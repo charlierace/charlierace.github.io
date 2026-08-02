@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bring a Trailer - Dynamic Auctions Dashboard</title>
+    <style>
+        :root {
+            --bat-red: #d32f2f;
+            --bg-dark: #121212;
+            --card-bg: #1e1e1e;
+            --text-light: #e0e0e0;
+            --gold: #fbc02d;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .header {
+            max-width: 1100px;
+            margin: 0 auto 24px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            margin: 0;
+            color: #fff;
+        }
+
+        .badge {
+            background-color: var(--bat-red);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .controls {
+            max-width: 1100px;
+            margin: 0 auto 24px auto;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            flex: 1;
+            min-width: 160px;
+        }
+
+        label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: #888;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        button, input {
+            background: #2a2a2a;
+            border: 1px solid #444;
+            color: #fff;
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+
+        button {
+            cursor: pointer;
+            align-self: flex-end;
+            height: 40px;
+            background: #333;
+        }
+
+        button:hover { background: #444; }
+
+        .grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid #333;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--gold);
+        }
+
+        .card-body {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            margin: 0 0 10px 0;
+            line-height: 1.3;
+        }
+
+        .meta-row {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+
+        .tag-title {
+            display: inline-block;
+            background: rgba(251, 192, 45, 0.15);
+            color: var(--gold);
+            border: 1px solid var(--gold);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .tag-days {
+            display: inline-block;
+            background: rgba(46, 125, 50, 0.2);
+            color: #81c784;
+            border: 1px solid #2e7d32;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .snippet {
+            font-size: 0.85rem;
+            color: #aaa;
+            margin-bottom: 16px;
+            background: #181818;
+            padding: 8px;
+            border-left: 3px solid #555;
+            border-radius: 2px;
+            line-height: 1.4;
+        }
+
+        .btn-link {
+            margin-top: auto;
+            background-color: var(--bat-red);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .status-msg {
+            max-width: 1100px;
+            margin: 40px auto;
+            text-align: center;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>🚗 BaT Active Auctions</h1>
+        <span class="badge" id="count-badge">0 Open Listings</span>
+    </div>
+
+    <div class="controls">
+        <div class="input-group" style="max-width: 160px;">
+            <label for="days-input">Max Days Allowed</label>
+            <input type="number" id="days-input" value="7" min="1" max="14" oninput="filterGrid()">
+        </div>
+        <div class="input-group">
+            <label for="title-input">Refine Location (Optional)</label>
+            <input type="text" id="title-input" placeholder="e.g. Los Angeles, San Diego..." oninput="filterGrid()">
+        </div>
+        <div class="input-group">
+            <label for="model-input">Filter Make/Model</label>
+            <input type="text" id="model-input" placeholder="e.g. Porsche, BMW, Ford..." oninput="filterGrid()">
+        </div>
+        <button onclick="fetchListings()">🔄 Refresh Feed</button>
+    </div>
+
+    <div id="status" class="status-msg">Fetching live BaT listings...</div>
+
+    <div class="grid" id="car-grid"></div>
+
+    <script>
+        // results.md is written by bat_ca_scanner.py and committed to the
+        // repo by the GitHub Actions workflow (scan.yml). Since this HTML
+        // file and results.md live in the same GitHub Pages site, this is
+        // a same-origin fetch — no CORS proxy needed.
+        const RESULTS_FILE = 'results.md';
+
+        let allListings = [];
+        let lastRunLabel = '';
+
+        function parseResultsMarkdown(text) {
+            const listings = [];
+
+            // Header line: "# BaT California scan — last run 2026-08-01 12:00 UTC"
+            const headerMatch = text.match(/last run\s+(.+)/i);
+            lastRunLabel = headerMatch ? headerMatch[1].trim() : '';
+
+            // Each entry looks like:
+            // - **Title**
+            //   - Ends: 2026-08-02T10:00:00+00:00
+            //   - Location: Los Angeles, CA
+            //   - [https://...](https://...)
+            const entryPattern = /-\s+\*\*(.+?)\*\*\s*\n\s*-\s+Ends:\s*(.+?)\s*\n\s*-\s+Location:\s*(.*?)\s*\n\s*-\s+\[(.+?)\]\((.+?)\)/g;
+
+            let m;
+            while ((m = entryPattern.exec(text)) !== null) {
+                const [, title, endsRaw, location, , link] = m;
+                const endsDate = new Date(endsRaw);
+                const daysRemaining = isNaN(endsDate.getTime())
+                    ? null
+                    : (endsDate - new Date()) / (1000 * 60 * 60 * 24);
+
+                listings.push({
+                    title: title.trim(),
+                    link: link.trim(),
+                    location: location.trim(),
+                    fullText: `${title} ${location}`,
+                    snippet: location.trim() || 'No location captured',
+                    daysRemaining: daysRemaining === null ? 999 : daysRemaining
+                });
+            }
+
+            return listings;
+        }
+
+        async function fetchListings() {
+            const grid = document.getElementById('car-grid');
+            const status = document.getElementById('status');
+            status.innerText = "Loading latest scan results...";
+            grid.innerHTML = "";
+
+            try {
+                // cache: 'no-store' so you always see the latest committed scan,
+                // not a stale cached copy of results.md
+                const response = await fetch(RESULTS_FILE, { cache: 'no-store' });
+                if (!response.ok) {
+                    throw new Error(`results.md returned ${response.status}`);
+                }
+                const text = await response.text();
+                allListings = parseResultsMarkdown(text);
+
+                if (allListings.length > 0) {
+                    filterGrid();
+                } else {
+                    status.innerText = "results.md loaded, but no matches were found in the latest scan.";
+                }
+            } catch (e) {
+                console.error(e);
+                status.innerText = "Couldn't load results.md — make sure the GitHub Action has run at least once and committed the file to this repo.";
+            }
+        }
+
+        function filterGrid() {
+            const maxDays = parseFloat(document.getElementById('days-input').value) || 14;
+            const titleQuery = document.getElementById('title-input').value.trim().toLowerCase();
+            const modelQuery = document.getElementById('model-input').value.trim().toLowerCase();
+
+            const filtered = allListings.filter(car => {
+                const matchesDays = car.daysRemaining <= maxDays;
+                const text = car.fullText.toLowerCase();
+                const matchesTitle = titleQuery === "" || text.includes(titleQuery);
+                const matchesModel = modelQuery === "" || car.title.toLowerCase().includes(modelQuery);
+
+                return matchesDays && matchesTitle && matchesModel;
+            });
+
+            renderGrid(filtered, titleQuery);
+        }
+
+        function renderGrid(listings, titleQuery) {
+            const grid = document.getElementById('car-grid');
+            const status = document.getElementById('status');
+            const badge = document.getElementById('count-badge');
+
+            badge.innerText = `${listings.length} Open Listings`;
+
+            const updatedNote = lastRunLabel ? ` (scan last ran: ${lastRunLabel})` : '';
+
+            if (listings.length === 0) {
+                status.innerText = `No listings match your current filter criteria.${updatedNote}`;
+                return;
+            }
+
+            status.innerText = updatedNote.trim() ? updatedNote.trim() : "";
+            grid.innerHTML = listings.map(car => {
+                const formattedDays = car.daysRemaining < 1
+                    ? `~${Math.max(1, Math.round(car.daysRemaining * 24))} Hours Left`
+                    : `~${car.daysRemaining.toFixed(1)} Days Left`;
+
+                return `
+                    <a href="${car.link}" target="_blank" class="card">
+                        <div class="card-body">
+                            <div class="meta-row">
+                                <span class="tag-days">⏱️ ${formattedDays}</span>
+                                ${titleQuery !== "" ? `<span class="tag-title">Matched Title: "${titleQuery}"</span>` : ''}
+                            </div>
+                            <div class="title">${car.title}</div>
+                            <div class="snippet">${car.snippet}</div>
+                            <div class="btn-link">View Listing on BaT ↗</div>
+                        </div>
+                    </a>
+                `;
+            }).join('');
+        }
+
+        fetchListings();
+    </script>
+</body>
+</html>
