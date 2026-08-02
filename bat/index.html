@@ -195,47 +195,89 @@
     <div class="grid" id="car-grid"></div>
 
     <script>
-        const TARGET_RSS = 'https://bringatrailer.com/feed/';
-        const FEED_URL = `https://api.allorigins.win/get?url=${encodeURIComponent(TARGET_RSS)}`;
+        const RSS_TARGET = 'https://bringatrailer.com/feed/';
         
+        // List of proxies to cycle through if one fails
+        const PROXIES = [
+            `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS_TARGET)}`,
+            `https://api.allorigins.win/get?url=${encodeURIComponent(RSS_TARGET)}`,
+            `https://corsproxy.io/?${encodeURIComponent(RSS_TARGET)}`
+        ];
+
         let allListings = [];
 
         async function fetchListings() {
             const grid = document.getElementById('car-grid');
             const status = document.getElementById('status');
-            status.innerText = "Loading live Bring a Trailer listings...";
+            status.innerText = "Connecting to live Bring a Trailer feed...";
             grid.innerHTML = "";
 
-            try {
-                const response = await fetch(FEED_URL);
-                if (!response.ok) throw new Error("Network response failed");
-                
-                const data = await response.json();
-                
-                const parser = new DOMParser();
-                const xmlDoc = parser.parseFromString(data.contents, "text/xml");
-                const items = xmlDoc.querySelectorAll("item");
+            let success = false;
 
-                if (!items || items.length === 0) {
-                    throw new Error("No items found in feed");
+            for (const proxyUrl of PROXIES) {
+                try {
+                    const response = await fetch(proxyUrl, { signal: AbortSignal.timeout(5000) });
+                    if (!response.ok) continue;
+
+                    if (proxyUrl.includes('rss2json')) {
+                        const data = await response.json();
+                        if (data.status === 'ok' && data.items) {
+                            allListings = parseJsonListings(data.items);
+                            success = true;
+                            break;
+                        }
+                    } else if (proxyUrl.includes('allorigins')) {
+                        const data = await response.json();
+                        if (data.contents) {
+                            allListings = parseXmlText(data.contents);
+                            success = true;
+                            break;
+                        }
+                    } else {
+                        const text = await response.text();
+                        if (text && text.includes('<rss')) {
+                            allListings = parseXmlText(text);
+                            success = true;
+                            break;
+                        }
+                    }
+                } catch (e) {
+                    console.warn(`Proxy ${proxyUrl} failed, trying next...`, e);
                 }
+            }
 
-                allListings = parseXmlListings(items);
-                filterGrid(); 
-
-            } catch (err) {
-                status.innerText = "Error loading feed. Please make sure you have an active internet connection.";
-                console.error(err);
+            if (success) {
+                filterGrid();
+            } else {
+                status.innerText = "Unable to reach BaT feed at the moment. Please try hitting Refresh in a few seconds.";
             }
         }
 
-        function parseXmlListings(items) {
+        function parseJsonListings(items) {
+            return items.map(item => {
+                const title = item.title || "";
+                const content = item.content || item.description || "";
+                const cleanContent = content.replace(/<[^>]*>?/gm, '');
+
+                return {
+                    title: title,
+                    link: item.link,
+                    fullText: `${title} ${cleanContent}`,
+                    snippet: cleanContent.substring(0, 150) + "..."
+                };
+            });
+        }
+
+        function parseXmlText(xmlString) {
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xmlString, "text/xml");
+            const items = xmlDoc.querySelectorAll("item");
             const parsed = [];
+
             items.forEach(item => {
                 const title = item.querySelector("title")?.textContent || "";
                 const link = item.querySelector("link")?.textContent || "";
                 const description = item.querySelector("description")?.textContent || "";
-                
                 const cleanContent = description.replace(/<[^>]*>?/gm, '');
 
                 parsed.push({
@@ -245,6 +287,7 @@
                     snippet: cleanContent.substring(0, 150) + "..."
                 });
             });
+
             return parsed;
         }
 
@@ -254,10 +297,8 @@
 
             const filtered = allListings.filter(car => {
                 const text = car.fullText.toLowerCase();
-
                 const matchesTitle = titleQuery === "" || text.includes(titleQuery);
                 const matchesModel = modelQuery === "" || car.title.toLowerCase().includes(modelQuery);
-
                 return matchesTitle && matchesModel;
             });
 
@@ -272,7 +313,7 @@
             badge.innerText = `${listings.length} Listings Found`;
 
             if (listings.length === 0) {
-                status.innerText = "No listings match your current title/model filter criteria.";
+                status.innerText = "No listings match your current filter criteria.";
                 return;
             }
 
@@ -280,7 +321,7 @@
             grid.innerHTML = listings.map(car => `
                 <a href="${car.link}" target="_blank" class="card">
                     <div class="card-body">
-                        ${titleQuery !== "" ? `<span class="tag-title">Matched Title: "${titleQuery}"</span>` : ''}
+                        ${titleQuery !== "" ? `<span class="tag-title">Matched Filter: "${titleQuery}"</span>` : ''}
                         <div class="title">${car.title}</div>
                         <div class="snippet">${car.snippet}</div>
                         <div class="btn-link">View Listing on BaT ↗</div>
