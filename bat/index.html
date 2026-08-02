@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bring a Trailer - Closing Soon Dashboard</title>
+    <style>
+        :root {
+            --bat-red: #d32f2f;
+            --bg-dark: #121212;
+            --card-bg: #1e1e1e;
+            --text-light: #e0e0e0;
+            --gold: #fbc02d;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .header {
+            max-width: 1100px;
+            margin: 0 auto 24px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            margin: 0;
+            color: #fff;
+        }
+
+        .badge {
+            background-color: var(--bat-red);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .controls {
+            max-width: 1100px;
+            margin: 0 auto 24px auto;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: #888;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        button, input {
+            background: #2a2a2a;
+            border: 1px solid #444;
+            color: #fff;
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+
+        button { 
+            cursor: pointer; 
+            align-self: flex-end;
+            height: 40px;
+            background: #333;
+        }
+        
+        button:hover { background: #444; }
+
+        .grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid #333;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--gold);
+        }
+
+        .card-body {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            margin: 0 0 10px 0;
+            line-height: 1.3;
+        }
+
+        .tag-title {
+            display: inline-block;
+            background: rgba(251, 192, 45, 0.15);
+            color: var(--gold);
+            border: 1px solid var(--gold);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            width: fit-content;
+        }
+
+        .snippet {
+            font-size: 0.85rem;
+            color: #aaa;
+            margin-bottom: 16px;
+            background: #181818;
+            padding: 8px;
+            border-left: 3px solid #555;
+            border-radius: 2px;
+            line-height: 1.4;
+        }
+
+        .btn-link {
+            margin-top: auto;
+            background-color: var(--bat-red);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .status-msg {
+            max-width: 1100px;
+            margin: 40px auto;
+            text-align: center;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>🚗 BaT Auctions Closing Soon</h1>
+        <span class="badge" id="count-badge">0 Listings</span>
+    </div>
+
+    <div class="controls">
+        <div class="input-group">
+            <label for="title-input">Place of Title Filter (Leave blank for all)</label>
+            <input type="text" id="title-input" placeholder="e.g. California, CA, Texas, Clean Title..." oninput="filterGrid()">
+        </div>
+        <div class="input-group">
+            <label for="model-input">Filter Make/Model</label>
+            <input type="text" id="model-input" placeholder="e.g. Porsche, BMW, Ford..." oninput="filterGrid()">
+        </div>
+        <button onclick="fetchListings()">🔄 Refresh Feed</button>
+    </div>
+
+    <div id="status" class="status-msg">Fetching live BaT listings...</div>
+
+    <div class="grid" id="car-grid"></div>
+
+    <script>
+        const TARGET_RSS = 'https://bringatrailer.com/feed/';
+        const FEED_URL = `https://api.allorigins.win/get?url=${encodeURIComponent(TARGET_RSS)}`;
+        
+        let allListings = [];
+
+        async function fetchListings() {
+            const grid = document.getElementById('car-grid');
+            const status = document.getElementById('status');
+            status.innerText = "Loading live Bring a Trailer listings...";
+            grid.innerHTML = "";
+
+            try {
+                const response = await fetch(FEED_URL);
+                if (!response.ok) throw new Error("Network response failed");
+                
+                const data = await response.json();
+                
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(data.contents, "text/xml");
+                const items = xmlDoc.querySelectorAll("item");
+
+                if (!items || items.length === 0) {
+                    throw new Error("No items found in feed");
+                }
+
+                allListings = parseXmlListings(items);
+                filterGrid(); 
+
+            } catch (err) {
+                status.innerText = "Error loading feed. Please make sure you have an active internet connection.";
+                console.error(err);
+            }
+        }
+
+        function parseXmlListings(items) {
+            const parsed = [];
+            items.forEach(item => {
+                const title = item.querySelector("title")?.textContent || "";
+                const link = item.querySelector("link")?.textContent || "";
+                const description = item.querySelector("description")?.textContent || "";
+                
+                const cleanContent = description.replace(/<[^>]*>?/gm, '');
+
+                parsed.push({
+                    title: title,
+                    link: link,
+                    fullText: `${title} ${cleanContent}`,
+                    snippet: cleanContent.substring(0, 150) + "..."
+                });
+            });
+            return parsed;
+        }
+
+        function filterGrid() {
+            const titleQuery = document.getElementById('title-input').value.trim().toLowerCase();
+            const modelQuery = document.getElementById('model-input').value.trim().toLowerCase();
+
+            const filtered = allListings.filter(car => {
+                const text = car.fullText.toLowerCase();
+
+                const matchesTitle = titleQuery === "" || text.includes(titleQuery);
+                const matchesModel = modelQuery === "" || car.title.toLowerCase().includes(modelQuery);
+
+                return matchesTitle && matchesModel;
+            });
+
+            renderGrid(filtered, titleQuery);
+        }
+
+        function renderGrid(listings, titleQuery) {
+            const grid = document.getElementById('car-grid');
+            const status = document.getElementById('status');
+            const badge = document.getElementById('count-badge');
+
+            badge.innerText = `${listings.length} Listings Found`;
+
+            if (listings.length === 0) {
+                status.innerText = "No listings match your current title/model filter criteria.";
+                return;
+            }
+
+            status.innerText = "";
+            grid.innerHTML = listings.map(car => `
+                <a href="${car.link}" target="_blank" class="card">
+                    <div class="card-body">
+                        ${titleQuery !== "" ? `<span class="tag-title">Matched Title: "${titleQuery}"</span>` : ''}
+                        <div class="title">${car.title}</div>
+                        <div class="snippet">${car.snippet}</div>
+                        <div class="btn-link">View Listing on BaT ↗</div>
+                    </div>
+                </a>
+            `).join('');
+        }
+
+        fetchListings();
+    </script>
+</body>
+</html>
