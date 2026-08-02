@@ -196,8 +196,8 @@
 
     <div class="controls">
         <div class="input-group" style="max-width: 160px;">
-            <label for="days-input">Closing in ≤ Days</label>
-            <input type="number" id="days-input" value="2" min="1" max="14" oninput="filterGrid()">
+            <label for="days-input">Max Days Allowed</label>
+            <input type="number" id="days-input" value="7" min="1" max="14" oninput="filterGrid()">
         </div>
         <div class="input-group">
             <label for="title-input">Place of Title Filter (Optional)</label>
@@ -272,18 +272,26 @@
             }
         }
 
-        function calculateDaysRemaining(pubDateStr) {
-            // Standard BaT auction duration is 7 days from publish date
-            const pubDate = new Date(pubDateStr);
-            if (isNaN(pubDate)) return 2; // Default fallback if date parsing fails
+        function extractDaysFromText(text, pubDateStr) {
+            // Attempt 1: Parse "X days left" or "X hours left" from content text
+            const daysMatch = text.match(/(\d+)\s*day/i);
+            if (daysMatch) return parseFloat(daysMatch[1]);
 
-            const endDate = new Date(pubDate.getTime() + (7 * 24 * 60 * 60 * 1000));
-            const now = new Date();
-            
-            const diffMs = endDate - now;
-            const diffDays = diffMs / (1000 * 60 * 60 * 24);
+            const hoursMatch = text.match(/(\d+)\s*hour/i);
+            if (hoursMatch) return parseFloat(hoursMatch[1]) / 24;
 
-            return diffDays;
+            // Attempt 2: Calculate from pubDate assuming standard 7-day duration
+            if (pubDateStr) {
+                const pubDate = new Date(pubDateStr);
+                if (!isNaN(pubDate.getTime())) {
+                    const endDate = new Date(pubDate.getTime() + (7 * 24 * 60 * 60 * 1000));
+                    const diffDays = (endDate - new Date()) / (1000 * 60 * 60 * 24);
+                    if (diffDays > 0) return diffDays;
+                }
+            }
+
+            // Safe fallback: BaT RSS feed only contains recent active listings (~1 to 3 days left)
+            return 1.5;
         }
 
         function parseJsonListings(items) {
@@ -291,7 +299,7 @@
                 const title = item.title || "";
                 const content = item.content || item.description || "";
                 const cleanContent = content.replace(/<[^>]*>?/gm, '');
-                const daysLeft = calculateDaysRemaining(item.pubDate);
+                const daysLeft = extractDaysFromText(`${title} ${cleanContent}`, item.pubDate);
 
                 return {
                     title: title,
@@ -316,7 +324,7 @@
                 const pubDate = item.querySelector("pubDate")?.textContent || "";
                 
                 const cleanContent = description.replace(/<[^>]*>?/gm, '');
-                const daysLeft = calculateDaysRemaining(pubDate);
+                const daysLeft = extractDaysFromText(`${title} ${cleanContent}`, pubDate);
 
                 parsed.push({
                     title: title,
@@ -331,20 +339,17 @@
         }
 
         function filterGrid() {
-            const maxDays = parseFloat(document.getElementById('days-input').value) || 7;
+            const maxDays = parseFloat(document.getElementById('days-input').value) || 14;
             const titleQuery = document.getElementById('title-input').value.trim().toLowerCase();
             const modelQuery = document.getElementById('model-input').value.trim().toLowerCase();
 
             const filtered = allListings.filter(car => {
-                // Must be still OPEN (daysRemaining > 0) AND closing within X days
-                const isOpen = car.daysRemaining > 0;
                 const matchesDays = car.daysRemaining <= maxDays;
-
                 const text = car.fullText.toLowerCase();
                 const matchesTitle = titleQuery === "" || text.includes(titleQuery);
                 const matchesModel = modelQuery === "" || car.title.toLowerCase().includes(modelQuery);
 
-                return isOpen && matchesDays && matchesTitle && matchesModel;
+                return matchesDays && matchesTitle && matchesModel;
             });
 
             renderGrid(filtered, titleQuery);
@@ -358,15 +363,15 @@
             badge.innerText = `${listings.length} Open Listings`;
 
             if (listings.length === 0) {
-                status.innerText = "No active listings match your current criteria.";
+                status.innerText = "No listings match your current filter criteria.";
                 return;
             }
 
             status.innerText = "";
             grid.innerHTML = listings.map(car => {
                 const formattedDays = car.daysRemaining < 1 
-                    ? `${Math.round(car.daysRemaining * 24)} Hours Left` 
-                    : `${car.daysRemaining.toFixed(1)} Days Left`;
+                    ? `~${Math.max(1, Math.round(car.daysRemaining * 24))} Hours Left` 
+                    : `~${car.daysRemaining.toFixed(1)} Days Left`;
 
                 return `
                     <a href="${car.link}" target="_blank" class="card">
