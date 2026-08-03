@@ -1,4 +1,4 @@
-# BaT California scan — last run 2026-08-02 21:29 UTC
+# BaT California scan — last run 2026-08-03 12:40 UTC
 
 Window: closing within 48 hours
 
@@ -392,13 +392,53 @@ Window: closing within 48 hours
   - Location: lat=38.3929, lon=-122.292
   - [https://bringatrailer.com/listing/1973-bmw-r60-5-17/](https://bringatrailer.com/listing/1973-bmw-r60-5-17/)
 
+- **2007 Volvo V70R**
+  - Ends: 2026-08-04T21:30:00+00:00
+  - Location: lat=37.9185, lon=-121.694
+  - [https://bringatrailer.com/listing/2007-volvo-v70r-41/](https://bringatrailer.com/listing/2007-volvo-v70r-41/)
+
+- **1983 Honda ATC 200X**
+  - Ends: 2026-08-04T21:31:00+00:00
+  - Location: lat=35.4482, lon=-120.67
+  - [https://bringatrailer.com/listing/1983-honda-atc-200x-3/](https://bringatrailer.com/listing/1983-honda-atc-200x-3/)
+
+- **Ex–Joe Sposato 1988 Swift DB4 Formula Atlantic Race Car**
+  - Ends: 2026-08-04T21:34:00+00:00
+  - Location: lat=34.521, lon=-119.248
+  - [https://bringatrailer.com/listing/1988-swift-db4/](https://bringatrailer.com/listing/1988-swift-db4/)
+
+- **2004 Mercedes-Benz CLK500 Cabriolet Espresso Edition**
+  - Ends: 2026-08-04T21:36:00+00:00
+  - Location: lat=33.2301, lon=-117.297
+  - [https://bringatrailer.com/listing/2004-mercedes-benz-clk500-cabriolet-27/](https://bringatrailer.com/listing/2004-mercedes-benz-clk500-cabriolet-27/)
+
+- **1970 Harley-Davidson FLH Electra Glide**
+  - Ends: 2026-08-04T21:37:00+00:00
+  - Location: lat=39.005, lon=-121.029
+  - [https://bringatrailer.com/listing/1970-harley-davidson-flh-electra-glide-3/](https://bringatrailer.com/listing/1970-harley-davidson-flh-electra-glide-3/)
+
+- **Original-Owner Modified 2016 Toyota Tacoma TRD Off-Road Double Cab V6 4&#215;4**
+  - Ends: 2026-08-04T21:38:00+00:00
+  - Location: lat=37.8338, lon=-121.981
+  - [https://bringatrailer.com/listing/2016-toyota-tacoma-29/](https://bringatrailer.com/listing/2016-toyota-tacoma-29/)
+
+- **1997 Toyota T100 Xtracab SR5 4&#215;4 5-Speed**
+  - Ends: 2026-08-04T21:41:00+00:00
+  - Location: lat=34.0567, lon=-117.896
+  - [https://bringatrailer.com/listing/1997-toyota-t100-23/](https://bringatrailer.com/listing/1997-toyota-t100-23/)
+
+- **24k-Mile 1999 Ferrari 360 Modena 6-Speed**
+  - Ends: 2026-08-04T21:51:00+00:00
+  - Location: lat=34.1496, lon=-118.978
+  - [https://bringatrailer.com/listing/1999-ferrari-360-modena-65/](https://bringatrailer.com/listing/1999-ferrari-360-modena-65/)
+
 ---
 
 ### Diagnostics
 
-- '"excerpt":' occurrences seen on page: 1301
-- Listing objects successfully parsed: 1301
+- '"excerpt":' occurrences seen on page: 1307
+- Listing objects successfully parsed: 1307
 - Listings missing/invalid timestamp_end: 0
-- Listings ending outside the 48h window: 871
-- Listings checked within window: 430
-- California matches: 78
+- Listings ending outside the 48h window: 854
+- Listings checked within window: 453
+- California matches: 86
