@@ -1,66 +1,6 @@
-# BaT California scan — last run 2026-08-03 12:40 UTC
+# BaT California scan — last run 2026-08-03 18:22 UTC
 
 Window: closing within 48 hours
-
-- **300-Mile 2019 Porsche 911 GT3 Touring 6-Speed**
-  - Ends: 2026-08-03T17:15:00+00:00
-  - Location: lat=33.8773, lon=-116.564
-  - [https://bringatrailer.com/listing/2019-porsche-911-gt3-touring-47/](https://bringatrailer.com/listing/2019-porsche-911-gt3-touring-47/)
-
-- **1984 BMW R100RT**
-  - Ends: 2026-08-03T17:20:00+00:00
-  - Location: lat=37.5972, lon=-122.419
-  - [https://bringatrailer.com/listing/1984-bmw-r100rt-6/](https://bringatrailer.com/listing/1984-bmw-r100rt-6/)
-
-- **362-Mile 2023 Aston Martin V12 Vantage Roadster**
-  - Ends: 2026-08-03T17:21:00+00:00
-  - Location: lat=37.567, lon=-122.367
-  - [https://bringatrailer.com/listing/2023-aston-martin-v12-vantage-roadster-10/](https://bringatrailer.com/listing/2023-aston-martin-v12-vantage-roadster-10/)
-
-- **10k-Mile Mexico Blue 2015 Porsche 911 Targa 4S**
-  - Ends: 2026-08-03T17:30:00+00:00
-  - Location: lat=33.6235, lon=-117.864
-  - [https://bringatrailer.com/listing/2015-porsche-911-targa-4s-58/](https://bringatrailer.com/listing/2015-porsche-911-targa-4s-58/)
-
-- **RoW 1997 Porsche 911 Carrera 4S Coupe 6-Speed**
-  - Ends: 2026-08-03T17:36:00+00:00
-  - Location: lat=33.7629, lon=-118.126
-  - [https://bringatrailer.com/listing/1997-porsche-911-carrera-4s-135/](https://bringatrailer.com/listing/1997-porsche-911-carrera-4s-135/)
-
-- **Fuel-Injected, Ram Jet 350-Powered 1935 Ford Model 48 Convertible Cabriolet**
-  - Ends: 2026-08-03T17:39:00+00:00
-  - Location: lat=37.8359, lon=-122.285
-  - [https://bringatrailer.com/listing/1935-ford-convertible-cabriolet-3/](https://bringatrailer.com/listing/1935-ford-convertible-cabriolet-3/)
-
-- **2005 Honda Element EX**
-  - Ends: 2026-08-03T17:40:00+00:00
-  - Location: lat=33.8752, lon=-117.565
-  - [https://bringatrailer.com/listing/2005-honda-element-41/](https://bringatrailer.com/listing/2005-honda-element-41/)
-
-- **1996 Porsche 911 Turbo**
-  - Ends: 2026-08-03T17:44:00+00:00
-  - Location: lat=33.6235, lon=-117.864
-  - [https://bringatrailer.com/listing/1996-porsche-911-turbo-215/](https://bringatrailer.com/listing/1996-porsche-911-turbo-215/)
-
-- **2003 Lexus GX470**
-  - Ends: 2026-08-03T17:52:00+00:00
-  - Location: lat=33.9021, lon=-118.01
-  - [https://bringatrailer.com/listing/2003-lexus-gx470-10/](https://bringatrailer.com/listing/2003-lexus-gx470-10/)
-
-- **One-Owner, 6k-Mile 2000 Jaguar Vanden Plas Supercharged**
-  - Ends: 2026-08-03T17:58:00+00:00
-  - Location: lat=37.8639, lon=-119.908
-  - [https://bringatrailer.com/listing/2000-jaguar-vanden-plas-supercharged-4/](https://bringatrailer.com/listing/2000-jaguar-vanden-plas-supercharged-4/)
-
-- **2021 Ram 1500 TRX Crew Cab 4×4 Launch Edition**
-  - Ends: 2026-08-03T18:05:00+00:00
-  - Location: lat=34.1403, lon=-118.762
-  - [https://bringatrailer.com/listing/2021-dodge-ram-1500-trx-11/](https://bringatrailer.com/listing/2021-dodge-ram-1500-trx-11/)
-
-- **1971 Volkswagen Super Beetle Convertible**
-  - Ends: 2026-08-03T18:10:00+00:00
-  - Location: lat=36.5816, lon=-121.844
-  - [https://bringatrailer.com/listing/1971-volkswagen-super-beetle-convertible-42/](https://bringatrailer.com/listing/1971-volkswagen-super-beetle-convertible-42/)
 
 - **Single-Family-Owned, 383-Powered &#8217;41 Willys Coupe**
   - Ends: 2026-08-03T18:33:00+00:00
@@ -432,13 +372,68 @@ Window: closing within 48 hours
   - Location: lat=34.1496, lon=-118.978
   - [https://bringatrailer.com/listing/1999-ferrari-360-modena-65/](https://bringatrailer.com/listing/1999-ferrari-360-modena-65/)
 
+- **2014 Pagani Huayra Tempesta**
+  - Ends: 2026-08-05T17:05:00+00:00
+  - Location: lat=34.0998, lon=-118.413
+  - [https://bringatrailer.com/listing/2014-pagani-huayra-3/](https://bringatrailer.com/listing/2014-pagani-huayra-3/)
+
+- **1,200-Mile 2015 Ferrari 458 Italia**
+  - Ends: 2026-08-05T17:26:00+00:00
+  - Location: lat=37.567, lon=-122.367
+  - [https://bringatrailer.com/listing/2015-ferrari-458-italia-17/](https://bringatrailer.com/listing/2015-ferrari-458-italia-17/)
+
+- **30k-Mile 2014 Aston Martin V8 Vantage**
+  - Ends: 2026-08-05T17:42:00+00:00
+  - Location: lat=34.4359, lon=-119.682
+  - [https://bringatrailer.com/listing/2014-aston-martin-v8-vantage-23/](https://bringatrailer.com/listing/2014-aston-martin-v8-vantage-23/)
+
+- **1966 Austin-Healey 3000 BJ8 Mk III**
+  - Ends: 2026-08-05T17:46:00+00:00
+  - Location: lat=39.005, lon=-121.029
+  - [https://bringatrailer.com/listing/1966-austin-healey-3000-mk-iii-28/](https://bringatrailer.com/listing/1966-austin-healey-3000-mk-iii-28/)
+
+- **29k-Mile 2020 Winnebago Revel 4&#215;4**
+  - Ends: 2026-08-05T17:48:00+00:00
+  - Location: lat=35.2383, lon=-120.621
+  - [https://bringatrailer.com/listing/2020-winnebago-revel-6/](https://bringatrailer.com/listing/2020-winnebago-revel-6/)
+
+- **Fuel-Injected, BluePrint 306-Powered 1965 Ford Mustang Fastback**
+  - Ends: 2026-08-05T17:49:00+00:00
+  - Location: lat=37.778, lon=-122.003
+  - [https://bringatrailer.com/listing/1965-ford-mustang-934/](https://bringatrailer.com/listing/1965-ford-mustang-934/)
+
+- **1998 Toyota 4Runner Limited 4WD**
+  - Ends: 2026-08-05T18:05:00+00:00
+  - Location: lat=34.4173, lon=-118.573
+  - [https://bringatrailer.com/listing/1998-toyota-4runner-162/](https://bringatrailer.com/listing/1998-toyota-4runner-162/)
+
+- **2011 Land Rover Range Rover HSE**
+  - Ends: 2026-08-05T18:08:00+00:00
+  - Location: lat=34.1772, lon=-118.614
+  - [https://bringatrailer.com/listing/2011-land-rover-range-rover-213/](https://bringatrailer.com/listing/2011-land-rover-range-rover-213/)
+
+- **1967 Jaguar XKE Series I 4.2 2+2 4-Speed**
+  - Ends: 2026-08-05T18:10:00+00:00
+  - Location: lat=36.1433, lon=-115.2
+  - [https://bringatrailer.com/listing/1967-jaguar-e-type-series-1-22-4/](https://bringatrailer.com/listing/1967-jaguar-e-type-series-1-22-4/)
+
+- **21k-Mile 2000 Ferrari 456M GTA**
+  - Ends: 2026-08-05T18:16:00+00:00
+  - Location: lat=34.1496, lon=-118.978
+  - [https://bringatrailer.com/listing/2000-ferrari-456m-gta-13/](https://bringatrailer.com/listing/2000-ferrari-456m-gta-13/)
+
+- **1977 Dodge Ramcharger 4&#215;4**
+  - Ends: 2026-08-05T18:20:00+00:00
+  - Location: lat=36.9729, lon=-121.989
+  - [https://bringatrailer.com/listing/1977-dodge-ramcharger-8-2-2/](https://bringatrailer.com/listing/1977-dodge-ramcharger-8-2-2/)
+
 ---
 
 ### Diagnostics
 
-- '"excerpt":' occurrences seen on page: 1307
-- Listing objects successfully parsed: 1307
+- '"excerpt":' occurrences seen on page: 1330
+- Listing objects successfully parsed: 1330
 - Listings missing/invalid timestamp_end: 0
-- Listings ending outside the 48h window: 854
-- Listings checked within window: 453
-- California matches: 86
+- Listings ending outside the 48h window: 885
+- Listings checked within window: 445
+- California matches: 85
