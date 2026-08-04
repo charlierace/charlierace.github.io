@@ -1,51 +1,6 @@
-# BaT California scan — last run 2026-08-04 10:16 UTC
+# BaT California scan — last run 2026-08-04 18:14 UTC
 
 Window: closing within 48 hours
-
-- **1988 Porsche 944 Turbo Cup**
-  - Ends: 2026-08-04T17:15:00+00:00
-  - Location: lat=34.012, lon=-118.468
-  - [https://bringatrailer.com/listing/1988-porsche-944-turbo-cup/](https://bringatrailer.com/listing/1988-porsche-944-turbo-cup/)
-
-- **Jade Green 2019 Porsche 911 Carrera 4 GTS Coupe**
-  - Ends: 2026-08-04T17:18:00+00:00
-  - Location: lat=34.1496, lon=-118.978
-  - [https://bringatrailer.com/listing/2019-porsche-911-carrera-4-gts-coupe-12-2/](https://bringatrailer.com/listing/2019-porsche-911-carrera-4-gts-coupe-12-2/)
-
-- **20-Years-Owned 1967 Pontiac Firebird Convertible 3-Speed**
-  - Ends: 2026-08-04T17:21:00+00:00
-  - Location: lat=33.8907, lon=-118.397
-  - [https://bringatrailer.com/listing/1967-pontiac-firebird-114-2/](https://bringatrailer.com/listing/1967-pontiac-firebird-114-2/)
-
-- **Modified 1997 Toyota Land Cruiser FZJ80 40th Anniversary**
-  - Ends: 2026-08-04T17:26:00+00:00
-  - Location: lat=34.1496, lon=-118.978
-  - [https://bringatrailer.com/listing/1997-toyota-land-cruiser-fzj80-289/](https://bringatrailer.com/listing/1997-toyota-land-cruiser-fzj80-289/)
-
-- **3,800-Mile 2012 Mercedes-Benz SLS AMG**
-  - Ends: 2026-08-04T17:41:00+00:00
-  - Location: lat=34.1496, lon=-118.978
-  - [https://bringatrailer.com/listing/2012-mercedes-benz-sls-amg-73/](https://bringatrailer.com/listing/2012-mercedes-benz-sls-amg-73/)
-
-- **1913 Excelsior 7SC Board Track Racer**
-  - Ends: 2026-08-04T17:46:00+00:00
-  - Location: lat=34.0998, lon=-118.413
-  - [https://bringatrailer.com/listing/1913-excelsior-7sc/](https://bringatrailer.com/listing/1913-excelsior-7sc/)
-
-- **2023 Bentley Continental GT V8 Azure Convertible**
-  - Ends: 2026-08-04T17:48:00+00:00
-  - Location: lat=34.1496, lon=-118.978
-  - [https://bringatrailer.com/listing/2023-bentley-continental-gt-v8-6/](https://bringatrailer.com/listing/2023-bentley-continental-gt-v8-6/)
-
-- **3.6L-Powered 1987 Porsche 911 Carrera Coupe G50**
-  - Ends: 2026-08-04T17:57:00+00:00
-  - Location: lat=34.1496, lon=-118.978
-  - [https://bringatrailer.com/listing/1987-porsche-911-carrera-coupe-119/](https://bringatrailer.com/listing/1987-porsche-911-carrera-coupe-119/)
-
-- **18×8″ and 18×9.5″ BMW Style 65 Wheels**
-  - Ends: 2026-08-04T18:09:00+00:00
-  - Location: lat=36.2092, lon=-115.294
-  - [https://bringatrailer.com/listing/bmw-e39-m5-style-65-wheels/](https://bringatrailer.com/listing/bmw-e39-m5-style-65-wheels/)
 
 - **2004 Lincoln Navigator Luxury 4×4**
   - Ends: 2026-08-04T18:26:00+00:00
@@ -507,13 +462,53 @@ Window: closing within 48 hours
   - Location: lat=37.5381, lon=-122.306
   - [https://bringatrailer.com/listing/1994-jaguar-xjs-coupe-15/](https://bringatrailer.com/listing/1994-jaguar-xjs-coupe-15/)
 
+- **23k-Mile 1992 Ferrari 512 TR**
+  - Ends: 2026-08-06T17:10:00+00:00
+  - Location: lat=34.1496, lon=-118.978
+  - [https://bringatrailer.com/listing/1992-ferrari-512-tr-52/](https://bringatrailer.com/listing/1992-ferrari-512-tr-52/)
+
+- **2025 Lamborghini Revuelto**
+  - Ends: 2026-08-06T17:15:00+00:00
+  - Location: lat=33.6235, lon=-117.864
+  - [https://bringatrailer.com/listing/2025-lamborghini-revuelto-9/](https://bringatrailer.com/listing/2025-lamborghini-revuelto-9/)
+
+- **2019 Ferrari 488 Spider**
+  - Ends: 2026-08-06T17:30:00+00:00
+  - Location: lat=37.8931, lon=-122.473
+  - [https://bringatrailer.com/listing/2019-ferrari-488-spider-23/](https://bringatrailer.com/listing/2019-ferrari-488-spider-23/)
+
+- **24-Mile 2023 Dodge Challenger SRT Demon 170**
+  - Ends: 2026-08-06T17:36:00+00:00
+  - Location: lat=33.6255, lon=-117.933
+  - [https://bringatrailer.com/listing/2023-dodge-challenger-srt-demon-170-222/](https://bringatrailer.com/listing/2023-dodge-challenger-srt-demon-170-222/)
+
+- **Porsche 356 Roadster D Replica by Intermeccanica**
+  - Ends: 2026-08-06T17:47:00+00:00
+  - Location: lat=35.2383, lon=-120.621
+  - [https://bringatrailer.com/listing/1961-porsche-356-replica/](https://bringatrailer.com/listing/1961-porsche-356-replica/)
+
+- **1969 Honda Z50A Mini Trail**
+  - Ends: 2026-08-06T17:49:00+00:00
+  - Location: lat=33.0899, lon=-117.248
+  - [https://bringatrailer.com/listing/1969-honda-z50a-mini-trail-88/](https://bringatrailer.com/listing/1969-honda-z50a-mini-trail-88/)
+
+- **2005 GMC Yukon Denali**
+  - Ends: 2026-08-06T18:02:00+00:00
+  - Location: lat=34.1772, lon=-118.614
+  - [https://bringatrailer.com/listing/2005-gmc-yukon-20/](https://bringatrailer.com/listing/2005-gmc-yukon-20/)
+
+- **2023 Porsche Panamera Turbo S Sport Turismo**
+  - Ends: 2026-08-06T18:04:00+00:00
+  - Location: lat=33.1508, lon=-117.306
+  - [https://bringatrailer.com/listing/2023-porsche-panamera-turbo-s-sport-turismo/](https://bringatrailer.com/listing/2023-porsche-panamera-turbo-s-sport-turismo/)
+
 ---
 
 ### Diagnostics
 
-- '"excerpt":' occurrences seen on page: 1317
-- Listing objects successfully parsed: 1317
+- '"excerpt":' occurrences seen on page: 1354
+- Listing objects successfully parsed: 1354
 - Listings missing/invalid timestamp_end: 0
-- Listings ending outside the 48h window: 822
-- Listings checked within window: 495
-- California matches: 101
+- Listings ending outside the 48h window: 857
+- Listings checked within window: 497
+- California matches: 100
