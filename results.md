@@ -1,211 +1,6 @@
-# BaT California scan — last run 2026-08-04 18:14 UTC
+# BaT California scan — last run 2026-08-05 10:12 UTC
 
 Window: closing within 48 hours
-
-- **2004 Lincoln Navigator Luxury 4×4**
-  - Ends: 2026-08-04T18:26:00+00:00
-  - Location: lat=37.3112, lon=-121.962
-  - [https://bringatrailer.com/listing/2004-lincoln-navigator-8/](https://bringatrailer.com/listing/2004-lincoln-navigator-8/)
-
-- **34-Years-Owned, Supercharged 350-Powered T-Bucket**
-  - Ends: 2026-08-04T18:28:00+00:00
-  - Location: lat=37.567, lon=-122.367
-  - [https://bringatrailer.com/listing/1923-ford-model-t-59/](https://bringatrailer.com/listing/1923-ford-model-t-59/)
-
-- **1978 GMC K1500 Sierra Classic 4×4**
-  - Ends: 2026-08-04T18:51:00+00:00
-  - Location: lat=35.9098, lon=-114.759
-  - [https://bringatrailer.com/listing/1978-gmc-k1500-8/](https://bringatrailer.com/listing/1978-gmc-k1500-8/)
-
-- **1992 Honda Civic DX Hatchback**
-  - Ends: 2026-08-04T18:53:00+00:00
-  - Location: lat=34.0287, lon=-118.239
-  - [https://bringatrailer.com/listing/1992-honda-civic-56/](https://bringatrailer.com/listing/1992-honda-civic-56/)
-
-- **1964 Ford Falcon Ranchero 3-Speed**
-  - Ends: 2026-08-04T18:56:00+00:00
-  - Location: lat=37.778, lon=-122.003
-  - [https://bringatrailer.com/listing/1964-ford-falcon-ranchero-9/](https://bringatrailer.com/listing/1964-ford-falcon-ranchero-9/)
-
-- **1953 Packard Caribbean Custom Convertible**
-  - Ends: 2026-08-04T19:01:00+00:00
-  - Location: lat=33.1593, lon=-117.335
-  - [https://bringatrailer.com/listing/1953-packard-caribbean-2/](https://bringatrailer.com/listing/1953-packard-caribbean-2/)
-
-- **1964 Vespa VBB 150 w/Sidecar**
-  - Ends: 2026-08-04T19:02:00+00:00
-  - Location: lat=36.0383, lon=-115.146
-  - [https://bringatrailer.com/listing/1964-vespa-vbb-150-3/](https://bringatrailer.com/listing/1964-vespa-vbb-150-3/)
-
-- **16×7″ Alpina Wheels by Ronal**
-  - Ends: 2026-08-04T19:10:00+00:00
-  - Location: lat=37.8992, lon=-122.117
-  - [https://bringatrailer.com/listing/wheels-649/](https://bringatrailer.com/listing/wheels-649/)
-
-- **23-Years-Owned 1980 Triumph TR8 Convertible 5-Speed**
-  - Ends: 2026-08-04T19:13:00+00:00
-  - Location: lat=33.8907, lon=-118.397
-  - [https://bringatrailer.com/listing/1980-triumph-tr8-convertible-30/](https://bringatrailer.com/listing/1980-triumph-tr8-convertible-30/)
-
-- **2020 BMW X7 M50i**
-  - Ends: 2026-08-04T19:18:00+00:00
-  - Location: lat=37.778, lon=-122.003
-  - [https://bringatrailer.com/listing/2020-bmw-x7-m50i-3/](https://bringatrailer.com/listing/2020-bmw-x7-m50i-3/)
-
-- **1980 Toyota Land Cruiser FJ45 Pickup**
-  - Ends: 2026-08-04T19:21:00+00:00
-  - Location: lat=34.1471, lon=-118.432
-  - [https://bringatrailer.com/listing/1980-toyota-land-cruiser-fj45-10-2/](https://bringatrailer.com/listing/1980-toyota-land-cruiser-fj45-10-2/)
-
-- **Backdated 1983 Porsche 911SC Coupe**
-  - Ends: 2026-08-04T19:38:00+00:00
-  - Location: lat=33.785, lon=-117.844
-  - [https://bringatrailer.com/listing/1983-porsche-911sc-161/](https://bringatrailer.com/listing/1983-porsche-911sc-161/)
-
-- **V6-Powered 1954 Willys M38A1**
-  - Ends: 2026-08-04T19:43:00+00:00
-  - Location: lat=37.0412, lon=-122.124
-  - [https://bringatrailer.com/listing/1954-jeep-cj-3b-2/](https://bringatrailer.com/listing/1954-jeep-cj-3b-2/)
-
-- **2012 BMW 760Li Individual**
-  - Ends: 2026-08-04T19:44:00+00:00
-  - Location: lat=38.4748, lon=-121.443
-  - [https://bringatrailer.com/listing/2012-bmw-760li/](https://bringatrailer.com/listing/2012-bmw-760li/)
-
-- **2015 Porsche Cayenne Turbo**
-  - Ends: 2026-08-04T19:45:00+00:00
-  - Location: lat=38.4748, lon=-121.443
-  - [https://bringatrailer.com/listing/2015-porsche-cayenne-turbo-27/](https://bringatrailer.com/listing/2015-porsche-cayenne-turbo-27/)
-
-- **2000 Cadillac Escalade**
-  - Ends: 2026-08-04T19:47:00+00:00
-  - Location: lat=37.9773, lon=-121.962
-  - [https://bringatrailer.com/listing/2000-cadillac-escalade-23/](https://bringatrailer.com/listing/2000-cadillac-escalade-23/)
-
-- **1974 Volkswagen Beetle**
-  - Ends: 2026-08-04T20:00:00+00:00
-  - Location: lat=35.0318, lon=-120.457
-  - [https://bringatrailer.com/listing/1974-volkswagen-beetle-4999/](https://bringatrailer.com/listing/1974-volkswagen-beetle-4999/)
-
-- **1999 Ford Expedition XLT 4×4**
-  - Ends: 2026-08-04T20:05:00+00:00
-  - Location: lat=36.0914, lon=-115.089
-  - [https://bringatrailer.com/listing/1999-ford-expedition-14/](https://bringatrailer.com/listing/1999-ford-expedition-14/)
-
-- **Hendrick Track Attack Chevrolet Camaro Race Car**
-  - Ends: 2026-08-04T20:09:00+00:00
-  - Location: lat=33.093, lon=-116.061
-  - [https://bringatrailer.com/listing/2023-chevrolet-camaro-zl1-nascar-race-car/](https://bringatrailer.com/listing/2023-chevrolet-camaro-zl1-nascar-race-car/)
-
-- **4k-Mile 2014 Harley-Davidson V-Rod Muscle**
-  - Ends: 2026-08-04T20:14:00+00:00
-  - Location: lat=36.1426, lon=-115.226
-  - [https://bringatrailer.com/listing/2014-harley-davidson-v-rod-3/](https://bringatrailer.com/listing/2014-harley-davidson-v-rod-3/)
-
-- **15×6″ Fuchs Wheels for Porsche**
-  - Ends: 2026-08-04T20:21:00+00:00
-  - Location: lat=33.7377, lon=-118.291
-  - [https://bringatrailer.com/listing/wheels-651/](https://bringatrailer.com/listing/wheels-651/)
-
-- **1997 Ducati 900 Supersport SP**
-  - Ends: 2026-08-04T20:29:00+00:00
-  - Location: lat=36.6625, lon=-121.649
-  - [https://bringatrailer.com/listing/1997-ducati-900ss-cr-2/](https://bringatrailer.com/listing/1997-ducati-900ss-cr-2/)
-
-- **1957 Chevrolet Corvette 283/270 3-Speed**
-  - Ends: 2026-08-04T20:32:00+00:00
-  - Location: lat=37.9769, lon=-122.505
-  - [https://bringatrailer.com/listing/1957-chevrolet-corvette-181/](https://bringatrailer.com/listing/1957-chevrolet-corvette-181/)
-
-- **1950 Jaguar MK V Drophead Coupe 5-Speed**
-  - Ends: 2026-08-04T20:53:00+00:00
-  - Location: lat=37.8359, lon=-122.285
-  - [https://bringatrailer.com/listing/1950-jaguar-mk-v-4/](https://bringatrailer.com/listing/1950-jaguar-mk-v-4/)
-
-- **2010 Mercedes-Benz GL350 BlueTEC 4MATIC**
-  - Ends: 2026-08-04T20:54:00+00:00
-  - Location: lat=33.8078, lon=-118.174
-  - [https://bringatrailer.com/listing/2010-mercedes-benz-gl350-bluetec-6/](https://bringatrailer.com/listing/2010-mercedes-benz-gl350-bluetec-6/)
-
-- **350-Powered 1955 Chevrolet Bel Air 2-Door Sedan 5-Speed**
-  - Ends: 2026-08-04T21:04:00+00:00
-  - Location: lat=37.0412, lon=-122.124
-  - [https://bringatrailer.com/listing/1955-chevrolet-bel-air-257/](https://bringatrailer.com/listing/1955-chevrolet-bel-air-257/)
-
-- **Original-Owner 2006 Mini Cooper S JCW GP 6-Speed**
-  - Ends: 2026-08-04T21:05:00+00:00
-  - Location: lat=37.4524, lon=-122.184
-  - [https://bringatrailer.com/listing/2006-mini-cooper-s-jcw-gp-52/](https://bringatrailer.com/listing/2006-mini-cooper-s-jcw-gp-52/)
-
-- **2022 Moke America Electric Moke**
-  - Ends: 2026-08-04T21:07:00+00:00
-  - Location: lat=34.4359, lon=-119.682
-  - [https://bringatrailer.com/listing/2022-moke-america-electric-moke-20/](https://bringatrailer.com/listing/2022-moke-america-electric-moke-20/)
-
-- ** 20-Years-Owned 1993 Mazda RX-7 Touring 5-Speed**
-  - Ends: 2026-08-04T21:11:00+00:00
-  - Location: lat=37.9547, lon=-122.076
-  - [https://bringatrailer.com/listing/1993-mazda-rx-7-us-can-112/](https://bringatrailer.com/listing/1993-mazda-rx-7-us-can-112/)
-
-- **27k-Mile 2006 Chrysler PT Cruiser GT**
-  - Ends: 2026-08-04T21:16:00+00:00
-  - Location: lat=37.6335, lon=-122.056
-  - [https://bringatrailer.com/listing/2006-chrysler-pt-cruiser-20/](https://bringatrailer.com/listing/2006-chrysler-pt-cruiser-20/)
-
-- **44k-Mile 2000 Volvo S40**
-  - Ends: 2026-08-04T21:21:00+00:00
-  - Location: lat=34.1772, lon=-118.614
-  - [https://bringatrailer.com/listing/2000-volvo-s40-2/](https://bringatrailer.com/listing/2000-volvo-s40-2/)
-
-- **42k-Mile 2012 Infiniti G37 Sedan Journey**
-  - Ends: 2026-08-04T21:23:00+00:00
-  - Location: lat=32.8068, lon=-117.169
-  - [https://bringatrailer.com/listing/2012-infiniti-g37-7/](https://bringatrailer.com/listing/2012-infiniti-g37-7/)
-
-- **1973 BMW R60/5 LWB**
-  - Ends: 2026-08-04T21:29:00+00:00
-  - Location: lat=38.3929, lon=-122.292
-  - [https://bringatrailer.com/listing/1973-bmw-r60-5-17/](https://bringatrailer.com/listing/1973-bmw-r60-5-17/)
-
-- **2007 Volvo V70R**
-  - Ends: 2026-08-04T21:30:00+00:00
-  - Location: lat=37.9185, lon=-121.694
-  - [https://bringatrailer.com/listing/2007-volvo-v70r-41/](https://bringatrailer.com/listing/2007-volvo-v70r-41/)
-
-- **1983 Honda ATC 200X**
-  - Ends: 2026-08-04T21:31:00+00:00
-  - Location: lat=35.4482, lon=-120.67
-  - [https://bringatrailer.com/listing/1983-honda-atc-200x-3/](https://bringatrailer.com/listing/1983-honda-atc-200x-3/)
-
-- **Ex–Joe Sposato 1988 Swift DB4 Formula Atlantic Race Car**
-  - Ends: 2026-08-04T21:34:00+00:00
-  - Location: lat=34.521, lon=-119.248
-  - [https://bringatrailer.com/listing/1988-swift-db4/](https://bringatrailer.com/listing/1988-swift-db4/)
-
-- **2004 Mercedes-Benz CLK500 Cabriolet Espresso Edition**
-  - Ends: 2026-08-04T21:36:00+00:00
-  - Location: lat=33.2301, lon=-117.297
-  - [https://bringatrailer.com/listing/2004-mercedes-benz-clk500-cabriolet-27/](https://bringatrailer.com/listing/2004-mercedes-benz-clk500-cabriolet-27/)
-
-- **1970 Harley-Davidson FLH Electra Glide**
-  - Ends: 2026-08-04T21:37:00+00:00
-  - Location: lat=39.005, lon=-121.029
-  - [https://bringatrailer.com/listing/1970-harley-davidson-flh-electra-glide-3/](https://bringatrailer.com/listing/1970-harley-davidson-flh-electra-glide-3/)
-
-- **Original-Owner Modified 2016 Toyota Tacoma TRD Off-Road Double Cab V6 4&#215;4**
-  - Ends: 2026-08-04T21:38:00+00:00
-  - Location: lat=37.8338, lon=-121.981
-  - [https://bringatrailer.com/listing/2016-toyota-tacoma-29/](https://bringatrailer.com/listing/2016-toyota-tacoma-29/)
-
-- **1997 Toyota T100 Xtracab SR5 4&#215;4 5-Speed**
-  - Ends: 2026-08-04T21:41:00+00:00
-  - Location: lat=34.0567, lon=-117.896
-  - [https://bringatrailer.com/listing/1997-toyota-t100-23/](https://bringatrailer.com/listing/1997-toyota-t100-23/)
-
-- **24k-Mile 1999 Ferrari 360 Modena 6-Speed**
-  - Ends: 2026-08-04T21:51:00+00:00
-  - Location: lat=34.1496, lon=-118.978
-  - [https://bringatrailer.com/listing/1999-ferrari-360-modena-65/](https://bringatrailer.com/listing/1999-ferrari-360-modena-65/)
 
 - **2014 Pagani Huayra Tempesta**
   - Ends: 2026-08-05T17:05:00+00:00
@@ -502,13 +297,133 @@ Window: closing within 48 hours
   - Location: lat=33.1508, lon=-117.306
   - [https://bringatrailer.com/listing/2023-porsche-panamera-turbo-s-sport-turismo/](https://bringatrailer.com/listing/2023-porsche-panamera-turbo-s-sport-turismo/)
 
+- **Ex–Ewan McGregor M1952 BSA Bantam**
+  - Ends: 2026-08-06T18:26:00+00:00
+  - Location: lat=38.5691, lon=-121.44
+  - [https://bringatrailer.com/listing/1952-bsa-bantam/](https://bringatrailer.com/listing/1952-bsa-bantam/)
+
+- **22-Years-Owned 1964 Volkswagen Type 2 Bus**
+  - Ends: 2026-08-06T18:39:00+00:00
+  - Location: lat=33.0233, lon=-117.276
+  - [https://bringatrailer.com/listing/1964-volkswagen-bus-50/](https://bringatrailer.com/listing/1964-volkswagen-bus-50/)
+
+- **5.0L-Powered 1972 Ford Bronco**
+  - Ends: 2026-08-06T18:42:00+00:00
+  - Location: lat=33.6474, lon=-117.921
+  - [https://bringatrailer.com/listing/1972-ford-bronco-272/](https://bringatrailer.com/listing/1972-ford-bronco-272/)
+
+- **1968 Porsche 912 Coupe 5-Speed**
+  - Ends: 2026-08-06T18:45:00+00:00
+  - Location: lat=37.5381, lon=-122.306
+  - [https://bringatrailer.com/listing/1968-porsche-912-coupe-45/](https://bringatrailer.com/listing/1968-porsche-912-coupe-45/)
+
+- **1947 Chrysler Town &#038; Country Convertible**
+  - Ends: 2026-08-06T18:46:00+00:00
+  - Location: lat=34.4359, lon=-119.682
+  - [https://bringatrailer.com/listing/1947-chrysler-town-country-17/](https://bringatrailer.com/listing/1947-chrysler-town-country-17/)
+
+- **2006 Land Rover Range Rover HSE**
+  - Ends: 2026-08-06T18:51:00+00:00
+  - Location: lat=37.8212, lon=-121.292
+  - [https://bringatrailer.com/listing/2006-land-rover-range-rover-55/](https://bringatrailer.com/listing/2006-land-rover-range-rover-55/)
+
+- **9k-Mile 2011 Lamborghini Gallardo LP560-4 Spyder**
+  - Ends: 2026-08-06T18:58:00+00:00
+  - Location: lat=33.6791, lon=-117.909
+  - [https://bringatrailer.com/listing/2011-lamborghini-gallardo-lp560-4-spyder-6/](https://bringatrailer.com/listing/2011-lamborghini-gallardo-lp560-4-spyder-6/)
+
+- **2010 Porsche Cayenne GTS**
+  - Ends: 2026-08-06T19:12:00+00:00
+  - Location: lat=32.9789, lon=-117.02
+  - [https://bringatrailer.com/listing/2010-porsche-cayenne-gts-31-2/](https://bringatrailer.com/listing/2010-porsche-cayenne-gts-31-2/)
+
+- **45-Years-Owned 1953 Jaguar XK120 Fixed Head Coupe 4-Speed**
+  - Ends: 2026-08-06T19:13:00+00:00
+  - Location: lat=34.3488, lon=-119.33
+  - [https://bringatrailer.com/listing/1953-jaguar-xk120-31/](https://bringatrailer.com/listing/1953-jaguar-xk120-31/)
+
+- **1965 Chevrolet Impala SS Sport Coupe 396**
+  - Ends: 2026-08-06T19:14:00+00:00
+  - Location: lat=34.036, lon=-117.017
+  - [https://bringatrailer.com/listing/1965-chevrolet-impala-ss-54/](https://bringatrailer.com/listing/1965-chevrolet-impala-ss-54/)
+
+- **2008 Pontiac G8 GT**
+  - Ends: 2026-08-06T19:24:00+00:00
+  - Location: lat=39.005, lon=-121.029
+  - [https://bringatrailer.com/listing/2008-pontiac-g8-20/](https://bringatrailer.com/listing/2008-pontiac-g8-20/)
+
+- **2022 Husqvarna Norden 901**
+  - Ends: 2026-08-06T19:27:00+00:00
+  - Location: lat=39.4779, lon=-119.898
+  - [https://bringatrailer.com/listing/2022-husqvarna-norden-901/](https://bringatrailer.com/listing/2022-husqvarna-norden-901/)
+
+- **2012 Land Rover LR4 HSE**
+  - Ends: 2026-08-06T19:33:00+00:00
+  - Location: lat=37.8212, lon=-121.292
+  - [https://bringatrailer.com/listing/2012-land-rover-lr4-46/](https://bringatrailer.com/listing/2012-land-rover-lr4-46/)
+
+- **5k-Mile 2023 Lamborghini Urus Performante**
+  - Ends: 2026-08-06T19:35:00+00:00
+  - Location: lat=33.6791, lon=-117.909
+  - [https://bringatrailer.com/listing/2023-lamborghini-urus-performante-14/](https://bringatrailer.com/listing/2023-lamborghini-urus-performante-14/)
+
+- **1966 Pontiac GTO Hardtop Coupe Tri-Power 4-Speed**
+  - Ends: 2026-08-06T19:37:00+00:00
+  - Location: lat=32.9495, lon=-117.207
+  - [https://bringatrailer.com/listing/1966-pontiac-gto-159/](https://bringatrailer.com/listing/1966-pontiac-gto-159/)
+
+- **2006 Mitsubishi Lancer Evolution IX MR**
+  - Ends: 2026-08-06T19:41:00+00:00
+  - Location: lat=32.7856, lon=-116.887
+  - [https://bringatrailer.com/listing/2006-mitsubishi-lancer-evolution-ix-28/](https://bringatrailer.com/listing/2006-mitsubishi-lancer-evolution-ix-28/)
+
+- **3.6L-Powered 1972 Porsche 911T Coupe 5-Speed**
+  - Ends: 2026-08-06T19:45:00+00:00
+  - Location: lat=32.8952, lon=-117.205
+  - [https://bringatrailer.com/listing/1972-porsche-911t-coupe-46/](https://bringatrailer.com/listing/1972-porsche-911t-coupe-46/)
+
+- **2019 Porsche 911 GT3 RS**
+  - Ends: 2026-08-06T19:58:00+00:00
+  - Location: lat=38.2328, lon=-122.636
+  - [https://bringatrailer.com/listing/2019-porsche-911-gt3-rs-70/](https://bringatrailer.com/listing/2019-porsche-911-gt3-rs-70/)
+
+- **2016 Porsche Macan Turbo**
+  - Ends: 2026-08-06T20:06:00+00:00
+  - Location: lat=37.8212, lon=-121.292
+  - [https://bringatrailer.com/listing/2016-porsche-macan-turbo-21/](https://bringatrailer.com/listing/2016-porsche-macan-turbo-21/)
+
+- **14k-Mile 2004 Mercedes-Benz CLK500 Cabriolet Launch Edition**
+  - Ends: 2026-08-06T20:07:00+00:00
+  - Location: lat=33.5317, lon=-117.106
+  - [https://bringatrailer.com/listing/2004-mercedes-benz-clk500-cabriolet-28/](https://bringatrailer.com/listing/2004-mercedes-benz-clk500-cabriolet-28/)
+
+- **2,600-Mile Nardo Gray 2022 Porsche 911 GT3 Touring**
+  - Ends: 2026-08-06T20:09:00+00:00
+  - Location: lat=34.1496, lon=-118.978
+  - [https://bringatrailer.com/listing/2022-porsche-911-gt3-touring-162/](https://bringatrailer.com/listing/2022-porsche-911-gt3-touring-162/)
+
+- **27k-Mile 1995 Ferrari F355 Berlinetta 6-Speed**
+  - Ends: 2026-08-06T20:13:00+00:00
+  - Location: lat=38.4252, lon=-121.435
+  - [https://bringatrailer.com/listing/1995-ferrari-f355-berlinetta-33/](https://bringatrailer.com/listing/1995-ferrari-f355-berlinetta-33/)
+
+- **44k-Mile 1994 Porsche 968 Coupe 6-Speed**
+  - Ends: 2026-08-06T20:25:00+00:00
+  - Location: lat=37.567, lon=-122.367
+  - [https://bringatrailer.com/listing/1994-porsche-968-coupe-39/](https://bringatrailer.com/listing/1994-porsche-968-coupe-39/)
+
+- **2010 Ford E-350 Super Duty XLT 4×4 Conversion**
+  - Ends: 2026-08-06T20:40:00+00:00
+  - Location: lat=33.0272, lon=-117.118
+  - [https://bringatrailer.com/listing/2010-ford-e-350-super-duty-3/](https://bringatrailer.com/listing/2010-ford-e-350-super-duty-3/)
+
 ---
 
 ### Diagnostics
 
-- '"excerpt":' occurrences seen on page: 1354
-- Listing objects successfully parsed: 1354
+- '"excerpt":' occurrences seen on page: 1312
+- Listing objects successfully parsed: 1312
 - Listings missing/invalid timestamp_end: 0
-- Listings ending outside the 48h window: 857
-- Listings checked within window: 497
-- California matches: 100
+- Listings ending outside the 48h window: 882
+- Listings checked within window: 430
+- California matches: 83
