@@ -1,11 +1,6 @@
-# BaT California scan — last run 2026-08-05 10:12 UTC
+# BaT California scan — last run 2026-08-05 17:13 UTC
 
 Window: closing within 48 hours
-
-- **2014 Pagani Huayra Tempesta**
-  - Ends: 2026-08-05T17:05:00+00:00
-  - Location: lat=34.0998, lon=-118.413
-  - [https://bringatrailer.com/listing/2014-pagani-huayra-3/](https://bringatrailer.com/listing/2014-pagani-huayra-3/)
 
 - **1,200-Mile 2015 Ferrari 458 Italia**
   - Ends: 2026-08-05T17:26:00+00:00
@@ -417,13 +412,18 @@ Window: closing within 48 hours
   - Location: lat=33.0272, lon=-117.118
   - [https://bringatrailer.com/listing/2010-ford-e-350-super-duty-3/](https://bringatrailer.com/listing/2010-ford-e-350-super-duty-3/)
 
+- **6k-Mile 2009 Lamborghini Murcielago LP640 Roadster**
+  - Ends: 2026-08-07T17:10:00+00:00
+  - Location: lat=33.9564, lon=-118.118
+  - [https://bringatrailer.com/listing/2009-lamborghini-murcielago-lp640-roadster-2/](https://bringatrailer.com/listing/2009-lamborghini-murcielago-lp640-roadster-2/)
+
 ---
 
 ### Diagnostics
 
-- '"excerpt":' occurrences seen on page: 1312
-- Listing objects successfully parsed: 1312
+- '"excerpt":' occurrences seen on page: 1355
+- Listing objects successfully parsed: 1355
 - Listings missing/invalid timestamp_end: 0
-- Listings ending outside the 48h window: 882
-- Listings checked within window: 430
+- Listings ending outside the 48h window: 929
+- Listings checked within window: 426
 - California matches: 83
