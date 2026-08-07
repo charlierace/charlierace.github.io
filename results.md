@@ -1,4 +1,4 @@
-# BaT California scan — last run 2026-08-07 05:53 UTC
+# BaT California scan — last run 2026-08-07 15:12 UTC
 
 Window: closing within 48 hours
 
@@ -371,9 +371,9 @@ Window: closing within 48 hours
 
 ### Diagnostics
 
-- '"excerpt":' occurrences seen on page: 1295
-- Listing objects successfully parsed: 1295
+- '"excerpt":' occurrences seen on page: 1312
+- Listing objects successfully parsed: 1312
 - Listings missing/invalid timestamp_end: 0
-- Listings ending outside the 48h window: 950
+- Listings ending outside the 48h window: 967
 - Listings checked within window: 345
 - California matches: 73
