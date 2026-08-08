@@ -1,4 +1,4 @@
-# BaT California scan — last run 2026-08-08 03:27 UTC
+# BaT California scan — last run 2026-08-08 03:35 UTC
 
 Window: closing within 48 hours
 
