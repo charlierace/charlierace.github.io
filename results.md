@@ -1,32 +1,32 @@
-# BaT California scan — last run 2026-08-08 08:07 UTC
+# BaT California scan — last run 2026-08-08 14:07 UTC
 
 Window: closing within 48 hours
 
 | Year | Make | Model | Current Bid | Ends (UTC) | Title/Reg Place | Location |
 |---|---|---|---|---|---|---|
-| 1956 | Jaguar | XK140 Fixed Head Coupe 5-Speed | $27,500 | 2026-08-08T17:01:00+00:00 | California | lat=39.71, lon=-121.809 |
-| 2010 | Mercedes-Benz | S63 AMG | $17,250 | 2026-08-08T17:04:00+00:00 | California | lat=37.9788, lon=-122.165 |
+| 1956 | Jaguar | XK140 Fixed Head Coupe 5-Speed | $34,000 | 2026-08-08T17:01:00+00:00 | California | lat=39.71, lon=-121.809 |
+| 2010 | Mercedes-Benz | S63 AMG | $19,000 | 2026-08-08T17:04:00+00:00 | California | lat=37.9788, lon=-122.165 |
 | 1973 | Chevrolet | Corvette Coupe | $9,500 | 2026-08-08T17:15:00+00:00 | California | lat=34.0702, lon=-118.35 |
 | 2017 | Ford | Mustang Shelby GT350R | $70,000 | 2026-08-08T17:16:00+00:00 | California | lat=33.9289, lon=-117.548 |
-| 2007 | Mercedes-Benz | E350 Sport Sedan | $7,300 | 2026-08-08T17:23:00+00:00 | California | lat=33.5694, lon=-117.148 |
-| 1971 | Porsche | 914 Project | $3,250 | 2026-08-08T17:31:00+00:00 | California | lat=34.2068, lon=-118.68 |
+| 2007 | Mercedes-Benz | E350 Sport Sedan | $8,000 | 2026-08-08T17:23:00+00:00 | California | lat=33.5694, lon=-117.148 |
+| 1971 | Porsche | 914 Project | $3,500 | 2026-08-08T17:31:00+00:00 | California | lat=34.2068, lon=-118.68 |
 | 1965 | Chevrolet | Corvette Convertible L79 327/350 4-Speed | $30,000 | 2026-08-08T17:34:00+00:00 | California | lat=33.1069, lon=-117.287 |
 | 2025 | Chevrolet | Corvette Z06 Coupe 3LZ | $100,000 | 2026-08-08T17:35:00+00:00 | Washington | lat=33.5317, lon=-117.106 |
-| ? | ? | MV Agusta Mini Bike Racing | $2,500 | 2026-08-08T17:45:00+00:00 | Not found | lat=38.2077, lon=-122.333 |
+| ? | ? | MV Agusta Mini Bike Racing | $2,600 | 2026-08-08T17:45:00+00:00 | Not found | lat=38.2077, lon=-122.333 |
 | 1995 | Mazda | MX-5 Miata 5-Speed | $11,000 | 2026-08-08T17:49:00+00:00 | California | lat=33.7629, lon=-118.126 |
-| 2010 | Toyota | Sequoia Limited 5.7L 4WD | $18,500 | 2026-08-08T17:51:00+00:00 | California | lat=34.0033, lon=-117.446 |
+| 2010 | Toyota | Sequoia Limited 5.7L 4WD | $19,000 | 2026-08-08T17:51:00+00:00 | California | lat=34.0033, lon=-117.446 |
 | 1996 | Toyota | Tacoma V6 4×4 5-Speed | $17,250 | 2026-08-08T17:52:00+00:00 | California | lat=34.236, lon=-118.245 |
 | 1991 | Lexus | LS400 | $12,250 | 2026-08-08T17:53:00+00:00 | California | lat=33.9325, lon=-117.353 |
-| 1998 | Toyota Land | Cruiser UZJ100 | $8,200 | 2026-08-08T17:59:00+00:00 | California | lat=32.741, lon=-117.243 |
-| 2018 | Mercedes-Benz | S560 Cabriolet | $32,750 | 2026-08-08T18:00:00+00:00 | Tennessee | lat=33.7002, lon=-116.342 |
+| 1998 | Toyota Land | Cruiser UZJ100 | $9,000 | 2026-08-08T17:59:00+00:00 | California | lat=32.741, lon=-117.243 |
+| 2018 | Mercedes-Benz | S560 Cabriolet | $34,000 | 2026-08-08T18:00:00+00:00 | Tennessee | lat=33.7002, lon=-116.342 |
 | 2007 | Porsche | Boxster S 6-Speed | $25,000 | 2026-08-08T18:08:00+00:00 | California | lat=35.9577, lon=-115.159 |
-| 1989 | Ford | F-350 XLT Lariat 7.5L Dually | $4,201 | 2026-08-08T18:16:00+00:00 | Nevada | lat=39.0164, lon=-119.925 |
+| 1989 | Ford | F-350 XLT Lariat 7.5L Dually | $5,100 | 2026-08-08T18:16:00+00:00 | Nevada | lat=39.0164, lon=-119.925 |
 | 1973 | Pontiac | Ventura 350 | $7,850 | 2026-08-08T18:18:00+00:00 | California | lat=34.2242, lon=-118.632 |
 | 2022 | Lucid | Air Dream Edition Performance | $73,333 | 2026-08-08T18:22:00+00:00 | California | lat=33.1597, lon=-117.234 |
 | 2007 | Lexus | LX470 Limited Edition | $31,111 | 2026-08-08T18:23:00+00:00 | California | lat=37.2101, lon=-121.539 |
 | 2005 | Ford | Expedition Eddie Bauer | $5,500 | 2026-08-08T18:24:00+00:00 | California | lat=34.1772, lon=-118.614 |
 | 2009 | Jaguar | XJ Super V8 Portfolio | $25,277 | 2026-08-08T18:49:00+00:00 | California | lat=34.0092, lon=-118.348 |
-| 1979 | GMC | C1500 Sierra Fenderside 3-Speed | $7,830 | 2026-08-08T18:56:00+00:00 | California | lat=36.8229, lon=-119.76 |
+| 1979 | GMC | C1500 Sierra Fenderside 3-Speed | $8,500 | 2026-08-08T18:56:00+00:00 | California | lat=36.8229, lon=-119.76 |
 | 2009 | Porsche | 911 Carrera 4S Coupe 6-Speed | $73,001 | 2026-08-08T19:01:00+00:00 | California | lat=38.4796, lon=-120.634 |
 | 1957 | Porsche | 356A 1600 Coupe | $65,993 | 2026-08-08T19:05:00+00:00 | Montana | lat=36.5816, lon=-121.844 |
 | 2017 | Thor | Outlaw 37BG Motorhome &#038; Toy Hauler | $30,000 | 2026-08-08T20:01:00+00:00 | Ohio | lat=32.8087, lon=-116.72 |
@@ -45,9 +45,9 @@ Window: closing within 48 hours
 | 1997 | Honda | Civic Del Sol Si 5-Speed | $12,888 | 2026-08-09T17:29:00+00:00 | California | lat=34.0753, lon=-117.697 |
 | 2011 | Ducati | Diavel | $3,700 | 2026-08-09T17:34:00+00:00 | California | lat=37.4181, lon=-122.131 |
 | 1963 | Chevrolet | Corvette Convertible Fuelie 4-Speed | $57,000 | 2026-08-09T17:39:00+00:00 | Ohio | lat=33.7872, lon=-117.982 |
-| 2020 | Karma | Revero GT | $16,000 | 2026-08-09T17:41:00+00:00 | California | lat=33.7772, lon=-118.368 |
+| 2020 | Karma | Revero GT | $38,000 | 2026-08-09T17:41:00+00:00 | California | lat=33.7772, lon=-118.368 |
 | 2018 | BMW | X5 xDrive35d | $7,600 | 2026-08-09T17:42:00+00:00 | New Jersey | lat=32.7776, lon=-117.196 |
-| ? | ? | Lola T91/00 Indy Car Rolling Chassis | $5,000 | 2026-08-09T17:53:00+00:00 | Not found | lat=38.5691, lon=-121.44 |
+| ? | ? | Lola T91/00 Indy Car Rolling Chassis | $6,000 | 2026-08-09T17:53:00+00:00 | Not found | lat=38.5691, lon=-121.44 |
 | 2003 | Honda | Z50J Limited Edition | $5,103 | 2026-08-09T18:07:00+00:00 | Not found | lat=33.1069, lon=-117.287 |
 
 - [1956 Jaguar XK140 Fixed Head Coupe 5-Speed](https://bringatrailer.com/listing/1956-jaguar-xk140-22/)
@@ -100,10 +100,10 @@ Window: closing within 48 hours
 
 ### Diagnostics
 
-- excerpt matches seen: 1289
-- objects parsed: 1289
+- excerpt matches seen: 1300
+- objects parsed: 1300
 - missing timestamp: 0
-- ending outside window: 1094
+- ending outside window: 1105
 - checked within window: 195
 - ca matches: 45
 - detail fetch failures: 0
