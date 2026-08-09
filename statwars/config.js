@@ -5,10 +5,10 @@
 
 const SW_CONFIG = {
   // Your GitHub username
-  owner: 'YOUR_GITHUB_USERNAME',
+  owner: 'charlierace',
 
   // The repo where your apps live (e.g. 'my-apps')
-  repo: 'YOUR_REPO_NAME',
+  repo: 'charlierace',
 
   // The subfolder within that repo where Stat Wars lives
   // e.g. 'statwars' if the path is my-apps/statwars/
@@ -21,5 +21,5 @@ const SW_CONFIG = {
   // Create one at: https://github.com/settings/tokens
   // Keep this file private — do NOT commit it if your repo is public.
   // For a public repo, use a fine-grained token scoped to this repo only.
-  pat: 'YOUR_PERSONAL_ACCESS_TOKEN',
+  pat: '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',
 };
