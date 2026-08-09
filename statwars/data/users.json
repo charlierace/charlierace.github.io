@@ -1,7 +1,4 @@
 [
-  {
-    "email": "demo@statwars.com",
-    "password": "demo",
-    "name": "Demo User"
-  }
+  {"email": "charlesrace@gmail.com", "password": "charlie", "name": "Charlie"},
+  {"email": "demo@statwars.com", "password": "demo", "name": "Demo User"}
 ]
