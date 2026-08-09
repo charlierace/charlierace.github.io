@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Form Line — tomorrow's racecards, scored</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Azeret+Mono:wght@400;600&family=Chivo:wght@400;600;900&display=swap" rel="stylesheet">
+<style>
+/* ---------- tokens ---------- */
+:root{
+  --turf:        #12241A;   /* deep paddock green, page ground */
+  --turf-raised: #1B3325;   /* cards, rail */
+  --turf-lift:   #24422F;   /* hover, selected */
+  --rail:        #E9E4D4;   /* running-rail white — hairlines & primary text */
+  --chalk:       #EFEBDC;   /* bookmaker's chalk */
+  --muted:       #8FA795;
+  --gold:        #E0A93C;   /* the 1 cloth */
+  --silver:      #B9C3BC;
+  --bronze:      #B57A4A;
+  --claret:      #A6394A;
+  --ink:         #0B1711;
+
+  --f-display: 'Alfa Slab One', Georgia, serif;
+  --f-body:    'Chivo', system-ui, -apple-system, sans-serif;
+  --f-data:    'Azeret Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --gap: 18px;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--turf);
+  color:var(--chalk);
+  font-family:var(--f-body);
+  font-size:15px;
+  line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+/* ---------- masthead ---------- */
+.masthead{
+  border-bottom:1px solid rgba(233,228,212,.22);
+  padding:20px var(--gap) 14px;
+  display:flex;flex-wrap:wrap;align-items:flex-end;gap:14px 24px;
+}
+.wordmark{
+  font-family:var(--f-display);
+  font-size:clamp(30px,5.5vw,44px);
+  line-height:.9;
+  letter-spacing:-.01em;
+  margin:0;
+}
+.wordmark em{font-style:normal;color:var(--gold)}
+.masthead-note{
+  font-family:var(--f-data);
+  font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);
+  margin:0 0 4px;
+  flex:1 1 200px;
+}
+.masthead-actions{display:flex;gap:8px;margin-bottom:2px}
+.ghost-btn{
+  font-family:var(--f-data);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+  border:1px solid rgba(233,228,212,.3);
+  padding:7px 11px;border-radius:2px;color:var(--muted);
+}
+.ghost-btn:hover{color:var(--chalk);border-color:var(--chalk)}
+.ghost-btn[aria-expanded="true"]{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
+
+/* ---------- settings drawer ---------- */
+.settings{
+  display:none;
+  border-bottom:1px solid rgba(233,228,212,.22);
+  background:var(--turf-raised);
+  padding:16px var(--gap);
+  gap:26px;flex-wrap:wrap;
+}
+.settings.is-open{display:flex}
+.field{display:flex;flex-direction:column;gap:6px}
+.field-label{
+  font-family:var(--f-data);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+}
+.field select,.field input[type="date"]{
+  font-family:var(--f-data);font-size:13px;
+  background:var(--turf);color:var(--chalk);
+  border:1px solid rgba(233,228,212,.3);border-radius:2px;padding:7px 9px;
+}
+.field-hint{font-size:12px;color:var(--muted);max-width:34ch}
+
+/* ---------- layout ---------- */
+.layout{
+  display:grid;
+  grid-template-columns:minmax(230px,290px) 1fr;
+  align-items:start;
+  min-height:calc(100vh - 90px);
+}
+.rail{
+  border-right:1px solid rgba(233,228,212,.22);
+  padding:var(--gap) 0 60px;
+  position:sticky;top:0;max-height:100vh;overflow-y:auto;
+}
+.card-area{padding:var(--gap) var(--gap) 80px}
+
+/* ---------- meetings rail ---------- */
+.rail-head{
+  font-family:var(--f-data);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);padding:0 var(--gap) 10px;
+}
+.meeting{margin-bottom:16px}
+.meeting-name{
+  display:flex;align-items:baseline;gap:8px;
+  padding:0 var(--gap) 6px;
+  font-weight:900;font-size:16px;letter-spacing:-.01em;
+}
+.meeting-going{
+  font-family:var(--f-data);font-size:10px;letter-spacing:.06em;
+  color:var(--muted);text-transform:uppercase;font-weight:400;
+}
+.race-btn{
+  display:flex;align-items:center;gap:10px;width:100%;
+  padding:7px var(--gap);text-align:left;
+  border-left:3px solid transparent;
+}
+.race-btn:hover{background:var(--turf-raised)}
+.race-btn.is-on{background:var(--turf-lift);border-left-color:var(--gold)}
+.race-time{font-family:var(--f-data);font-size:13px;font-weight:600;min-width:44px}
+.race-blurb{font-size:13px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.race-btn.is-on .race-blurb{color:var(--chalk)}
+
+/* ---------- race header ---------- */
+.race-head{border-bottom:1px solid rgba(233,228,212,.22);padding-bottom:16px;margin-bottom:6px}
+.race-title{
+  font-family:var(--f-display);
+  font-size:clamp(21px,3.2vw,30px);line-height:1.08;margin:0 0 8px;
+}
+.race-meta{
+  display:flex;flex-wrap:wrap;gap:6px 8px;
+  font-family:var(--f-data);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+}
+.tag{border:1px solid rgba(233,228,212,.3);padding:3px 8px;border-radius:2px;color:var(--muted)}
+.tag.tag-key{border-color:var(--gold);color:var(--gold)}
+
+/* ---------- runner rows ---------- */
+.runners{list-style:none;margin:0;padding:0}
+.runner{
+  display:grid;
+  grid-template-columns:34px 42px 1fr auto;
+  gap:14px;align-items:center;
+  padding:16px 4px;
+  border-bottom:1px solid rgba(233,228,212,.13);
+}
+.runner.is-top{background:linear-gradient(90deg,rgba(224,169,60,.11),transparent 62%)}
+.rank{
+  font-family:var(--f-display);font-size:22px;line-height:1;
+  color:var(--muted);text-align:right;
+}
+.runner.is-top .rank{color:var(--gold)}
+.rank small{font-family:var(--f-data);font-size:10px;display:block;color:var(--muted);font-weight:400;margin-top:3px}
+.silks{width:42px;height:46px;display:block}
+.runner-main{min-width:0}
+.horse{
+  font-weight:900;font-size:17px;letter-spacing:-.01em;
+  display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;
+}
+.cloth{
+  font-family:var(--f-data);font-size:10px;font-weight:600;
+  background:var(--chalk);color:var(--ink);
+  padding:2px 5px;border-radius:2px;letter-spacing:0;
+}
+.people{font-size:12.5px;color:var(--muted);margin:2px 0 8px}
+
+/* the form ladder — signature element */
+.ladder{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.ladder-label{
+  font-family:var(--f-data);font-size:9px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);margin-right:4px;
+}
+.rung{
+  width:26px;height:26px;border-radius:2px;
+  display:grid;place-items:center;
+  font-family:var(--f-data);font-size:11px;font-weight:600;
+  background:rgba(233,228,212,.08);color:var(--muted);
+  border:1px solid transparent;
+  position:relative;
+}
+.rung[data-pos="1"]{background:var(--gold);color:var(--ink)}
+.rung[data-pos="2"]{background:var(--silver);color:var(--ink)}
+.rung[data-pos="3"]{background:var(--bronze);color:var(--ink)}
+.rung[data-pos="4"]{background:rgba(233,228,212,.42);color:var(--ink)}
+.rung[data-pos="5"]{background:rgba(233,228,212,.24);color:var(--chalk)}
+.rung.is-cd{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+.rung-sep{width:1px;height:18px;background:rgba(233,228,212,.25);margin:0 5px}
+.chip{
+  font-family:var(--f-data);font-size:10px;font-weight:600;letter-spacing:.06em;
+  padding:5px 7px;border-radius:2px;
+  border:1px solid var(--gold);color:var(--gold);
+}
+.chip.is-off{border-color:rgba(233,228,212,.16);color:rgba(143,167,149,.55)}
+
+/* score block */
+.score{text-align:right;min-width:74px}
+.score-num{font-family:var(--f-display);font-size:34px;line-height:.9}
+.runner.is-top .score-num{color:var(--gold)}
+.score-word{font-family:var(--f-data);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.score-bar{height:4px;background:rgba(233,228,212,.12);margin-top:7px;border-radius:2px;overflow:hidden}
+.score-bar i{display:block;height:100%;background:var(--gold);border-radius:2px;transition:width .5s cubic-bezier(.2,.8,.2,1)}
+
+/* ---------- misc ---------- */
+.empty{padding:70px 10px;max-width:44ch}
+.empty h2{font-family:var(--f-display);font-size:24px;margin:0 0 10px}
+.empty p{color:var(--muted);margin:0 0 8px}
+.footnote{
+  margin-top:34px;padding-top:16px;
+  border-top:1px solid rgba(233,228,212,.16);
+  font-size:12.5px;color:var(--muted);max-width:64ch;
+}
+.footnote code{font-family:var(--f-data);font-size:11.5px;color:var(--chalk)}
+.banner{
+  background:var(--claret);color:#fff;padding:10px var(--gap);
+  font-family:var(--f-data);font-size:11.5px;letter-spacing:.04em;
+}
+
+@media (max-width:820px){
+  .layout{grid-template-columns:1fr}
+  .rail{position:static;max-height:none;border-right:none;border-bottom:1px solid rgba(233,228,212,.22)}
+  .runner{grid-template-columns:26px 34px 1fr;gap:10px;row-gap:10px}
+  .silks{width:34px;height:38px}
+  .score{grid-column:1 / -1;text-align:left;display:flex;align-items:baseline;gap:9px}
+  .score-bar{display:none}
+  .score-num{font-size:26px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important}}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <h1 class="wordmark">Form<em>·</em>Line</h1>
+  <p class="masthead-note" id="dateNote">Loading cards…</p>
+  <div class="masthead-actions">
+    <button class="ghost-btn" id="settingsBtn" aria-expanded="false" aria-controls="settings">Scoring</button>
+  </div>
+</header>
+
+<section class="settings" id="settings">
+  <div class="field">
+    <label class="field-label" for="raceDate">Race date</label>
+    <input type="date" id="raceDate">
+  </div>
+  <div class="field">
+    <label class="field-label" for="optRuns">Runs counted</label>
+    <select id="optRuns">
+      <option value="5" selected>Last 5</option>
+      <option value="3">Last 3</option>
+      <option value="6">Last 6</option>
+      <option value="10">Last 10</option>
+    </select>
+  </div>
+  <div class="field">
+    <label class="field-label" for="optScope">Course &amp; distance wins from</label>
+    <select id="optScope">
+      <option value="career" selected>Whole career</option>
+      <option value="window">Only the counted runs</option>
+    </select>
+    <span class="field-hint">Career matches the standard C/D flag on a racecard.</span>
+  </div>
+  <div class="field">
+    <label class="field-label" for="optTol">Distance counts as a match</label>
+    <select id="optTol">
+      <option value="0" selected>Exactly</option>
+      <option value="0.5">Within ½ furlong</option>
+      <option value="1">Within 1 furlong</option>
+    </select>
+  </div>
+  <div class="field">
+    <label class="field-label" for="optCD">Unprovable course &amp; distance win</label>
+    <select id="optCD">
+      <option value="withhold" selected>Withhold the point</option>
+      <option value="award">Award it</option>
+    </select>
+    <span class="field-hint">When a horse has won here and won over the trip, but not within its visible starts.</span>
+  </div>
+  <div class="field">
+    <label class="field-label" for="optSource">Data</label>
+    <select id="optSource">
+      <option value="embedded">Card built into this file</option>
+      <option value="sample">Sample cards</option>
+      <option value="remote">./data/racecards-DATE.json</option>
+    </select>
+    <span class="field-hint">Point this at a file your scraper commits.</span>
+  </div>
+</section>
+
+<div class="layout">
+  <nav class="rail" id="rail" aria-label="Meetings and races"></nav>
+  <main class="card-area" id="cardArea"></main>
+</div>
+
+<script id="embeddedCard" type="application/json">{"date":"2026-08-09","meetings":[{"course":"DMR","courseName":"Del Mar","going":"2 surfaces","races":[{"id":"DMR-2026-08-09-1","course":"DMR","courseName":"Del Mar","raceNumber":1,"dist":9.0,"about":false,"surface":"Turf","surfaceCode":"T","going":"Turf","time":"14:00","name":"Md Sp Wt","raceType":"Maiden Special Weight","purse":80000,"runners":[{"cloth":1,"name":"Helen's Time","jockey":"Kyle Frey","trainer":"Glenn James W JR","age":3,"sex":"F","weight":120,"mlOdds":"12.00","silksText":"Red; 'JG' inside white diamonds on back; white diamonds on sleeves; red cap","daysOff":23,"record":{"starts":2,"wins":0,"courseStarts":1,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":7,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2026-07-17"},{"pos":3,"course":"LRC","courseName":"Los Alamitos","dist":6.5,"surface":"D","date":"2026-06-19"}]},{"cloth":2,"name":"Runyon Canyon","jockey":"Joel Rosario","trainer":"Neil Drysdale","age":5,"sex":"M","weight":125,"mlOdds":"6.00","silksText":"Maroon; navy blue cap","daysOff":428,"record":{"starts":8,"wins":0,"courseStarts":1,"courseWins":0,"distStarts":4,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":8,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2025-06-07"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":9.0,"surface":"T","date":"2025-05-17"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2025-03-28"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":9.0,"surface":"T","date":"2024-06-16"},{"pos":8,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2024-05-26"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":9.0,"surface":"T","date":"2024-04-27"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":9.0,"surface":"T","date":"2024-03-15"},{"pos":7,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2023-08-19"}]},{"cloth":3,"name":"Pentle Bay","jockey":"Antonio Fresu","trainer":"Simon Callaghan","age":3,"sex":"F","weight":120,"mlOdds":"3.00","silksText":"Claret; gold braid; gold tassel on claret cap","daysOff":23,"record":{"starts":5,"wins":0,"courseStarts":2,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":4,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2026-07-17"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-05-30"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2025-10-05"},{"pos":2,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2025-09-06"},{"pos":5,"course":"DMR","courseName":"Del Mar","dist":6.5,"surface":"D","date":"2025-08-09"}]},{"cloth":4,"name":"Preclude","jockey":"Umberto Rispoli","trainer":"McCarthy Michael W","age":3,"sex":"F","weight":120,"mlOdds":"6.00","silksText":"Royal blue; orange circled 'R' front and back; royal blue hoops on orange sleeves; orange cap","daysOff":217,"record":{"starts":1,"wins":0,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":8,"course":"GP","courseName":"Gulfstream Park","dist":8.0,"surface":"T","date":"2026-01-04"}]},{"cloth":5,"name":"Brazoria","jockey":"Armando Ayuso","trainer":"Mandella Richard E","age":4,"sex":"F","weight":125,"mlOdds":"6.00","silksText":"Pink; primrose hoops and bars on sleeves; primrose cap","daysOff":16,"record":{"starts":1,"wins":0,"courseStarts":1,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":3,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"T","date":"2026-07-24"}]},{"cloth":6,"name":"Daring Pursuit","jockey":"Berrios Hector Isaac","trainer":"Daniel Blacker","age":3,"sex":"F","weight":120,"mlOdds":"4.00","silksText":"Navy blue; baby blue  cross sashes front and back; baby blue diamonds on navy blue sleeves; matching","daysOff":57,"record":{"starts":6,"wins":0,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":4,"course":"SA","courseName":"Santa Anita","dist":8.5,"surface":"D","date":"2026-06-13"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"D","date":"2026-05-29"},{"pos":7,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-05-02"},{"pos":11,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2026-04-04"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-02-21"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-01-11"}]},{"cloth":7,"name":"Ulysses Rose","jockey":"Hernandez Juan J","trainer":"McCarthy Michael W","age":4,"sex":"F","weight":125,"mlOdds":"2.50","silksText":"Black; light blue sash; light blue polka dots on white sleeves; blue stripe on black cap","daysOff":23,"record":{"starts":5,"wins":0,"courseStarts":1,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":2,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2026-07-17"},{"pos":7,"course":"SA","courseName":"Santa Anita","dist":10.0,"surface":"T","date":"2026-06-12"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":12.0,"surface":"T","date":"2026-05-03"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-04-05"},{"pos":2,"course":"BAL","courseName":"BAL","dist":9.7,"surface":"T","date":"2025-06-23"}]}]},{"id":"DMR-2026-08-09-2","course":"DMR","courseName":"Del Mar","raceNumber":2,"dist":6.5,"about":false,"surface":"Dirt","surfaceCode":"D","going":"Dirt","time":"14:32","name":"Md Sp Wt","raceType":"Maiden Special Weight","purse":100000,"runners":[{"cloth":1,"name":"Miss Monica","jockey":"Hernandez Juan J","trainer":"Bob Baffert","age":2,"sex":"F","weight":122,"mlOdds":"1.60","silksText":"Red; red 'MP' on yellow ball; yellow stripes on sleeves; red and yellow cap","daysOff":null,"record":{"starts":0,"wins":0,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[]},{"cloth":2,"name":"Forewarn","jockey":"Umberto Rispoli","trainer":"Mandella Richard E","age":2,"sex":"F","weight":122,"mlOdds":"4.00","silksText":"Salmon; teal vertical  stripes; salmon and teal cap","daysOff":null,"record":{"starts":0,"wins":0,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[]},{"cloth":3,"name":"Mooberry","jockey":"E Jaramillo","trainer":"Doug O'Neill","age":2,"sex":"F","weight":122,"mlOdds":"15.00","silksText":"Chartreuse; green 'DO' on back; green dots; chartreuse cap","daysOff":9,"record":{"starts":1,"wins":0,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":6,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"T","date":"2026-07-31"}]},{"cloth":4,"name":"Royal Pearl","jockey":"Antonio Fresu","trainer":"McCarthy Michael W","age":2,"sex":"F","weight":122,"mlOdds":"3.00","silksText":"Royal blue; royal blue 'R' on orange star; royal blue bars on orange sleeves; orange cap","daysOff":null,"record":{"starts":0,"wins":0,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[]},{"cloth":5,"name":"Well Versed","jockey":"Smith M E","trainer":"Mandella Richard E","age":2,"sex":"F","weight":122,"mlOdds":"2.00","silksText":"Orange and purple squares bisected by a yellow line; orange sleeves; orange cap","daysOff":null,"record":{"starts":0,"wins":0,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[]}]},{"id":"DMR-2026-08-09-3","course":"DMR","courseName":"Del Mar","raceNumber":3,"dist":8.0,"about":false,"surface":"Turf","surfaceCode":"T","going":"Turf","time":"15:04","name":"OClm 80000n1x","raceType":"Allowance Opt Clm","purse":81000,"runners":[{"cloth":1,"name":"Red Cherry","jockey":"Joel Rosario","trainer":"Sadler John W","age":3,"sex":"F","weight":121,"mlOdds":"2.50","silksText":"Blue; orange 'T' on back;  orange stars on front; blue cuffs on orange sleeves; orange cap","daysOff":23,"record":{"starts":6,"wins":1,"courseStarts":1,"courseWins":0,"distStarts":2,"distWins":1},"careerFlags":{"course":false,"distance":true,"cd":false},"form":[{"pos":2,"course":"DMR","courseName":"Del Mar","dist":8.5,"surface":"T","date":"2026-07-17"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-05-15"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":8.5,"surface":"D","date":"2026-04-04"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-02-28"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2026-02-01"},{"pos":8,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-01-08"}]},{"cloth":2,"name":"Mia Familia","jockey":"E Jaramillo","trainer":"D'Angelo Jose Francisco","age":3,"sex":"F","weight":121,"mlOdds":"5.00","silksText":"White; red bars and 'LKS'; white and red horizontal sleeves; red cap","daysOff":38,"record":{"starts":7,"wins":1,"courseStarts":0,"courseWins":0,"distStarts":4,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":2,"course":"CNL","courseName":"CNL","dist":8.0,"surface":"t","date":"2026-07-02"},{"pos":2,"course":"GP","courseName":"Gulfstream Park","dist":8.5,"surface":"D","date":"2026-06-06"},{"pos":6,"course":"GP","courseName":"Gulfstream Park","dist":8.0,"surface":"T","date":"2026-05-02"},{"pos":1,"course":"GP","courseName":"Gulfstream Park","dist":8.5,"surface":"T","date":"2026-04-12"},{"pos":5,"course":"GP","courseName":"Gulfstream Park","dist":8.0,"surface":"T","date":"2026-02-26"},{"pos":3,"course":"GP","courseName":"Gulfstream Park","dist":7.5,"surface":"T","date":"2026-01-30"},{"pos":3,"course":"GP","courseName":"Gulfstream Park","dist":8.5,"surface":"T","date":"2025-12-21"}]},{"cloth":3,"name":"Soul Sister","jockey":"Tiago Pereira","trainer":"Karen Headley","age":3,"sex":"F","weight":121,"mlOdds":"12.00","silksText":"Royal blue & white stripes; blue cuffs on white sleeves; blue collar; white cap","daysOff":23,"record":{"starts":8,"wins":1,"courseStarts":2,"courseWins":0,"distStarts":4,"distWins":1},"careerFlags":{"course":false,"distance":true,"cd":false},"form":[{"pos":3,"course":"DMR","courseName":"Del Mar","dist":8.5,"surface":"T","date":"2026-07-17"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-05-30"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-05-02"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-02-28"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2026-01-31"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"D","date":"2026-01-02"},{"pos":4,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2025-11-29"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2025-10-24"}]},{"cloth":4,"name":"Memorized","jockey":"Umberto Rispoli","trainer":"Philip Damato","age":3,"sex":"F","weight":121,"mlOdds":"4.00","silksText":"Black; royal blue yoke; white mirrored 'RR' emblem; black hoops on royal blue sleeves; black cap","daysOff":291,"record":{"starts":3,"wins":1,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":5,"course":"KEE","courseName":"Keeneland","dist":8.5,"surface":"T","date":"2025-10-22"},{"pos":1,"course":"BAQ","courseName":"Belmont at Aqueduct","dist":8.5,"surface":"t","date":"2025-09-11"},{"pos":4,"course":"SAR","courseName":"Saratoga","dist":6.5,"surface":"D","date":"2025-08-10"}]},{"cloth":5,"name":"Peppermint Dash","jockey":"Armando Ayuso","trainer":"Richard Baltas","age":3,"sex":"F","weight":121,"mlOdds":"6.00","silksText":"Lime green; dark green 'SAYJAY Racing' in mobius loop horse emblem front & back; dark green sleeves;","daysOff":23,"record":{"starts":2,"wins":1,"courseStarts":1,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":4,"course":"DMR","courseName":"Del Mar","dist":8.5,"surface":"T","date":"2026-07-17"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2026-04-04"}]},{"cloth":6,"name":"Full Moon Tonight","jockey":"Antonio Fresu","trainer":"Simon Callaghan","age":3,"sex":"F","weight":121,"mlOdds":"6.00","silksText":"Maroon; navy blue cap","daysOff":86,"record":{"starts":3,"wins":1,"courseStarts":0,"courseWins":0,"distStarts":1,"distWins":1},"careerFlags":{"course":false,"distance":true,"cd":false},"form":[{"pos":1,"course":"LEP","courseName":"LEP","dist":8.0,"surface":"T","date":"2026-05-15"},{"pos":4,"course":"DUD","courseName":"DUD","dist":7.0,"surface":"D","date":"2026-01-23"},{"pos":3,"course":"DUD","courseName":"DUD","dist":6.0,"surface":"D","date":"2025-12-19"}]},{"cloth":7,"name":"What About Us","jockey":"Hernandez Juan J","trainer":"Mark Glatt","age":3,"sex":"F","weight":121,"mlOdds":"3.00","silksText":"Red; white horse in white circle; maroon yoke; maroon and red sleeves; maroon cap","daysOff":72,"record":{"starts":4,"wins":1,"courseStarts":0,"courseWins":0,"distStarts":1,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":1,"course":"DRL","courseName":"DRL","dist":7.0,"surface":"T","date":"2026-05-29"},{"pos":2,"course":"KIL","courseName":"KIL","dist":8.1,"surface":"T","date":"2026-05-12"},{"pos":3,"course":"DUD","courseName":"DUD","dist":7.0,"surface":"D","date":"2025-11-19"},{"pos":2,"course":"DUD","courseName":"DUD","dist":7.0,"surface":"D","date":"2025-10-29"}]}]},{"id":"DMR-2026-08-09-4","course":"DMR","courseName":"Del Mar","raceNumber":4,"dist":5.0,"about":false,"surface":"Dirt","surfaceCode":"D","going":"Dirt","time":"15:38","name":"Md 20000","raceType":"Maiden Claiming","purse":30000,"runners":[{"cloth":1,"name":"De Pantera","jockey":"Francisco Monroy","trainer":"Becerra Perez Ivan","age":2,"sex":"F","weight":122,"mlOdds":"20.00","silksText":"Red; white 'B' front and back; red chevrons on white sleeves; red cap","daysOff":null,"record":{"starts":0,"wins":0,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[]},{"cloth":2,"name":"Senora Gobernadora","jockey":"Armando Aguilar","trainer":"Rolando Quinonez","age":2,"sex":"F","weight":122,"mlOdds":"3.50","silksText":"Red; red 'RQ' in white star front and back; red stars on white sleeves; white cap","daysOff":50,"record":{"starts":1,"wins":0,"courseStarts":0,"courseWins":0,"distStarts":1,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":4,"course":"LRC","courseName":"Los Alamitos","dist":5.0,"surface":"D","date":"2026-06-20"}]},{"cloth":3,"name":"Big Broadcast","jockey":"Joel Rosario","trainer":"Tim Yakteen","age":2,"sex":"F","weight":122,"mlOdds":"3.00","silksText":"Fuchsia; white 'K' on black film strip emblem; black and yellow hoops on blue sleeves; yellow visor","daysOff":null,"record":{"starts":0,"wins":0,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[]},{"cloth":4,"name":"Beastro","jockey":"Jeremy Laprida","trainer":"Val Brinkerhoff","age":2,"sex":"F","weight":122,"mlOdds":"8.00","silksText":"White; black 'FLORES' under red & double gray 'V' emblem on back; double gray 'V' on front; black sl","daysOff":23,"record":{"starts":1,"wins":0,"courseStarts":1,"courseWins":0,"distStarts":1,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":10,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"D","date":"2026-07-17"}]},{"cloth":5,"name":"Ride Like the Wolf","jockey":"Cesar Belmont","trainer":"Garcia Antonio C","age":2,"sex":"F","weight":122,"mlOdds":"20.00","silksText":"Purple; gold rattlesnake on back; black cuffs on gold sleeves; gold & purple cap","daysOff":50,"record":{"starts":3,"wins":0,"courseStarts":0,"courseWins":0,"distStarts":1,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":5,"course":"LRC","courseName":"Los Alamitos","dist":5.0,"surface":"D","date":"2026-06-20"},{"pos":6,"course":"SA","courseName":"Santa Anita","dist":5.0,"surface":"T","date":"2026-06-14"},{"pos":6,"course":"SA","courseName":"Santa Anita","dist":4.5,"surface":"D","date":"2026-05-31"}]},{"cloth":6,"name":"She's My Star","jockey":"Franco Wandryck Cardoso","trainer":"Alvarez Edwin G","age":2,"sex":"F","weight":122,"mlOdds":"20.00","silksText":"Green; white helm and horseshoes on back; white star and horses on black yoke on front; white star o","daysOff":17,"record":{"starts":3,"wins":0,"courseStarts":1,"courseWins":0,"distStarts":1,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":9,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"D","date":"2026-07-23"},{"pos":7,"course":"SA","courseName":"Santa Anita","dist":4.5,"surface":"D","date":"2026-05-31"},{"pos":6,"course":"SA","courseName":"Santa Anita","dist":4.5,"surface":"D","date":"2026-04-30"}]},{"cloth":7,"name":"Az Daisy","jockey":"Cristobal Herrera","trainer":"Ian Kruljac","age":2,"sex":"F","weight":122,"mlOdds":"8.00","silksText":"Black; white horseshoe 1 emblem front and back; white sleeves; black cap","daysOff":null,"record":{"starts":0,"wins":0,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[]},{"cloth":8,"name":"Rejoiceful","jockey":"Bautista Alfredo L","trainer":"Felix Rondan","age":2,"sex":"F","weight":117,"mlOdds":"6.00","silksText":"Gray; blue 'WT' brand; blue stars on sleeves; gray cap","daysOff":null,"record":{"starts":0,"wins":0,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[]},{"cloth":9,"name":"Eleanore's Pick","jockey":"Leparoux Julien R","trainer":"Paul Aguirre","age":2,"sex":"F","weight":122,"mlOdds":"8.00","silksText":"Red and black blocks; red sleeves and cap","daysOff":null,"record":{"starts":0,"wins":0,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[]},{"cloth":10,"name":"Club Mayo","jockey":"Kyle Frey","trainer":"Jeff Bonde","age":2,"sex":"F","weight":122,"mlOdds":"5.00","silksText":"Bright orange; initials  'TM JR' front & back; lime green sleeves; black 'JR' emblem right sleeve; n","daysOff":null,"record":{"starts":0,"wins":0,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[]},{"cloth":11,"name":"Please Behave","jockey":"Lopez Henry Reynoso","trainer":"Gonzalez Felix L","age":2,"sex":"F","weight":122,"mlOdds":"4.00","silksText":"Red; 'FG' and 'Pellio' emblem inside gold ball on front and back; red cap","daysOff":17,"record":{"starts":3,"wins":0,"courseStarts":1,"courseWins":0,"distStarts":3,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":5,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"D","date":"2026-07-23"},{"pos":3,"course":"LRC","courseName":"Los Alamitos","dist":5.0,"surface":"D","date":"2026-07-03"},{"pos":2,"course":"LRC","courseName":"Los Alamitos","dist":5.0,"surface":"D","date":"2026-06-20"}]},{"cloth":13,"name":"Harkette","jockey":"Ricardo Gonzalez","trainer":"Mike Puype","age":2,"sex":"F","weight":122,"mlOdds":"3.50","silksText":"Blue; pink diamond hoop; pink diamond stripe on blue sleeves; blue cap","daysOff":17,"record":{"starts":1,"wins":0,"courseStarts":1,"courseWins":0,"distStarts":1,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":3,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"D","date":"2026-07-23"}]},{"cloth":14,"name":"Quick Up","jockey":"Baze T C","trainer":"Jorge Periban","age":2,"sex":"F","weight":122,"mlOdds":"8.00","silksText":"Green and white halves; green and white halved sleeves; green and white cap","daysOff":17,"record":{"starts":1,"wins":0,"courseStarts":1,"courseWins":0,"distStarts":1,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":6,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"D","date":"2026-07-23"}]}]},{"id":"DMR-2026-08-09-5","course":"DMR","courseName":"Del Mar","raceNumber":5,"dist":5.0,"about":false,"surface":"Turf","surfaceCode":"T","going":"Turf","time":"16:10","name":"Clm 25000","raceType":"Claiming","purse":43000,"runners":[{"cloth":1,"name":"Comedy Town","jockey":"Edgar Payeras","trainer":"Vann Belvoir","age":8,"sex":"G","weight":120,"mlOdds":"3.50","silksText":"Black; red 'VTB' on back; red bars on white sleeves; red cap","daysOff":22,"record":{"starts":44,"wins":8,"courseStarts":0,"courseWins":0,"distStarts":9,"distWins":1},"careerFlags":{"course":false,"distance":true,"cd":false},"form":[{"pos":6,"course":"DMR","courseName":"Del Mar","dist":6.0,"surface":"D","date":"2026-07-18"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-06-06"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-05-10"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"D","date":"2026-04-04"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-03-07"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-01-19"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-01-02"},{"pos":2,"course":"DMR","courseName":"Del Mar","dist":7.0,"surface":"D","date":"2025-11-29"},{"pos":2,"course":"DMR","courseName":"Del Mar","dist":6.0,"surface":"D","date":"2025-11-01"},{"pos":6,"course":"DEL","courseName":"Delaware Park","dist":6.0,"surface":"D","date":"2025-09-28"}]},{"cloth":2,"name":"Smart Code","jockey":"Ricardo Gonzalez","trainer":"Palma Hector O","age":6,"sex":"G","weight":120,"mlOdds":"10.00","silksText":"Royal blue; white sash on back; white 'RS' on front; white bars and cuffs on sleeves; royal blue cap","daysOff":23,"record":{"starts":17,"wins":3,"courseStarts":10,"courseWins":1,"distStarts":1,"distWins":0},"careerFlags":{"course":true,"distance":false,"cd":false},"form":[{"pos":7,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"T","date":"2026-07-17"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-04-05"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2026-03-08"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-01-09"},{"pos":3,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2025-11-09"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2025-10-12"},{"pos":3,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2025-09-01"},{"pos":1,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2025-07-25"},{"pos":7,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2024-09-07"},{"pos":2,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2024-07-27"}]},{"cloth":3,"name":"Gazon","jockey":"Joel Rosario","trainer":"Sadler John W","age":5,"sex":"G","weight":120,"mlOdds":"4.00","silksText":"Dark green; white 'HR'; dark green bars on white sleeves; dark green cap","daysOff":63,"record":{"starts":8,"wins":2,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":2,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-06-07"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-05-09"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2025-06-14"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2025-05-03"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2025-03-16"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2024-03-04"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2024-02-03"},{"pos":8,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2024-01-06"}]},{"cloth":4,"name":"Nijinsky Halo","jockey":"Van Dyke Drayden","trainer":"Genaro Vallejo","age":4,"sex":"G","weight":120,"mlOdds":"30.00","silksText":"Red; black hoops; white 'GV' red and black bars on white sleeves; red cap","daysOff":7,"record":{"starts":22,"wins":3,"courseStarts":1,"courseWins":0,"distStarts":1,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":8,"course":"DMR","courseName":"Del Mar","dist":5.5,"surface":"D","date":"2026-08-02"},{"pos":5,"course":"LRC","courseName":"Los Alamitos","dist":7.0,"surface":"D","date":"2026-07-05"},{"pos":1,"course":"LRC","courseName":"Los Alamitos","dist":5.0,"surface":"D","date":"2026-06-27"},{"pos":4,"course":"LA","courseName":"LA","dist":4.55,"surface":"D","date":"2026-06-14"},{"pos":5,"course":"LA","courseName":"LA","dist":4.55,"surface":"D","date":"2025-08-17"},{"pos":7,"course":"DMR","courseName":"Del Mar","dist":5.5,"surface":"D","date":"2025-08-10"},{"pos":7,"course":"DMR","courseName":"Del Mar","dist":6.0,"surface":"D","date":"2025-07-18"},{"pos":10,"course":"LRC","courseName":"Los Alamitos","dist":5.5,"surface":"D","date":"2025-06-27"},{"pos":3,"course":"LRC","courseName":"Los Alamitos","dist":5.5,"surface":"D","date":"2025-06-20"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2025-05-17"}]},{"cloth":5,"name":"Kimmer","jockey":"J Bravo","trainer":"Genaro Vallejo","age":7,"sex":"G","weight":120,"mlOdds":"20.00","silksText":"Royal blue; white red & black hoops; red cross on white shield on front; multi color hoops on sleeve","daysOff":35,"record":{"starts":40,"wins":2,"courseStarts":5,"courseWins":0,"distStarts":4,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":6,"course":"LRC","courseName":"Los Alamitos","dist":7.0,"surface":"D","date":"2026-07-05"},{"pos":7,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-05-22"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-05-03"},{"pos":8,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-04-05"},{"pos":6,"course":"LA","courseName":"LA","dist":4.55,"surface":"D","date":"2026-02-21"},{"pos":8,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2025-01-31"},{"pos":3,"course":"DMR","courseName":"Del Mar","dist":8.5,"surface":"T","date":"2024-11-15"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":9.0,"surface":"T","date":"2024-10-26"},{"pos":6,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2024-10-11"},{"pos":4,"course":"LRC","courseName":"Los Alamitos","dist":8.0,"surface":"D","date":"2024-09-13"}]},{"cloth":6,"name":"Urban Ruler","jockey":"E Jaramillo","trainer":"Doug O'Neill","age":4,"sex":"G","weight":122,"mlOdds":"5.00","silksText":"Chartreuse; green 'DO' on back; green dots; chartreuse cap","daysOff":21,"record":{"starts":12,"wins":3,"courseStarts":0,"courseWins":0,"distStarts":6,"distWins":2},"careerFlags":{"course":false,"distance":true,"cd":false},"form":[{"pos":2,"course":"HAW","courseName":"Hawthorne","dist":5.5,"surface":"T","date":"2026-07-19"},{"pos":3,"course":"HAW","courseName":"Hawthorne","dist":6.0,"surface":"D","date":"2026-07-12"},{"pos":4,"course":"HAW","courseName":"Hawthorne","dist":5.5,"surface":"T","date":"2026-05-31"},{"pos":1,"course":"HAW","courseName":"Hawthorne","dist":5.5,"surface":"T","date":"2026-05-17"},{"pos":11,"course":"KEE","courseName":"Keeneland","dist":7.0,"surface":"D","date":"2026-04-08"},{"pos":3,"course":"FG","courseName":"Fair Grounds","dist":6.0,"surface":"D","date":"2026-03-19"},{"pos":1,"course":"FG","courseName":"Fair Grounds","dist":6.0,"surface":"D","date":"2026-02-21"},{"pos":5,"course":"FG","courseName":"Fair Grounds","dist":5.5,"surface":"T","date":"2026-01-02"},{"pos":4,"course":"HAW","courseName":"Hawthorne","dist":5.5,"surface":"T","date":"2025-10-12"},{"pos":3,"course":"KD","courseName":"KD","dist":6.5,"surface":"T","date":"2025-09-07"}]},{"cloth":7,"name":"Tom Seaver","jockey":"Cesar Belmont","trainer":"Steven Miyadi","age":5,"sex":"G","weight":118,"mlOdds":"20.00","silksText":"Black and red panels; red sleeves; black cap","daysOff":23,"record":{"starts":9,"wins":3,"courseStarts":1,"courseWins":0,"distStarts":1,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":6,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"T","date":"2026-07-17"},{"pos":7,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-06-12"},{"pos":8,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2026-04-17"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2025-04-19"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2025-03-22"},{"pos":8,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"D","date":"2025-02-15"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"D","date":"2024-04-06"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2024-03-17"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2023-10-22"}]},{"cloth":8,"name":"Daniel's Magic","jockey":"Armando Ayuso","trainer":"Craig Dollase","age":8,"sex":"G","weight":122,"mlOdds":"3.00","silksText":"Gold; green shamrock; green hat emblem on back; green sleeves; gold and green cap","daysOff":21,"record":{"starts":37,"wins":7,"courseStarts":12,"courseWins":2,"distStarts":9,"distWins":2},"careerFlags":{"course":true,"distance":true,"cd":null},"form":[{"pos":1,"course":"LA","courseName":"LA","dist":4.55,"surface":"D","date":"2026-07-19"},{"pos":4,"course":"LRC","courseName":"Los Alamitos","dist":5.5,"surface":"D","date":"2026-07-03"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2025-10-03"},{"pos":5,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2025-09-07"},{"pos":5,"course":"DMR","courseName":"Del Mar","dist":8.5,"surface":"T","date":"2025-08-15"},{"pos":4,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"T","date":"2025-07-31"},{"pos":2,"course":"LA","courseName":"LA","dist":4.55,"surface":"D","date":"2025-07-13"},{"pos":6,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2025-06-15"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2025-05-17"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2024-10-14"}]},{"cloth":9,"name":"Enterdadragon","jockey":"Antonio Fresu","trainer":"Doug O'Neill","age":4,"sex":"G","weight":120,"mlOdds":"4.00","silksText":"Maroon; gold 'M'; gold stripe on sleeves; maroon cap","daysOff":21,"record":{"starts":19,"wins":3,"courseStarts":1,"courseWins":0,"distStarts":2,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":2,"course":"DMR","courseName":"Del Mar","dist":8.5,"surface":"T","date":"2026-07-19"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-06-05"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2026-05-08"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-03-28"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2026-02-06"},{"pos":10,"course":"SA","courseName":"Santa Anita","dist":9.0,"surface":"T","date":"2026-01-18"},{"pos":9,"course":"CD","courseName":"Churchill Downs","dist":9.0,"surface":"T","date":"2025-11-02"},{"pos":9,"course":"KEE","courseName":"Keeneland","dist":8.5,"surface":"T","date":"2025-10-04"},{"pos":5,"course":"CD","courseName":"Churchill Downs","dist":8.5,"surface":"T","date":"2025-05-09"},{"pos":10,"course":"GP","courseName":"Gulfstream Park","dist":9.0,"surface":"D","date":"2025-03-29"}]}]},{"id":"DMR-2026-08-09-6","course":"DMR","courseName":"Del Mar","raceNumber":6,"dist":6.0,"about":false,"surface":"Dirt","surfaceCode":"D","going":"Dirt","time":"16:40","name":"Sorrento-G3","raceType":"Grade 3","purse":150000,"runners":[{"cloth":1,"name":"Dash","jockey":"Ricardo Gonzalez","trainer":"McCarthy Michael W","age":2,"sex":"F","weight":118,"mlOdds":"6.00","silksText":"Black; light blue sash; light blue dots on white sleeves; light blue stripe on black cap","daysOff":22,"record":{"starts":1,"wins":0,"courseStarts":1,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":4,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"D","date":"2026-07-18"}]},{"cloth":2,"name":"Belleza Latina","jockey":"E Jaramillo","trainer":"Peter Miller","age":2,"sex":"F","weight":123,"mlOdds":"8.00","silksText":"Hot pink; black circled 'BB' front & back; black epaulettes & black cap","daysOff":57,"record":{"starts":2,"wins":1,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":1,"course":"CD","courseName":"Churchill Downs","dist":4.5,"surface":"D","date":"2026-06-13"},{"pos":3,"course":"CD","courseName":"Churchill Downs","dist":4.5,"surface":"D","date":"2026-05-21"}]},{"cloth":3,"name":"Crazy Hot Mess","jockey":"Assael Espinoza","trainer":"Peter Miller","age":2,"sex":"F","weight":123,"mlOdds":"12.00","silksText":"Black; orange 'KMAC STABLES'; orange stripe on sleeves; black cap","daysOff":28,"record":{"starts":1,"wins":1,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":1,"course":"ELP","courseName":"Ellis Park","dist":6.5,"surface":"D","date":"2026-07-12"}]},{"cloth":4,"name":"Ruiva","jockey":"Yedsit Hazlewood","trainer":"Ward Wesley a","age":2,"sex":"F","weight":123,"mlOdds":"1.40","silksText":"Navy blue and red diamonds; white sleeves; navy blue cap","daysOff":53,"record":{"starts":2,"wins":1,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":3,"course":"ASC","courseName":"ASC","dist":5.0,"surface":"T","date":"2026-06-17"},{"pos":1,"course":"CD","courseName":"Churchill Downs","dist":4.5,"surface":"D","date":"2026-04-29"}]},{"cloth":5,"name":"Holmby","jockey":"Hernandez Juan J","trainer":"Bob Baffert","age":2,"sex":"F","weight":123,"mlOdds":"1.60","silksText":"Blue; orange 'T' on back;  orange stars on front; blue cuffs on orange sleeves; orange cap","daysOff":22,"record":{"starts":1,"wins":1,"courseStarts":1,"courseWins":1,"distStarts":0,"distWins":0},"careerFlags":{"course":true,"distance":false,"cd":false},"form":[{"pos":1,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"D","date":"2026-07-18"}]},{"cloth":6,"name":"Blockade","jockey":"Adrian Escobedo","trainer":"Ryan Hanson","age":2,"sex":"F","weight":120,"mlOdds":"8.00","silksText":"Navy blue; Carolina blue 'W' front and back; navy blue cap","daysOff":44,"record":{"starts":2,"wins":1,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":1,"course":"LRC","courseName":"Los Alamitos","dist":5.0,"surface":"D","date":"2026-06-26"},{"pos":6,"course":"SA","courseName":"Santa Anita","dist":5.0,"surface":"D","date":"2026-06-11"}]}]},{"id":"DMR-2026-08-09-7","course":"DMR","courseName":"Del Mar","raceNumber":7,"dist":5.0,"about":false,"surface":"Turf","surfaceCode":"T","going":"Turf","time":"17:10","name":"OClm 20000n1x","raceType":"Allowance Opt Clm","purse":81000,"runners":[{"cloth":1,"name":"Christa McAuliffe","jockey":"Antonio Fresu","trainer":"Steven Miyadi","age":3,"sex":"F","weight":118,"mlOdds":"12.00","silksText":"White; navy blue yoke; orange hoop; orange 'MM' on front; orange & white bars on navy sleeves; navy;","daysOff":63,"record":{"starts":7,"wins":1,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":3,"course":"SA","courseName":"Santa Anita","dist":5.5,"surface":"D","date":"2026-06-07"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-05-09"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2026-04-18"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":5.5,"surface":"D","date":"2026-04-05"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-03-08"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2026-02-14"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":5.5,"surface":"D","date":"2026-01-30"}]},{"cloth":2,"name":"Harney Lane","jockey":"Ricardo Gonzalez","trainer":"Garcia Antonio C","age":5,"sex":"M","weight":122,"mlOdds":"30.00","silksText":"Purple; gold rattlesnake on back; black cuffs on gold sleeves; gold & purple cap","daysOff":10,"record":{"starts":25,"wins":7,"courseStarts":1,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":9,"course":"DMR","courseName":"Del Mar","dist":6.0,"surface":"D","date":"2026-07-30"},{"pos":1,"course":"LRC","courseName":"Los Alamitos","dist":5.5,"surface":"D","date":"2026-07-04"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-06-13"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-05-24"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":5.5,"surface":"D","date":"2026-04-30"},{"pos":10,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-04-24"},{"pos":5,"course":"LRC","courseName":"Los Alamitos","dist":5.5,"surface":"D","date":"2025-09-12"},{"pos":3,"course":"DMR","courseName":"Del Mar","dist":6.5,"surface":"D","date":"2025-08-15"},{"pos":2,"course":"EMD","courseName":"Emerald Downs","dist":6.0,"surface":"D","date":"2025-07-26"},{"pos":6,"course":"EMD","courseName":"Emerald Downs","dist":6.0,"surface":"D","date":"2025-07-18"}]},{"cloth":3,"name":"Donttellmewhattodo","jockey":"E Maldonado","trainer":"George Papaprodromou","age":3,"sex":"F","weight":120,"mlOdds":"8.00","silksText":"Yellow; blue diamond frame 'JK' on back; blue diamonds on sleeves; blue cap","daysOff":16,"record":{"starts":10,"wins":2,"courseStarts":1,"courseWins":1,"distStarts":1,"distWins":1},"careerFlags":{"course":true,"distance":true,"cd":true},"form":[{"pos":9,"course":"DMR","courseName":"Del Mar","dist":7.0,"surface":"D","date":"2026-07-24"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-05-02"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"D","date":"2026-04-04"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-03-27"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":5.5,"surface":"D","date":"2026-02-20"},{"pos":6,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-01-09"},{"pos":"K","course":"DMR","courseName":"Del Mar","dist":6.0,"surface":"D","date":"2025-11-30"},{"pos":1,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"T","date":"2025-11-09"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2025-10-05"},{"pos":10,"course":"DMR","courseName":"Del Mar","dist":5.5,"surface":"D","date":"2025-09-06"}]},{"cloth":4,"name":"Petit Filet","jockey":"J Bravo","trainer":"Cunningham Brian T","age":5,"sex":"M","weight":122,"mlOdds":"20.00","silksText":"Royal blue; multi color diamond sash; white cap","daysOff":28,"record":{"starts":14,"wins":2,"courseStarts":2,"courseWins":0,"distStarts":2,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":2,"course":"LA","courseName":"LA","dist":4.55,"surface":"D","date":"2026-07-12"},{"pos":2,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"T","date":"2025-07-26"},{"pos":3,"course":"LRC","courseName":"Los Alamitos","dist":5.5,"surface":"D","date":"2025-06-22"},{"pos":6,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2025-05-24"},{"pos":6,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2025-05-04"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":5.5,"surface":"D","date":"2024-06-09"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2024-05-11"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2024-03-22"},{"pos":7,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2024-03-03"},{"pos":8,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2024-01-13"}]},{"cloth":5,"name":"Fancy Facts","jockey":"Van Dyke Drayden","trainer":"Mike Puype","age":4,"sex":"F","weight":122,"mlOdds":"10.00","silksText":"Orange; black 'SLUGO' and emblem on back; black hoop on front; orange bar on black sleeves; orange a","daysOff":22,"record":{"starts":9,"wins":2,"courseStarts":3,"courseWins":1,"distStarts":3,"distWins":1},"careerFlags":{"course":true,"distance":true,"cd":true},"form":[{"pos":5,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"T","date":"2026-07-18"},{"pos":8,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-06-15"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2026-03-28"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-02-15"},{"pos":9,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-01-24"},{"pos":4,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"T","date":"2025-11-23"},{"pos":9,"course":"DMR","courseName":"Del Mar","dist":6.5,"surface":"D","date":"2025-09-07"},{"pos":1,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"T","date":"2025-08-09"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2025-06-12"}]},{"cloth":6,"name":"Tiger of the Sea","jockey":"Joel Rosario","trainer":"Brian Koriner","age":4,"sex":"F","weight":122,"mlOdds":"6.00","silksText":"Red; cream 'PL' on front; navy sleeves; red cap","daysOff":22,"record":{"starts":10,"wins":1,"courseStarts":3,"courseWins":0,"distStarts":3,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":4,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"T","date":"2026-07-18"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-06-12"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-05-03"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"D","date":"2026-03-29"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":5.5,"surface":"D","date":"2026-02-22"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-01-11"},{"pos":5,"course":"LRC","courseName":"Los Alamitos","dist":5.5,"surface":"D","date":"2025-12-06"},{"pos":2,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"T","date":"2025-11-07"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2025-09-27"},{"pos":2,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"T","date":"2024-08-22"}]},{"cloth":7,"name":"Pavel Is Appealing","jockey":"Umberto Rispoli","trainer":"Doug O'Neill","age":4,"sex":"F","weight":124,"mlOdds":"2.00","silksText":"White; purple hoop; white bar on purple sleeves; purple cap","daysOff":22,"record":{"starts":7,"wins":2,"courseStarts":1,"courseWins":0,"distStarts":1,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":3,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"T","date":"2026-07-18"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2026-05-23"},{"pos":6,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-04-26"},{"pos":11,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2025-01-18"},{"pos":1,"course":"DMR","courseName":"Del Mar","dist":5.5,"surface":"D","date":"2024-12-01"},{"pos":4,"course":"DMR","courseName":"Del Mar","dist":7.0,"surface":"D","date":"2024-11-01"},{"pos":1,"course":"DMR","courseName":"Del Mar","dist":6.0,"surface":"D","date":"2024-09-02"}]},{"cloth":8,"name":"Come On Om","jockey":"Baze T C","trainer":"Sean McCarthy","age":3,"sex":"F","weight":118,"mlOdds":"8.00","silksText":"Green and white diamonds; green sleeves; green cap","daysOff":14,"record":{"starts":3,"wins":1,"courseStarts":1,"courseWins":1,"distStarts":1,"distWins":1},"careerFlags":{"course":true,"distance":true,"cd":true},"form":[{"pos":1,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"T","date":"2026-07-26"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-06-14"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-05-17"}]},{"cloth":9,"name":"Pure Chaos","jockey":"Armando Ayuso","trainer":"Richard Baltas","age":4,"sex":"F","weight":124,"mlOdds":"4.00","silksText":"Royal blue; gold & white 'CALIFORNIA RACING PARTNERS' on back; gold & white horse on front; blue hoo","daysOff":22,"record":{"starts":10,"wins":2,"courseStarts":4,"courseWins":0,"distStarts":2,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":2,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"T","date":"2026-07-18"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2026-05-23"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-05-02"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-03-06"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-01-11"},{"pos":4,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"T","date":"2025-11-07"},{"pos":9,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2025-10-12"},{"pos":4,"course":"DMR","courseName":"Del Mar","dist":8.5,"surface":"T","date":"2025-08-15"},{"pos":7,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2025-07-25"},{"pos":7,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2025-06-14"}]},{"cloth":10,"name":"Taking a Joy Ride","jockey":"Hernandez Juan J","trainer":"Lewis Craig a","age":3,"sex":"F","weight":118,"mlOdds":"8.00","silksText":"Yellow; indigo 'S' on black and white cow print diamond; indigo cuffs on yellow sleeves; indigo 'S'","daysOff":16,"record":{"starts":5,"wins":1,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":4,"course":"DMR","courseName":"Del Mar","dist":7.0,"surface":"D","date":"2026-07-24"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-06-14"},{"pos":6,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-05-22"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-04-26"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":5.5,"surface":"D","date":"2026-04-05"}]},{"cloth":11,"name":"Andiamo Ragazza","jockey":"Antonio Fresu","trainer":"Peter Miller","age":5,"sex":"M","weight":124,"mlOdds":"6.00","silksText":"Black; gold panel; gold hoops on black sleeves; black cap","daysOff":58,"record":{"starts":17,"wins":2,"courseStarts":4,"courseWins":1,"distStarts":4,"distWins":2},"careerFlags":{"course":true,"distance":true,"cd":null},"form":[{"pos":9,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-06-12"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-05-17"},{"pos":7,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2026-04-18"},{"pos":3,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"T","date":"2025-08-28"},{"pos":6,"course":"DMR","courseName":"Del Mar","dist":5.0,"surface":"T","date":"2025-07-27"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2025-06-12"},{"pos":6,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2025-05-03"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2025-04-05"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2025-03-01"},{"pos":6,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2025-01-18"}]}]},{"id":"DMR-2026-08-09-8","course":"DMR","courseName":"Del Mar","raceNumber":8,"dist":6.5,"about":false,"surface":"Dirt","surfaceCode":"D","going":"Dirt","time":"17:40","name":"OClm 50000n1x","raceType":"Allowance Opt Clm","purse":81000,"runners":[{"cloth":1,"name":"No Bad Beats","jockey":"Antonio Fresu","trainer":"Doug O'Neill","age":4,"sex":"F","weight":124,"mlOdds":"2.00","silksText":"Black; white 'RUN FAST RACING' on sleeves; black cap","daysOff":183,"record":{"starts":9,"wins":2,"courseStarts":2,"courseWins":0,"distStarts":2,"distWins":1},"careerFlags":{"course":false,"distance":true,"cd":false},"form":[{"pos":6,"course":"SA","courseName":"Santa Anita","dist":7.0,"surface":"D","date":"2026-02-07"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-01-11"},{"pos":5,"course":"ZIA","courseName":"Zia Park","dist":6.0,"surface":"D","date":"2025-11-25"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":8.5,"surface":"D","date":"2025-04-05"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2025-03-01"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"D","date":"2025-02-07"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2025-01-19"},{"pos":2,"course":"DMR","courseName":"Del Mar","dist":6.5,"surface":"D","date":"2024-11-24"},{"pos":2,"course":"DMR","courseName":"Del Mar","dist":6.0,"surface":"D","date":"2024-11-08"}]},{"cloth":2,"name":"Shared Future","jockey":"Armando Aguilar","trainer":"Mark Rheinford","age":7,"sex":"M","weight":124,"mlOdds":"4.00","silksText":"Yellow and light blue diamonds; light  blue diamond stripe on yellow sleeves; yellow cap","daysOff":14,"record":{"starts":41,"wins":8,"courseStarts":7,"courseWins":0,"distStarts":6,"distWins":1},"careerFlags":{"course":false,"distance":true,"cd":false},"form":[{"pos":2,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"D","date":"2026-07-26"},{"pos":2,"course":"LRC","courseName":"Los Alamitos","dist":8.0,"surface":"D","date":"2026-06-28"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"D","date":"2026-04-02"},{"pos":9,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-03-15"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"D","date":"2026-02-06"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"D","date":"2026-01-11"},{"pos":2,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"D","date":"2025-11-09"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"D","date":"2025-10-12"},{"pos":3,"course":"DMR","courseName":"Del Mar","dist":6.5,"surface":"D","date":"2025-09-05"},{"pos":3,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"D","date":"2025-08-01"}]},{"cloth":3,"name":"Clarina","jockey":"Cristobal Herrera","trainer":"Gloria Haley","age":5,"sex":"M","weight":124,"mlOdds":"12.00","silksText":"Navy blue; navy blue emblems on red shield on back; blue cuffs on green sleeves; green cap","daysOff":58,"record":{"starts":15,"wins":4,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":9,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-06-12"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-03-01"},{"pos":7,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-02-01"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":5.5,"surface":"D","date":"2025-03-02"},{"pos":3,"course":"PLN","courseName":"PLN","dist":6.0,"surface":"D","date":"2024-11-30"},{"pos":2,"course":"PLN","courseName":"PLN","dist":6.0,"surface":"D","date":"2024-11-09"},{"pos":8,"course":"PLN","courseName":"PLN","dist":6.0,"surface":"D","date":"2024-10-20"},{"pos":3,"course":"FNO","courseName":"FNO","dist":5.5,"surface":"D","date":"2024-09-15"},{"pos":1,"course":"SR","courseName":"SR","dist":5.5,"surface":"D","date":"2024-08-16"},{"pos":1,"course":"PLN","courseName":"PLN","dist":5.5,"surface":"D","date":"2024-07-06"}]},{"cloth":4,"name":"Kinzlee'scharisma","jockey":"Cesar Belmont","trainer":"Jensen Daniel M","age":3,"sex":"F","weight":118,"mlOdds":"6.00","silksText":"Purple; black diamond on front and back; black diamonds on purple sleeves; purple cap","daysOff":15,"record":{"starts":8,"wins":1,"courseStarts":1,"courseWins":1,"distStarts":2,"distWins":1},"careerFlags":{"course":true,"distance":true,"cd":true},"form":[{"pos":1,"course":"DMR","courseName":"Del Mar","dist":6.5,"surface":"D","date":"2026-07-25"},{"pos":2,"course":"LRC","courseName":"Los Alamitos","dist":6.5,"surface":"D","date":"2026-06-19"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2026-06-06"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":9.0,"surface":"T","date":"2026-05-10"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-03-20"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-02-28"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2026-01-31"},{"pos":2,"course":"ARP","courseName":"Arapahoe Park","dist":5.5,"surface":"D","date":"2025-09-28"}]},{"cloth":5,"name":"Scary Fast Ride","jockey":"Armando Ayuso","trainer":"Andy Mathis","age":7,"sex":"M","weight":124,"mlOdds":"3.00","silksText":"White; blue hoop; blue bar on sleeves; blue cap","daysOff":100,"record":{"starts":21,"wins":5,"courseStarts":6,"courseWins":0,"distStarts":4,"distWins":2},"careerFlags":{"course":false,"distance":true,"cd":false},"form":[{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-05-01"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"D","date":"2026-03-14"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-02-13"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"D","date":"2026-01-09"},{"pos":4,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"D","date":"2025-11-09"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2025-10-17"},{"pos":5,"course":"DMR","courseName":"Del Mar","dist":6.0,"surface":"D","date":"2025-07-24"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2025-05-30"},{"pos":4,"course":"FNO","courseName":"FNO","dist":6.0,"surface":"D","date":"2024-09-29"},{"pos":3,"course":"DMR","courseName":"Del Mar","dist":6.5,"surface":"D","date":"2024-09-02"}]},{"cloth":6,"name":"Pocket Venus","jockey":"Joel Rosario","trainer":"Mark Glatt","age":4,"sex":"F","weight":122,"mlOdds":"4.00","silksText":"Blue and white checks; red chess emblem; blue sleeves; blue 'B' on red cap","daysOff":35,"record":{"starts":8,"wins":2,"courseStarts":2,"courseWins":1,"distStarts":0,"distWins":0},"careerFlags":{"course":true,"distance":false,"cd":false},"form":[{"pos":2,"course":"LRC","courseName":"Los Alamitos","dist":5.5,"surface":"D","date":"2026-07-05"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-05-10"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":7.0,"surface":"D","date":"2026-03-06"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-02-13"},{"pos":7,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-01-10"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2025-10-12"},{"pos":2,"course":"DMR","courseName":"Del Mar","dist":6.0,"surface":"D","date":"2025-08-24"},{"pos":1,"course":"DMR","courseName":"Del Mar","dist":5.5,"surface":"D","date":"2025-08-02"}]},{"cloth":7,"name":"Kambree's Flyer","jockey":"Tiago Pereira","trainer":"Jensen Daniel M","age":3,"sex":"F","weight":118,"mlOdds":"30.00","silksText":"Purple; black diamond on front and back; black diamonds on purple sleeves; purple cap","daysOff":43,"record":{"starts":3,"wins":1,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":1,"course":"LRC","courseName":"Los Alamitos","dist":6.0,"surface":"D","date":"2026-06-27"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":5.5,"surface":"D","date":"2026-06-15"},{"pos":10,"course":"SA","courseName":"Santa Anita","dist":5.5,"surface":"D","date":"2026-04-18"}]}]},{"id":"DMR-2026-08-09-9","course":"DMR","courseName":"Del Mar","raceNumber":9,"dist":8.0,"about":false,"surface":"Turf","surfaceCode":"T","going":"Turf","time":"18:10","name":"OClm 50000","raceType":"Optional Claiming","purse":41000,"runners":[{"cloth":1,"name":"Back Nine Stakes","jockey":"Hernandez Juan J","trainer":"Sean Williams","age":3,"sex":"C","weight":118,"mlOdds":"3.50","silksText":"Black; black 'SDR' on orange & royal blue ball on back; blue & orange striped sleeves and cap","daysOff":93,"record":{"starts":2,"wins":1,"courseStarts":0,"courseWins":0,"distStarts":1,"distWins":1},"careerFlags":{"course":false,"distance":true,"cd":false},"form":[{"pos":1,"course":"GP","courseName":"Gulfstream Park","dist":7.5,"surface":"T","date":"2026-05-08"},{"pos":4,"course":"GP","courseName":"Gulfstream Park","dist":5.5,"surface":"D","date":"2026-04-10"}]},{"cloth":2,"name":"Rostovsky","jockey":"E Jaramillo","trainer":"Mark Glatt","age":5,"sex":"G","weight":123,"mlOdds":"4.00","silksText":"Powder blue black yoke; white stars on black sleeves; powder blue cap","daysOff":77,"record":{"starts":12,"wins":1,"courseStarts":3,"courseWins":0,"distStarts":5,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":2,"course":"SA","courseName":"Santa Anita","dist":9.0,"surface":"T","date":"2026-05-24"},{"pos":6,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-04-25"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":9.0,"surface":"T","date":"2026-03-29"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":9.0,"surface":"T","date":"2026-02-13"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-01-09"},{"pos":6,"course":"DMR","courseName":"Del Mar","dist":8.5,"surface":"T","date":"2025-11-02"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":9.0,"surface":"T","date":"2024-10-26"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2024-09-28"},{"pos":2,"course":"DMR","courseName":"Del Mar","dist":9.0,"surface":"T","date":"2024-08-11"},{"pos":8,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2024-07-20"}]},{"cloth":3,"name":"No Poking Around","jockey":"E Maldonado","trainer":"Hess R B JR","age":4,"sex":"G","weight":123,"mlOdds":"20.00","silksText":"Black orange purple panel front and back; black stripe on orange cap","daysOff":42,"record":{"starts":7,"wins":1,"courseStarts":1,"courseWins":0,"distStarts":5,"distWins":1},"careerFlags":{"course":false,"distance":true,"cd":false},"form":[{"pos":7,"course":"LRC","courseName":"Los Alamitos","dist":5.5,"surface":"D","date":"2026-06-28"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2025-05-11"},{"pos":7,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2025-04-04"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2025-02-28"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2025-01-19"},{"pos":6,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2024-11-29"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2024-10-25"}]},{"cloth":4,"name":"Divisible By","jockey":"Joel Rosario","trainer":"Neil Drysdale","age":5,"sex":"G","weight":125,"mlOdds":"8.00","silksText":"White; three green pine trees on back; pine green collar and sleeves; white cap","daysOff":57,"record":{"starts":6,"wins":1,"courseStarts":3,"courseWins":0,"distStarts":3,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":1,"course":"SA","courseName":"Santa Anita","dist":9.0,"surface":"T","date":"2026-06-13"},{"pos":7,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-05-30"},{"pos":5,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2024-11-23"},{"pos":5,"course":"DMR","courseName":"Del Mar","dist":9.0,"surface":"T","date":"2024-08-11"},{"pos":2,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2024-07-25"},{"pos":7,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2024-06-08"}]},{"cloth":5,"name":"Maximon","jockey":"Armando Ayuso","trainer":"Peter Eurton","age":4,"sex":"G","weight":125,"mlOdds":"12.00","silksText":"Royal blue; white seagulls front and back; black sleeves; black and blue cap","daysOff":70,"record":{"starts":4,"wins":1,"courseStarts":0,"courseWins":0,"distStarts":0,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-05-31"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2026-05-01"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-03-22"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-01-19"}]},{"cloth":6,"name":"Sterling Sea","jockey":"Leparoux Julien R","trainer":"Philip Damato","age":3,"sex":"G","weight":118,"mlOdds":"12.00","silksText":"Lime green; white 'SS' on purple diamond front & back; lime & white diamonds on purple sleeves; purp","daysOff":63,"record":{"starts":7,"wins":1,"courseStarts":2,"courseWins":0,"distStarts":3,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":5,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-06-07"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2026-05-01"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"T","date":"2026-04-03"},{"pos":6,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-02-20"},{"pos":5,"course":"LRC","courseName":"Los Alamitos","dist":6.5,"surface":"D","date":"2025-12-06"},{"pos":6,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2025-08-17"},{"pos":4,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2025-07-27"}]},{"cloth":7,"name":"Moonlit Sonata","jockey":"Umberto Rispoli","trainer":"Tim Yakteen","age":5,"sex":"H","weight":123,"mlOdds":"5.00","silksText":"Navy blue; white 'Soma Racing Stables' light blue collar &  cuffs on navy sleeves; light blue & navy","daysOff":77,"record":{"starts":14,"wins":1,"courseStarts":1,"courseWins":0,"distStarts":4,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":3,"course":"SA","courseName":"Santa Anita","dist":9.0,"surface":"T","date":"2026-05-24"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-04-25"},{"pos":7,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-03-15"},{"pos":9,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2026-02-21"},{"pos":6,"course":"SA","courseName":"Santa Anita","dist":9.0,"surface":"T","date":"2026-01-18"},{"pos":3,"course":"DMR","courseName":"Del Mar","dist":8.5,"surface":"T","date":"2025-11-01"},{"pos":5,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2025-04-05"},{"pos":3,"course":"SA","courseName":"Santa Anita","dist":9.0,"surface":"T","date":"2025-03-01"},{"pos":7,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2024-06-13"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":9.0,"surface":"T","date":"2024-05-12"}]},{"cloth":8,"name":"Dreamrider","jockey":"Berrios Hector Isaac","trainer":"Neil Drysdale","age":3,"sex":"C","weight":120,"mlOdds":"6.00","silksText":"Sky blue; blue and yellow 8 pointed star emblem in black circled stirrup strap front and back; blue","daysOff":63,"record":{"starts":7,"wins":1,"courseStarts":0,"courseWins":0,"distStarts":5,"distWins":1},"careerFlags":{"course":false,"distance":true,"cd":false},"form":[{"pos":3,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-06-07"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-05-17"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-03-27"},{"pos":7,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-02-27"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-01-30"},{"pos":6,"course":"LRC","courseName":"Los Alamitos","dist":6.5,"surface":"D","date":"2025-12-06"},{"pos":4,"course":"LRC","courseName":"Los Alamitos","dist":6.5,"surface":"D","date":"2025-09-20"}]},{"cloth":9,"name":"Muscled","jockey":"Ricardo Gonzalez","trainer":"Patrick Gallagher","age":4,"sex":"G","weight":123,"mlOdds":"12.00","silksText":"Black; light blue sash; light blue dots on white sleeves; light blue stripe on black cap","daysOff":22,"record":{"starts":8,"wins":1,"courseStarts":4,"courseWins":0,"distStarts":6,"distWins":1},"careerFlags":{"course":false,"distance":true,"cd":false},"form":[{"pos":9,"course":"DMR","courseName":"Del Mar","dist":8.5,"surface":"T","date":"2026-07-18"},{"pos":10,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2025-06-13"},{"pos":4,"course":"SA","courseName":"Santa Anita","dist":6.5,"surface":"T","date":"2025-04-06"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2025-02-28"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2024-12-28"},{"pos":2,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2024-12-01"},{"pos":4,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2024-10-31"},{"pos":10,"course":"DMR","courseName":"Del Mar","dist":8.0,"surface":"T","date":"2024-07-27"}]},{"cloth":10,"name":"Knowhere","jockey":"Edgar Payeras","trainer":"De Alba Cesar","age":3,"sex":"G","weight":120,"mlOdds":"12.00","silksText":"Navy blue and red halves; red cap","daysOff":36,"record":{"starts":6,"wins":1,"courseStarts":0,"courseWins":0,"distStarts":2,"distWins":1},"careerFlags":{"course":false,"distance":true,"cd":false},"form":[{"pos":5,"course":"LRC","courseName":"Los Alamitos","dist":8.0,"surface":"D","date":"2026-07-04"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-06-07"},{"pos":1,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"T","date":"2026-05-15"},{"pos":2,"course":"SA","courseName":"Santa Anita","dist":8.0,"surface":"D","date":"2026-04-26"},{"pos":6,"course":"SA","courseName":"Santa Anita","dist":6.0,"surface":"D","date":"2026-04-02"},{"pos":3,"course":"LRC","courseName":"Los Alamitos","dist":5.0,"surface":"D","date":"2025-06-29"}]},{"cloth":11,"name":"Muir Woods","jockey":"Antonio Fresu","trainer":"Christopher Davis","age":3,"sex":"C","weight":118,"mlOdds":"12.00","silksText":"Silver; white and black sashes; black band on white sleeves; white cap","daysOff":50,"record":{"starts":7,"wins":1,"courseStarts":0,"courseWins":0,"distStarts":1,"distWins":0},"careerFlags":{"course":false,"distance":false,"cd":false},"form":[{"pos":5,"course":"CD","courseName":"Churchill Downs","dist":8.0,"surface":"T","date":"2026-06-20"},{"pos":4,"course":"CD","courseName":"Churchill Downs","dist":6.5,"surface":"D","date":"2026-05-24"},{"pos":4,"course":"CD","courseName":"Churchill Downs","dist":6.5,"surface":"D","date":"2026-05-09"},{"pos":1,"course":"TP","courseName":"Turfway Park","dist":6.5,"surface":"D","date":"2026-02-25"},{"pos":8,"course":"TP","courseName":"Turfway Park","dist":6.0,"surface":"D","date":"2026-02-07"},{"pos":3,"course":"TP","courseName":"Turfway Park","dist":6.5,"surface":"D","date":"2025-12-26"},{"pos":7,"course":"KEE","courseName":"Keeneland","dist":8.5,"surface":"D","date":"2025-10-19"}]}]}]}]}</script>
+<script>
+/* ============================================================
+   1. SCORING  — the whole model lives in this one function.
+   ============================================================ */
+
+const POS_POINTS = {1:5, 2:4, 3:3, 4:2, 5:1};   // 6th and worse, and all
+                                                 // non-completions, score 0.
+const BONUS = { course:2, distance:2, courseAndDistance:1 };
+
+const DEFAULTS = { runs:5, scope:'career', tol:0, unknownCD:'withhold' };
+
+function distMatches(a, b, tol){ return Math.abs(a - b) <= tol + 1e-9; }
+
+/**
+ * runner.form      — runs, most recent first: {pos, course, dist, date}
+ *                    pos is a number, or 'PU'/'F'/'UR'/'BD'/'RO' etc.
+ * runner.careerWins— every career win: {course, dist, date}
+ * race             — {course, dist}
+ */
+function scoreRunner(runner, race, opts = DEFAULTS){
+  const window = runner.form.slice(0, opts.runs);
+
+  // --- form points ---
+  let formPoints = 0;
+  const rungs = window.map(run => {
+    const pts = (typeof run.pos === 'number' && POS_POINTS[run.pos]) || 0;
+    formPoints += pts;
+    return {
+      pos: run.pos,
+      pts,
+      course: run.course,
+      courseName: run.courseName,
+      dist: run.dist,
+      date: run.date,
+      cd: run.pos === 1 && run.course === race.course
+          && distMatches(run.dist, race.dist, opts.tol)
+          && (!run.surface || !race.surfaceCode || run.surface === race.surfaceCode)
+    };
+  });
+
+  // --- course / distance bonuses ---
+  // A feed may hand us career totals rather than a list of wins (BRIS does:
+  // its lifetime course and distance records are surface-restricted already).
+  // Prefer those when present, since a win list is usually capped at 10 starts.
+  const flags = runner.careerFlags;
+  const useFlags = flags && opts.scope === 'career';
+
+  const winPool = opts.scope === 'career'
+    ? (runner.careerWins || window.filter(r => r.pos === 1))
+    : window.filter(r => r.pos === 1);
+
+  const wonCourse = useFlags ? !!flags.course
+    : winPool.some(w => w.course === race.course);
+  const wonDist   = useFlags ? !!flags.distance
+    : winPool.some(w => distMatches(w.dist, race.dist, opts.tol));
+
+  // cd may be null: both lifetime flags are set, but the visible starts don't
+  // prove one single win did both. opts.unknownCD decides what that's worth.
+  let wonCD, cdUnknown = false;
+  if (useFlags && flags.cd === null){
+    cdUnknown = true;
+    wonCD = opts.unknownCD === 'award';
+  } else {
+    wonCD = useFlags ? !!flags.cd
+      : winPool.some(w => w.course === race.course && distMatches(w.dist, race.dist, opts.tol));
+  }
+
+  const bonus =
+      (wonCourse ? BONUS.course : 0)
+    + (wonDist   ? BONUS.distance : 0)
+    + (wonCD     ? BONUS.courseAndDistance : 0);
+
+  // --- tie-breaks: freshest win first, then lowest saddlecloth ---
+  const lastWin = winPool.length
+    ? winPool.map(w => w.date).sort().slice(-1)[0]
+    : '';
+
+  return {
+    total: formPoints + bonus,
+    formPoints, bonus, rungs,
+    wonCourse, wonDist, wonCD, cdUnknown, lastWin,
+    runsCounted: window.length
+  };
+}
+
+function maxPossible(opts){
+  return opts.runs * 5 + BONUS.course + BONUS.distance + BONUS.courseAndDistance;
+}
+
+function rankRunners(race, opts){
+  const scored = race.runners
+    .filter(r => !r.nonRunner)
+    .map(r => ({ ...r, score: scoreRunner(r, race, opts) }));
+
+  scored.sort((a,b) =>
+       b.score.total      - a.score.total
+    || b.score.formPoints - a.score.formPoints
+    || (a.score.lastWin < b.score.lastWin ? 1 : a.score.lastWin > b.score.lastWin ? -1 : 0)
+    || a.cloth - b.cloth
+  );
+
+  // joint ranks for genuine ties
+  let rank = 0, prev = null;
+  scored.forEach((r, i) => {
+    if (prev === null || r.score.total !== prev) { rank = i + 1; prev = r.score.total; }
+    r.rank = rank;
+    r.joint = false;
+  });
+  scored.forEach(r => {
+    r.joint = scored.filter(o => o.rank === r.rank).length > 1;
+  });
+  return scored;
+}
+
+/* ============================================================
+   2. DATA  — swap the adapter, keep everything else.
+   ============================================================ */
+
+function embedded(){
+  const tag = document.getElementById('embeddedCard');
+  if (!tag) return null;
+  try { return JSON.parse(tag.textContent); } catch { return null; }
+}
+
+const DataSource = {
+  mode: embedded() ? 'embedded' : 'sample',
+  async cardsFor(dateISO){
+    if (this.mode === 'embedded'){
+      const e = embedded();
+      if (!e) throw new Error('No card is embedded in this file.');
+      if (e.date !== dateISO)
+        throw new Error(`This file only holds the card for ${e.date}.`);
+      return e.meetings;
+    }
+    if (this.mode === 'remote'){
+      const res = await fetch(`./data/racecards-${dateISO}.json`);
+      if (!res.ok) throw new Error(`No card file for ${dateISO} (HTTP ${res.status})`);
+      return res.json();
+    }
+    return sampleCards(dateISO);
+  }
+};
+
+/* --- deterministic sample generator, so a given date always
+       produces the same card and you can eyeball the maths --- */
+function mulberry(seed){
+  return function(){
+    seed |= 0; seed = seed + 0x6D2B79F5 | 0;
+    let t = Math.imul(seed ^ seed >>> 15, 1 | seed);
+    t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  };
+}
+const hashStr = s => { let h = 2166136261; for (const c of s){ h ^= c.charCodeAt(0); h = Math.imul(h, 16777619);} return h >>> 0; };
+
+const COURSES = [
+  {name:'Newmarket', going:'Good to firm', dists:[5,6,7,8,10,12]},
+  {name:'Ascot',     going:'Good',         dists:[6,7,8,10,12,14]},
+  {name:'Haydock',   going:'Soft',         dists:[5,6,8,10,12,16]},
+  {name:'Chepstow',  going:'Good to soft', dists:[6,8,10,13,16,20]},
+];
+const ALL_COURSES = [...COURSES.map(c=>c.name), 'York','Goodwood','Doncaster','Sandown','Newbury','Leicester','Thirsk','Ripon'];
+const W1 = ['Kodiac','Desert','Midnight','Harbour','Saffron','Copper','Winter','Gallant','Tacitus','Bold','Silent','Northern','Lambourn','Ivory','Rebel','Crimson','Quiet','Marble','Thunder','Petra','Golden','Sable','Rowan','Hazel'];
+const W2 = ['Crown','Rumour','Lantern','Quest','Belle','Mistral','Compass','Verdict','Anthem','Falcon','Reef','Tempo','Archer','Larkspur','Whisper','Cavalier','Sonnet','Harrier','Prospect','Vigil','Duchess','Bandit','Meridian','Ledger'];
+const JOCKEYS = ['R Havlin','H Doyle','T Marquand','O Murphy','W Buick','R Kingscote','J Fanning','K Shoemark','C Bishop','D Muscutt','S De Sousa','B Curtis'];
+const TRAINERS = ['J Gosden','A Balding','C Appleby','R Varian','W Haggas','K Burke','M Johnston','R Beckett','D O\'Meara','E Walker'];
+const NF = ['PU','F','UR','BD','RO'];
+const GRADES = ['Novice Stakes','Handicap','Maiden Stakes','Class 3 Handicap','Nursery Handicap','Conditions Stakes','Class 2 Handicap','Fillies\' Handicap'];
+
+function sampleCards(dateISO){
+  const rnd = mulberry(hashStr(dateISO));
+  const pick = a => a[Math.floor(rnd()*a.length)];
+  const daysBefore = n => {
+    const d = new Date(dateISO + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate()-n);
+    return d.toISOString().slice(0,10);
+  };
+
+  return COURSES.map(course => {
+    const nRaces = 4 + Math.floor(rnd()*2);
+    const races = [];
+    for (let i = 0; i < nRaces; i++){
+      const dist = pick(course.dists);
+      const hh = 13 + Math.floor((i*35 + 10)/60);
+      const mm = (i*35 + 10) % 60;
+      const race = {
+        id: `${course.name}-${dateISO}-${i}`.replace(/\s+/g,''),
+        course: course.name,
+        going: course.going,
+        dist,
+        time: `${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`,
+        name: `${pick(GRADES)}`,
+        runners: []
+      };
+      const n = 6 + Math.floor(rnd()*6);
+      for (let c = 1; c <= n; c++){
+        const name = `${pick(W1)} ${pick(W2)}`;
+        const ability = rnd();              // hidden quality, shapes the form
+        const form = [], careerWins = [];
+        let ago = 12 + Math.floor(rnd()*20);
+        for (let r = 0; r < 10; r++){
+          const roll = rnd() * (0.45 + ability);
+          let pos;
+          if (roll > 0.92) pos = pick(NF);
+          else pos = Math.max(1, Math.min(14, Math.ceil((1 - roll) * 13) || 1));
+          // let some horses have real course/distance affinity
+          const atThisCourse = rnd() < (0.28 + ability*0.2);
+          const runCourse = atThisCourse ? course.name : pick(ALL_COURSES);
+          const runDist = rnd() < (0.3 + ability*0.25) ? dist : pick(course.dists);
+          const date = daysBefore(ago);
+          form.push({pos, course:runCourse, dist:runDist, date});
+          if (pos === 1) careerWins.push({course:runCourse, dist:runDist, date});
+          ago += 14 + Math.floor(rnd()*45);
+        }
+        race.runners.push({
+          cloth: c,
+          name,
+          jockey: pick(JOCKEYS),
+          trainer: pick(TRAINERS),
+          age: 3 + Math.floor(rnd()*5),
+          silks: silksSpec(name),
+          form, careerWins
+        });
+      }
+      races.push(race);
+    }
+    return {course: course.name, going: course.going, races};
+  });
+}
+
+/* ============================================================
+   3. SILKS  — every runner gets a jacket, derived from its name
+   ============================================================ */
+const SILK_COLOURS = ['#D8403A','#1E56A0','#E0A93C','#2E7D4F','#7B3F9D','#E86A2B','#0E9CA8','#C9245E','#F2EDE0','#2B2B2B','#8FBF3F','#E2A0B8'];
+const SILK_PATTERNS = ['solid','stripes','hoops','sash','chevron','spots','halved','star'];
+
+/* BRIS ships the registered owner's colours as prose, e.g.
+   "Red; 'JG' inside white diamonds on back; white diamonds on sleeves; red cap".
+   Read what we can from it and fall back to the generated jacket. */
+const COLOUR_WORDS = {
+  red:'#D8403A', dark:'#2B2B2B', black:'#1A1A1A', white:'#F4F1E8', blue:'#1E56A0',
+  royal:'#1E56A0', navy:'#16305C', light:'#7FB2E5', green:'#2E7D4F', lime:'#8FBF3F',
+  yellow:'#EFC53F', gold:'#D9A441', orange:'#E86A2B', purple:'#7B3F9D', pink:'#E2A0B8',
+  grey:'#9AA0A0', gray:'#9AA0A0', brown:'#7A4B2A', maroon:'#7A2231', turquoise:'#0E9CA8',
+  silver:'#C8CCC9', tan:'#C8A97E', beige:'#DED3B6', cerise:'#C9245E', lavender:'#B9A5D8'
+};
+const PATTERN_WORDS = [
+  ['stripe','stripes'], ['hoop','hoops'], ['sash','sash'], ['chevron','chevron'],
+  ['diamond','spots'], ['spot','spots'], ['star','star'], ['halve','halved'],
+  ['quarter','halved'], ['ball','spots'], ['dot','spots']
+];
+
+function colourAt(text, i){
+  const w = text.slice(Math.max(0,i-40), i).toLowerCase().match(/[a-z]+/g) || [];
+  for (let k = w.length-1; k >= 0; k--) if (COLOUR_WORDS[w[k]]) return COLOUR_WORDS[w[k]];
+  return null;
+}
+
+function silksFromText(text, fallbackSeed){
+  const spec = silksSpec(fallbackSeed);
+  if (!text) return spec;
+  const t = text.toLowerCase();
+
+  const first = (t.match(/[a-z]+/g) || []).find(w => COLOUR_WORDS[w]);
+  if (first) spec.base = COLOUR_WORDS[first];
+
+  const cap = t.indexOf('cap');
+  if (cap > -1) spec.cap = colourAt(t, cap) || spec.cap;
+
+  const sl = t.indexOf('sleeve');
+  if (sl > -1) spec.sleeves = colourAt(t, sl) || spec.sleeves;
+
+  const others = (t.match(/[a-z]+/g) || []).filter(w => COLOUR_WORDS[w] && COLOUR_WORDS[w] !== spec.base);
+  if (others.length) spec.second = COLOUR_WORDS[others[0]];
+
+  for (const [needle, pat] of PATTERN_WORDS)
+    if (t.includes(needle)) { spec.pattern = pat; break; }
+
+  return spec;
+}
+
+function silksSpec(seedStr){
+  const rnd = mulberry(hashStr(seedStr));
+  const pick = a => a[Math.floor(rnd()*a.length)];
+  let base = pick(SILK_COLOURS), second = pick(SILK_COLOURS);
+  if (second === base) second = SILK_COLOURS[(SILK_COLOURS.indexOf(base)+5) % SILK_COLOURS.length];
+  return {base, second, cap:pick(SILK_COLOURS), sleeves:pick(SILK_COLOURS), pattern:pick(SILK_PATTERNS)};
+}
+
+function silksSVG(s, id){
+  const cid = `clip${id}`;
+  let motif = '';
+  if (s.pattern === 'stripes')
+    motif = [0,1,2,3].map(i=>`<rect x="${10+i*5}" y="12" width="2.6" height="26" fill="${s.second}"/>`).join('');
+  else if (s.pattern === 'hoops')
+    motif = [0,1,2].map(i=>`<rect x="8" y="${15+i*8}" width="24" height="4" fill="${s.second}"/>`).join('');
+  else if (s.pattern === 'sash')
+    motif = `<path d="M8 34 L32 12 L32 19 L8 41 Z" fill="${s.second}"/>`;
+  else if (s.pattern === 'chevron')
+    motif = `<path d="M8 30 L20 18 L32 30 L32 36 L20 24 L8 36 Z" fill="${s.second}"/>`;
+  else if (s.pattern === 'spots')
+    motif = [[14,19],[26,19],[20,27],[14,34],[26,34]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="3" fill="${s.second}"/>`).join('');
+  else if (s.pattern === 'halved')
+    motif = `<rect x="20" y="12" width="12" height="28" fill="${s.second}"/>`;
+  else if (s.pattern === 'star')
+    motif = `<path d="M20 17 L22.4 23 L28.6 23 L23.6 27 L25.6 33 L20 29.4 L14.4 33 L16.4 27 L11.4 23 L17.6 23 Z" fill="${s.second}"/>`;
+
+  return `<svg class="silks" viewBox="0 0 40 46" aria-hidden="true">
+    <defs><clipPath id="${cid}"><path d="M13 12 L27 12 L32 15 L32 39 L8 39 L8 15 Z"/></clipPath></defs>
+    <circle cx="20" cy="5.5" r="4.4" fill="${s.cap}" stroke="rgba(0,0,0,.25)"/>
+    <rect x="2.5" y="15" width="6" height="20" rx="1.6" fill="${s.sleeves}" stroke="rgba(0,0,0,.25)" stroke-width=".7"/>
+    <rect x="31.5" y="15" width="6" height="20" rx="1.6" fill="${s.sleeves}" stroke="rgba(0,0,0,.25)" stroke-width=".7"/>
+    <g clip-path="url(#${cid})">
+      <rect x="8" y="12" width="24" height="28" fill="${s.base}"/>
+      ${motif}
+    </g>
+    <path d="M13 12 L27 12 L32 15 L32 39 L8 39 L8 15 Z" fill="none" stroke="rgba(0,0,0,.3)" stroke-width=".8"/>
+  </svg>`;
+}
+
+/* ============================================================
+   4. VIEW
+   ============================================================ */
+const state = { date:null, cards:[], raceId:null, opts:{...DEFAULTS} };
+
+const el = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function tomorrowISO(){
+  const d = new Date(); d.setDate(d.getDate()+1);
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+function prettyDate(iso){
+  return new Date(iso+'T12:00:00').toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'});
+}
+function fmtDist(f){
+  const m = Math.floor(f/8), rest = f - m*8;
+  const half = rest % 1 >= 0.5 ? '½' : '';
+  const whole = Math.floor(rest);
+  const fp = whole || half ? `${whole||''}${half}f` : '';
+  return [m ? `${m}m` : '', fp].filter(Boolean).join(' ') || `${f}f`;
+}
+
+function renderRail(){
+  const rail = el('rail');
+  if (!state.cards.length){ rail.innerHTML = ''; return; }
+  rail.innerHTML = `<p class="rail-head">${state.cards.length} meeting${state.cards.length===1?'':'s'} · ${state.cards.reduce((n,m)=>n+m.races.length,0)} races</p>` +
+    state.cards.map(m => `
+      <div class="meeting">
+        <div class="meeting-name">${esc(m.courseName || m.course)} <span class="meeting-going">${esc(m.going||'')}</span></div>
+        ${m.races.map(r => `
+          <button class="race-btn ${r.id===state.raceId?'is-on':''}" data-race="${esc(r.id)}">
+            <span class="race-time">${esc(r.time)}</span>
+            <span class="race-blurb">${fmtDist(r.dist)} · ${esc(r.name)}</span>
+          </button>`).join('')}
+      </div>`).join('');
+}
+
+function findRace(id){
+  for (const m of state.cards) for (const r of m.races) if (r.id === id) return r;
+  return null;
+}
+
+function renderRace(){
+  const area = el('cardArea');
+  const race = findRace(state.raceId);
+  if (!race){
+    area.innerHTML = `<div class="empty">
+      <h2>Pick a race</h2>
+      <p>Every runner is scored on its last ${state.opts.runs} outings — 5 points for a win, 4 for a second, down to 1 for a fifth — then given 2 more for a previous win at the course, 2 for a win over the trip, and 1 on top if a single win did both.</p>
+      <p>Nothing here is a tip. It is one arithmetic opinion among many.</p>
+    </div>`;
+    return;
+  }
+
+  const ranked = rankRunners(race, state.opts);
+  const cap = maxPossible(state.opts);
+
+  area.innerHTML = `
+    <div class="race-head">
+      <h2 class="race-title">${esc(race.time)} ${esc(race.courseName || race.course)} — ${esc(race.name)}</h2>
+      <div class="race-meta">
+        <span class="tag tag-key">${fmtDist(race.dist)}${race.about?' (abt)':''}</span>
+        <span class="tag">${esc(race.surface || race.going || 'Surface n/k')}</span>
+        <span class="tag">${ranked.length} runners</span>
+        <span class="tag">Max ${cap} pts</span>
+      </div>
+    </div>
+    <ol class="runners">${ranked.map((r,i)=>runnerRow(r,i,cap)).join('')}</ol>
+    <p class="footnote">
+      Scored from the last ${state.opts.runs} runs, with course and distance wins taken from
+      ${state.opts.scope === 'career' ? 'the whole career' : 'the counted runs only'}.
+      A gold outline on a run means that win was over this course <em>and</em> this trip.
+      Ties are shown jointly and broken on form points, then on the freshest win.
+      ${DataSource.mode === 'sample' ? 'These are generated sample cards — the horses are not real.' : ''}
+    </p>`;
+
+  requestAnimationFrame(() => {
+    document.querySelectorAll('.score-bar i').forEach(b => b.style.width = b.dataset.w + '%');
+  });
+}
+
+function runnerRow(r, i, cap){
+  const s = r.score;
+  const rungs = s.rungs.map(g => {
+    const label = typeof g.pos === 'number' ? (g.pos > 9 ? '9+' : g.pos) : g.pos;
+    const posAttr = (typeof g.pos === 'number' && g.pos <= 5) ? g.pos : '';
+    return `<span class="rung ${g.cd?'is-cd':''}" data-pos="${posAttr}"
+      title="${esc(g.courseName || g.course)} ${fmtDist(g.dist)} · ${esc(g.date)} · finished ${label} · ${g.pts} pt${g.pts===1?'':'s'}">${label}</span>`;
+  }).join('');
+
+  const chip = (on, label, pts, unknown) =>
+    `<span class="chip ${on?'':'is-off'}" ${unknown?'title="Won here and won over the trip, but the visible starts don\'t show one win that did both."':''}>${label} ${unknown?(on?'+'+pts+'?':'?'):(on?'+'+pts:'—')}</span>`;
+
+  return `<li class="runner ${i===0?'is-top':''}">
+    <div class="rank">${r.joint?'=':''}${r.rank}${i===0?'<small>top</small>':''}</div>
+    ${silksSVG(r.silks || silksFromText(r.silksText, r.name), r.cloth + '-' + i)}
+    <div class="runner-main">
+      <div class="horse"><span class="cloth">${r.cloth}</span>${esc(r.name)}</div>
+      <div class="people">${esc(r.jockey||'')}${r.trainer?' · '+esc(r.trainer):''}${r.age?' · '+r.age+'yo':''}${r.mlOdds&&+r.mlOdds?' · ML '+(+r.mlOdds)+'-1':''}</div>
+      <div class="ladder">
+        <span class="ladder-label">Form</span>${rungs}
+        <span class="rung-sep"></span>
+        ${chip(s.wonCourse,'Course',BONUS.course)}
+        ${chip(s.wonDist,'Trip',BONUS.distance)}
+        ${chip(s.wonCD,'C&amp;D',BONUS.courseAndDistance, s.cdUnknown)}
+      </div>
+    </div>
+    <div class="score">
+      <div class="score-num">${s.total}</div>
+      <div class="score-word">${s.formPoints} form + ${s.bonus} bonus</div>
+      <div class="score-bar"><i data-w="${Math.round(s.total/cap*100)}"></i></div>
+    </div>
+  </li>`;
+}
+
+/* ============================================================
+   5. WIRING
+   ============================================================ */
+async function load(){
+  el('dateNote').textContent = 'Loading cards…';
+  try{
+    state.cards = await DataSource.cardsFor(state.date);
+    state.raceId = null;
+    document.querySelectorAll('.banner').forEach(b => b.remove());
+    el('dateNote').textContent = `Racing ${prettyDate(state.date)} · scored on last ${state.opts.runs} runs`;
+  }catch(err){
+    state.cards = [];
+    el('dateNote').textContent = 'No cards loaded';
+    const b = document.createElement('div');
+    b.className = 'banner';
+    b.textContent = `Couldn't load that card file. ${err.message} — put a JSON file at data/racecards-${state.date}.json, or switch back to sample cards.`;
+    el('settings').after(b);
+  }
+  renderRail(); renderRace();
+}
+
+el('rail').addEventListener('click', e => {
+  const btn = e.target.closest('[data-race]');
+  if (!btn) return;
+  state.raceId = btn.dataset.race;
+  renderRail(); renderRace();
+  if (window.innerWidth <= 820) el('cardArea').scrollIntoView({behavior:'smooth', block:'start'});
+});
+
+el('settingsBtn').addEventListener('click', () => {
+  const open = el('settings').classList.toggle('is-open');
+  el('settingsBtn').setAttribute('aria-expanded', open);
+});
+
+el('raceDate').addEventListener('change', e => { state.date = e.target.value; load(); });
+el('optRuns').addEventListener('change', e => { state.opts.runs = +e.target.value; el('dateNote').textContent = `Racing ${prettyDate(state.date)} · scored on last ${state.opts.runs} runs`; renderRace(); });
+el('optScope').addEventListener('change', e => { state.opts.scope = e.target.value; renderRace(); });
+el('optTol').addEventListener('change', e => { state.opts.tol = +e.target.value; renderRace(); });
+el('optCD').addEventListener('change', e => { state.opts.unknownCD = e.target.value; renderRace(); });
+el('optSource').addEventListener('change', e => { DataSource.mode = e.target.value; load(); });
+
+const built = embedded();
+state.date = built ? built.date : tomorrowISO();
+el('optSource').value = DataSource.mode;
+el('raceDate').value = state.date;
+load();
+</script>
+</body>
+</html>
