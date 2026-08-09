@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaT Live Auctions</title>
+    <style>
+        :root {
+            --bat-red: #d32f2f;
+            --bg-dark: #121212;
+            --card-bg: #1e1e1e;
+            --text-light: #e0e0e0;
+            --gold: #fbc02d;
+            --row-alt: #191919;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .header {
+            max-width: 1300px;
+            margin: 0 auto 20px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            margin: 0;
+            color: #fff;
+        }
+
+        .badge {
+            background-color: var(--bat-red);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .last-updated {
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        .controls {
+            max-width: 1300px;
+            margin: 0 auto 20px auto;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            flex: 1;
+            min-width: 160px;
+        }
+
+        label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: #888;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        input {
+            background: #2a2a2a;
+            border: 1px solid #444;
+            color: #fff;
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+
+        .table-wrap {
+            max-width: 1300px;
+            margin: 0 auto;
+            overflow-x: auto;
+            border: 1px solid #333;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+            min-width: 900px;
+        }
+
+        thead th {
+            position: sticky;
+            top: 0;
+            background: #252525;
+            color: var(--gold);
+            text-align: left;
+            padding: 12px 14px;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid #333;
+            cursor: pointer;
+            user-select: none;
+            white-space: nowrap;
+        }
+
+        thead th:hover { color: #fff; }
+
+        tbody tr {
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        tbody tr:nth-child(even) {
+            background: var(--row-alt);
+        }
+
+        tbody tr:hover {
+            background: #262626;
+        }
+
+        td {
+            padding: 12px 14px;
+            vertical-align: top;
+        }
+
+        td.model-cell a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        td.model-cell a:hover {
+            color: var(--gold);
+            text-decoration: underline;
+        }
+
+        .time-left {
+            font-weight: 600;
+            color: #81c784;
+            white-space: nowrap;
+        }
+
+        .time-left.urgent {
+            color: #ff8a65;
+        }
+
+        .unknown {
+            color: #777;
+            font-style: italic;
+        }
+
+        .status-msg {
+            max-width: 1300px;
+            margin: 40px auto;
+            text-align: center;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>🚗 BaT Live Auctions</h1>
+        <div style="display:flex; align-items:center; gap:12px;">
+            <span class="last-updated" id="last-updated"></span>
+            <span class="badge" id="count-badge">0 Listings</span>
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="input-group" style="max-width: 140px;">
+            <label for="days-input">Days Left</label>
+            <input type="number" id="days-input" value="1" min="0.1" max="14" step="0.1" oninput="renderTable()">
+        </div>
+        <div class="input-group">
+            <label for="model-input">Filter Make/Model</label>
+            <input type="text" id="model-input" placeholder="e.g. Porsche, BMW, Ford..." oninput="renderTable()">
+        </div>
+        <div class="input-group">
+            <label for="title-place-input">Filter Title/Reg Place</label>
+            <input type="text" id="title-place-input" placeholder="e.g. California, Texas..." oninput="renderTable()">
+        </div>
+    </div>
+
+    <div id="status" class="status-msg">Loading latest scan results...</div>
+
+    <div class="table-wrap" id="table-wrap" style="display:none;">
+        <table>
+            <thead>
+                <tr>
+                    <th onclick="setSort('year')">Year</th>
+                    <th onclick="setSort('make')">Make</th>
+                    <th onclick="setSort('model')">Model</th>
+                    <th onclick="setSort('current_bid')">Current Bid</th>
+                    <th onclick="setSort('ends')">Time Left</th>
+                    <th onclick="setSort('title_place')">Title/Reg Place</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+
+    <script>
+        const RESULTS_FILE = 'results.json';
+        let allListings = [];
+        let sortKey = 'ends';
+        let sortDir = 1;
+
+        function formatPacific(isoString) {
+            const d = new Date(isoString);
+            if (isNaN(d.getTime())) return isoString;
+            return d.toLocaleString('en-US', {
+                timeZone: 'America/Los_Angeles',
+                year: 'numeric', month: 'short', day: 'numeric',
+                hour: 'numeric', minute: '2-digit',
+                timeZoneName: 'short'
+            });
+        }
+
+        async function loadResults() {
+            const status = document.getElementById('status');
+            const wrap = document.getElementById('table-wrap');
+
+            try {
+                const response = await fetch(RESULTS_FILE, { cache: 'no-store' });
+                if (!response.ok) throw new Error(`results.json returned ${response.status}`);
+                const data = await response.json();
+
+                allListings = data.listings || [];
+                document.getElementById('last-updated').innerText =
+                    data.last_run_iso ? `Scan last ran: ${formatPacific(data.last_run_iso)}` : '';
+
+                if (data.error) {
+                    status.innerText = `Scan note: ${data.error}`;
+                }
+
+                if (allListings.length > 0) {
+                    wrap.style.display = 'block';
+                    status.style.display = 'none';
+                    renderTable();
+                } else if (!data.error) {
+                    status.innerText = 'results.json loaded, but no matches were found in the latest scan.';
+                }
+            } catch (e) {
+                console.error(e);
+                status.innerText = `Couldn't load results.json: ${e.message}`;
+            }
+        }
+
+        function hoursLeft(endsIso) {
+            const end = new Date(endsIso);
+            if (isNaN(end.getTime())) return null;
+            return (end - new Date()) / (1000 * 60 * 60);
+        }
+
+        function formatTimeLeft(hrs) {
+            if (hrs === null) return { text: 'Unknown', urgent: false };
+            if (hrs <= 0) return { text: 'Ended', urgent: true };
+            if (hrs < 1) return { text: `${Math.round(hrs * 60)}m`, urgent: true };
+            let wholeHrs = Math.floor(hrs);
+            let mins = Math.round((hrs - wholeHrs) * 60);
+            if (mins === 60) {
+                wholeHrs += 1;
+                mins = 0;
+            }
+            return { text: `${wholeHrs}h ${mins}m`, urgent: hrs < 6 };
+        }
+
+        function setSort(key) {
+            if (sortKey === key) {
+                sortDir *= -1;
+            } else {
+                sortKey = key;
+                sortDir = 1;
+            }
+            renderTable();
+        }
+
+        function getSortValue(row, key) {
+            if (key === 'ends') return new Date(row.ends).getTime() || 0;
+            if (key === 'current_bid') return parseFloat((row.current_bid || '0').replace(/,/g, '')) || 0;
+            if (key === 'year') return parseInt(row.year, 10) || 0;
+            return (row[key] || '').toString().toLowerCase();
+        }
+
+        function renderTable() {
+            const maxDays = parseFloat(document.getElementById('days-input').value) || 1;
+            const maxHours = maxDays * 24;
+            const modelQuery = document.getElementById('model-input').value.trim().toLowerCase();
+            const titlePlaceQuery = document.getElementById('title-place-input').value.trim().toLowerCase();
+
+            let filtered = allListings.filter(row => {
+                const hrs = hoursLeft(row.ends);
+                const withinWindow = hrs === null || hrs <= maxHours;
+                const matchesModel = modelQuery === '' ||
+                    `${row.make || ''} ${row.model || ''} ${row.full_title || ''}`.toLowerCase().includes(modelQuery);
+                const matchesTitlePlace = titlePlaceQuery === '' ||
+                    (row.title_place || '').toLowerCase().includes(titlePlaceQuery);
+                return withinWindow && matchesModel && matchesTitlePlace;
+            });
+
+            filtered.sort((a, b) => {
+                const va = getSortValue(a, sortKey);
+                const vb = getSortValue(b, sortKey);
+                if (va < vb) return -1 * sortDir;
+                if (va > vb) return 1 * sortDir;
+                return 0;
+            });
+
+            document.getElementById('count-badge').innerText = `${filtered.length} Listings`;
+
+            const tbody = document.getElementById('table-body');
+            tbody.innerHTML = filtered.map(row => {
+                const hrs = hoursLeft(row.ends);
+                const tl = formatTimeLeft(hrs);
+                const bid = row.current_bid ? `$${row.current_bid}` : '<span class="unknown">Unknown</span>';
+                const titlePlace = row.title_place || '<span class="unknown">Not found</span>';
+                const model = row.model || row.full_title || 'Unknown';
+
+                return `
+                    <tr>
+                        <td>${row.year || '<span class="unknown">?</span>'}</td>
+                        <td>${row.make || '<span class="unknown">?</span>'}</td>
+                        <td class="model-cell"><a href="${row.url}" target="_blank">${model}</a></td>
+                        <td>${bid}</td>
+                        <td class="time-left ${tl.urgent ? 'urgent' : ''}" title="Ends: ${formatPacific(row.ends)}">${tl.text}</td>
+                        <td>${titlePlace}</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        loadResults();
+        // Refresh the "time left" column display every 60s without re-fetching data
+        setInterval(renderTable, 60000);
+    </script>
+</body>
+</html>
