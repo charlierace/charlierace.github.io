@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Stat Wars — Deck Builder</title>
+<script src="config.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0b0f;--bg2:#13151c;--bg3:#1a1d28;--bg4:#21253a;
+  --accent:#f7c948;--accent2:#e8433a;--accent3:#3af0c8;
+  --text:#e8e6f0;--text2:#9896b0;--text3:#5c5a70;
+  --border:#2a2d45;--border2:#3a3d5c;
+  --card-w:200px;--card-h:300px;
+  --font-head:'Orbitron',monospace;--font-body:'Rajdhani',sans-serif;
+}
+html{height:-webkit-fill-available}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:16px;min-height:100vh;min-height:-webkit-fill-available;overflow-x:hidden;-webkit-text-size-adjust:100%}
+.stars{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;background:radial-gradient(ellipse at 20% 50%,#1a0a2e 0%,transparent 50%),radial-gradient(ellipse at 80% 20%,#0a1a2e 0%,transparent 40%)}
+.stars::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background-image:radial-gradient(circle,#fff 1px,transparent 1px),radial-gradient(circle,#fff 1px,transparent 1px),radial-gradient(circle,rgba(255,255,255,.5) 1px,transparent 1px);background-size:200px 200px,350px 350px,500px 500px;background-position:0 0,100px 100px,250px 50px;opacity:.4}
+.app{position:relative;z-index:1;min-height:100vh;min-height:-webkit-fill-available}
+
+/* NAV */
+nav{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:space-between;justify-content:space-between;padding:12px 24px;border-bottom:1px solid var(--border);background:rgba(10,11,15,.95);position:-webkit-sticky;position:sticky;top:0;z-index:100}
+.nav-logo{font-family:var(--font-head);font-size:18px;font-weight:900;letter-spacing:2px;color:var(--accent)}
+.nav-logo span{color:var(--accent2)}
+.nav-right{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;gap:12px}
+.nav-user{font-size:13px;color:var(--text2)}
+
+/* BUTTONS */
+.btn{font-family:var(--font-head);font-size:11px;letter-spacing:1px;padding:8px 16px;border-radius:4px;cursor:pointer;border:none;transition:all .2s;display:inline-block;text-align:center}
+.btn-primary{background:var(--accent);color:#0a0b0f;font-weight:700}
+.btn-primary:hover{background:#ffd560;box-shadow:0 0 20px rgba(247,201,72,.4)}
+.btn-outline{background:transparent;color:var(--text);border:1px solid var(--border2)}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+.btn-danger{background:transparent;color:var(--accent2);border:1px solid var(--accent2);font-size:11px;padding:6px 12px}
+.btn-danger:hover{background:var(--accent2);color:#fff}
+.btn-sm{padding:5px 10px;font-size:10px}
+.btn-ghost{background:transparent;color:var(--text2);border:1px solid var(--border);font-size:10px;padding:5px 10px}
+.btn-ghost:hover{border-color:var(--accent3);color:var(--accent3)}
+.btn-teal{background:transparent;color:var(--accent3);border:1px solid var(--accent3);font-size:11px;padding:6px 12px}
+.btn-teal:hover{background:var(--accent3);color:#0a0b0f}
+.btn:disabled{opacity:.4;cursor:not-allowed;pointer-events:none}
+
+/* LOGIN */
+.login-wrap{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;min-height:90vh;padding:24px}
+.login-box{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:48px 40px;width:100%;max-width:420px;text-align:center}
+.login-logo{font-family:var(--font-head);font-size:32px;font-weight:900;color:var(--accent);letter-spacing:4px;margin-bottom:4px}
+.login-logo span{color:var(--accent2)}
+.login-sub{color:var(--text2);font-size:14px;margin-bottom:32px;font-style:italic}
+.login-tab{display:-webkit-flex;display:flex;margin-bottom:24px;border:1px solid var(--border2);border-radius:6px;overflow:hidden}
+.login-tab button{-webkit-flex:1;flex:1;padding:10px;background:transparent;border:none;color:var(--text2);font-family:var(--font-head);font-size:11px;cursor:pointer;letter-spacing:1px;transition:all .2s}
+.login-tab button.active{background:var(--accent);color:#0a0b0f;font-weight:700}
+.login-demo{margin-top:16px;font-size:12px;color:var(--text3);cursor:pointer;text-decoration:underline}
+
+/* FORM FIELDS */
+.field{margin-bottom:16px;text-align:left}
+.field label{display:block;font-size:12px;font-family:var(--font-head);letter-spacing:1px;color:var(--text2);margin-bottom:6px}
+.field input,.field textarea{width:100%;background:var(--bg3);border:1px solid var(--border2);border-radius:6px;padding:10px 14px;color:var(--text);font-family:var(--font-body);font-size:15px;outline:none;transition:border .2s;-webkit-appearance:none;appearance:none}
+.field input:focus,.field textarea:focus{border-color:var(--accent)}
+
+/* LAYOUT */
+.main{display:-webkit-flex;display:flex;min-height:calc(100vh - 57px)}
+.sidebar{width:200px;background:var(--bg2);border-right:1px solid var(--border);padding:16px 0;-webkit-flex-shrink:0;flex-shrink:0;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.sidebar-section{padding:0 12px;margin-bottom:8px}
+.sidebar-label{font-size:10px;font-family:var(--font-head);letter-spacing:2px;color:var(--text3);margin-bottom:8px;padding:0 8px}
+.sidebar-item{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;gap:10px;padding:9px 12px;border-radius:6px;cursor:pointer;color:var(--text2);font-size:14px;transition:all .15s;margin-bottom:2px}
+.sidebar-item:hover{background:var(--bg3);color:var(--text)}
+.sidebar-item.active{background:rgba(247,201,72,.1);color:var(--accent);border-left:2px solid var(--accent)}
+.sidebar-item.disabled{opacity:.35;pointer-events:none}
+.sidebar-icon{font-size:14px;width:16px;text-align:center}
+.content{-webkit-flex:1;flex:1;padding:28px;overflow-y:auto;-webkit-overflow-scrolling:touch}
+
+/* PAGE */
+.page-header{display:-webkit-flex;display:flex;-webkit-align-items:flex-start;align-items:flex-start;-webkit-justify-content:space-between;justify-content:space-between;margin-bottom:28px;-webkit-flex-wrap:wrap;flex-wrap:wrap;gap:12px}
+.page-title{font-family:var(--font-head);font-size:20px;font-weight:700;color:var(--text);letter-spacing:2px}
+.page-sub{font-size:13px;color:var(--text2);margin-top:3px}
+.btn-group{display:-webkit-flex;display:flex;gap:8px;-webkit-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-items:center;align-items:center}
+
+/* DECK GRID */
+.deck-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px}
+.deck-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:20px;transition:all .2s;position:relative;overflow:hidden}
+.deck-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.deck-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.deck-card-title{font-family:var(--font-head);font-size:13px;font-weight:700;letter-spacing:1px;margin-bottom:8px}
+.deck-card-meta{font-size:12px;color:var(--text2);display:-webkit-flex;display:flex;gap:12px;margin-bottom:8px;-webkit-flex-wrap:wrap;flex-wrap:wrap}
+.deck-card-owner{font-size:11px;color:var(--text3);margin-bottom:10px;font-style:italic}
+.deck-card-actions{display:-webkit-flex;display:flex;gap:6px;-webkit-flex-wrap:wrap;flex-wrap:wrap}
+.new-deck-card{background:transparent;border:2px dashed var(--border2);border-radius:10px;padding:20px;cursor:pointer;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;gap:8px;min-height:140px;transition:all .2s;color:var(--text3)}
+.new-deck-card:hover{border-color:var(--accent);color:var(--accent)}
+.new-deck-icon{font-size:28px}
+.new-deck-label{font-family:var(--font-head);font-size:11px;letter-spacing:2px}
+
+/* PANELS */
+.panel{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:16px}
+.panel-title{font-family:var(--font-head);font-size:12px;letter-spacing:2px;color:var(--accent);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+
+/* CATEGORIES */
+.cat-col-headers{display:grid;grid-template-columns:1fr 80px 32px 32px;gap:8px;margin-bottom:6px;padding:0 2px}
+.cat-col-label{font-size:10px;font-family:var(--font-head);letter-spacing:1px;color:var(--text3)}
+.cat-row{display:grid;grid-template-columns:1fr 80px 32px 32px;-webkit-align-items:center;align-items:center;gap:8px;margin-bottom:8px}
+.cat-input{background:var(--bg3);border:1px solid var(--border2);border-radius:5px;padding:7px 10px;color:var(--text);font-family:var(--font-body);font-size:14px;outline:none;width:100%;-webkit-appearance:none}
+.cat-input:focus{border-color:var(--accent3)}
+.cat-max-input{background:var(--bg3);border:1px solid var(--border2);border-radius:5px;padding:7px 8px;color:var(--accent3);font-family:var(--font-head);font-size:12px;outline:none;width:100%;text-align:center;-webkit-appearance:none}
+.cat-max-input:focus{border-color:var(--accent3)}
+.cat-badge{background:rgba(58,240,200,.1);color:var(--accent3);border:1px solid rgba(58,240,200,.2);border-radius:4px;font-size:10px;padding:3px 6px;font-family:var(--font-head);letter-spacing:1px;white-space:nowrap;text-align:center}
+.del-btn{background:transparent;border:none;color:var(--text3);cursor:pointer;font-size:15px;padding:4px;line-height:1;transition:color .15s}
+.del-btn:hover{color:var(--accent2)}
+
+/* CARD LIST */
+.card-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin-top:16px}
+.card-thumb{background:var(--bg3);border:1px solid var(--border);border-radius:8px;overflow:hidden;cursor:pointer;transition:all .2s;position:relative}
+.card-thumb:hover{border-color:var(--accent);transform:translateY(-2px)}
+.card-thumb-img{width:100%;height:85px;background:var(--bg4);display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;font-size:26px;color:var(--text3);overflow:hidden}
+.card-thumb-img img{width:100%;height:100%;object-fit:cover}
+.card-thumb-body{padding:8px}
+.card-thumb-name{font-family:var(--font-head);font-size:10px;letter-spacing:1px;margin-bottom:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card-thumb-stats{font-size:10px;color:var(--text3)}
+.card-thumb-del{position:absolute;top:4px;right:4px;background:rgba(0,0,0,.7);border:none;color:var(--text2);cursor:pointer;border-radius:3px;padding:2px 5px;font-size:11px;opacity:0;transition:opacity .15s}
+.card-thumb:hover .card-thumb-del{opacity:1}
+.card-thumb-del:hover{color:var(--accent2)}
+
+/* MODAL */
+.modal-bg{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.85);z-index:200;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;padding:20px;-webkit-overflow-scrolling:touch}
+.modal{background:var(--bg2);border:1px solid var(--border2);border-radius:12px;padding:28px;width:100%;max-width:540px;max-height:88vh;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.modal-title{font-family:var(--font-head);font-size:15px;letter-spacing:2px;color:var(--accent);margin-bottom:20px}
+.modal-actions{display:-webkit-flex;display:flex;-webkit-justify-content:flex-end;justify-content:flex-end;gap:10px;margin-top:20px;padding-top:16px;border-top:1px solid var(--border)}
+
+/* STAT ROWS IN CARD EDITOR */
+.stat-row{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;gap:10px;margin-bottom:10px}
+.stat-label{font-size:11px;color:var(--text2);width:110px;-webkit-flex-shrink:0;flex-shrink:0;font-family:var(--font-head);letter-spacing:1px}
+.stat-range{-webkit-flex:1;flex:1;-webkit-appearance:none;appearance:none;height:4px;border-radius:2px;background:var(--bg3);outline:none;cursor:pointer}
+.stat-range::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--accent);cursor:pointer}
+.stat-num-input{width:58px;background:var(--bg3);border:1px solid var(--border2);border-radius:5px;padding:5px 6px;color:var(--accent3);font-family:var(--font-head);font-size:12px;outline:none;text-align:center;-webkit-flex-shrink:0;flex-shrink:0;-webkit-appearance:none}
+.stat-max-label{font-size:10px;color:var(--text3);-webkit-flex-shrink:0;flex-shrink:0;font-family:var(--font-head)}
+
+/* IMAGE UPLOAD */
+.img-upload{border:2px dashed var(--border2);border-radius:8px;padding:16px;text-align:center;cursor:pointer;transition:border .2s;margin-bottom:16px}
+.img-upload:hover{border-color:var(--accent)}
+.img-upload img{max-width:100%;max-height:110px;border-radius:6px;margin-bottom:6px;display:block;margin-left:auto;margin-right:auto}
+.img-upload-label{font-size:12px;color:var(--text2)}
+
+/* PRINT / TEMPLATES */
+.template-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px}
+.template-opt{border:2px solid var(--border);border-radius:8px;padding:10px;cursor:pointer;transition:border .2s;text-align:center}
+.template-opt.active{border-color:var(--accent)}
+.template-thumb{height:54px;border-radius:5px;margin-bottom:6px;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;font-family:var(--font-head);font-size:9px;letter-spacing:1px;color:rgba(255,255,255,.7)}
+.template-name{font-size:11px;font-family:var(--font-head);letter-spacing:1px;color:var(--text2)}
+.template-opt.active .template-name{color:var(--accent)}
+.print-preview-wrap{background:var(--bg3);border-radius:10px;padding:20px;margin-bottom:20px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.cards-print-grid{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;gap:12px}
+
+/* ── STAT WARS CARD ── */
+.sw-card{width:var(--card-w);height:var(--card-h);border-radius:10px;overflow:hidden;-webkit-flex-shrink:0;flex-shrink:0;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column}
+.card-img-wrap{height:110px;overflow:hidden;position:relative;-webkit-flex-shrink:0;flex-shrink:0}
+.card-img-wrap img{width:100%;height:100%;object-fit:cover}
+.card-img-wrap .no-img{width:100%;height:100%;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;font-size:36px;background:rgba(255,255,255,.05)}
+.card-header{padding:6px 8px;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:space-between;justify-content:space-between;-webkit-flex-shrink:0;flex-shrink:0}
+.card-deck-name{font-family:var(--font-head);font-size:7px;letter-spacing:1px;opacity:.7;color:#fff}
+.card-title-bar{padding:5px 8px 3px;-webkit-flex-shrink:0;flex-shrink:0}
+.card-title-text{font-family:var(--font-head);font-size:10px;font-weight:700;letter-spacing:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card-stats{padding:2px 8px;-webkit-flex:1;flex:1;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-justify-content:space-evenly;justify-content:space-evenly}
+.card-stat-row{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:space-between;justify-content:space-between;margin-bottom:1px}
+.cat-name{font-size:7.5px;letter-spacing:.3px;opacity:.85;text-transform:uppercase}
+.cat-val{font-family:var(--font-head);font-size:11px;font-weight:700}
+.cat-max{font-family:var(--font-head);font-size:7px;opacity:.5;margin-left:1px}
+.card-bar-wrap{height:2px;background:rgba(255,255,255,.1);border-radius:2px;margin-bottom:2px;overflow:hidden}
+.card-bar{height:2px;border-radius:2px}
+.card-footer{padding:3px 8px;border-top:1px solid rgba(255,255,255,.05);display:-webkit-flex;display:flex;-webkit-justify-content:flex-end;justify-content:flex-end;-webkit-flex-shrink:0;flex-shrink:0}
+.card-num{font-family:var(--font-head);font-size:7px;opacity:.4;letter-spacing:1px}
+/* Templates */
+.sw-card.tmpl-galactic{background:linear-gradient(170deg,#0d1b3e,#1a0a2e);border:2px solid #2a3a6e}
+.sw-card.tmpl-galactic .card-header{background:linear-gradient(90deg,#1f3a8a,#2a1a6e);border-bottom:1px solid rgba(100,150,255,.3)}
+.sw-card.tmpl-galactic .cat-name{color:#a0b8ff}.sw-card.tmpl-galactic .cat-val{color:#ffd700}.sw-card.tmpl-galactic .card-title-text{color:#fff}.sw-card.tmpl-galactic .card-bar{background:linear-gradient(90deg,#1f3a8a,#4a6adf)}
+.sw-card.tmpl-empire{background:#1a1a1a;border:2px solid #cc0000}
+.sw-card.tmpl-empire .card-header{background:#cc0000}
+.sw-card.tmpl-empire .cat-name{color:#ccc}.sw-card.tmpl-empire .cat-val{color:#ff4444}.sw-card.tmpl-empire .card-title-text{color:#fff}.sw-card.tmpl-empire .card-bar{background:linear-gradient(90deg,#800000,#cc0000)}
+.sw-card.tmpl-rebel{background:linear-gradient(170deg,#1a2a0a,#0a1a0a);border:2px solid #4a8a20}
+.sw-card.tmpl-rebel .card-header{background:linear-gradient(90deg,#2a4a0a,#1a3a08);border-bottom:1px solid rgba(80,180,40,.3)}
+.sw-card.tmpl-rebel .cat-name{color:#90c870}.sw-card.tmpl-rebel .cat-val{color:#aaff55}.sw-card.tmpl-rebel .card-title-text{color:#e0ffc8}.sw-card.tmpl-rebel .card-bar{background:linear-gradient(90deg,#2a6010,#5aaa20)}
+.sw-card.tmpl-chrome{background:linear-gradient(170deg,#1a1a2a,#0f0f1f);border:2px solid var(--accent3)}
+.sw-card.tmpl-chrome .card-header{background:rgba(58,240,200,.1);border-bottom:1px solid rgba(58,240,200,.3)}
+.sw-card.tmpl-chrome .cat-name{color:var(--text2)}.sw-card.tmpl-chrome .cat-val{color:var(--accent3)}.sw-card.tmpl-chrome .card-title-text{color:var(--accent3)}.sw-card.tmpl-chrome .card-bar{background:linear-gradient(90deg,rgba(58,240,200,.2),rgba(58,240,200,.5))}
+
+/* MISC */
+.badge{display:inline-flex;-webkit-align-items:center;align-items:center;padding:2px 8px;border-radius:3px;font-size:10px;font-family:var(--font-head);letter-spacing:1px}
+.badge-yellow{background:rgba(247,201,72,.1);color:var(--accent);border:1px solid rgba(247,201,72,.2)}
+.tabs{display:-webkit-flex;display:flex;margin-bottom:20px;border:1px solid var(--border);border-radius:6px;overflow:hidden;width:-webkit-fit-content;width:fit-content}
+.tab-btn{padding:9px 16px;background:transparent;border:none;color:var(--text2);font-family:var(--font-head);font-size:11px;cursor:pointer;letter-spacing:1px;transition:all .2s}
+.tab-btn.active{background:rgba(247,201,72,.1);color:var(--accent)}
+.info-box{background:rgba(58,240,200,.05);border:1px solid rgba(58,240,200,.15);border-radius:8px;padding:12px 16px;font-size:13px;color:var(--text2);margin-bottom:20px}
+.info-box strong{color:var(--accent3)}
+.empty{text-align:center;padding:60px 20px;color:var(--text3)}
+.empty-icon{font-size:48px;margin-bottom:16px;opacity:.4}
+.empty-text{font-size:14px;margin-bottom:4px;font-family:var(--font-head);letter-spacing:1px}
+.empty-sub{font-size:12px;margin-bottom:20px}
+.step-num{display:inline-flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--accent);color:#0a0b0f;font-family:var(--font-head);font-size:11px;font-weight:700;-webkit-flex-shrink:0;flex-shrink:0}
+hr{border:none;border-top:1px solid var(--border);margin:16px 0}
+.saving-indicator{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--bg3);border:1px solid var(--accent);border-radius:20px;padding:8px 20px;font-family:var(--font-head);font-size:11px;color:var(--accent);letter-spacing:1px;z-index:300;display:none;-webkit-align-items:center;align-items:center;gap:8px}
+.saving-indicator.show{display:-webkit-flex;display:flex}
+.spinner{width:12px;height:12px;border:2px solid rgba(247,201,72,.3);border-top-color:var(--accent);border-radius:50%;-webkit-animation:spin .8s linear infinite;animation:spin .8s linear infinite}
+@keyframes spin{to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+@-webkit-keyframes spin{to{-webkit-transform:rotate(360deg)}}
+.toast{position:fixed;bottom:24px;right:24px;background:var(--bg3);border:1px solid var(--accent3);border-radius:8px;padding:12px 20px;font-size:13px;color:var(--accent3);z-index:500;font-family:var(--font-head);letter-spacing:1px;-webkit-animation:slideUp .3s ease;animation:slideUp .3s ease}
+@keyframes slideUp{from{-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0}to{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+/* MOBILE */
+@media (max-width:600px){
+  nav{padding:10px 14px}.nav-user{display:none}
+  .main{-webkit-flex-direction:column;flex-direction:column}
+  .sidebar{width:100%;border-right:none;border-bottom:1px solid var(--border);padding:8px 0;display:-webkit-flex;display:flex;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .sidebar-section{display:-webkit-flex;display:flex;-webkit-flex-direction:row;flex-direction:row;padding:0 8px;margin-bottom:0;gap:4px}
+  .sidebar-label{display:none}
+  .sidebar-item{white-space:nowrap;margin-bottom:0;padding:7px 10px;font-size:12px}
+  .sidebar-item.active{border-left:none;border-bottom:2px solid var(--accent)}
+  .content{padding:14px}
+  .deck-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .deck-card{padding:12px}
+  .login-box{padding:28px 18px}
+  .modal{padding:18px}
+  .template-grid{grid-template-columns:1fr 1fr}
+  .cat-row{grid-template-columns:1fr 65px 28px 28px}
+}
+
+/* PRINT */
+@media print{
+  .no-print{display:none!important}
+  .stars,.sidebar,nav,.saving-indicator{display:none!important}
+  .main,.content{display:block;padding:0}
+  body{background:#fff;color:#000}
+  .sw-card{break-inside:avoid}
+  .cards-print-grid{display:flex;flex-wrap:wrap;gap:8px}
+  @page{margin:15mm}
+}
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-track{background:var(--bg2)}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+</style>
+</head>
+<body>
+<div class="stars"></div>
+<div class="app" id="app"></div>
+<div id="toast-container"></div>
+<div class="saving-indicator" id="saving-indicator">
+  <div class="spinner"></div>
+  <span id="saving-text">SAVING…</span>
+</div>
+
+<script>
+// ── HELPERS ──────────────────────────────────────────────────
+const $ = id => document.getElementById(id);
+const el = (tag, props={}, ...children) => {
+  const e = document.createElement(tag);
+  Object.entries(props).forEach(([k,v]) => {
+    if(k==='html') e.innerHTML=v;
+    else if(k==='style'&&typeof v==='object') Object.assign(e.style,v);
+    else if(k.startsWith('on')) e[k]=v;
+    else e.setAttribute(k,v);
+  });
+  children.flat().forEach(c => c && e.appendChild(typeof c==='string'?document.createTextNode(c):c));
+  return e;
+};
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
+function toast(msg,col='var(--accent3)'){
+  const t=el('div',{class:'toast'},msg);
+  t.style.color=col;t.style.borderColor=col;
+  $('toast-container').appendChild(t);
+  setTimeout(()=>t&&t.remove(),3000);
+}
+function showSaving(msg='SAVING…'){
+  $('saving-text').textContent=msg;
+  $('saving-indicator').classList.add('show');
+}
+function hideSaving(){$('saving-indicator').classList.remove('show')}
+
+// ── GITHUB API ───────────────────────────────────────────────
+const GH_BASE = 'https://api.github.com';
+
+function ghHeaders(write=false){
+  const h = {'Content-Type':'application/json'};
+  if(write || SW_CONFIG.pat) h['Authorization']='token '+SW_CONFIG.pat;
+  return h;
+}
+
+// Build path within repo: subfolder/data/...
+function dataPath(relativePath){
+  return SW_CONFIG.subfolder+'/data/'+relativePath;
+}
+
+// Raw content URL (no auth needed for public repos)
+function rawUrl(relativePath){
+  return `https://raw.githubusercontent.com/${SW_CONFIG.owner}/${SW_CONFIG.repo}/${SW_CONFIG.branch}/${dataPath(relativePath)}?cb=${Date.now()}`;
+}
+
+async function ghGet(relativePath){
+  const res = await fetch(rawUrl(relativePath));
+  if(!res.ok) throw new Error('Not found: '+relativePath);
+  return res.json();
+}
+
+// Get a file's current SHA (needed to update it via API)
+async function ghGetSHA(relativePath){
+  const res = await fetch(
+    `${GH_BASE}/repos/${SW_CONFIG.owner}/${SW_CONFIG.repo}/contents/${dataPath(relativePath)}`,
+    {headers: ghHeaders(true)}
+  );
+  if(res.status===404) return null; // new file
+  const data = await res.json();
+  return data.sha || null;
+}
+
+async function ghPut(relativePath, content, commitMsg){
+  const sha = await ghGetSHA(relativePath);
+  const body = {
+    message: commitMsg,
+    content: btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2)))),
+    branch: SW_CONFIG.branch,
+  };
+  if(sha) body.sha = sha;
+  const res = await fetch(
+    `${GH_BASE}/repos/${SW_CONFIG.owner}/${SW_CONFIG.repo}/contents/${dataPath(relativePath)}`,
+    {method:'PUT', headers:ghHeaders(true), body:JSON.stringify(body)}
+  );
+  if(!res.ok){
+    const err = await res.json().catch(()=>({}));
+    throw new Error(err.message||'GitHub write failed');
+  }
+  return res.json();
+}
+
+async function ghDelete(relativePath, commitMsg){
+  const sha = await ghGetSHA(relativePath);
+  if(!sha) return; // already gone
+  const res = await fetch(
+    `${GH_BASE}/repos/${SW_CONFIG.owner}/${SW_CONFIG.repo}/contents/${dataPath(relativePath)}`,
+    {method:'DELETE', headers:ghHeaders(true), body:JSON.stringify({
+      message: commitMsg, sha, branch: SW_CONFIG.branch
+    })}
+  );
+  if(!res.ok) throw new Error('GitHub delete failed');
+}
+
+// ── STATE ─────────────────────────────────────────────────────
+let state = {
+  currentUser: null,
+  authMode: 'login',
+  // all deck metadata (from index.json)
+  deckIndex: [],    // [{id, name, description, owner, template, categoryCount, cardCount, updatedAt}]
+  // the currently loaded full deck object
+  activeDeck: null,
+  view: 'decks',   // decks | editor | print | howto
+  editCardId: null,
+  modal: null,      // null | 'newdeck' | 'editdeck' | 'card'
+  loading: false,
+  editorTab: 'categories',
+};
+
+// ── BOOTSTRAP ─────────────────────────────────────────────────
+async function boot(){
+  renderApp(); // show login screen immediately
+}
+
+// ── RENDER ROOT ───────────────────────────────────────────────
+function renderApp(){
+  const app=$('app');
+  app.innerHTML='';
+  if(!state.currentUser){ renderLogin(app); return; }
+  app.appendChild(renderNav());
+  const main=el('div',{class:'main'});
+  main.appendChild(renderSidebar());
+  const content=el('div',{class:'content'});
+  if(state.loading){
+    content.appendChild(renderSpinner('Loading…'));
+  } else if(state.view==='decks') content.appendChild(renderDecks());
+  else if(state.view==='editor') content.appendChild(renderEditor());
+  else if(state.view==='print') content.appendChild(renderPrint());
+  else if(state.view==='howto') content.appendChild(renderHowTo());
+  main.appendChild(content);
+  app.appendChild(main);
+  if(state.modal) app.appendChild(renderModal());
+}
+
+function renderSpinner(msg=''){
+  const w=el('div',{style:{textAlign:'center',padding:'80px 20px',color:'var(--text3)'}});
+  w.appendChild(el('div',{style:{fontSize:'32px',marginBottom:'16px',animation:'spin 1s linear infinite',display:'inline-block'}},'◎'));
+  if(msg) w.appendChild(el('div',{style:{fontFamily:'var(--font-head)',fontSize:'12px',letterSpacing:'2px'}},msg));
+  return w;
+}
+
+// ── AUTH ──────────────────────────────────────────────────────
+function renderLogin(app){
+  app.innerHTML='';
+  const wrap=el('div',{class:'login-wrap'});
+  const box=el('div',{class:'login-box'});
+  box.appendChild(el('div',{class:'login-logo',html:'STAT<span>WARS</span>'}));
+  box.appendChild(el('div',{class:'login-sub'},'Build your ultimate battle deck'));
+  const tabs=el('div',{class:'login-tab'});
+  ['LOGIN','REGISTER'].forEach((t,i)=>{
+    tabs.appendChild(el('button',{class:state.authMode===(i===0?'login':'register')?'active':'',
+      onclick:()=>{state.authMode=i===0?'login':'register';renderApp();}},t));
+  });
+  box.appendChild(tabs);
+  const ef=el('div',{class:'field'});ef.appendChild(el('label',{},'EMAIL'));
+  ef.appendChild(el('input',{type:'email',id:'a-email',placeholder:'commander@statwars.com',autocapitalize:'off',autocorrect:'off'}));
+  box.appendChild(ef);
+  if(state.authMode==='register'){
+    const nf=el('div',{class:'field'});nf.appendChild(el('label',{},'YOUR NAME'));
+    nf.appendChild(el('input',{type:'text',id:'a-name',placeholder:'Commander name'}));
+    box.appendChild(nf);
+  }
+  const pf=el('div',{class:'field'});pf.appendChild(el('label',{},'PASSWORD'));
+  pf.appendChild(el('input',{type:'password',id:'a-pw',placeholder:'••••••••'}));
+  box.appendChild(pf);
+  const loginBtn=el('button',{class:'btn btn-primary',style:{width:'100%',padding:'12px'},onclick:()=>doAuth()},
+    state.authMode==='login'?'ENTER THE BATTLE':'JOIN THE REBELLION');
+  box.appendChild(loginBtn);
+  // Allow Enter key
+  [ef,pf].forEach(f=>f.querySelector('input').addEventListener('keydown',e=>{if(e.key==='Enter')doAuth();}));
+  box.appendChild(el('div',{class:'login-demo',onclick:()=>{
+    ($('a-email')||{value:''}).value='demo@statwars.com';
+    ($('a-pw')||{value:''}).value='demo';
+    doAuth();
+  }},'Use demo account →'));
+  wrap.appendChild(box);app.appendChild(wrap);
+}
+
+async function doAuth(){
+  const email=($('a-email')||{value:''}).value.trim().toLowerCase();
+  const pw=($('a-pw')||{value:''}).value;
+  if(!email||!pw){toast('Fill in all fields','var(--accent2)');return;}
+  showSaving('CHECKING…');
+  try{
+    const users=await ghGet('users.json');
+    if(state.authMode==='login'){
+      const u=users.find(u=>u.email.toLowerCase()===email&&u.password===pw);
+      if(!u){hideSaving();toast('Email or password incorrect','var(--accent2)');return;}
+      state.currentUser=u;
+      hideSaving();
+      await loadDeckIndex();
+    } else {
+      const name=($('a-name')||{value:''}).value.trim();
+      if(!name){hideSaving();toast('Enter your name','var(--accent2)');return;}
+      if(users.find(u=>u.email.toLowerCase()===email)){hideSaving();toast('That email is already registered','var(--accent2)');return;}
+      const newUser={email,password:pw,name};
+      users.push(newUser);
+      showSaving('CREATING ACCOUNT…');
+      await ghPut('users.json',users,'Add user: '+email);
+      state.currentUser=newUser;
+      hideSaving();
+      toast('Account created! Welcome, '+name);
+      await loadDeckIndex();
+    }
+  }catch(e){
+    hideSaving();
+    toast('Could not reach GitHub — check your connection','var(--accent2)');
+    console.error(e);
+  }
+}
+
+// ── DECK INDEX ────────────────────────────────────────────────
+async function loadDeckIndex(){
+  state.loading=true;state.view='decks';renderApp();
+  try{
+    state.deckIndex=await ghGet('decks/index.json');
+  }catch(e){
+    state.deckIndex=[];
+  }
+  state.loading=false;renderApp();
+}
+
+async function saveDeckIndex(){
+  await ghPut('decks/index.json', state.deckIndex, 'Update deck index');
+}
+
+// Update the index entry for a deck (without saving the full deck)
+function updateIndexEntry(deck){
+  const entry={
+    id:deck.id, name:deck.name, description:deck.description||'',
+    owner:deck.owner, template:deck.template||'galactic',
+    categoryCount:deck.categories.length, cardCount:deck.cards.length,
+    updatedAt:Date.now()
+  };
+  const idx=state.deckIndex.findIndex(d=>d.id===deck.id);
+  if(idx>=0) state.deckIndex[idx]=entry;
+  else state.deckIndex.push(entry);
+}
+
+// ── FULL DECK LOAD/SAVE ───────────────────────────────────────
+async function loadFullDeck(deckId){
+  state.loading=true;renderApp();
+  try{
+    const deck=await ghGet('decks/'+deckId+'.json');
+    // migrate old string categories
+    deck.categories=(deck.categories||[]).map(c=>
+      typeof c==='string'?{name:c,maxVal:100}:{...c,maxVal:c.maxVal||100}
+    );
+    state.activeDeck=deck;
+  }catch(e){
+    toast('Could not load deck','var(--accent2)');
+    state.activeDeck=null;
+  }
+  state.loading=false;renderApp();
+}
+
+async function saveFullDeck(msg){
+  const deck=state.activeDeck;
+  if(!deck) return;
+  showSaving('SAVING…');
+  try{
+    updateIndexEntry(deck);
+    await Promise.all([
+      ghPut('decks/'+deck.id+'.json', deck, msg||'Update deck: '+deck.name),
+      ghPut('decks/index.json', state.deckIndex, 'Update index for: '+deck.name),
+    ]);
+    hideSaving();
+  }catch(e){
+    hideSaving();
+    toast('Save failed: '+e.message,'var(--accent2)');
+    console.error(e);
+  }
+}
+
+// ── NAV ───────────────────────────────────────────────────────
+function renderNav(){
+  const n=el('nav');
+  n.appendChild(el('div',{class:'nav-logo',html:'STAT<span>WARS</span>'}));
+  const r=el('div',{class:'nav-right'});
+  r.appendChild(el('div',{class:'nav-user'},'⚡ '+state.currentUser.name));
+  r.appendChild(el('button',{class:'btn btn-outline btn-sm',onclick:()=>{
+    state.currentUser=null;state.activeDeck=null;state.deckIndex=[];state.view='decks';renderApp();
+  }},'LOGOUT'));
+  n.appendChild(r);
+  return n;
+}
+
+// ── SIDEBAR ───────────────────────────────────────────────────
+function renderSidebar(){
+  const s=el('div',{class:'sidebar no-print'});
+  const noActive=!state.activeDeck;
+  const items=[
+    {icon:'◈',label:'ALL DECKS',view:'decks'},
+    {icon:'◉',label:'EDITOR',view:'editor',disabled:noActive},
+    {icon:'◎',label:'PRINT',view:'print',disabled:noActive},
+    {icon:'◇',label:'HOW TO',view:'howto'},
+  ];
+  const sec=el('div',{class:'sidebar-section'});
+  sec.appendChild(el('div',{class:'sidebar-label'},'NAVIGATE'));
+  items.forEach(item=>{
+    const d=el('div',{class:'sidebar-item'+(state.view===item.view?' active':'')+(item.disabled?' disabled':'')});
+    d.appendChild(el('span',{class:'sidebar-icon'},item.icon));
+    d.appendChild(el('span',{},item.label));
+    d.onclick=()=>{if(!item.disabled){state.view=item.view;renderApp();}};
+    sec.appendChild(d);
+  });
+  s.appendChild(sec);
+  if(state.activeDeck){
+    s.appendChild(el('hr'));
+    const dsec=el('div',{class:'sidebar-section'});
+    dsec.appendChild(el('div',{class:'sidebar-label'},'ACTIVE'));
+    const di=el('div',{style:{padding:'8px',background:'rgba(247,201,72,.06)',borderRadius:'6px',margin:'0 8px'}});
+    di.appendChild(el('div',{style:{fontFamily:'var(--font-head)',fontSize:'11px',color:'var(--accent)',letterSpacing:'1px',marginBottom:'3px',overflow:'hidden',textOverflow:'ellipsis',whiteSpace:'nowrap'}},state.activeDeck.name));
+    di.appendChild(el('div',{style:{fontSize:'11px',color:'var(--text3)'}},state.activeDeck.cards.length+' cards'));
+    dsec.appendChild(di);
+    s.appendChild(dsec);
+  }
+  return s;
+}
+
+// ── DECKS VIEW ────────────────────────────────────────────────
+function renderDecks(){
+  const wrap=el('div');
+  const hdr=el('div',{class:'page-header'});
+  const htxt=el('div');
+  htxt.appendChild(el('div',{class:'page-title'},'ALL DECKS'));
+  htxt.appendChild(el('div',{class:'page-sub'},state.deckIndex.length+' decks in the galaxy'));
+  hdr.appendChild(htxt);
+  hdr.appendChild(el('button',{class:'btn btn-primary',onclick:()=>{state.modal='newdeck';renderApp();}},'+ NEW DECK'));
+  wrap.appendChild(hdr);
+
+  if(state.deckIndex.length===0){
+    wrap.appendChild(el('div',{class:'info-box',html:'<strong>No decks yet, Commander.</strong> Create the first one — it will be visible to everyone with access to this app.'}));
+  }
+
+  const grid=el('div',{class:'deck-grid'});
+  // Sort: user's own decks first, then others
+  const sorted=[...state.deckIndex].sort((a,b)=>{
+    const aOwn=a.owner===state.currentUser.email?0:1;
+    const bOwn=b.owner===state.currentUser.email?0:1;
+    return aOwn-bOwn || b.updatedAt-a.updatedAt;
+  });
+
+  sorted.forEach(entry=>{
+    const isOwner=entry.owner===state.currentUser.email;
+    const card=el('div',{class:'deck-card'});
+    card.appendChild(el('div',{class:'deck-card-title'},entry.name));
+    const meta=el('div',{class:'deck-card-meta'});
+    meta.appendChild(el('span',{},'🃏 '+entry.cardCount+' cards'));
+    meta.appendChild(el('span',{},'📊 '+entry.categoryCount+' stats'));
+    card.appendChild(meta);
+    card.appendChild(el('div',{class:'deck-card-owner'},isOwner?'👤 Your deck':'👤 '+entry.owner.split('@')[0]));
+    if(entry.description) card.appendChild(el('div',{style:{fontSize:'12px',color:'var(--text3)',marginBottom:'10px',fontStyle:'italic'}},entry.description));
+    const acts=el('div',{class:'deck-card-actions'});
+    acts.appendChild(el('button',{class:'btn btn-outline btn-sm',onclick:()=>openDeck(entry.id,'editor')},'OPEN'));
+    acts.appendChild(el('button',{class:'btn btn-ghost btn-sm',onclick:()=>openDeck(entry.id,'print')},'PRINT'));
+    if(isOwner){
+      acts.appendChild(el('button',{class:'btn btn-danger btn-sm',onclick:()=>deleteDeck(entry)},'DEL'));
+    }
+    card.appendChild(acts);
+    grid.appendChild(card);
+  });
+
+  const newCard=el('div',{class:'new-deck-card',onclick:()=>{state.modal='newdeck';renderApp();}});
+  newCard.appendChild(el('div',{class:'new-deck-icon'},'✦'));
+  newCard.appendChild(el('div',{class:'new-deck-label'},'CREATE DECK'));
+  grid.appendChild(newCard);
+  wrap.appendChild(grid);
+  return wrap;
+}
+
+async function openDeck(deckId, view){
+  await loadFullDeck(deckId);
+  if(state.activeDeck){state.view=view||'editor';state.editorTab='categories';renderApp();}
+}
+
+async function deleteDeck(entry){
+  if(!confirm('Delete "'+entry.name+'"? This cannot be undone.')) return;
+  showSaving('DELETING…');
+  try{
+    await ghDelete('decks/'+entry.id+'.json','Delete deck: '+entry.name);
+    state.deckIndex=state.deckIndex.filter(d=>d.id!==entry.id);
+    await saveDeckIndex();
+    if(state.activeDeck&&state.activeDeck.id===entry.id) state.activeDeck=null;
+    hideSaving();
+    toast('Deck deleted');
+    renderApp();
+  }catch(e){
+    hideSaving();
+    toast('Delete failed: '+e.message,'var(--accent2)');
+  }
+}
+
+// ── EDITOR VIEW ───────────────────────────────────────────────
+function renderEditor(){
+  const deck=state.activeDeck;
+  if(!deck) return renderNoDeck();
+  const wrap=el('div');
+  const hdr=el('div',{class:'page-header'});
+  const htxt=el('div');
+  const titleRow=el('div',{style:{display:'-webkit-flex',display:'flex',alignItems:'center',gap:'10px'}});
+  titleRow.appendChild(el('div',{class:'page-title'},deck.name.toUpperCase()));
+  titleRow.appendChild(el('button',{class:'btn btn-ghost btn-sm',onclick:()=>{state.modal='editdeck';renderApp();}},'✎ RENAME'));
+  htxt.appendChild(titleRow);
+  htxt.appendChild(el('div',{class:'page-sub'},deck.cards.length+' cards · '+deck.categories.length+' stats'));
+  hdr.appendChild(htxt);
+  hdr.appendChild(el('button',{class:'btn btn-primary',onclick:()=>{
+    if(deck.categories.length===0){toast('Add stat categories first!','var(--accent2)');return;}
+    state.modal='card';state.editCardId='new';renderApp();
+  }},'+ADD CARD'));
+  wrap.appendChild(hdr);
+  const tabs=el('div',{class:'tabs'});
+  ['CATEGORIES','CARDS'].forEach(t=>{
+    tabs.appendChild(el('button',{class:'tab-btn'+(state.editorTab===t.toLowerCase()?' active':''),
+      onclick:()=>{state.editorTab=t.toLowerCase();renderApp();}},t));
+  });
+  wrap.appendChild(tabs);
+
+  if(state.editorTab==='categories'){
+    const panel=el('div',{class:'panel'});
+    panel.appendChild(el('div',{class:'panel-title'},'STAT CATEGORIES'));
+    panel.appendChild(el('div',{style:{fontSize:'12px',color:'var(--text2)',marginBottom:'12px'}},'Up to 6 stats per card. Set Max Value to control the bar fill (e.g. max 1000 km/h, value 750 = 75% bar).'));
+    const colHdr=el('div',{class:'cat-col-headers'});
+    ['STAT NAME','MAX VAL','',''].forEach(l=>colHdr.appendChild(el('div',{class:'cat-col-label'},l)));
+    panel.appendChild(colHdr);
+    deck.categories.forEach((cat,i)=>{
+      const row=el('div',{class:'cat-row'});
+      row.appendChild(el('input',{class:'cat-input',value:cat.name,placeholder:'e.g. Speed',oninput:(e)=>{deck.categories[i].name=e.target.value;}}));
+      row.appendChild(el('input',{class:'cat-max-input',type:'number',min:'1',value:cat.maxVal||100,oninput:(e)=>{deck.categories[i].maxVal=parseInt(e.target.value)||100;}}));
+      row.appendChild(el('span',{class:'cat-badge'},'#'+(i+1)));
+      row.appendChild(el('button',{class:'del-btn',title:'Remove',onclick:()=>{
+        deck.categories.splice(i,1);
+        deck.cards.forEach(c=>{c.stats.splice(i,1);});
+        renderApp();
+      }},'✕'));
+      panel.appendChild(row);
+    });
+    if(deck.categories.length<6){
+      panel.appendChild(el('button',{class:'btn btn-ghost',style:{marginTop:'10px'},onclick:()=>{
+        deck.categories.push({name:'New Stat',maxVal:100});renderApp();
+      }},'+ ADD CATEGORY'));
+    }
+    wrap.appendChild(panel);
+    wrap.appendChild(el('button',{class:'btn btn-primary',onclick:()=>saveFullDeck('Update categories for: '+deck.name)},'💾 SAVE CATEGORIES'));
+  } else {
+    // CARDS tab
+    if(deck.cards.length===0){
+      const empty=el('div',{class:'empty'});
+      empty.appendChild(el('div',{class:'empty-icon'},'🃏'));
+      empty.appendChild(el('div',{class:'empty-text'},'NO CARDS YET'));
+      empty.appendChild(el('div',{class:'empty-sub'},'Define your stat categories first, then add cards'));
+      if(deck.categories.length>0) empty.appendChild(el('button',{class:'btn btn-primary',onclick:()=>{state.modal='card';state.editCardId='new';renderApp();}},'+ ADD FIRST CARD'));
+      wrap.appendChild(empty);
+    } else {
+      const grid=el('div',{class:'card-list'});
+      deck.cards.forEach(card=>{
+        const thumb=el('div',{class:'card-thumb',onclick:()=>{state.modal='card';state.editCardId=card.id;renderApp();}});
+        const imgWrap=el('div',{class:'card-thumb-img'});
+        if(card.image) imgWrap.appendChild(el('img',{src:card.image}));
+        else imgWrap.innerHTML='🪐';
+        thumb.appendChild(imgWrap);
+        const body=el('div',{class:'card-thumb-body'});
+        body.appendChild(el('div',{class:'card-thumb-name'},card.name||'Unnamed'));
+        body.appendChild(el('div',{class:'card-thumb-stats'},card.stats.slice(0,2).map((s,i)=>(deck.categories[i]?.name||'?')+': '+s).join(' · ')));
+        thumb.appendChild(body);
+        const del=el('button',{class:'card-thumb-del',onclick:(e)=>{
+          e.stopPropagation();
+          if(confirm('Delete "'+card.name+'"?')){
+            deck.cards=deck.cards.filter(c=>c.id!==card.id);
+            saveFullDeck('Delete card: '+card.name+' from '+deck.name);
+            renderApp();
+          }
+        }});
+        del.textContent='✕';
+        thumb.appendChild(del);
+        grid.appendChild(thumb);
+      });
+      wrap.appendChild(grid);
+    }
+  }
+  return wrap;
+}
+
+function renderNoDeck(){
+  const w=el('div',{class:'empty'});
+  w.appendChild(el('div',{class:'empty-icon'},'◈'));
+  w.appendChild(el('div',{class:'empty-text'},'NO DECK OPEN'));
+  w.appendChild(el('div',{class:'empty-sub'},'Choose a deck from All Decks'));
+  w.appendChild(el('button',{class:'btn btn-primary',onclick:()=>{state.view='decks';renderApp();}},'VIEW ALL DECKS'));
+  return w;
+}
+
+// ── MODAL ROUTER ─────────────────────────────────────────────
+function renderModal(){
+  if(state.modal==='newdeck') return renderNewDeckModal();
+  if(state.modal==='editdeck') return renderEditDeckModal();
+  if(state.modal==='card') return renderCardModal();
+  return el('div');
+}
+
+function closeModal(){state.modal=null;state.editCardId=null;renderApp();}
+
+function modalShell(title, ...children){
+  const bg=el('div',{class:'modal-bg no-print',onclick:(e)=>{if(e.target===bg)closeModal();}});
+  const m=el('div',{class:'modal'});
+  m.appendChild(el('div',{class:'modal-title'},title));
+  children.forEach(c=>m.appendChild(c));
+  bg.appendChild(m);
+  return bg;
+}
+
+// ── NEW DECK MODAL ────────────────────────────────────────────
+function renderNewDeckModal(){
+  const nameF=el('div',{class:'field'});nameF.appendChild(el('label',{},'DECK NAME'));
+  nameF.appendChild(el('input',{type:'text',id:'nd-name',placeholder:'e.g. Starfighters, Planets…'}));
+  const descF=el('div',{class:'field'});descF.appendChild(el('label',{},'DESCRIPTION (optional)'));
+  descF.appendChild(el('input',{type:'text',id:'nd-desc',placeholder:'What is this deck about?'}));
+  const acts=el('div',{class:'modal-actions'});
+  acts.appendChild(el('button',{class:'btn btn-outline',onclick:closeModal},'CANCEL'));
+  acts.appendChild(el('button',{class:'btn btn-primary',onclick:async()=>{
+    const name=($('nd-name')||{}).value.trim();
+    if(!name){toast('Enter a deck name','var(--accent2)');return;}
+    const deck={
+      id:uid(), name, description:($('nd-desc')||{}).value.trim(),
+      owner:state.currentUser.email, categories:[], cards:[],
+      template:'galactic', createdAt:Date.now()
+    };
+    state.activeDeck=deck;
+    state.modal=null;
+    state.view='editor';
+    state.editorTab='categories';
+    renderApp();
+    // Save to GitHub
+    showSaving('CREATING…');
+    try{
+      updateIndexEntry(deck);
+      await Promise.all([
+        ghPut('decks/'+deck.id+'.json', deck, 'Create deck: '+deck.name),
+        ghPut('decks/index.json', state.deckIndex, 'Add deck to index: '+deck.name),
+      ]);
+      hideSaving();
+      toast('Deck created!');
+    }catch(e){hideSaving();toast('Save failed: '+e.message,'var(--accent2)');}
+  }},'CREATE'));
+  return modalShell('NEW DECK', nameF, descF, acts);
+}
+
+// ── EDIT DECK MODAL ───────────────────────────────────────────
+function renderEditDeckModal(){
+  const deck=state.activeDeck;
+  if(!deck){closeModal();return el('div');}
+  const nameF=el('div',{class:'field'});nameF.appendChild(el('label',{},'DECK NAME'));
+  nameF.appendChild(el('input',{type:'text',id:'ed-name',value:deck.name}));
+  const descF=el('div',{class:'field'});descF.appendChild(el('label',{},'DESCRIPTION'));
+  descF.appendChild(el('input',{type:'text',id:'ed-desc',value:deck.description||'',placeholder:'Short description…'}));
+  const acts=el('div',{class:'modal-actions'});
+  acts.appendChild(el('button',{class:'btn btn-outline',onclick:closeModal},'CANCEL'));
+  acts.appendChild(el('button',{class:'btn btn-primary',onclick:async()=>{
+    const name=($('ed-name')||{}).value.trim();
+    if(!name){toast('Name cannot be empty','var(--accent2)');return;}
+    deck.name=name;
+    deck.description=($('ed-desc')||{}).value.trim();
+    closeModal();
+    await saveFullDeck('Rename deck to: '+name);
+    renderApp();
+    toast('Deck updated!');
+  }},'SAVE'));
+  return modalShell('EDIT DECK', nameF, descF, acts);
+}
+
+// ── CARD MODAL ────────────────────────────────────────────────
+function renderCardModal(){
+  const deck=state.activeDeck;
+  const isNew=state.editCardId==='new';
+  let card=isNew
+    ?{id:uid(),name:'',image:'',stats:deck.categories.map(c=>Math.round((c.maxVal||100)/2))}
+    :deck.cards.find(c=>c.id===state.editCardId);
+  if(!card){closeModal();return el('div');}
+
+  const nameF=el('div',{class:'field'});nameF.appendChild(el('label',{},'CARD NAME'));
+  nameF.appendChild(el('input',{type:'text',id:'cm-name',value:card.name||'',placeholder:'e.g. Millennium Falcon',oninput:(e)=>{card.name=e.target.value;}}));
+
+  // Image upload
+  const imgWrap=el('div',{class:'img-upload'});
+  const imgInput=el('input',{type:'file',accept:'image/*',style:{display:'none'}});
+  imgInput.onchange=(e)=>{
+    const f=e.target.files[0];if(!f)return;
+    const r=new FileReader();
+    r.onload=(ev)=>{
+      card.image=ev.target.result;
+      imgWrap.innerHTML='';
+      imgWrap.appendChild(el('img',{src:card.image}));
+      imgWrap.appendChild(el('div',{class:'img-upload-label'},'Tap to change'));
+      imgWrap.appendChild(imgInput);
+    };
+    r.readAsDataURL(f);
+  };
+  imgWrap.onclick=()=>imgInput.click();
+  if(card.image){
+    imgWrap.appendChild(el('img',{src:card.image}));
+    imgWrap.appendChild(el('div',{class:'img-upload-label'},'Tap to change'));
+  } else {
+    imgWrap.innerHTML='<div style="font-size:28px;margin-bottom:8px">🖼</div><div class="img-upload-label">Tap to upload image</div>';
+  }
+  imgWrap.appendChild(imgInput);
+
+  const statsLabel=el('div',{style:{fontFamily:'var(--font-head)',fontSize:'11px',letterSpacing:'2px',color:'var(--accent)',marginBottom:'10px'}});
+  statsLabel.textContent='STATS';
+
+  const statsWrap=el('div');
+  deck.categories.forEach((cat,i)=>{
+    const maxVal=cat.maxVal||100;
+    const cur=Math.min(card.stats[i]!==undefined?card.stats[i]:Math.round(maxVal/2),maxVal);
+    card.stats[i]=cur;
+    const row=el('div',{class:'stat-row'});
+    row.appendChild(el('div',{class:'stat-label'},cat.name.toUpperCase()));
+    const numIn=el('input',{type:'number',class:'stat-num-input',min:'0',max:maxVal,value:cur});
+    const range=el('input',{type:'range',min:'0',max:maxVal,value:cur,class:'stat-range'});
+    numIn.oninput=(e)=>{let v=Math.max(0,Math.min(maxVal,parseInt(e.target.value)||0));card.stats[i]=v;numIn.value=v;range.value=v;};
+    range.oninput=(e)=>{card.stats[i]=parseInt(e.target.value);numIn.value=card.stats[i];};
+    row.appendChild(range);row.appendChild(numIn);
+    row.appendChild(el('div',{class:'stat-max-label'},'/'+maxVal));
+    statsWrap.appendChild(row);
+  });
+
+  const acts=el('div',{class:'modal-actions'});
+  acts.appendChild(el('button',{class:'btn btn-outline',onclick:closeModal},'CANCEL'));
+  acts.appendChild(el('button',{class:'btn btn-primary',onclick:async()=>{
+    if(!card.name.trim()){toast('Enter a card name','var(--accent2)');return;}
+    if(isNew) deck.cards.push(card);
+    else{const idx=deck.cards.findIndex(c=>c.id===card.id);deck.cards[idx]=card;}
+    closeModal();
+    state.editorTab='cards';
+    renderApp();
+    await saveFullDeck((isNew?'Add':'Update')+' card: '+card.name+' in '+deck.name);
+    toast(isNew?'Card saved to GitHub!':'Card updated!');
+  }},isNew?'SAVE CARD':'UPDATE CARD'));
+
+  return modalShell(isNew?'ADD NEW CARD':'EDIT CARD', nameF, imgWrap, statsLabel, statsWrap, acts);
+}
+
+// ── PRINT VIEW ────────────────────────────────────────────────
+function renderPrint(){
+  const deck=state.activeDeck;
+  if(!deck) return renderNoDeck();
+  const wrap=el('div');
+  const hdr=el('div',{class:'page-header no-print'});
+  const htxt=el('div');
+  htxt.appendChild(el('div',{class:'page-title'},'PRINT: '+deck.name.toUpperCase()));
+  htxt.appendChild(el('div',{class:'page-sub'},deck.cards.length+' cards'));
+  hdr.appendChild(htxt);
+  const acts=el('div',{class:'btn-group'});
+  acts.appendChild(el('button',{class:'btn btn-outline',onclick:()=>{state.view='editor';renderApp();}},'← BACK'));
+  acts.appendChild(el('button',{class:'btn btn-primary',onclick:()=>doPrint()},'PRINT'));
+  hdr.appendChild(acts);
+  wrap.appendChild(hdr);
+
+  // Template selector
+  const tsel=el('div',{class:'no-print'});
+  tsel.appendChild(el('div',{style:{fontFamily:'var(--font-head)',fontSize:'11px',letterSpacing:'2px',color:'var(--text2)',marginBottom:'12px'}},'CARD TEMPLATE'));
+  const tgrid=el('div',{class:'template-grid'});
+  [{id:'galactic',name:'GALACTIC',bg:'linear-gradient(135deg,#0d1b3e,#1a0a2e)'},
+   {id:'empire',  name:'EMPIRE',  bg:'linear-gradient(135deg,#1a1a1a,#330000)'},
+   {id:'rebel',   name:'REBEL',   bg:'linear-gradient(135deg,#1a2a0a,#0a1a0a)'},
+   {id:'chrome',  name:'CHROME',  bg:'linear-gradient(135deg,#0f0f1f,#1a1a2a)'}
+  ].forEach(t=>{
+    const opt=el('div',{class:'template-opt'+(deck.template===t.id?' active':''),onclick:async()=>{
+      deck.template=t.id;renderApp();
+      await saveFullDeck('Change template for: '+deck.name);
+    }});
+    opt.appendChild(el('div',{class:'template-thumb',style:{background:t.bg}},t.name));
+    opt.appendChild(el('div',{class:'template-name'},t.name));
+    tgrid.appendChild(opt);
+  });
+  tsel.appendChild(tgrid);
+  wrap.appendChild(tsel);
+
+  if(deck.cards.length===0){
+    wrap.appendChild(el('div',{class:'empty',style:{paddingTop:'40px'}},'No cards yet. Add some in the editor!'));
+    return wrap;
+  }
+
+  const preview=el('div',{class:'print-preview-wrap no-print'});
+  preview.appendChild(el('div',{style:{fontSize:'11px',fontFamily:'var(--font-head)',letterSpacing:'2px',color:'var(--text2)',marginBottom:'12px'}},'PREVIEW'));
+  const cg=el('div',{class:'cards-print-grid'});
+  deck.cards.forEach((card,i)=>cg.appendChild(buildCard(card,deck,i+1)));
+  preview.appendChild(cg);
+  wrap.appendChild(preview);
+
+  // Hidden print area
+  const pa=el('div',{id:'print-area',style:{display:'none'}});
+  const cg2=el('div',{class:'cards-print-grid'});
+  deck.cards.forEach((card,i)=>cg2.appendChild(buildCard(card,deck,i+1)));
+  pa.appendChild(cg2);
+  wrap.appendChild(pa);
+  return wrap;
+}
+
+function doPrint(){
+  const pa=$('print-area');
+  if(pa) pa.style.display='block';
+  window.print();
+  setTimeout(()=>{if(pa)pa.style.display='none';},500);
+}
+
+// ── BUILD CARD ────────────────────────────────────────────────
+function buildCard(card,deck,num){
+  const tmpl=deck.template||'galactic';
+  const c=el('div',{class:'sw-card tmpl-'+tmpl});
+  const hdr=el('div',{class:'card-header'});
+  hdr.appendChild(el('div',{class:'card-deck-name'},deck.name.toUpperCase()));
+  hdr.appendChild(el('div',{class:'badge badge-yellow',style:{fontSize:'7px',padding:'1px 5px'}},num.toString().padStart(2,'0')));
+  c.appendChild(hdr);
+  const imgWrap=el('div',{class:'card-img-wrap'});
+  if(card.image) imgWrap.appendChild(el('img',{src:card.image,alt:card.name}));
+  else{const no=el('div',{class:'no-img'});no.textContent='🪐';imgWrap.appendChild(no);}
+  c.appendChild(imgWrap);
+  c.appendChild(el('div',{class:'card-title-bar'},el('div',{class:'card-title-text'},card.name||'Unknown')));
+  const stats=el('div',{class:'card-stats'});
+  deck.categories.forEach((cat,i)=>{
+    const val=card.stats[i]!==undefined?card.stats[i]:0;
+    const maxVal=cat.maxVal||100;
+    const barPct=Math.min(100,Math.max(0,Math.round((val/maxVal)*100)));
+    const row=el('div',{class:'card-stat-row'});
+    row.appendChild(el('div',{class:'cat-name'},cat.name.toUpperCase()));
+    const vw=el('div',{style:{display:'-webkit-flex',display:'flex',alignItems:'baseline',gap:'1px'}});
+    vw.appendChild(el('div',{class:'cat-val'},val.toString()));
+    vw.appendChild(el('div',{class:'cat-max'},'/'+maxVal));
+    row.appendChild(vw);
+    stats.appendChild(row);
+    const bw=el('div',{class:'card-bar-wrap'});
+    bw.appendChild(el('div',{class:'card-bar',style:{width:barPct+'%'}}));
+    stats.appendChild(bw);
+  });
+  c.appendChild(stats);
+  const footer=el('div',{class:'card-footer'});
+  footer.appendChild(el('div',{class:'card-num'},'STAT WARS © '+new Date().getFullYear()));
+  c.appendChild(footer);
+  return c;
+}
+
+// ── HOW TO ────────────────────────────────────────────────────
+function renderHowTo(){
+  const wrap=el('div');
+  wrap.appendChild(el('div',{class:'page-title',style:{marginBottom:'8px'}},'HOW TO USE'));
+  wrap.appendChild(el('div',{class:'page-sub',style:{marginBottom:'24px'}},'Stat Wars — GitHub-powered deck builder'));
+  [
+    {n:1,title:'Setup (one time)',body:'Edit config.js in your repo: add your GitHub username, repo name, subfolder name, branch, and Personal Access Token. The PAT needs "Contents: Read & Write" permission on your repo. Then push all files and enable GitHub Pages.'},
+    {n:2,title:'Managing Users',body:'Edit data/users.json in your repo to add or remove users. Each user needs an email, password, and name. The demo account is demo@statwars.com / demo — change or remove it once you\'re set up.'},
+    {n:3,title:'Create a Deck',body:'Click + New Deck, give it a name and description. It saves straight to your GitHub repo — every other user will see it immediately. Own your decks; others can open and print but only you can delete yours.'},
+    {n:4,title:'Categories & Cards',body:'Add up to 6 stat categories (e.g. Speed, Power), each with a Max Value. Then add cards — name, picture, and a value for each stat. Each save commits directly to GitHub.'},
+    {n:5,title:'Print',body:'Open any deck, go to Print, pick a template (Galactic, Empire, Rebel, Chrome) and hit Print. Set Portrait orientation and disable headers/footers in your browser dialog. Cut out the cards and play!'},
+  ].forEach(step=>{
+    const box=el('div',{class:'panel',style:{display:'-webkit-flex',display:'flex',gap:'14px',alignItems:'flex-start',marginBottom:'12px'}});
+    box.appendChild(el('div',{class:'step-num'},step.n.toString()));
+    const txt=el('div');
+    txt.appendChild(el('div',{style:{fontFamily:'var(--font-head)',fontSize:'12px',letterSpacing:'1px',marginBottom:'6px',color:'var(--accent)'}},step.title.toUpperCase()));
+    txt.appendChild(el('div',{style:{fontSize:'14px',color:'var(--text2)',lineHeight:'1.6'}},step.body));
+    box.appendChild(txt);wrap.appendChild(box);
+  });
+  wrap.appendChild(el('div',{class:'info-box',style:{marginTop:'16px'},html:'<strong>Game Rules:</strong> Deal all cards equally. Player 1 picks a stat from their top card — highest value wins all top cards from other players. Ties go to a pot, won by the next round winner. First to collect all cards wins!'}));
+  return wrap;
+}
+
+// ── START ─────────────────────────────────────────────────────
+boot();
+</script>
+</body>
+</html>
