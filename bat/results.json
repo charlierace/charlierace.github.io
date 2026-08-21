@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-08-21 08:16 UTC",
-  "last_run_iso": "2026-08-21T08:16:35.314998+00:00",
+  "last_run": "2026-08-21 14:27 UTC",
+  "last_run_iso": "2026-08-21T14:27:37.601527+00:00",
   "window_hours": 336,
   "error": null,
   "listings": [
@@ -29,7 +29,7 @@
       "year": "1992",
       "make": "Porsche",
       "model": "911 Carrera RS",
-      "current_bid": "180,000",
+      "current_bid": "202,911",
       "ends": "2026-08-21T17:05:00+00:00",
       "title_place": "South Dakota",
       "url": "https://bringatrailer.com/listing/1992-porsche-911-carrera-rs-50/"
@@ -49,7 +49,7 @@
       "year": "2009",
       "make": "Mercedes-Benz",
       "model": "SL63 AMG",
-      "current_bid": "32,000",
+      "current_bid": "33,000",
       "ends": "2026-08-21T17:28:00+00:00",
       "title_place": "Pennsylvania",
       "url": "https://bringatrailer.com/listing/2009-mercedes-benz-sl63-amg-18-3/"
@@ -59,7 +59,7 @@
       "year": "1962",
       "make": "Chevrolet",
       "model": "Corvair 95 Loadside Pickup 4-Speed",
-      "current_bid": "10,750",
+      "current_bid": "12,000",
       "ends": "2026-08-21T17:29:00+00:00",
       "title_place": "Florida",
       "url": "https://bringatrailer.com/listing/1962-chevrolet-corvair-95-pickup-4/"
@@ -69,7 +69,7 @@
       "year": "1970",
       "make": "BMW",
       "model": "2002 4-Speed",
-      "current_bid": "3,500",
+      "current_bid": "3,700",
       "ends": "2026-08-21T17:30:00+00:00",
       "title_place": null,
       "url": "https://bringatrailer.com/listing/1970-bmw-2002-39/"
@@ -79,7 +79,7 @@
       "year": "1979",
       "make": "Ford",
       "model": "F-250\u2013Bodied 2007 Ford F-250 Super Duty Powerstroke 4&#215;4",
-      "current_bid": "30,250",
+      "current_bid": "31,000",
       "ends": "2026-08-21T17:31:00+00:00",
       "title_place": "Idaho",
       "url": "https://bringatrailer.com/listing/1979-ford-f-250-87/"
@@ -119,7 +119,7 @@
       "year": "1987",
       "make": "Porsche",
       "model": "911 Carrera Coupe G50",
-      "current_bid": "47,500",
+      "current_bid": "50,000",
       "ends": "2026-08-21T17:36:00+00:00",
       "title_place": "Idaho",
       "url": "https://bringatrailer.com/listing/1987-porsche-911-carrera-coupe-120/"
@@ -139,7 +139,7 @@
       "year": "1967",
       "make": "Chevrolet",
       "model": "Chevelle 300 Deluxe 2-Door Station Wagon Conversion",
-      "current_bid": "23,250",
+      "current_bid": "23,750",
       "ends": "2026-08-21T17:38:00+00:00",
       "title_place": "Wisconsin",
       "url": "https://bringatrailer.com/listing/1967-chevrolet-chevelle-300-5/"
@@ -149,7 +149,7 @@
       "year": "2002",
       "make": "Jeep",
       "model": "Wrangler Apex Edition 4.0 5-Speed",
-      "current_bid": "4,000",
+      "current_bid": "4,700",
       "ends": "2026-08-21T17:39:00+00:00",
       "title_place": "New Jersey",
       "url": "https://bringatrailer.com/listing/2002-jeep-wrangler-101/"
@@ -169,7 +169,7 @@
       "year": "1969",
       "make": "Chevrolet",
       "model": "Camaro Z/28 4-Speed",
-      "current_bid": "70,100",
+      "current_bid": "71,000",
       "ends": "2026-08-21T17:41:00+00:00",
       "title_place": "Wisconsin",
       "url": "https://bringatrailer.com/listing/1969-chevrolet-camaro-z-28-298/"
@@ -179,7 +179,7 @@
       "year": "1995",
       "make": "Ford",
       "model": "F-350 XLT Power Stroke 4\u00d74 5-Speed",
-      "current_bid": "20,500",
+      "current_bid": "23,000",
       "ends": "2026-08-21T17:42:00+00:00",
       "title_place": "Washington",
       "url": "https://bringatrailer.com/listing/1995-ford-f-350-116/"
@@ -249,7 +249,7 @@
       "year": "1997",
       "make": "Suzuki",
       "model": "X-90 4&#215;4 5-Speed",
-      "current_bid": "3,250",
+      "current_bid": "3,350",
       "ends": "2026-08-21T17:50:00+00:00",
       "title_place": "Montana",
       "url": "https://bringatrailer.com/listing/1997-suzuki-x-90-3/"
@@ -279,7 +279,7 @@
       "year": "1990",
       "make": "Volkswagen",
       "model": "Vanagon 4-Speed",
-      "current_bid": "6,100",
+      "current_bid": "6,500",
       "ends": "2026-08-21T17:53:00+00:00",
       "title_place": "Florida",
       "url": "https://bringatrailer.com/listing/1990-volkswagen-vanagon-39/"
@@ -289,7 +289,7 @@
       "year": "2018",
       "make": "Volvo",
       "model": "S60 Polestar",
-      "current_bid": "15,555",
+      "current_bid": "16,690",
       "ends": "2026-08-21T17:54:00+00:00",
       "title_place": "Idaho",
       "url": "https://bringatrailer.com/listing/2018-volvo-s60-polestar-3/"
@@ -339,7 +339,7 @@
       "year": "2003",
       "make": "Harley-Davidson",
       "model": "Electra Glide Ultra Classic 100th Anniversary Edition w/Born Free Trailer",
-      "current_bid": "3,000",
+      "current_bid": "4,000",
       "ends": "2026-08-21T17:59:00+00:00",
       "title_place": null,
       "url": "https://bringatrailer.com/listing/2003-harley-davidson-electra-glide-6/"
@@ -379,7 +379,7 @@
       "year": "2003",
       "make": "BMW",
       "model": "M3 Convertible 6-Speed",
-      "current_bid": "23,500",
+      "current_bid": "25,000",
       "ends": "2026-08-21T18:03:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/2003-bmw-m3-convertible-182/"
@@ -389,7 +389,7 @@
       "year": "1989",
       "make": "Dodge",
       "model": "Ramcharger 4&#215;4",
-      "current_bid": "4,000",
+      "current_bid": "5,000",
       "ends": "2026-08-21T18:04:00+00:00",
       "title_place": "North Dakota",
       "url": "https://bringatrailer.com/listing/1989-dodge-ramcharger-26/"
@@ -409,7 +409,7 @@
       "year": "2023",
       "make": "Chevrolet",
       "model": "Silverado 1500 Crew Cab RST Z71 4\u00d74 Black Widow",
-      "current_bid": "35,769",
+      "current_bid": "36,911",
       "ends": "2026-08-21T18:06:00+00:00",
       "title_place": "Florida",
       "url": "https://bringatrailer.com/listing/2023-chevrolet-silverado-1500-3/"
@@ -439,7 +439,7 @@
       "year": "2015",
       "make": "Bentley",
       "model": "Flying Spur W12",
-      "current_bid": "40,500",
+      "current_bid": "42,000",
       "ends": "2026-08-21T18:09:00+00:00",
       "title_place": "Pennsylvania",
       "url": "https://bringatrailer.com/listing/2015-bentley-flying-spur-w12/"
@@ -459,7 +459,7 @@
       "year": "1973",
       "make": "Dodge",
       "model": "Dart Sport 318",
-      "current_bid": "8,900",
+      "current_bid": "9,000",
       "ends": "2026-08-21T18:11:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/1973-dodge-dart-sport-10/"
@@ -479,7 +479,7 @@
       "year": "2022",
       "make": "Dodge",
       "model": "Challenger SRT Hellcat Redeye Widebody Jailbreak",
-      "current_bid": "68,000",
+      "current_bid": "72,500",
       "ends": "2026-08-21T18:13:00+00:00",
       "title_place": "Pennsylvania",
       "url": "https://bringatrailer.com/listing/2022-dodge-challenger-srt-hellcat-redeye-widebody-jailbreak-33/"
@@ -499,7 +499,7 @@
       "year": "2007",
       "make": "Chevrolet",
       "model": "Corvette Z06 2LZ",
-      "current_bid": "52,000",
+      "current_bid": "52,500",
       "ends": "2026-08-21T18:15:00+00:00",
       "title_place": "Florida",
       "url": "https://bringatrailer.com/listing/2007-chevrolet-corvette-z06-121/"
@@ -509,7 +509,7 @@
       "year": "1947",
       "make": "MG",
       "model": "YA",
-      "current_bid": "4,900",
+      "current_bid": "5,000",
       "ends": "2026-08-21T18:16:00+00:00",
       "title_place": "South Carolina",
       "url": "https://bringatrailer.com/listing/1947-mg-ya/"
@@ -529,7 +529,7 @@
       "year": "2007",
       "make": "Chevrolet",
       "model": "Silverado Classic 3500 LT3 Crew Cab Duramax Dually 4\u00d74 Flatbed",
-      "current_bid": "40,500",
+      "current_bid": "43,250",
       "ends": "2026-08-21T18:18:00+00:00",
       "title_place": "North Carolina",
       "url": "https://bringatrailer.com/listing/2007-chevrolet-silverado-classic-3500-gmt800-8/"
@@ -549,7 +549,7 @@
       "year": "1963",
       "make": "Porsche",
       "model": "356B Coupe",
-      "current_bid": "13,856",
+      "current_bid": "20,000",
       "ends": "2026-08-21T18:20:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/1963-porsche-356b-coupe-42/"
@@ -569,7 +569,7 @@
       "year": "1973",
       "make": "Jaguar",
       "model": "E-Type Series III Roadster V12 4-Speed",
-      "current_bid": "33,000",
+      "current_bid": "38,000",
       "ends": "2026-08-21T18:22:00+00:00",
       "title_place": "Ohio",
       "url": "https://bringatrailer.com/listing/1973-jaguar-e-type-series-iii-roadster-v12-26/"
@@ -599,7 +599,7 @@
       "year": "1997",
       "make": "Dodge",
       "model": "Ram 2500 Laramie SLT Club Cab Cummins 4\u00d74 5-Speed",
-      "current_bid": "36,250",
+      "current_bid": "36,500",
       "ends": "2026-08-21T18:25:00+00:00",
       "title_place": "Arizona",
       "url": "https://bringatrailer.com/listing/1997-dodge-ram-2500-15/"
@@ -629,7 +629,7 @@
       "year": "2018",
       "make": "Land Rover",
       "model": "Range Rover Supercharged LWB",
-      "current_bid": "8,000",
+      "current_bid": "9,200",
       "ends": "2026-08-21T18:28:00+00:00",
       "title_place": "Montana",
       "url": "https://bringatrailer.com/listing/2018-land-rover-range-rover-63/"
@@ -679,7 +679,7 @@
       "year": "2000",
       "make": "Porsche",
       "model": "911 Carrera 4 Cabriolet",
-      "current_bid": "5,500",
+      "current_bid": "7,500",
       "ends": "2026-08-21T18:32:00+00:00",
       "title_place": "Pennsylvania",
       "url": "https://bringatrailer.com/listing/2000-porsche-911-carrera-4-cabriolet-44/"
@@ -709,7 +709,7 @@
       "year": "2020",
       "make": "Land Rover",
       "model": "Range Rover SVAutobiography LWB",
-      "current_bid": "54,000",
+      "current_bid": "54,500",
       "ends": "2026-08-21T18:35:00+00:00",
       "title_place": "Tennessee",
       "url": "https://bringatrailer.com/listing/2020-land-rover-range-rover-59/"
@@ -809,7 +809,7 @@
       "year": "1968",
       "make": "Pontiac",
       "model": "Firebird 350 Convertible 4-Speed",
-      "current_bid": "19,500",
+      "current_bid": "19,750",
       "ends": "2026-08-21T18:46:00+00:00",
       "title_place": "New Mexico",
       "url": "https://bringatrailer.com/listing/1968-pontiac-firebird-151/"
@@ -819,7 +819,7 @@
       "year": "2001",
       "make": "BMW",
       "model": "740i Sport",
-      "current_bid": "17,500",
+      "current_bid": "18,000",
       "ends": "2026-08-21T18:47:00+00:00",
       "title_place": "Massachusetts",
       "url": "https://bringatrailer.com/listing/2001-bmw-740i-225/"
@@ -839,7 +839,7 @@
       "year": "2007",
       "make": "Nissan",
       "model": "350Z Touring Roadster 6-Speed",
-      "current_bid": "6,500",
+      "current_bid": "9,519",
       "ends": "2026-08-21T18:49:00+00:00",
       "title_place": "Maryland",
       "url": "https://bringatrailer.com/listing/2007-nissan-350z-roadster-14/"
@@ -849,7 +849,7 @@
       "year": "1990",
       "make": "Ford",
       "model": "Econoline E-350 Quigley 4&#215;4 Conversion Project",
-      "current_bid": "2,100",
+      "current_bid": "2,300",
       "ends": "2026-08-21T18:50:00+00:00",
       "title_place": "New Jersey",
       "url": "https://bringatrailer.com/listing/1990-ford-econoline-e-350-quigley-4x4/"
@@ -939,7 +939,7 @@
       "year": "2016",
       "make": "Ferrari",
       "model": "488 Spider",
-      "current_bid": "251,000",
+      "current_bid": "256,000",
       "ends": "2026-08-21T19:00:00+00:00",
       "title_place": "Illinois",
       "url": "https://bringatrailer.com/listing/2016-ferrari-488-spider-11/"
@@ -989,7 +989,7 @@
       "year": "1979",
       "make": "Porsche",
       "model": "911SC Coupe RS Tribute",
-      "current_bid": "100,000",
+      "current_bid": "115,000",
       "ends": "2026-08-21T19:05:00+00:00",
       "title_place": "Montana",
       "url": "https://bringatrailer.com/listing/1979-porsche-911sc-118/"
@@ -999,7 +999,7 @@
       "year": "2008",
       "make": "Lamborghini",
       "model": "Gallardo Spyder",
-      "current_bid": "101,000",
+      "current_bid": "102,000",
       "ends": "2026-08-21T19:07:00+00:00",
       "title_place": "Pennsylvania",
       "url": "https://bringatrailer.com/listing/2008-lamborghini-gallardo-spyder-32/"
@@ -1019,7 +1019,7 @@
       "year": "1968",
       "make": "Chevrolet",
       "model": "Camaro Coupe Project",
-      "current_bid": "16,250",
+      "current_bid": "17,000",
       "ends": "2026-08-21T19:09:00+00:00",
       "title_place": "Texas",
       "url": "https://bringatrailer.com/listing/1968-chevrolet-camaro-451/"
@@ -1029,7 +1029,7 @@
       "year": "1988",
       "make": "Mercedes-Benz",
       "model": "240GD 6-Speed",
-      "current_bid": "32,500",
+      "current_bid": "32,750",
       "ends": "2026-08-21T19:10:00+00:00",
       "title_place": "Massachusetts",
       "url": "https://bringatrailer.com/listing/1988-mercedes-benz-240gd-5/"
@@ -1069,7 +1069,7 @@
       "year": "1982",
       "make": "Porsche",
       "model": "928 Project",
-      "current_bid": "1,028",
+      "current_bid": "2,500",
       "ends": "2026-08-21T19:14:00+00:00",
       "title_place": "Michigan",
       "url": "https://bringatrailer.com/listing/1982-porsche-928-89/"
@@ -1079,7 +1079,7 @@
       "year": "2013",
       "make": "Lotus",
       "model": "Evora S",
-      "current_bid": "22,953",
+      "current_bid": "24,000",
       "ends": "2026-08-21T19:15:00+00:00",
       "title_place": "Pennsylvania",
       "url": "https://bringatrailer.com/listing/2013-lotus-evora-8/"
@@ -1189,7 +1189,7 @@
       "year": "2019",
       "make": "Porsche",
       "model": "Cayenne",
-      "current_bid": "24,250",
+      "current_bid": "25,000",
       "ends": "2026-08-21T19:28:00+00:00",
       "title_place": "Ohio",
       "url": "https://bringatrailer.com/listing/2019-porsche-cayenne-19/"
@@ -1219,7 +1219,7 @@
       "year": "1993",
       "make": "Toyota Land",
       "model": "Cruiser FZJ80",
-      "current_bid": "18,000",
+      "current_bid": "18,250",
       "ends": "2026-08-21T19:30:00+00:00",
       "title_place": "North Carolina",
       "url": "https://bringatrailer.com/listing/1993-toyota-land-cruiser-fzj80-88/"
@@ -1249,7 +1249,7 @@
       "year": "2008",
       "make": "Porsche",
       "model": "Boxster 5-Speed",
-      "current_bid": "7,200",
+      "current_bid": "8,000",
       "ends": "2026-08-21T19:33:00+00:00",
       "title_place": "Pennsylvania",
       "url": "https://bringatrailer.com/listing/2008-porsche-boxster-62/"
@@ -1259,7 +1259,7 @@
       "year": "2002",
       "make": "Lincoln",
       "model": "Blackwood",
-      "current_bid": "11,500",
+      "current_bid": "15,000",
       "ends": "2026-08-21T19:34:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/2002-lincoln-blackwood-49/"
@@ -1269,7 +1269,7 @@
       "year": "2015",
       "make": "BMW",
       "model": "435i Gran Coupe M Sport",
-      "current_bid": "6,300",
+      "current_bid": "6,500",
       "ends": "2026-08-21T19:35:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/2015-bmw-435i-gran-coupe-3/"
@@ -1299,7 +1299,7 @@
       "year": "2023",
       "make": "Morgan",
       "model": "Super 3",
-      "current_bid": "25,000",
+      "current_bid": "31,000",
       "ends": "2026-08-21T19:39:00+00:00",
       "title_place": null,
       "url": "https://bringatrailer.com/listing/2023-morgan-super-3-11/"
@@ -1339,7 +1339,7 @@
       "year": "1979",
       "make": "BMW",
       "model": "320 Baur TC 5-Speed",
-      "current_bid": "5,500",
+      "current_bid": "5,850",
       "ends": "2026-08-21T19:43:00+00:00",
       "title_place": null,
       "url": "https://bringatrailer.com/listing/1979-bmw-320-5/"
@@ -1349,7 +1349,7 @@
       "year": "2002",
       "make": "Pontiac",
       "model": "Firebird Trans Am WS6 Coupe 6-Speed",
-      "current_bid": "21,250",
+      "current_bid": "21,500",
       "ends": "2026-08-21T19:44:00+00:00",
       "title_place": "Idaho",
       "url": "https://bringatrailer.com/listing/2002-pontiac-firebird-trans-am-coupe-96/"
@@ -1359,7 +1359,7 @@
       "year": "2007",
       "make": "Dodge",
       "model": "Ram 3500 SLT Mega Cab Dually 4\u00d74 Cummins",
-      "current_bid": "20,000",
+      "current_bid": "20,250",
       "ends": "2026-08-21T19:45:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/2007-dodge-ram-3500-15/"
@@ -1419,7 +1419,7 @@
       "year": "2007",
       "make": "Ford",
       "model": "F-250 Super Duty Lariat SuperCab Power Stroke 4\u00d74 FX4",
-      "current_bid": "13,000",
+      "current_bid": "14,000",
       "ends": "2026-08-21T19:51:00+00:00",
       "title_place": "Tennessee",
       "url": "https://bringatrailer.com/listing/2007-ford-f-250-14/"
@@ -1429,7 +1429,7 @@
       "year": "2010",
       "make": "Jeep",
       "model": "Wrangler Rubicon 6-Speed",
-      "current_bid": "3,100",
+      "current_bid": "4,000",
       "ends": "2026-08-21T19:52:00+00:00",
       "title_place": "Michigan",
       "url": "https://bringatrailer.com/listing/2010-jeep-wrangler-45/"
@@ -1469,7 +1469,7 @@
       "year": "1994",
       "make": "Ferrari",
       "model": "348 Spider",
-      "current_bid": "40,500",
+      "current_bid": "42,500",
       "ends": "2026-08-21T19:56:00+00:00",
       "title_place": "Pennsylvania",
       "url": "https://bringatrailer.com/listing/1994-ferrari-348-51/"
@@ -1479,7 +1479,7 @@
       "year": "2014",
       "make": "Mercedes-Benz",
       "model": "C300 Sport Sedan",
-      "current_bid": "5,500",
+      "current_bid": "5,600",
       "ends": "2026-08-21T19:57:00+00:00",
       "title_place": "Florida",
       "url": "https://bringatrailer.com/listing/2014-mercedes-benz-c300-sport-sedan-2/"
@@ -1509,7 +1509,7 @@
       "year": "2005",
       "make": "BMW",
       "model": "330Ci ZHP Coupe 6-Speed",
-      "current_bid": "6,100",
+      "current_bid": "6,300",
       "ends": "2026-08-21T20:00:00+00:00",
       "title_place": "Georgia",
       "url": "https://bringatrailer.com/listing/2005-bmw-330ci-zhp-coupe-17/"
@@ -1519,7 +1519,7 @@
       "year": "1976",
       "make": "Ford",
       "model": "Bronco",
-      "current_bid": "35,000",
+      "current_bid": "35,500",
       "ends": "2026-08-21T20:01:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/1976-ford-bronco-241/"
@@ -1529,7 +1529,7 @@
       "year": "2008",
       "make": "Ford",
       "model": "Mustang Shelby GT Convertible 5-Speed",
-      "current_bid": "13,500",
+      "current_bid": "15,500",
       "ends": "2026-08-21T20:02:00+00:00",
       "title_place": "Pennsylvania",
       "url": "https://bringatrailer.com/listing/2008-ford-mustang-shelby-gt-coupe-12/"
@@ -1539,7 +1539,7 @@
       "year": "2001",
       "make": "Ford",
       "model": "Mustang SVT Cobra Convertible",
-      "current_bid": "4,500",
+      "current_bid": "5,500",
       "ends": "2026-08-21T20:03:00+00:00",
       "title_place": "Texas",
       "url": "https://bringatrailer.com/listing/2001-ford-mustang-svt-cobra-convertible-15/"
@@ -1559,7 +1559,7 @@
       "year": "1966",
       "make": "Chevrolet",
       "model": "Chevy II Nova Two-Door Sedan 6-Speed",
-      "current_bid": "15,005",
+      "current_bid": "17,800",
       "ends": "2026-08-21T20:05:00+00:00",
       "title_place": "Florida",
       "url": "https://bringatrailer.com/listing/1966-chevrolet-chevy-ii-nova-41/"
@@ -1619,7 +1619,7 @@
       "year": "2013",
       "make": "Cadillac",
       "model": "Escalade Premium AWD",
-      "current_bid": "18,500",
+      "current_bid": "20,000",
       "ends": "2026-08-21T20:11:00+00:00",
       "title_place": "Pennsylvania",
       "url": "https://bringatrailer.com/listing/2013-cadillac-escalade-13/"
@@ -1639,7 +1639,7 @@
       "year": "1961",
       "make": "MG",
       "model": "MGA 1600 Mk I Roadster",
-      "current_bid": "8,500",
+      "current_bid": "8,900",
       "ends": "2026-08-21T20:13:00+00:00",
       "title_place": "Ohio",
       "url": "https://bringatrailer.com/listing/1961-mg-mga-1600-mk-i-16/"
@@ -1729,7 +1729,7 @@
       "year": "2012",
       "make": "Mercedes-Benz",
       "model": "E350 Sedan",
-      "current_bid": "3,500",
+      "current_bid": "3,600",
       "ends": "2026-08-21T20:22:00+00:00",
       "title_place": "Montana",
       "url": "https://bringatrailer.com/listing/2012-mercedes-benz-e350-sedan-13/"
@@ -1779,7 +1779,7 @@
       "year": "2006",
       "make": "Chevrolet",
       "model": "Suburban LTZ 6.0L 4&#215;4",
-      "current_bid": "7,250",
+      "current_bid": "7,500",
       "ends": "2026-08-21T20:28:00+00:00",
       "title_place": "Colorado",
       "url": "https://bringatrailer.com/listing/2006-chevrolet-suburban-17/"
@@ -1819,7 +1819,7 @@
       "year": "1965",
       "make": "Plymouth",
       "model": "Belvedere II Hardtop 383 4-Speed",
-      "current_bid": "12,000",
+      "current_bid": "15,000",
       "ends": "2026-08-21T20:32:00+00:00",
       "title_place": "Florida",
       "url": "https://bringatrailer.com/listing/1965-plymouth-belvedere-ii-2/"
@@ -1889,7 +1889,7 @@
       "year": "2018",
       "make": "BMW",
       "model": "X5 xDrive40e iPerformance",
-      "current_bid": "5,388",
+      "current_bid": "5,500",
       "ends": "2026-08-22T17:10:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/2018-bmw-x5-xdrive40e-iperformance/"
@@ -1909,7 +1909,7 @@
       "year": "2012",
       "make": "Nissan",
       "model": "Altima 3.5 SR Sedan",
-      "current_bid": "7,000",
+      "current_bid": "7,100",
       "ends": "2026-08-22T17:12:00+00:00",
       "title_place": "New Jersey",
       "url": "https://bringatrailer.com/listing/2012-nissan-altima-4/"
@@ -1929,7 +1929,7 @@
       "year": "1980",
       "make": "Porsche",
       "model": "911SC Targa",
-      "current_bid": "22,500",
+      "current_bid": "22,750",
       "ends": "2026-08-22T17:14:00+00:00",
       "title_place": "Texas",
       "url": "https://bringatrailer.com/listing/1980-porsche-911sc-targa-85-2/"
@@ -1969,7 +1969,7 @@
       "year": "1995",
       "make": "Land Rover",
       "model": "Defender 90 300Tdi 5-Speed",
-      "current_bid": "25,000",
+      "current_bid": "25,500",
       "ends": "2026-08-22T17:19:00+00:00",
       "title_place": "Tennessee",
       "url": "https://bringatrailer.com/listing/1995-land-rover-defender-90-145/"
@@ -2089,7 +2089,7 @@
       "year": "2011",
       "make": "Mercedes-Benz",
       "model": "E350 Coupe",
-      "current_bid": "4,000",
+      "current_bid": "4,500",
       "ends": "2026-08-22T17:31:00+00:00",
       "title_place": "Florida",
       "url": "https://bringatrailer.com/listing/2011-mercedes-benz-e350-coupe-3/"
@@ -2199,7 +2199,7 @@
       "year": "2020",
       "make": "Ford",
       "model": "Mustang Shelby GT500",
-      "current_bid": "73,500",
+      "current_bid": "76,000",
       "ends": "2026-08-22T17:43:00+00:00",
       "title_place": "Texas",
       "url": "https://bringatrailer.com/listing/2020-ford-mustang-shelby-gt500-129/"
@@ -2229,7 +2229,7 @@
       "year": "2003",
       "make": "Mercedes-Benz",
       "model": "SL500",
-      "current_bid": "6,000",
+      "current_bid": "6,100",
       "ends": "2026-08-22T17:48:00+00:00",
       "title_place": "Washington",
       "url": "https://bringatrailer.com/listing/2003-mercedes-benz-sl500-404/"
@@ -2239,7 +2239,7 @@
       "year": "2015",
       "make": "Porsche",
       "model": "Macan Turbo",
-      "current_bid": "5,250",
+      "current_bid": "5,500",
       "ends": "2026-08-22T17:49:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/2015-porsche-macan-turbo-31/"
@@ -2249,7 +2249,7 @@
       "year": "2008",
       "make": "Jaguar",
       "model": "XJ8",
-      "current_bid": "5,600",
+      "current_bid": "5,700",
       "ends": "2026-08-22T17:50:00+00:00",
       "title_place": "Pennsylvania",
       "url": "https://bringatrailer.com/listing/2008-jaguar-xj8-29/"
@@ -2319,7 +2319,7 @@
       "year": "2020",
       "make": "Mercedes-AMG",
       "model": "E53 Cabriolet",
-      "current_bid": "20,000",
+      "current_bid": "21,000",
       "ends": "2026-08-22T17:57:00+00:00",
       "title_place": "Florida",
       "url": "https://bringatrailer.com/listing/2020-mercedes-benz-e53-amg-cabriolet/"
@@ -2329,7 +2329,7 @@
       "year": "1979",
       "make": "Jeep",
       "model": "Cherokee S 4\u00d74 4-Speed",
-      "current_bid": "5,400",
+      "current_bid": "7,200",
       "ends": "2026-08-22T17:58:00+00:00",
       "title_place": "Michigan",
       "url": "https://bringatrailer.com/listing/1979-jeep-cherokee-13-2/"
@@ -2359,7 +2359,7 @@
       "year": "2014",
       "make": "Ram",
       "model": "5500 Dually Flatbed Cummins 4&#215;4",
-      "current_bid": "5,700",
+      "current_bid": "7,500",
       "ends": "2026-08-22T18:01:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/2014-ram-5500-heavy-duty/"
@@ -2399,7 +2399,7 @@
       "year": "2004",
       "make": "Chevrolet",
       "model": "Silverado 2500HD LS Extended Cab 4\u00d74",
-      "current_bid": "17,500",
+      "current_bid": "18,000",
       "ends": "2026-08-22T18:05:00+00:00",
       "title_place": "Arizona",
       "url": "https://bringatrailer.com/listing/2004-chevrolet-silverado-2500hd-32/"
@@ -2429,7 +2429,7 @@
       "year": "2008",
       "make": "Porsche",
       "model": "Boxster S 6-Speed",
-      "current_bid": "21,500",
+      "current_bid": "22,500",
       "ends": "2026-08-22T18:09:00+00:00",
       "title_place": "Pennsylvania",
       "url": "https://bringatrailer.com/listing/2008-porsche-boxster-s-68/"
@@ -2439,7 +2439,7 @@
       "year": "1990",
       "make": "Chevrolet",
       "model": "Corvette Coupe",
-      "current_bid": "7,100",
+      "current_bid": "7,200",
       "ends": "2026-08-22T18:10:00+00:00",
       "title_place": "Texas",
       "url": "https://bringatrailer.com/listing/1990-chevrolet-corvette-coupe-45/"
@@ -2469,7 +2469,7 @@
       "year": "1967",
       "make": "Chevrolet",
       "model": "Camaro RS Convertible 327 Project",
-      "current_bid": "15,250",
+      "current_bid": "16,500",
       "ends": "2026-08-22T18:13:00+00:00",
       "title_place": "Arizona",
       "url": "https://bringatrailer.com/listing/1967-chevrolet-camaro-538/"
@@ -2549,7 +2549,7 @@
       "year": "1965",
       "make": "Chevrolet",
       "model": "Chevelle Malibu SS Coupe L79 327/350 4-Speed",
-      "current_bid": "15,053",
+      "current_bid": "15,327",
       "ends": "2026-08-22T18:22:00+00:00",
       "title_place": "Massachusetts",
       "url": "https://bringatrailer.com/listing/1965-chevrolet-chevelle-malibu-ss-79/"
@@ -2579,7 +2579,7 @@
       "year": "1999",
       "make": "Porsche",
       "model": "911 Carrera Coupe 6-Speed",
-      "current_bid": "15,000",
+      "current_bid": "16,500",
       "ends": "2026-08-22T18:25:00+00:00",
       "title_place": "Massachusetts",
       "url": "https://bringatrailer.com/listing/1999-porsche-911-carrera-coupe-217/"
@@ -2689,7 +2689,7 @@
       "year": "1976",
       "make": "Chevrolet",
       "model": "Corvette Coupe",
-      "current_bid": "7,000",
+      "current_bid": "7,100",
       "ends": "2026-08-22T18:36:00+00:00",
       "title_place": "New York",
       "url": "https://bringatrailer.com/listing/1976-chevrolet-corvette-126/"
@@ -2719,7 +2719,7 @@
       "year": "1976",
       "make": "Ford",
       "model": "F-150 Custom Explorer 4&#215;4 4-Speed",
-      "current_bid": "8,000",
+      "current_bid": "9,000",
       "ends": "2026-08-22T18:39:00+00:00",
       "title_place": "Illinois",
       "url": "https://bringatrailer.com/listing/1976-ford-f-150-22/"
@@ -2819,7 +2819,7 @@
       "year": "1993",
       "make": "Toyota",
       "model": "Pickup Deluxe Xtracab 4&#215;4 5-Speed",
-      "current_bid": "15,000",
+      "current_bid": "15,250",
       "ends": "2026-08-22T18:50:00+00:00",
       "title_place": "Washington",
       "url": "https://bringatrailer.com/listing/1993-toyota-pickup-88-2/"
@@ -2859,7 +2859,7 @@
       "year": "2002",
       "make": "Ford",
       "model": "F-350 Super Duty XLT SuperCab Power Stroke 4\u00d74 6-Speed",
-      "current_bid": "5,900",
+      "current_bid": "7,777",
       "ends": "2026-08-22T18:54:00+00:00",
       "title_place": "Washington",
       "url": "https://bringatrailer.com/listing/2002-ford-f-350-63/"
@@ -2909,7 +2909,7 @@
       "year": "1982",
       "make": "Porsche",
       "model": "911SC Targa",
-      "current_bid": "11,250",
+      "current_bid": "11,500",
       "ends": "2026-08-22T19:01:00+00:00",
       "title_place": "Virginia",
       "url": "https://bringatrailer.com/listing/1982-porsche-911sc-targa-42/"
@@ -2979,7 +2979,7 @@
       "year": "1986",
       "make": "Mercedes-Benz",
       "model": "500SL",
-      "current_bid": "5,500",
+      "current_bid": "5,750",
       "ends": "2026-08-23T17:03:00+00:00",
       "title_place": "Washington",
       "url": "https://bringatrailer.com/listing/1986-mercedes-benz-500sl-27/"
@@ -3049,7 +3049,7 @@
       "year": "1993",
       "make": "Honda",
       "model": "Civic VX Hatchback 5-Speed",
-      "current_bid": "5,000",
+      "current_bid": "5,500",
       "ends": "2026-08-23T17:11:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/1993-honda-civic-6/"
@@ -3199,7 +3199,7 @@
       "year": "2009",
       "make": "Jaguar",
       "model": "Super V8 Portfolio",
-      "current_bid": "16,255",
+      "current_bid": "16,540",
       "ends": "2026-08-23T17:26:00+00:00",
       "title_place": "Michigan",
       "url": "https://bringatrailer.com/listing/2009-jaguar-super-v8-9/"
@@ -3279,7 +3279,7 @@
       "year": "2006",
       "make": "Honda",
       "model": "S2000",
-      "current_bid": "19,500",
+      "current_bid": "19,750",
       "ends": "2026-08-23T17:36:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/2006-honda-s2000-194/"
@@ -3569,7 +3569,7 @@
       "year": "2011",
       "make": "Mercedes-Benz",
       "model": "SL550",
-      "current_bid": "5,000",
+      "current_bid": "6,000",
       "ends": "2026-08-24T17:43:00+00:00",
       "title_place": "Vermont",
       "url": "https://bringatrailer.com/listing/2011-mercedes-benz-sl550-70/"
@@ -3599,7 +3599,7 @@
       "year": "2023",
       "make": "Thor",
       "model": "Motor Coach Tranquility 19PT Transit AWD",
-      "current_bid": "36,500",
+      "current_bid": "36,750",
       "ends": "2026-08-24T17:46:00+00:00",
       "title_place": "Michigan",
       "url": "https://bringatrailer.com/listing/2023-thor-motor-coach-tranquility-19pt-transit-awd/"
@@ -3659,7 +3659,7 @@
       "year": "2001",
       "make": "Jeep",
       "model": "Wrangler Sport 4.0 5-Speed",
-      "current_bid": "4,600",
+      "current_bid": "5,000",
       "ends": "2026-08-24T17:53:00+00:00",
       "title_place": "Missouri",
       "url": "https://bringatrailer.com/listing/2001-jeep-wrangler-97/"
@@ -4039,7 +4039,7 @@
       "year": "1986",
       "make": "Jeep",
       "model": "CJ-7",
-      "current_bid": "6,000",
+      "current_bid": "7,000",
       "ends": "2026-08-24T18:36:00+00:00",
       "title_place": "Virginia",
       "url": "https://bringatrailer.com/listing/1986-jeep-cj-7-95/"
@@ -4319,7 +4319,7 @@
       "year": "1977",
       "make": "Cushman",
       "model": "Truckster",
-      "current_bid": "5,200",
+      "current_bid": "6,200",
       "ends": "2026-08-24T19:09:00+00:00",
       "title_place": "Florida",
       "url": "https://bringatrailer.com/listing/1977-cushman-truckster-2/"
@@ -4479,7 +4479,7 @@
       "year": "1971",
       "make": "Schwinn",
       "model": "Sting-Ray Cotton Picker Krate Bicycle",
-      "current_bid": "2,071",
+      "current_bid": "2,300",
       "ends": "2026-08-24T19:27:00+00:00",
       "title_place": null,
       "url": "https://bringatrailer.com/listing/bicycle-36/"
@@ -4519,7 +4519,7 @@
       "year": "1957",
       "make": "Porsche-Diesel",
       "model": "111 Tractor",
-      "current_bid": "5,100",
+      "current_bid": "6,000",
       "ends": "2026-08-24T19:31:00+00:00",
       "title_place": null,
       "url": "https://bringatrailer.com/listing/1957-porsche-111-diesel-tractor-3/"
@@ -4559,7 +4559,7 @@
       "year": "1987",
       "make": "Porsche",
       "model": "911 Carrera Coupe G50",
-      "current_bid": "21,500",
+      "current_bid": "22,087",
       "ends": "2026-08-24T19:36:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/1987-porsche-911-carrera-coupe-24-2/"
@@ -4789,7 +4789,7 @@
       "year": "1977",
       "make": "Chevrolet",
       "model": "Corvette 4-Speed",
-      "current_bid": "2,977",
+      "current_bid": "3,100",
       "ends": "2026-08-24T20:02:00+00:00",
       "title_place": "Washington",
       "url": "https://bringatrailer.com/listing/1977-chevrolet-corvette-177/"
@@ -4889,7 +4889,7 @@
       "year": "2023",
       "make": "Porsche",
       "model": "Taycan GTS Sport Turismo",
-      "current_bid": "53,000",
+      "current_bid": "53,555",
       "ends": "2026-08-24T20:12:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/2023-porsche-taycan-gts-sport-turismo-5/"
@@ -4979,7 +4979,7 @@
       "year": "1974",
       "make": "Ferrari",
       "model": "Dino 246 GTS Chairs &#038; Flares",
-      "current_bid": "500,000",
+      "current_bid": "510,000",
       "ends": "2026-08-25T17:00:00+00:00",
       "title_place": null,
       "url": "https://bringatrailer.com/listing/1974-ferrari-dino-246-gts-11/"
@@ -4999,7 +4999,7 @@
       "year": "1931",
       "make": "Chrysler",
       "model": "CD-8 Sport Roadster",
-      "current_bid": "8,888",
+      "current_bid": "9,000",
       "ends": "2026-08-25T17:10:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/1931-chrysler-cd-8-3/"
@@ -5349,7 +5349,7 @@
       "year": "2003",
       "make": "Mercedes-Benz",
       "model": "G500",
-      "current_bid": "6,121",
+      "current_bid": "6,500",
       "ends": "2026-08-25T18:00:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/2003-mercedes-benz-g500-53/"
@@ -5379,7 +5379,7 @@
       "year": "2006",
       "make": "Pontiac",
       "model": "Solstice 5-Speed",
-      "current_bid": "2,200",
+      "current_bid": "2,300",
       "ends": "2026-08-25T18:02:00+00:00",
       "title_place": "New Jersey",
       "url": "https://bringatrailer.com/listing/2006-pontiac-solstice-89/"
@@ -5389,7 +5389,7 @@
       "year": "2025",
       "make": "McLaren",
       "model": "Artura",
-      "current_bid": "100,000",
+      "current_bid": "105,000",
       "ends": "2026-08-25T18:03:00+00:00",
       "title_place": "Florida",
       "url": "https://bringatrailer.com/listing/2025-mclaren-artura-2/"
@@ -5409,7 +5409,7 @@
       "year": "2003",
       "make": "GMC",
       "model": "Sierra 1500 Sportside",
-      "current_bid": "1,500",
+      "current_bid": "1,850",
       "ends": "2026-08-25T18:05:00+00:00",
       "title_place": "Virginia",
       "url": "https://bringatrailer.com/listing/2003-gmc-sierra-1500-10/"
@@ -5429,7 +5429,7 @@
       "year": "2007",
       "make": "GMC",
       "model": "Sierra 2500HD Utility Truck",
-      "current_bid": "5,700",
+      "current_bid": "6,500",
       "ends": "2026-08-25T18:06:00+00:00",
       "title_place": "Virginia",
       "url": "https://bringatrailer.com/listing/2007-gmc-sierra-2500hd-gmt900-6/"
@@ -5659,7 +5659,7 @@
       "year": "2024",
       "make": "Cadillac",
       "model": "Escalade-V AWD Hennessey H1000",
-      "current_bid": "89,000",
+      "current_bid": "89,500",
       "ends": "2026-08-25T18:31:00+00:00",
       "title_place": "Florida",
       "url": "https://bringatrailer.com/listing/2024-cadillac-escalade-v-9/"
@@ -5829,7 +5829,7 @@
       "year": "1983",
       "make": "Grumman",
       "model": "KubVan",
-      "current_bid": "3,600",
+      "current_bid": "3,700",
       "ends": "2026-08-25T18:48:00+00:00",
       "title_place": "Pennsylvania",
       "url": "https://bringatrailer.com/listing/1983-grumman-kubvan-2/"
@@ -6049,7 +6049,7 @@
       "year": "2003",
       "make": "Porsche",
       "model": "911 Turbo Coupe X50 6-Speed",
-      "current_bid": "78,500",
+      "current_bid": "99,620",
       "ends": "2026-08-25T19:10:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/2003-porsche-911-turbo-coupe-123/"
@@ -6239,7 +6239,7 @@
       "year": "2022",
       "make": "Dodge",
       "model": "Challenger SRT Super Stock Hennessey HPE1000",
-      "current_bid": "72,500",
+      "current_bid": "74,500",
       "ends": "2026-08-25T19:33:00+00:00",
       "title_place": "Idaho",
       "url": "https://bringatrailer.com/listing/2022-dodge-challenger-srt-super-stock-39/"
@@ -6359,7 +6359,7 @@
       "year": "1965",
       "make": "Chevrolet",
       "model": "Corvette Coupe SCCA/Trans Am Race Car",
-      "current_bid": "31,000",
+      "current_bid": "32,000",
       "ends": "2026-08-25T19:46:00+00:00",
       "title_place": "Colorado",
       "url": "https://bringatrailer.com/listing/1965-chevrolet-corvette-coupe-110/"
@@ -6369,7 +6369,7 @@
       "year": "2019",
       "make": "Mercedes-Benz",
       "model": "GLS450",
-      "current_bid": "5,000",
+      "current_bid": "6,000",
       "ends": "2026-08-25T19:47:00+00:00",
       "title_place": "Florida",
       "url": "https://bringatrailer.com/listing/2019-mercedes-benz-gls450-7/"
@@ -6379,7 +6379,7 @@
       "year": "2016",
       "make": "Dodge",
       "model": "Challenger SRT Hellcat 6-Speed",
-      "current_bid": "12,500",
+      "current_bid": "28,500",
       "ends": "2026-08-25T19:48:00+00:00",
       "title_place": "New York",
       "url": "https://bringatrailer.com/listing/2016-dodge-challenger-srt-hellcat-89/"
@@ -6469,7 +6469,7 @@
       "year": "1970",
       "make": "Chevrolet",
       "model": "C10 CST",
-      "current_bid": "6,100",
+      "current_bid": "6,200",
       "ends": "2026-08-25T19:57:00+00:00",
       "title_place": "Arizona",
       "url": "https://bringatrailer.com/listing/1970-chevrolet-c10-pickup-247/"
@@ -6609,7 +6609,7 @@
       "year": "1992",
       "make": "Maserati",
       "model": "2.24v 5-Speed",
-      "current_bid": "3,724",
+      "current_bid": "4,110",
       "ends": "2026-08-25T20:11:00+00:00",
       "title_place": "Rhode Island",
       "url": "https://bringatrailer.com/listing/1992-maserati-2-24v/"
@@ -6649,7 +6649,7 @@
       "year": "1984",
       "make": "Chevrolet",
       "model": "Blazer M1009 CUCV Diesel 4\u00d74",
-      "current_bid": "5,500",
+      "current_bid": "6,000",
       "ends": "2026-08-25T20:15:00+00:00",
       "title_place": "Tennessee",
       "url": "https://bringatrailer.com/listing/1984-chevrolet-k5-blazer-32/"
@@ -6659,7 +6659,7 @@
       "year": "1967",
       "make": "Ford",
       "model": "Mustang",
-      "current_bid": "5,300",
+      "current_bid": "6,000",
       "ends": "2026-08-25T20:16:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/1967-ford-mustang-503/"
@@ -6669,7 +6669,7 @@
       "year": "2004",
       "make": "Ford",
       "model": "Mustang SVT Cobra Coupe",
-      "current_bid": "28,000",
+      "current_bid": "29,000",
       "ends": "2026-08-25T20:17:00+00:00",
       "title_place": "New Jersey",
       "url": "https://bringatrailer.com/listing/2004-ford-mustang-svt-cobra-coupe-32/"
@@ -6819,7 +6819,7 @@
       "year": "1965",
       "make": "Chevrolet",
       "model": "Impala SS Sport Coupe",
-      "current_bid": "15,000",
+      "current_bid": "15,500",
       "ends": "2026-08-25T20:31:00+00:00",
       "title_place": "Arizona",
       "url": "https://bringatrailer.com/listing/1965-chevrolet-impala-ss-55/"
@@ -6839,7 +6839,7 @@
       "year": "1960",
       "make": "Mercedes-Benz",
       "model": "190SL",
-      "current_bid": "5,521",
+      "current_bid": "10,000",
       "ends": "2026-08-25T20:33:00+00:00",
       "title_place": "Missouri",
       "url": "https://bringatrailer.com/listing/1960-mercedes-benz-190sl-76-2/"
@@ -6919,7 +6919,7 @@
       "year": "2004",
       "make": "Toyota",
       "model": "Tacoma SR5 Double Cab TRD 4\u00d74 V6",
-      "current_bid": "3,700",
+      "current_bid": "3,800",
       "ends": "2026-08-25T20:49:00+00:00",
       "title_place": "Virginia",
       "url": "https://bringatrailer.com/listing/2004-toyota-tacoma-185/"
@@ -6929,7 +6929,7 @@
       "year": "2012",
       "make": "Volkswagen",
       "model": "GTI 2-Door 6-Speed",
-      "current_bid": "5,000",
+      "current_bid": "5,100",
       "ends": "2026-08-25T20:50:00+00:00",
       "title_place": "Michigan",
       "url": "https://bringatrailer.com/listing/2012-volkswagen-gti-16/"
@@ -7049,7 +7049,7 @@
       "year": "1978",
       "make": "Volkswagen",
       "model": "Super Beetle Convertible Champagne Edition II",
-      "current_bid": "8,000",
+      "current_bid": "9,000",
       "ends": "2026-08-25T21:04:00+00:00",
       "title_place": "Minnesota",
       "url": "https://bringatrailer.com/listing/1978-volkswagen-super-beetle-convertible-54/"
@@ -7059,7 +7059,7 @@
       "year": "2021",
       "make": "Thor",
       "model": "Motor Coach Tiburon 24TT",
-      "current_bid": "7,500",
+      "current_bid": "8,000",
       "ends": "2026-08-25T21:05:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/2021-thor-motor-coach-tiburon-24tt/"
@@ -7069,7 +7069,7 @@
       "year": "1971",
       "make": "Honda",
       "model": "SL350 Motosport",
-      "current_bid": "2,500",
+      "current_bid": "2,600",
       "ends": "2026-08-25T21:06:00+00:00",
       "title_place": "Oregon",
       "url": "https://bringatrailer.com/listing/1971-honda-sl350-14/"
@@ -7109,7 +7109,7 @@
       "year": "1995",
       "make": "Land Rover",
       "model": "Defender 90 NAS 5-Speed",
-      "current_bid": "5,000",
+      "current_bid": "15,000",
       "ends": "2026-08-25T21:12:00+00:00",
       "title_place": "Alaska",
       "url": "https://bringatrailer.com/listing/1995-land-rover-defender-90-nas-103/"
@@ -7149,7 +7149,7 @@
       "year": "1958",
       "make": "Ford",
       "model": "Fairlane 500 Skyliner 3-Speed",
-      "current_bid": "6,200",
+      "current_bid": "6,500",
       "ends": "2026-08-25T21:18:00+00:00",
       "title_place": null,
       "url": "https://bringatrailer.com/listing/1958-ford-fairlane-500-skyliner-7/"
@@ -7159,7 +7159,7 @@
       "year": "2016",
       "make": "Ferrari",
       "model": "488 Spider",
-      "current_bid": "235,000",
+      "current_bid": "236,000",
       "ends": "2026-08-25T21:19:00+00:00",
       "title_place": "Arkansas",
       "url": "https://bringatrailer.com/listing/2016-ferrari-488-spider-12/"
@@ -7189,7 +7189,7 @@
       "year": "2014",
       "make": "Ford",
       "model": "F-450 Super Duty XL Power Stroke Dually 4\u00d74 Utility Truck",
-      "current_bid": "7,900",
+      "current_bid": "8,000",
       "ends": "2026-08-25T21:22:00+00:00",
       "title_place": "Pennsylvania",
       "url": "https://bringatrailer.com/listing/2014-ford-f-450-2/"
@@ -7269,7 +7269,7 @@
       "year": "2014",
       "make": "Ford",
       "model": "F-150 XL",
-      "current_bid": "5,000",
+      "current_bid": "5,500",
       "ends": "2026-08-25T21:30:00+00:00",
       "title_place": "Oregon",
       "url": "https://bringatrailer.com/listing/2014-ford-f-150-34/"
@@ -7309,7 +7309,7 @@
       "year": "1956",
       "make": "Ford",
       "model": "Thunderbird",
-      "current_bid": "6,600",
+      "current_bid": "7,000",
       "ends": "2026-08-25T21:34:00+00:00",
       "title_place": "Ohio",
       "url": "https://bringatrailer.com/listing/1956-ford-thunderbird-235/"
@@ -7359,7 +7359,7 @@
       "year": "1987",
       "make": "Porsche",
       "model": "911 Turbo Coupe",
-      "current_bid": "105,000",
+      "current_bid": "110,000",
       "ends": "2026-08-26T17:20:00+00:00",
       "title_place": "Idaho",
       "url": "https://bringatrailer.com/listing/1987-porsche-911-turbo-coupe-77/"
@@ -7419,7 +7419,7 @@
       "year": "1947",
       "make": "Packard",
       "model": "Custom Super Clipper Eight Touring Sedan",
-      "current_bid": "6,576",
+      "current_bid": "7,500",
       "ends": "2026-08-26T17:35:00+00:00",
       "title_place": "Indiana",
       "url": "https://bringatrailer.com/listing/1947-packard-custom-super-clipper-eight-4/"
@@ -7639,7 +7639,7 @@
       "year": "1970",
       "make": "Chevrolet",
       "model": "Chevelle Malibu Sport Coupe",
-      "current_bid": "8,250",
+      "current_bid": "8,500",
       "ends": "2026-08-26T18:06:00+00:00",
       "title_place": "Colorado",
       "url": "https://bringatrailer.com/listing/1970-chevrolet-chevelle-malibu-56/"
@@ -7739,7 +7739,7 @@
       "year": "2000",
       "make": "Ford",
       "model": "F-350 Super Duty XLT Crew Cab Power Stroke 4&#215;4",
-      "current_bid": "6,500",
+      "current_bid": "7,000",
       "ends": "2026-08-26T18:16:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/2000-ford-f-350-64/"
@@ -7799,7 +7799,7 @@
       "year": "1970",
       "make": "Honda",
       "model": "CB750",
-      "current_bid": "5,400",
+      "current_bid": "5,500",
       "ends": "2026-08-26T18:22:00+00:00",
       "title_place": "Pennsylvania",
       "url": "https://bringatrailer.com/listing/1970-honda-cb750-19/"
@@ -7859,7 +7859,7 @@
       "year": "1998",
       "make": "Ferrari",
       "model": "550 Maranello",
-      "current_bid": "112,000",
+      "current_bid": "140,000",
       "ends": "2026-08-26T18:28:00+00:00",
       "title_place": "Montana",
       "url": "https://bringatrailer.com/listing/1998-ferrari-550-maranello-39/"
@@ -7879,7 +7879,7 @@
       "year": "1969",
       "make": "Ford",
       "model": "Mustang Mach 1 4-Speed",
-      "current_bid": "26,000",
+      "current_bid": "27,500",
       "ends": "2026-08-26T18:30:00+00:00",
       "title_place": "Ohio",
       "url": "https://bringatrailer.com/listing/1969-ford-mustang-mach-1-192/"
@@ -7919,7 +7919,7 @@
       "year": "1998",
       "make": "Mitsubishi",
       "model": "Minicab Pickup VX Special Edition 4WD 5-Speed",
-      "current_bid": "3,000",
+      "current_bid": "3,500",
       "ends": "2026-08-26T18:34:00+00:00",
       "title_place": "Florida",
       "url": "https://bringatrailer.com/listing/1998-mitsubishi-minicab-6/"
@@ -7969,7 +7969,7 @@
       "year": "1951",
       "make": "Chevrolet",
       "model": "3600 Pickup 4-Speed",
-      "current_bid": "711",
+      "current_bid": "1,500",
       "ends": "2026-08-26T18:41:00+00:00",
       "title_place": "Washington",
       "url": "https://bringatrailer.com/listing/1951-chevrolet-3600-pickup-9/"
@@ -8149,7 +8149,7 @@
       "year": "2016",
       "make": "BMW",
       "model": "750i xDrive",
-      "current_bid": "3,600",
+      "current_bid": "5,000",
       "ends": "2026-08-26T19:03:00+00:00",
       "title_place": "Florida",
       "url": "https://bringatrailer.com/listing/2016-bmw-750i-21-2/"
@@ -8269,7 +8269,7 @@
       "year": "2011",
       "make": "Maserati",
       "model": "GranTurismo Convertible",
-      "current_bid": "1,100",
+      "current_bid": "3,500",
       "ends": "2026-08-26T19:15:00+00:00",
       "title_place": "Montana",
       "url": "https://bringatrailer.com/listing/2011-maserati-granturismo-convertible-16/"
@@ -8339,7 +8339,7 @@
       "year": "1997",
       "make": "Nissan",
       "model": "240SX SE 5-Speed",
-      "current_bid": "21,000",
+      "current_bid": "23,000",
       "ends": "2026-08-26T19:22:00+00:00",
       "title_place": "Ohio",
       "url": "https://bringatrailer.com/listing/1997-nissan-240sx-44-2/"
@@ -8359,7 +8359,7 @@
       "year": "1972",
       "make": "Honda",
       "model": "CT70 Trail",
-      "current_bid": "1,000",
+      "current_bid": "1,500",
       "ends": "2026-08-26T19:24:00+00:00",
       "title_place": null,
       "url": "https://bringatrailer.com/listing/1972-honda-ct70-trail-51/"
@@ -8369,7 +8369,7 @@
       "year": "2008",
       "make": "N2A",
       "model": "Motors 789 Convertible",
-      "current_bid": "35,000",
+      "current_bid": "35,250",
       "ends": "2026-08-26T19:25:00+00:00",
       "title_place": "Florida",
       "url": "https://bringatrailer.com/listing/2008-chevrolet-corvette-convertible-31/"
@@ -8389,7 +8389,7 @@
       "year": "1978",
       "make": "Toyota Land",
       "model": "Cruiser FJ55",
-      "current_bid": "7,700",
+      "current_bid": "7,800",
       "ends": "2026-08-26T19:27:00+00:00",
       "title_place": "Colorado",
       "url": "https://bringatrailer.com/listing/1978-toyota-land-cruiser-fj55-13/"
@@ -8449,7 +8449,7 @@
       "year": "2023",
       "make": "Toyota",
       "model": "Tacoma TRD Off-Road Double Cab 4\u00d74 V6",
-      "current_bid": "36,500",
+      "current_bid": "37,000",
       "ends": "2026-08-26T19:36:00+00:00",
       "title_place": "Illinois",
       "url": "https://bringatrailer.com/listing/2023-toyota-tacoma-21/"
@@ -8629,7 +8629,7 @@
       "year": "1995",
       "make": "Chevrolet",
       "model": "K1500 Silverado 4\u00d74 5-Speed",
-      "current_bid": "2,600",
+      "current_bid": "2,789",
       "ends": "2026-08-26T19:56:00+00:00",
       "title_place": "North Carolina",
       "url": "https://bringatrailer.com/listing/1995-chevrolet-k1500-pickup-25/"
@@ -8719,7 +8719,7 @@
       "year": "2006",
       "make": "Dodge",
       "model": "Ram SRT-10 6-Speed",
-      "current_bid": "28,000",
+      "current_bid": "29,000",
       "ends": "2026-08-26T20:07:00+00:00",
       "title_place": null,
       "url": "https://bringatrailer.com/listing/2006-dodge-ram-srt-10-74/"
@@ -8769,7 +8769,7 @@
       "year": "2006",
       "make": "Cadillac",
       "model": "XLR-V",
-      "current_bid": "10,000",
+      "current_bid": "15,000",
       "ends": "2026-08-26T20:13:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/2006-cadillac-xlr-v-85/"
@@ -8799,7 +8799,7 @@
       "year": "1998",
       "make": "GMC",
       "model": "Sierra C1500 SLE",
-      "current_bid": "2,800",
+      "current_bid": "4,500",
       "ends": "2026-08-26T20:16:00+00:00",
       "title_place": "Minnesota",
       "url": "https://bringatrailer.com/listing/1998-gmc-sierra-c1500-8/"
@@ -8829,7 +8829,7 @@
       "year": "2007",
       "make": "Ford",
       "model": "F-350 SuperDuty XLT Crew Cab Power Stroke Dually",
-      "current_bid": "1,000",
+      "current_bid": "5,000",
       "ends": "2026-08-26T20:19:00+00:00",
       "title_place": "Washington",
       "url": "https://bringatrailer.com/listing/2007-ford-f-350-9/"
@@ -8899,7 +8899,7 @@
       "year": "2002",
       "make": "BMW",
       "model": "M5",
-      "current_bid": "6,000",
+      "current_bid": "6,100",
       "ends": "2026-08-26T20:27:00+00:00",
       "title_place": "Ohio",
       "url": "https://bringatrailer.com/listing/2002-bmw-m5-300/"
@@ -9119,7 +9119,7 @@
       "year": "2005",
       "make": "Porsche",
       "model": "Cayenne Turbo",
-      "current_bid": "3,000",
+      "current_bid": "3,333",
       "ends": "2026-08-26T20:53:00+00:00",
       "title_place": "Colorado",
       "url": "https://bringatrailer.com/listing/2005-porsche-cayenne-turbo-55/"
@@ -9189,7 +9189,7 @@
       "year": "2011",
       "make": "Jaguar",
       "model": "XFR",
-      "current_bid": "5,500",
+      "current_bid": "5,600",
       "ends": "2026-08-26T21:00:00+00:00",
       "title_place": "New Jersey",
       "url": "https://bringatrailer.com/listing/2011-jaguar-xfr-5/"
@@ -9249,7 +9249,7 @@
       "year": "2012",
       "make": "Land Rover",
       "model": "Range Rover HSE",
-      "current_bid": "1,500",
+      "current_bid": "1,650",
       "ends": "2026-08-26T21:06:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/2012-land-rover-range-rover-211/"
@@ -9339,7 +9339,7 @@
       "year": "1932",
       "make": "Cadillac",
       "model": "370-B V-12 Convertible Coupe",
-      "current_bid": "16,000",
+      "current_bid": "19,069",
       "ends": "2026-08-26T21:15:00+00:00",
       "title_place": "New York",
       "url": "https://bringatrailer.com/listing/1932-cadillac-370a-v-12/"
@@ -9379,7 +9379,7 @@
       "year": "2006",
       "make": "Ducati",
       "model": "SportClassic Sport 1000 Monoposto",
-      "current_bid": "5,000",
+      "current_bid": "5,100",
       "ends": "2026-08-26T21:20:00+00:00",
       "title_place": null,
       "url": "https://bringatrailer.com/listing/2006-ducati-sportclassic-sport-1000-monoposto-15/"
@@ -9419,7 +9419,7 @@
       "year": "1978",
       "make": "Pontiac",
       "model": "Firebird Trans Am 4-Speed",
-      "current_bid": "6,600",
+      "current_bid": "6,700",
       "ends": "2026-08-26T21:24:00+00:00",
       "title_place": "Oregon",
       "url": "https://bringatrailer.com/listing/1978-pontiac-firebird-trans-am-87/"
@@ -9509,7 +9509,7 @@
       "year": "2006",
       "make": "Lexus",
       "model": "LX470",
-      "current_bid": "12,500",
+      "current_bid": "13,000",
       "ends": "2026-08-26T21:34:00+00:00",
       "title_place": "Texas",
       "url": "https://bringatrailer.com/listing/2006-lexus-lx-33-2/"
@@ -9599,7 +9599,7 @@
       "year": "1979",
       "make": "Ford",
       "model": "Bronco Custom",
-      "current_bid": "77,000",
+      "current_bid": "77,500",
       "ends": "2026-08-27T17:20:00+00:00",
       "title_place": "Kansas",
       "url": "https://bringatrailer.com/listing/1979-ford-bronco-255/"
@@ -9649,7 +9649,7 @@
       "year": "1970",
       "make": "Oldsmobile",
       "model": "442 W-30 Convertible",
-      "current_bid": "12,250",
+      "current_bid": "52,000",
       "ends": "2026-08-27T17:30:00+00:00",
       "title_place": "Minnesota",
       "url": "https://bringatrailer.com/listing/1970-oldsmobile-442-84/"
@@ -9659,7 +9659,7 @@
       "year": "1960",
       "make": "Triumph",
       "model": "TR3A",
-      "current_bid": "18,000",
+      "current_bid": "19,000",
       "ends": "2026-08-27T17:31:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/1960-triumph-tr3a-80/"
@@ -10029,7 +10029,7 @@
       "year": "1994",
       "make": "Chevrolet",
       "model": "K3500 Silverado 4\u00d74 Dually",
-      "current_bid": "400",
+      "current_bid": "1,994",
       "ends": "2026-08-27T18:18:00+00:00",
       "title_place": "Texas",
       "url": "https://bringatrailer.com/listing/1994-chevrolet-k3500-pickup-7/"
@@ -10049,7 +10049,7 @@
       "year": "2006",
       "make": "Toyota",
       "model": "Tundra SR5 Access Cab V8 4\u00d74",
-      "current_bid": "19,500",
+      "current_bid": "20,000",
       "ends": "2026-08-27T18:20:00+00:00",
       "title_place": "South Dakota",
       "url": "https://bringatrailer.com/listing/2006-toyota-tundra-76/"
@@ -10199,7 +10199,7 @@
       "year": "1969",
       "make": "Ford",
       "model": "F-100 Ranger 3-Speed",
-      "current_bid": "5,100",
+      "current_bid": "5,500",
       "ends": "2026-08-27T18:35:00+00:00",
       "title_place": "Georgia",
       "url": "https://bringatrailer.com/listing/1969-ford-f-100-138/"
@@ -10339,7 +10339,7 @@
       "year": "1999",
       "make": "Ford",
       "model": "F-250 Super Duty XLT SuperCab 4\u00d74 V10 5-Speed",
-      "current_bid": "2,100",
+      "current_bid": "4,500",
       "ends": "2026-08-27T18:51:00+00:00",
       "title_place": "Washington",
       "url": "https://bringatrailer.com/listing/1999-ford-f-250-74/"
@@ -10479,7 +10479,7 @@
       "year": "1993",
       "make": "Cadillac",
       "model": "Fleetwood Brougham",
-      "current_bid": "888",
+      "current_bid": "1,993",
       "ends": "2026-08-27T19:06:00+00:00",
       "title_place": "Oregon",
       "url": "https://bringatrailer.com/listing/1993-cadillac-fleetwood-brougham-5/"
@@ -10719,7 +10719,7 @@
       "year": "1975",
       "make": "Chevrolet",
       "model": "K5 Blazer Cheyenne 4&#215;4",
-      "current_bid": "8,100",
+      "current_bid": "9,000",
       "ends": "2026-08-27T19:34:00+00:00",
       "title_place": "Connecticut",
       "url": "https://bringatrailer.com/listing/1975-chevrolet-k5-blazer-21/"
@@ -10929,7 +10929,7 @@
       "year": "1969",
       "make": "Chevrolet",
       "model": "Nova Coupe 4-Speed",
-      "current_bid": "19,000",
+      "current_bid": "22,200",
       "ends": "2026-08-27T19:56:00+00:00",
       "title_place": "Oregon",
       "url": "https://bringatrailer.com/listing/1969-chevrolet-chevy-ii-nova-14/"
@@ -10979,7 +10979,7 @@
       "year": "1981",
       "make": "Porsche",
       "model": "911 Turbo",
-      "current_bid": "100,000",
+      "current_bid": "102,000",
       "ends": "2026-08-27T20:00:00+00:00",
       "title_place": "Montana",
       "url": "https://bringatrailer.com/listing/1981-porsche-911-turbo/"
@@ -10999,7 +10999,7 @@
       "year": "2009",
       "make": "Land Rover",
       "model": "LR2 HSE",
-      "current_bid": "1,000",
+      "current_bid": "3,007",
       "ends": "2026-08-27T20:02:00+00:00",
       "title_place": "New York",
       "url": "https://bringatrailer.com/listing/2009-land-rover-lr2-2-2/"
@@ -11019,7 +11019,7 @@
       "year": "1992",
       "make": "Mazda",
       "model": "B2600i LE-5 Cab Plus 4\u00d74 5-Speed",
-      "current_bid": "992",
+      "current_bid": "1,092",
       "ends": "2026-08-27T20:04:00+00:00",
       "title_place": "South Carolina",
       "url": "https://bringatrailer.com/listing/1992-mazda-b2600i-4x4-le-5-cab-plus-5-speed/"
@@ -11089,7 +11089,7 @@
       "year": "1962",
       "make": "Ford",
       "model": "Falcon 6-Speed Race Car",
-      "current_bid": "6,500",
+      "current_bid": "10,000",
       "ends": "2026-08-27T20:12:00+00:00",
       "title_place": "Minnesota",
       "url": "https://bringatrailer.com/listing/1962-ford-falcon-38/"
@@ -11129,7 +11129,7 @@
       "year": "1990",
       "make": "Yugo",
       "model": "GV Plus Project",
-      "current_bid": "5,000",
+      "current_bid": "5,250",
       "ends": "2026-08-27T20:17:00+00:00",
       "title_place": "Michigan",
       "url": "https://bringatrailer.com/listing/1990-yugo-gv-plus-2/"
@@ -11159,7 +11159,7 @@
       "year": "1996",
       "make": "Toyota Land",
       "model": "Cruiser HZJ75 Troopy Diesel 5-Speed",
-      "current_bid": "30,250",
+      "current_bid": "32,650",
       "ends": "2026-08-27T20:21:00+00:00",
       "title_place": "North Carolina",
       "url": "https://bringatrailer.com/listing/1996-toyota-land-cruiser-hzj75-7/"
@@ -11169,7 +11169,7 @@
       "year": "1988",
       "make": "Pontiac",
       "model": "Fiero GT 5-Speed",
-      "current_bid": "9,100",
+      "current_bid": "10,000",
       "ends": "2026-08-27T20:22:00+00:00",
       "title_place": "Florida",
       "url": "https://bringatrailer.com/listing/1988-pontiac-fiero-gt-111/"
@@ -11199,7 +11199,7 @@
       "year": "1963",
       "make": "Fiat",
       "model": "600D Multipla",
-      "current_bid": "10,000",
+      "current_bid": "12,000",
       "ends": "2026-08-27T20:25:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/1963-fiat-600-5/"
@@ -11229,7 +11229,7 @@
       "year": "1968",
       "make": "Ford",
       "model": "Shelby Mustang GT350 Fastback 4-Speed",
-      "current_bid": "50,000",
+      "current_bid": "55,000",
       "ends": "2026-08-27T20:28:00+00:00",
       "title_place": "Arizona",
       "url": "https://bringatrailer.com/listing/1968-ford-shelby-mustang-gt350-6/"
@@ -11239,7 +11239,7 @@
       "year": "2016",
       "make": "Porsche",
       "model": "Cayman GT4",
-      "current_bid": "98,100",
+      "current_bid": "98,600",
       "ends": "2026-08-27T20:29:00+00:00",
       "title_place": null,
       "url": "https://bringatrailer.com/listing/2016-porsche-cayman-gt4-249/"
@@ -11249,7 +11249,7 @@
       "year": "1968",
       "make": "Triumph",
       "model": "TR250",
-      "current_bid": "2,500",
+      "current_bid": "3,500",
       "ends": "2026-08-27T20:30:00+00:00",
       "title_place": "Florida",
       "url": "https://bringatrailer.com/listing/1968-triumph-tr250-111/"
@@ -11269,7 +11269,7 @@
       "year": "1963",
       "make": ".5",
       "model": "Ford Galaxie 500 Hardtop Fastback R-Code 427 4-Speed",
-      "current_bid": "20,000",
+      "current_bid": "25,000",
       "ends": "2026-08-27T20:32:00+00:00",
       "title_place": "Virginia",
       "url": "https://bringatrailer.com/listing/1963-ford-galaxie-500-67/"
@@ -11309,7 +11309,7 @@
       "year": "1994",
       "make": "Toyota Land",
       "model": "Cruiser FZJ80",
-      "current_bid": "6,000",
+      "current_bid": "12,000",
       "ends": "2026-08-27T20:36:00+00:00",
       "title_place": "Wisconsin",
       "url": "https://bringatrailer.com/listing/1994-toyota-land-cruiser-fzj80-148/"
@@ -11389,7 +11389,7 @@
       "year": "2020",
       "make": "Thor",
       "model": "Motor Coach Gemini 24SX",
-      "current_bid": "0",
+      "current_bid": "2,020",
       "ends": "2026-08-27T20:44:00+00:00",
       "title_place": "California",
       "url": "https://bringatrailer.com/listing/2020-thor-motor-coach-sprinter-rv-conversion/"
@@ -11429,7 +11429,7 @@
       "year": "1999",
       "make": "Porsche",
       "model": "911 Carrera Coupe 6-Speed",
-      "current_bid": "16,250",
+      "current_bid": "20,000",
       "ends": "2026-08-27T20:48:00+00:00",
       "title_place": "Pennsylvania",
       "url": "https://bringatrailer.com/listing/1999-porsche-911-carrera-coupe-220/"
@@ -11439,7 +11439,7 @@
       "year": "2006",
       "make": "Ferrari",
       "model": "F430 Spider 6-Speed",
-      "current_bid": "260,000",
+      "current_bid": "270,000",
       "ends": "2026-08-27T20:49:00+00:00",
       "title_place": "Texas",
       "url": "https://bringatrailer.com/listing/2006-ferrari-f430-67/"
@@ -11459,7 +11459,7 @@
       "year": "1953",
       "make": "Chevrolet",
       "model": "Corvette",
-      "current_bid": "35,000",
+      "current_bid": "100,000",
       "ends": "2026-08-28T17:00:00+00:00",
       "title_place": "New York",
       "url": "https://bringatrailer.com/listing/1953-chevrolet-corvette-20/"
@@ -11489,7 +11489,7 @@
       "year": "1918",
       "make": "Ahrens-Fox",
       "model": "M-K-4 Fire Truck",
-      "current_bid": "5,911",
+      "current_bid": "6,343",
       "ends": "2026-08-28T17:15:00+00:00",
       "title_place": "Montana",
       "url": "https://bringatrailer.com/listing/1918-ahrens-fox-model-m-fire-truck/"
@@ -11503,6 +11503,116 @@
       "ends": "2026-08-28T17:15:00+00:00",
       "title_place": "New York",
       "url": "https://bringatrailer.com/listing/1997-porsche-911-turbo-120/"
+    },
+    {
+      "full_title": "1983 Datsun 280ZX Turbo 5-Speed",
+      "year": "1983",
+      "make": "Datsun",
+      "model": "280ZX Turbo 5-Speed",
+      "current_bid": "6,000",
+      "ends": "2026-08-28T17:20:00+00:00",
+      "title_place": "California",
+      "url": "https://bringatrailer.com/listing/1983-datsun-280zx-turbo-46/"
+    },
+    {
+      "full_title": "2002 Chevrolet Silverado 2500HD",
+      "year": "2002",
+      "make": "Chevrolet",
+      "model": "Silverado 2500HD",
+      "current_bid": "2,002",
+      "ends": "2026-08-28T17:21:00+00:00",
+      "title_place": "California",
+      "url": "https://bringatrailer.com/listing/2002-chevrolet-silverado-2500hd-30/"
+    },
+    {
+      "full_title": "One-Owner 2002 BMW M5",
+      "year": "2002",
+      "make": "BMW",
+      "model": "M5",
+      "current_bid": "25,000",
+      "ends": "2026-08-28T17:23:00+00:00",
+      "title_place": "California",
+      "url": "https://bringatrailer.com/listing/2002-bmw-m5-299/"
+    },
+    {
+      "full_title": "350-Powered 1955 Chevrolet Bel Air 2-Door Hardtop",
+      "year": "1955",
+      "make": "Chevrolet",
+      "model": "Bel Air 2-Door Hardtop",
+      "current_bid": "2,100",
+      "ends": "2026-08-28T17:24:00+00:00",
+      "title_place": "California",
+      "url": "https://bringatrailer.com/listing/1955-chevrolet-bel-air-265/"
+    },
+    {
+      "full_title": "1969 Honda Z50A Mini Trail",
+      "year": "1969",
+      "make": "Honda",
+      "model": "Z50A Mini Trail",
+      "current_bid": "600,000",
+      "ends": "2026-08-28T17:26:00+00:00",
+      "title_place": null,
+      "url": "https://bringatrailer.com/listing/1969-honda-z50a-mini-trail-89/"
+    },
+    {
+      "full_title": "1956 Neptune Model AA1 Outboard",
+      "year": "1956",
+      "make": "Neptune",
+      "model": "Model AA1 Outboard",
+      "current_bid": "600,000",
+      "ends": "2026-08-28T17:27:00+00:00",
+      "title_place": null,
+      "url": "https://bringatrailer.com/listing/1956-neptune-outboard/"
+    },
+    {
+      "full_title": "1998 Toyota Land Cruiser UZJ100",
+      "year": "1998",
+      "make": "Toyota Land",
+      "model": "Cruiser UZJ100",
+      "current_bid": "8,850",
+      "ends": "2026-08-28T17:29:00+00:00",
+      "title_place": "Florida",
+      "url": "https://bringatrailer.com/listing/1998-toyota-land-cruiser-102/"
+    },
+    {
+      "full_title": "1992 Ford F-150 SuperCab 4\u00d74",
+      "year": "1992",
+      "make": "Ford",
+      "model": "F-150 SuperCab 4\u00d74",
+      "current_bid": "600,000",
+      "ends": "2026-08-28T18:43:00+00:00",
+      "title_place": "Colorado",
+      "url": "https://bringatrailer.com/listing/1992-ford-f-150-114/"
+    },
+    {
+      "full_title": "2020 Lamborghini Aventador LP770-4 SVJ Roadster",
+      "year": "2020",
+      "make": "Lamborghini",
+      "model": "Aventador LP770-4 SVJ Roadster",
+      "current_bid": "1,600",
+      "ends": "2026-08-31T17:00:00+00:00",
+      "title_place": "Florida",
+      "url": "https://bringatrailer.com/listing/2020-lamborghini-aventador-lp770-4-svj-roadster-5/"
+    },
+    {
+      "full_title": "1971 Mercedes-Benz 280SE 3.5 Cabriolet",
+      "year": "1971",
+      "make": "Mercedes-Benz",
+      "model": "280SE 3.5 Cabriolet",
+      "current_bid": "22,000",
+      "ends": "2026-08-31T17:10:00+00:00",
+      "title_place": "Florida",
+      "url": "https://bringatrailer.com/listing/1971-mercedes-benz-280se-3-5-cabriolet-26/"
+    },
+    {
+      "full_title": "1988 Porsche 911 Turbo Cabriolet M505 Slant Nose",
+      "year": "1988",
+      "make": "Porsche",
+      "model": "911 Turbo Cabriolet M505 Slant Nose",
+      "current_bid": "90,000",
+      "ends": "2026-09-01T17:00:00+00:00",
+      "title_place": "Tennessee",
+      "url": "https://bringatrailer.com/listing/1988-porsche-911-turbo-cabriolet-56/"
     }
   ]
 }
