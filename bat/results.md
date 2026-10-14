@@ -1,230 +1,61 @@
-# BaT scan — last run 2026-10-14 16:19 UTC
+# BaT scan — last run 2026-10-14 21:22 UTC
 
 Window: all live auctions closing within 14 days (effectively all); filter by days-left/make/title-place in the dashboard
 
 | Year | Make | Model | Current Bid | Ends (UTC) | Title/Reg Place |
 |---|---|---|---|---|---|
-| 2023 | Porsche | 911 Sport Classic | $669,420 | 2026-10-14T17:05:00+00:00 | Montana |
-| 1953 | Alfa Romeo | 1900C Sprint Coupe by Touring 5-Speed | $90,000 | 2026-10-14T17:10:00+00:00 | California |
-| 2015 | Mercedes-Benz | SLS AMG GT Coupe Final Edition | $350,000 | 2026-10-14T17:15:00+00:00 | Florida |
-| 1976 | Ferrari | 308 GTB Vetroresina | $110,000 | 2026-10-14T17:20:00+00:00 | California |
-| 1990 | Porsche | 911 Carrera Coupe by Singer | $457,500 | 2026-10-14T17:25:00+00:00 | Montana |
-| 1998 | Porsche | 911 Carrera S Coupe 6-Speed | $175,000 | 2026-10-14T17:30:00+00:00 | California |
-| 1983 | Lancia | 037 Evolution II | $402,000 | 2026-10-14T17:35:00+00:00 | New Hampshire |
-| 2018 | Porsche | 911 GT2 RS Weissach | $360,000 | 2026-10-14T17:40:00+00:00 | California |
-| 1993 | Ford | Mustang SVT Cobra R | $100,000 | 2026-10-14T17:45:00+00:00 | Indiana |
-| 1980 | Ferrari | 308 GTSi | $66,000 | 2026-10-14T17:46:00+00:00 | Florida |
-| 2003 | Porsche | 911 Turbo Coupe 6-Speed | $68,000 | 2026-10-14T17:47:00+00:00 | California |
-| 2001 | Ferrari | 360 Spider 6-Speed | $67,500 | 2026-10-14T17:48:00+00:00 | Texas |
-| 2011 | Porsche | 911 Turbo S Cabriolet | $80,000 | 2026-10-14T17:49:00+00:00 | Montana |
-| 1957 | Ford | Thunderbird 3-Speed | $16,000 | 2026-10-14T17:50:00+00:00 | Florida |
-| 2005 | Honda | S2000 | $36,005 | 2026-10-14T17:51:00+00:00 | Missouri |
-| 1972 | Triumph | TR6 | $19,250 | 2026-10-14T17:52:00+00:00 | Colorado |
-| 1973 | Ford | Bronco | $15,000 | 2026-10-14T17:54:00+00:00 | Washington |
-| 1970 | Mercedes-Benz | 280SL | $75,000 | 2026-10-14T17:55:00+00:00 | Montana |
-| 1967 | Lincoln | Continental Convertible | $21,500 | 2026-10-14T17:56:00+00:00 | Michigan |
-| 2012 | BMW | M3 Coupe Competition Edition Frozen Silver | $56,500 | 2026-10-14T17:57:00+00:00 | Arizona |
-| 1985 | Volkswagen | GTI w/BBS Body Kit | $22,000 | 2026-10-14T17:58:00+00:00 | Montana |
-| 2005 | Harley-Davidson | V-Rod for the Kyle Petty Charity Ride Across America | $11,000 | 2026-10-14T17:59:00+00:00 | Connecticut |
-| 1989 | Porsche | 911 Carrera Coupe G50 | $70,000 | 2026-10-14T18:01:00+00:00 | Not found |
-| 2017 | Alfa Romeo | 4C Coupe | $47,000 | 2026-10-14T18:02:00+00:00 | Illinois |
-| 2008 | Ford | F-350 Lariat Crew Cab Power Stroke 4×4 | $25,500 | 2026-10-14T18:04:00+00:00 | Pennsylvania |
-| 2007 | Mercedes-Benz | CLK550 Cabriolet | $10,250 | 2026-10-14T18:05:00+00:00 | California |
-| 1988 | Jaguar | XJ-S V12 Hess &#038; Eisenhardt | $8,500 | 2026-10-14T18:06:00+00:00 | Florida |
-| 2003 | Jaguar | XKR Convertible | $9,400 | 2026-10-14T18:07:00+00:00 | Massachusetts |
-| 2014 | Mercedes-Benz | E350 Wagon 4MATIC | $4,900 | 2026-10-14T18:08:00+00:00 | Montana |
-| 2001 | Porsche | Boxster 5-Speed | $6,800 | 2026-10-14T18:09:00+00:00 | Ohio |
-| 1968 | Chevrolet | Camaro Coupe | $25,500 | 2026-10-14T18:10:00+00:00 | Wyoming |
-| 2001 | BMW | M5 | $35,039 | 2026-10-14T18:11:00+00:00 | Pennsylvania |
-| 1970 | Chevrolet | Chevelle Malibu Sport Coupe | $43,250 | 2026-10-14T18:13:00+00:00 | Indiana |
-| 2021 | Ferrari | F8 Spider | $405,000 | 2026-10-14T18:14:00+00:00 | Arizona |
-| 1995 | Toyota Land | Cruiser FZJ80 | $16,000 | 2026-10-14T18:15:00+00:00 | South Carolina |
-| 2015 | Aston Martin | DB9 Volante | $25,000 | 2026-10-14T18:16:00+00:00 | Texas |
-| 1995 | Chevrolet | K2500 Suburban LS 7.4L 4×4 | $6,500 | 2026-10-14T18:17:00+00:00 | California |
-| 2016 | Porsche | Panamera 4 Edition | $15,000 | 2026-10-14T18:18:00+00:00 | Virginia |
-| 2016 | Land Rover | LR4 HSE Luxury | $5,000 | 2026-10-14T18:19:00+00:00 | California |
-| 2015 | Volvo | V60 Polestar | $22,000 | 2026-10-14T18:21:00+00:00 | Not found |
-| 1997 | Porsche | 911 Carrera Cabriolet 6-Speed | $50,500 | 2026-10-14T18:22:00+00:00 | Montana |
-| 1960 | Willys | CJ-5 4-Speed | $5,000 | 2026-10-14T18:23:00+00:00 | Arizona |
-| 2021 | Ram | 1500 TRX Crew Cab 4&#215;4 | $28,000 | 2026-10-14T18:24:00+00:00 | Arizona |
-| 1969 | Dodge | Super Bee–Bodied 2009 Dodge Challenger R/T 6-Speed | $84,500 | 2026-10-14T18:25:00+00:00 | New York |
-| 2002 | Toyota | 4Runner Limited 4WD | $6,000 | 2026-10-14T18:26:00+00:00 | Georgia |
-| 1992 | Acura | NSX 5-Speed | $44,000 | 2026-10-14T18:27:00+00:00 | Georgia |
-| 1958 | Edsel | Citation Convertible | $10,500 | 2026-10-14T18:28:00+00:00 | Arizona |
-| 2015 | Porsche | Boxster GTS | $20,500 | 2026-10-14T18:29:00+00:00 | Michigan |
-| 2003 | Infiniti | M45 | $12,000 | 2026-10-14T18:30:00+00:00 | California |
-| 1988 | Volkswagen | Vanagon Caravelle Carat 5-Speed | $6,000 | 2026-10-14T18:31:00+00:00 | Wisconsin |
-| 1999 | Porsche | 911 Carrera 4 Coupe 6-Speed | $10,996 | 2026-10-14T18:32:00+00:00 | North Carolina |
-| 1966 | Ford | Mustang Fastback Track Car | $42,500 | 2026-10-14T18:33:00+00:00 | California |
-| 2018 | Dodge | Challenger SRT Demon | $80,000 | 2026-10-14T18:34:00+00:00 | Wisconsin |
-| 1990 | Chevrolet | Corvette Convertible | $8,500 | 2026-10-14T18:35:00+00:00 | Colorado |
-| 1988 | Saab | 900 Turbo SPG 5-Speed | $9,250 | 2026-10-14T18:36:00+00:00 | New York |
-| 2006 | Jeep | Wrangler Rubicon 4.0 6-Speed | $25,000 | 2026-10-14T18:37:00+00:00 | Pennsylvania |
-| 1992 | Chevrolet | Corvette Coupe 6-Speed | $15,250 | 2026-10-14T18:38:00+00:00 | Indiana |
-| 2014 | BMW | 750Li xDrive M Sport | $15,000 | 2026-10-14T18:39:00+00:00 | Not found |
-| 1995 | Land Rover | Range Rover County Classic LWB | $43,500 | 2026-10-14T18:40:00+00:00 | Montana |
-| 2002 | Audi | TT Coupe ALMS Commemorative Edition Quattro 6-Speed | $13,000 | 2026-10-14T18:41:00+00:00 | California |
-| 1981 | Porsche | 911SC Coupe | $60,888 | 2026-10-14T18:42:00+00:00 | Oregon |
-| 1986 | Chrysler | LeBaron Town &#038; Country Mark Cross Convertible | $6,100 | 2026-10-14T18:43:00+00:00 | Florida |
-| 2024 | Porsche | 718 Spyder RS Weissach | $194,000 | 2026-10-14T18:47:00+00:00 | Montana |
-| 1988 | Pontiac | Fiero GT 5-Speed | $10,500 | 2026-10-14T18:49:00+00:00 | Nevada |
-| 2022 | Mercedes-AMG | G63 4&#215;4² | $228,000 | 2026-10-14T18:50:00+00:00 | Georgia |
-| 2016 | Mercedes-AMG | E63 S 4MATIC Wagon | $62,500 | 2026-10-14T18:51:00+00:00 | New York |
-| 1998 | Volkswagen | New Beetle GT6 6-Speed by HPA Motorsports | $12,500 | 2026-10-14T18:52:00+00:00 | Massachusetts |
-| 1959 | Austin-Healey | 3000 BT7 Mk I | $15,000 | 2026-10-14T18:53:00+00:00 | New Jersey |
-| 1987 | Mercedes-Benz | 560SEL | $19,000 | 2026-10-14T18:54:00+00:00 | North Carolina |
-| 1924 | Buick | Series 24-Six Touring Car | $5,000 | 2026-10-14T18:55:00+00:00 | Utah |
-| 2021 | Mercedes-Benz | E450 4MATIC All-Terrain Wagon | $31,500 | 2026-10-14T18:56:00+00:00 | Virginia |
-| 2008 | Bentley | Continental GTC | $25,500 | 2026-10-14T18:57:00+00:00 | Ohio |
-| 1991 | BMW | 850i | $6,200 | 2026-10-14T18:58:00+00:00 | Not found |
-| 2004 | Mercedes-Benz | C320 Sport Coupe | $2,100 | 2026-10-14T18:59:00+00:00 | Texas |
-| 1989 | Mercedes-Benz | 560SL | $7,000 | 2026-10-14T19:00:00+00:00 | New Jersey |
-| 1986 | Alfa Romeo | Spider Quadrifoglio | $5,658 | 2026-10-14T19:01:00+00:00 | Mississippi |
-| 1966 | Buick | Wildcat Custom Convertible | $6,500 | 2026-10-14T19:02:00+00:00 | Indiana |
-| 1952 | Chevrolet | 3100 Pickup | $25,000 | 2026-10-14T19:03:00+00:00 | New Jersey |
-| 2012 | Chevrolet | Camaro 2SS Convertible 6-Speed | $16,500 | 2026-10-14T19:04:00+00:00 | Ohio |
-| 1987 | Porsche | 924S 5-Speed | $15,250 | 2026-10-14T19:06:00+00:00 | Massachusetts |
-| 1981 | Jeep | Cherokee Laredo 4×4 | $5,000 | 2026-10-14T19:07:00+00:00 | North Carolina |
-| 1985 | Toyota | Supra | $5,000 | 2026-10-14T19:08:00+00:00 | Michigan |
-| 2023 | Chevrolet | Camaro ZL1 1LE Coupe | $68,500 | 2026-10-14T19:09:00+00:00 | Arizona |
-| 1971 | GMC | C2500 Sierra | $6,600 | 2026-10-14T19:10:00+00:00 | New York |
-| 1970 | Porsche | 914-6 GT-Style Track Car | $40,500 | 2026-10-14T19:11:00+00:00 | Illinois |
-| 2003 | Ford | F-150 Harley-Davidson Edition SuperCrew | $22,250 | 2026-10-14T19:12:00+00:00 | Pennsylvania |
-| 1991 | Volvo | 240 Wagon | $14,000 | 2026-10-14T19:13:00+00:00 | Massachusetts |
-| 2024 | Jaguar | F-Type P575 R75 Convertible | $72,000 | 2026-10-14T19:14:00+00:00 | Wisconsin |
-| 1989 | Chevrolet | S-10 Tahoe Extended Cab V6 4×4 Baja | $8,600 | 2026-10-14T19:15:00+00:00 | Arizona |
-| 1977 | MG | MGB Roadster | $2,000 | 2026-10-14T19:16:00+00:00 | Idaho |
-| 1964 | Ford | Thunderbird | $4,250 | 2026-10-14T19:17:00+00:00 | California |
-| 1994 | Chevrolet | K1500 Silverado Z71 4×4 Sportside | $12,000 | 2026-10-14T19:18:00+00:00 | Colorado |
-| 1980 | Chevrolet | Corvette | $5,800 | 2026-10-14T19:19:00+00:00 | Washington |
-| 2017 | Ford | Transit 250 Sherrod Conversion Van | $19,500 | 2026-10-14T19:20:00+00:00 | Georgia |
-| 1976 | Jaguar | XJ6C Project | $5,000 | 2026-10-14T19:21:00+00:00 | Washington |
-| 1978 | Porsche | 928 5-Speed Project | $11,000 | 2026-10-14T19:22:00+00:00 | Ohio |
-| 1971 | Ford | F-250 Sport Custom Highboy 4&#215;4 | $22,500 | 2026-10-14T19:23:00+00:00 | Oregon |
-| 2012 | Porsche | 911 Carrera S Coupe | $71,500 | 2026-10-14T19:24:00+00:00 | Ohio |
-| 1991 | Honda | Accord EX Wagon | $4,000 | 2026-10-14T19:24:00+00:00 | California |
-| 1990 | Mitsubishi | Delica L300 Star Wagon Chamonix Edition 4×4 | $5,500 | 2026-10-14T19:25:00+00:00 | Vermont |
-| 1953 | Studebaker | Champion Regal Starliner Hardtop | $8,000 | 2026-10-14T19:26:00+00:00 | Wisconsin |
-| 2003 | Chevrolet | S-10 LS Crew Cab V6 4×4 | $13,000 | 2026-10-14T19:27:00+00:00 | North Carolina |
-| 2014 | Chevrolet | SS Sedan | $12,500 | 2026-10-14T19:28:00+00:00 | Missouri |
-| 2007 | BMW | M6 Convertible 6-Speed | $12,000 | 2026-10-14T19:29:00+00:00 | Pennsylvania |
-| 1959 | Edsel | Ranger Two-Door Hardtop | $3,100 | 2026-10-14T19:30:00+00:00 | Pennsylvania |
-| 2007 | Chevrolet | Silverado 2500HD LT | $3,500 | 2026-10-14T19:31:00+00:00 | Texas |
-| 1996 | Chevrolet | Impala SS | $20,000 | 2026-10-14T19:32:00+00:00 | North Dakota |
-| 2004 | Honda | Rune | $13,000 | 2026-10-14T19:34:00+00:00 | Arizona |
-| 2005 | Mercedes-Benz | CLK55 AMG Cabriolet | $3,950 | 2026-10-14T19:35:00+00:00 | North Carolina |
-| 1978 | Ford | F-250 Camper Special 4×4 Flatbed | $5,100 | 2026-10-14T19:36:00+00:00 | Oregon |
-| 1997 | Mercedes-Benz | SL600 | $15,900 | 2026-10-14T19:37:00+00:00 | California |
-| 1989 | Jeep | Grand Wagoneer | $25,000 | 2026-10-14T19:39:00+00:00 | California |
-| 2023 | Porsche | 911 Turbo S Coupe | $160,000 | 2026-10-14T19:40:00+00:00 | Florida |
-| 1975 | Yamaha | RD350 | $2,500 | 2026-10-14T19:41:00+00:00 | Maryland |
-| 1999 | Jeep | Cherokee Classic 4&#215;4 | $12,250 | 2026-10-14T19:42:00+00:00 | Connecticut |
-| 1929 | Ford | Model A Coupe | $10,000 | 2026-10-14T19:43:00+00:00 | Montana |
-| 1975 | Kawasaki | F9 Bighorn 350 | $3,000 | 2026-10-14T19:44:00+00:00 | Pennsylvania |
-| 2014 | Ferrari | 458 Spider | $260,000 | 2026-10-14T19:45:00+00:00 | Not found |
-| 2013 | Porsche | 911 Carrera 4S Coupe | $66,000 | 2026-10-14T19:46:00+00:00 | Iowa |
-| 1986 | Land Rover | 110 Diesel 5-Speed | $15,250 | 2026-10-14T19:47:00+00:00 | Florida |
-| 2007 | Chevrolet | Corvette Z06 2LZ 6-Speed | $38,250 | 2026-10-14T19:47:00+00:00 | Florida |
-| 1984 | Honda | CT110 | $2,100 | 2026-10-14T19:48:00+00:00 | California |
-| 2013 | BMW | 335is Convertible 6-Speed | $20,000 | 2026-10-14T19:50:00+00:00 | New Jersey |
-| 2001 | Plymouth | Prowler | $20,000 | 2026-10-14T19:51:00+00:00 | Arizona |
-| 1984 | Honda | VT250F Project | $201 | 2026-10-14T19:52:00+00:00 | Not found |
-| 1950 | Oldsmobile | Futuramic Series 88 2-Door Club Sedan | $16,000 | 2026-10-14T19:53:00+00:00 | Arizona |
-| 1966 | Ford | Bronco by Vintage Broncos | $82,000 | 2026-10-14T19:54:00+00:00 | Virginia |
-| 2000 | Chevrolet | Corvette Convertible 6-Speed | $8,000 | 2026-10-14T19:55:00+00:00 | Florida |
-| 2001 | Porsche | 911 Carrera Coupe 6-Speed | $18,500 | 2026-10-14T19:56:00+00:00 | New York |
-| 2015 | Mercedes-Benz | G550 | $38,830 | 2026-10-14T19:57:00+00:00 | Montana |
-| 2012 | Cadillac | CTS-V Wagon | $46,500 | 2026-10-14T19:58:00+00:00 | Ohio |
-| 2010 | Porsche | 911 Carrera Cabriolet | $44,000 | 2026-10-14T19:59:00+00:00 | Florida |
-| 1998 | Dodge | Viper GTS GT2 Championship Edition | $101,111 | 2026-10-14T20:00:00+00:00 | Virginia |
-| 2019 | Fiat | 124 Spider Abarth 6-Speed | $12,250 | 2026-10-14T20:01:00+00:00 | Texas |
-| 1990 | Nissan | 300ZX Twin Turbo 5-Speed | $45,000 | 2026-10-14T20:02:00+00:00 | Montana |
-| 2007 | Ferrari | F430 | $186,000 | 2026-10-14T20:03:00+00:00 | Arizona |
-| 1988 | Porsche | 911 Turbo Coupe 3.4L | $166,666 | 2026-10-14T20:04:00+00:00 | Washington |
-| 2005 | BMW | F650GS Dakar | $2,200 | 2026-10-14T20:05:00+00:00 | Missouri |
-| 2025 | Porsche | 911 GT3 Weissach 6-Speed | $192,000 | 2026-10-14T20:06:00+00:00 | Virginia |
-| 1978 | Oldsmobile | Toronado Brougham Coupe | $4,444 | 2026-10-14T20:11:00+00:00 | Idaho |
-| 1969 | Ford | Mustang SportsRoof 302 3-Speed | $30,000 | 2026-10-14T20:16:00+00:00 | New Jersey |
-| 1988 | Mazda | 323 GTX Turbo | $6,750 | 2026-10-14T20:21:00+00:00 | Utah |
-| 2003 | Mercedes-Benz | SL500 | $10,500 | 2026-10-14T20:31:00+00:00 | Montana |
-| 1986 | Porsche | 911 Carrera Cabriolet Slant Nose Conversion | $43,000 | 2026-10-14T20:32:00+00:00 | New York |
-| 1991 | Chevrolet | Corvette ZR-1 | $34,250 | 2026-10-14T20:33:00+00:00 | Illinois |
-| 2019 | Mercedes-Benz | S560 4MATIC Sedan | $28,000 | 2026-10-14T20:34:00+00:00 | North Carolina |
-| 2019 | Land Rover | Range Rover SVAutobiography LWB | $60,000 | 2026-10-14T20:35:00+00:00 | Florida |
-| 2012 | Mercedes-Benz | E63 AMG Wagon P30 Performance Package | $25,300 | 2026-10-14T20:36:00+00:00 | Texas |
-| 2007 | Chevrolet | Express 2500 Duramax | $14,000 | 2026-10-14T20:37:00+00:00 | Pennsylvania |
-| 1969 | Porsche | 911T Coupe 5-Speed | $669,420 | 2026-10-14T20:38:00+00:00 | Not found |
-| 1971 | Pontiac | GTO Hardtop Coupe | $20,250 | 2026-10-14T20:39:00+00:00 | Idaho |
-| 2013 | Ford | Mustang Shelby GT500 Convertible | $54,500 | 2026-10-14T20:40:00+00:00 | Pennsylvania |
-| 2007 | Lamborghini | Gallardo Spyder | $46,250 | 2026-10-14T20:41:00+00:00 | California |
-| 2002 | BMW | M Coupe S54 | $54,500 | 2026-10-14T20:42:00+00:00 | Montana |
-| 1993 | BMW | R100RT | $2,600 | 2026-10-14T20:43:00+00:00 | Texas |
-| 2004 | BMW | 330Ci ZHP Coupe 6-Speed | $15,500 | 2026-10-14T20:44:00+00:00 | Pennsylvania |
-| 1939 | GMC | AC-102 Pickup | $13,750 | 2026-10-14T20:45:00+00:00 | Florida |
-| 1953 | Kaiser | Manhattan Sedan | $1,953 | 2026-10-14T20:47:00+00:00 | South Carolina |
-| 1964 | Chevrolet | Corvette Convertible 4-Speed | $32,000 | 2026-10-14T20:48:00+00:00 | Texas |
-| 2006 | Mercedes-Benz | E350 4MATIC Sedan | $8,000 | 2026-10-14T20:50:00+00:00 | Illinois |
-| 1957 | BMW | Isetta 300 Bubble Window | $30,923 | 2026-10-14T20:52:00+00:00 | Arizona |
-| 2003 | Chevrolet | Corvette Coupe | $10,099 | 2026-10-14T20:53:00+00:00 | Ohio |
-| 2007 | BMW | 550i Sport | $7,000 | 2026-10-14T20:54:00+00:00 | Florida |
-| 1931 | Chevrolet | Series AE Independence Canopy Express Huckster | $10,250 | 2026-10-14T20:55:00+00:00 | Georgia |
-| 2025 | Porsche | 911 Carrera 4 GTS Coupe | $112,000 | 2026-10-14T20:56:00+00:00 | California |
-| 2010 | Ferrari | California | $61,500 | 2026-10-14T20:57:00+00:00 | Colorado |
-| 1962 | International | Harvester Scout 80 4×4 | $6,100 | 2026-10-14T20:59:00+00:00 | California |
-| 2005 | Porsche | Cayenne Turbo | $8,200 | 2026-10-14T21:00:00+00:00 | Pennsylvania |
-| 1983 | Jeep | CJ-8 Scrambler 4-Speed | $15,250 | 2026-10-14T21:01:00+00:00 | Idaho |
-| 2001 | Subaru | Outback L.L. Bean Edition | $15,805 | 2026-10-14T21:02:00+00:00 | Montana |
-| 2018 | Volvo | V90 T6 AWD R-Design | $9,500 | 2026-10-14T21:04:00+00:00 | Connecticut |
-| 1998 | BMW | M3 Sedan 6-Speed | $30,036 | 2026-10-14T21:05:00+00:00 | California |
-| 1967 | Chevrolet | C10 Pickup Stepside | $20,069 | 2026-10-14T21:06:00+00:00 | Pennsylvania |
-| 2019 | Ford | F-150 Raptor SuperCrew | $32,500 | 2026-10-14T21:07:00+00:00 | California |
-| 2012 | Audi | A4 Avant Premium Plus | $18,115 | 2026-10-14T21:08:00+00:00 | California |
-| 2018 | Jeep | Wrangler Unlimited Rubicon | $15,000 | 2026-10-14T21:09:00+00:00 | California |
-| 2000 | Dodge | Viper GTS ACR | $53,000 | 2026-10-14T21:10:00+00:00 | California |
-| 1994 | Land Rover | Defender 90 NAS 110 Wagon Conversion | $32,750 | 2026-10-14T21:11:00+00:00 | Texas |
-| 1990 | Mazda | MX-5 Miata Race Car | $2,500 | 2026-10-14T21:12:00+00:00 | Illinois |
-| 1979 | Mercedes-Benz | 300D | $19,250 | 2026-10-14T21:13:00+00:00 | Florida |
-| 1985 | Mercedes-Benz | 380SL | $3,858 | 2026-10-14T21:14:00+00:00 | Alabama |
-| 2008 | Jaguar | Super V8 | $18,500 | 2026-10-14T21:15:00+00:00 | Pennsylvania |
-| 1982 | Volkswagen | Vanagon Riviera 4-Speed | $2,600 | 2026-10-14T21:16:00+00:00 | Washington |
+| 2018 | Volvo | V90 T6 AWD R-Design | $12,250 | 2026-10-14T21:04:00+00:00 | Connecticut |
+| 1998 | BMW | M3 Sedan 6-Speed | $31,036 | 2026-10-14T21:05:00+00:00 | California |
+| 1967 | Chevrolet | C10 Pickup Stepside | $21,069 | 2026-10-14T21:06:00+00:00 | Pennsylvania |
+| 2019 | Ford | F-150 Raptor SuperCrew | $42,500 | 2026-10-14T21:07:00+00:00 | California |
+| 2012 | Audi | A4 Avant Premium Plus | $20,250 | 2026-10-14T21:08:00+00:00 | California |
+| 2018 | Jeep | Wrangler Unlimited Rubicon | $15,250 | 2026-10-14T21:09:00+00:00 | California |
+| 2000 | Dodge | Viper GTS ACR | $58,000 | 2026-10-14T21:10:00+00:00 | California |
+| 1994 | Land Rover | Defender 90 NAS 110 Wagon Conversion | $33,000 | 2026-10-14T21:11:00+00:00 | Texas |
+| 1990 | Mazda | MX-5 Miata Race Car | $4,000 | 2026-10-14T21:12:00+00:00 | Illinois |
+| 1979 | Mercedes-Benz | 300D | $23,000 | 2026-10-14T21:13:00+00:00 | Florida |
+| 1985 | Mercedes-Benz | 380SL | $9,500 | 2026-10-14T21:14:00+00:00 | Alabama |
+| 2008 | Jaguar | Super V8 | $20,500 | 2026-10-14T21:15:00+00:00 | Pennsylvania |
+| 1982 | Volkswagen | Vanagon Riviera 4-Speed | $3,500 | 2026-10-14T21:16:00+00:00 | Washington |
 | 1987 | Bertone | X1/9 | $15,000 | 2026-10-14T21:17:00+00:00 | North Carolina |
-| 2005 | Mercedes-Benz | CLK320 Cabriolet | $3,900 | 2026-10-14T21:18:00+00:00 | Tennessee |
+| 2005 | Mercedes-Benz | CLK320 Cabriolet | $6,794 | 2026-10-14T21:18:00+00:00 | Tennessee |
 | 2000 | Lotus | Elise 340R | $81,530 | 2026-10-14T21:19:00+00:00 | Not found |
-| 2004 | Lexus | LX470 | $7,100 | 2026-10-14T21:19:00+00:00 | Florida |
-| 1957 | Ford | Fairlane 500 Skyliner | $11,250 | 2026-10-14T21:20:00+00:00 | Iowa |
+| 2004 | Lexus | LX470 | $9,850 | 2026-10-14T21:19:00+00:00 | Florida |
+| 1957 | Ford | Fairlane 500 Skyliner | $19,000 | 2026-10-14T21:20:00+00:00 | Iowa |
 | 2006 | Mercedes-Benz | E320 CDI | $11,250 | 2026-10-14T21:21:00+00:00 | New Jersey |
-| 1999 | Porsche | Boxster 5-Speed | $5,000 | 2026-10-14T21:22:00+00:00 | New York |
-| 1991 | Mercedes-Benz | 500SL | $7,000 | 2026-10-14T21:23:00+00:00 | Illinois |
+| 1999 | Porsche | Boxster 5-Speed | $8,000 | 2026-10-14T21:22:00+00:00 | New York |
+| 1991 | Mercedes-Benz | 500SL | $9,000 | 2026-10-14T21:23:00+00:00 | Illinois |
 | 1972 | BMW | 2002tii | $25,002 | 2026-10-14T21:24:00+00:00 | Oregon |
-| 2008 | Land Rover | Range Rover Supercharged | $13,000 | 2026-10-14T21:26:00+00:00 | California |
+| 2008 | Land Rover | Range Rover Supercharged | $14,000 | 2026-10-14T21:26:00+00:00 | California |
 | 1959 | Ford | F-100 Flareside Project | $11,250 | 2026-10-14T21:26:00+00:00 | Georgia |
-| 1984 | Buick | LeSabre Limited | $6,307 | 2026-10-14T21:27:00+00:00 | New York |
-| 2011 | Mini | Cooper S Clubman 6-Speed | $5,500 | 2026-10-14T21:28:00+00:00 | California |
-| 1962 | Jaguar | Mk II 3.8 | $22,222 | 2026-10-14T21:29:00+00:00 | California |
+| 1984 | Buick | LeSabre Limited | $6,425 | 2026-10-14T21:27:00+00:00 | New York |
+| 2011 | Mini | Cooper S Clubman 6-Speed | $9,500 | 2026-10-14T21:28:00+00:00 | California |
+| 1962 | Jaguar | Mk II 3.8 | $22,472 | 2026-10-14T21:29:00+00:00 | California |
 | 2005 | Honda | Element EX 5-Speed | $7,500 | 2026-10-14T21:30:00+00:00 | California |
 | 1980 | Chevrolet | Camaro Z28 | $19,250 | 2026-10-14T21:32:00+00:00 | Massachusetts |
-| 1998 | Toyota | Tacoma Limited XtraCab TRD V6 4×4 | $14,250 | 2026-10-14T21:33:00+00:00 | Alaska |
-| 2018 | BMW | 750i M Sport | $15,500 | 2026-10-14T21:34:00+00:00 | Arizona |
-| 2000 | Jaguar | XK8 Convertible | $7,500 | 2026-10-14T21:35:00+00:00 | New York |
+| 1998 | Toyota | Tacoma Limited XtraCab TRD V6 4×4 | $19,000 | 2026-10-14T21:33:00+00:00 | Alaska |
+| 2018 | BMW | 750i M Sport | $19,500 | 2026-10-14T21:34:00+00:00 | Arizona |
+| 2000 | Jaguar | XK8 Convertible | $8,500 | 2026-10-14T21:35:00+00:00 | New York |
 | 2004 | BMW | M3 Coupe 6-Speed | $30,000 | 2026-10-14T21:36:00+00:00 | New York |
-| 1996 | Porsche | 911 Turbo | $120,000 | 2026-10-14T21:37:00+00:00 | Montana |
-| 2013 | BMW | M5 6-Speed | $29,249 | 2026-10-14T21:38:00+00:00 | Minnesota |
-| 1979 | Ford | F-150 Custom 4&#215;4 4-Speed | $9,000 | 2026-10-14T21:38:00+00:00 | Montana |
-| 2019 | Mercedes-Benz | E450 Coupe | $5,650 | 2026-10-14T21:39:00+00:00 | Florida |
-| 2016 | Chevrolet | Corvette Z06 Coupe 3LZ 7-Speed | $51,000 | 2026-10-14T21:40:00+00:00 | North Carolina |
-| 2016 | Cadillac | Escalade ESV Premium 4WD | $22,750 | 2026-10-14T21:41:00+00:00 | California |
-| 1999 | Ford | F-350 Super Duty SuperCab 5-Speed Dually | $5,500 | 2026-10-14T21:42:00+00:00 | Texas |
-| 1991 | Toyota | MR2 Turbo 5-Speed | $11,250 | 2026-10-14T21:43:00+00:00 | California |
-| 2000 | Porsche | Boxster S 6-Speed | $18,250 | 2026-10-14T21:44:00+00:00 | Pennsylvania |
+| 1996 | Porsche | 911 Turbo | $150,000 | 2026-10-14T21:37:00+00:00 | Montana |
+| 2013 | BMW | M5 6-Speed | $30,249 | 2026-10-14T21:38:00+00:00 | Minnesota |
+| 1979 | Ford | F-150 Custom 4&#215;4 4-Speed | $9,700 | 2026-10-14T21:38:00+00:00 | Montana |
+| 2019 | Mercedes-Benz | E450 Coupe | $13,250 | 2026-10-14T21:39:00+00:00 | Florida |
+| 2016 | Chevrolet | Corvette Z06 Coupe 3LZ 7-Speed | $57,500 | 2026-10-14T21:40:00+00:00 | North Carolina |
+| 2016 | Cadillac | Escalade ESV Premium 4WD | $23,645 | 2026-10-14T21:41:00+00:00 | California |
+| 1999 | Ford | F-350 Super Duty SuperCab 5-Speed Dually | $5,600 | 2026-10-14T21:42:00+00:00 | Texas |
+| 1991 | Toyota | MR2 Turbo 5-Speed | $14,250 | 2026-10-14T21:43:00+00:00 | California |
+| 2000 | Porsche | Boxster S 6-Speed | $19,000 | 2026-10-14T21:44:00+00:00 | Pennsylvania |
+| 2005 | Porsche | Cayenne Turbo | $10,250 | 2026-10-14T21:45:00+00:00 | Pennsylvania |
 | 1970 | Honda | CT70 Trail | $4,100 | 2026-10-14T21:45:00+00:00 | Not found |
-| 2014 | Volvo | XC90 3.2 Premier Plus AWD | $4,892 | 2026-10-14T21:46:00+00:00 | California |
-| 1963 | Daimler | SP250 Project | $3,100 | 2026-10-14T21:47:00+00:00 | Florida |
-| 1988 | Pontiac | Firebird Trans Am GTA Notchback | $7,875 | 2026-10-14T21:48:00+00:00 | Indiana |
-| 2014 | Mercedes-Benz | ML350 BlueTEC 4MATIC | $3,200 | 2026-10-14T21:49:00+00:00 | Florida |
-| 2002 | Volkswagen | EuroVan MV | $3,500 | 2026-10-14T21:50:00+00:00 | Connecticut |
-| 2020 | Ducati | Multistrada 1260 Pikes Peak | $9,016 | 2026-10-14T21:51:00+00:00 | Connecticut |
-| 2023 | Aston Martin | DBX707 | $75,000 | 2026-10-14T21:52:00+00:00 | California |
-| 2018 | Porsche | 911 GT2 RS Weissach | $455,555 | 2026-10-15T17:00:00+00:00 | Ohio |
+| 2014 | Volvo | XC90 3.2 Premier Plus AWD | $6,000 | 2026-10-14T21:46:00+00:00 | California |
+| 1963 | Daimler | SP250 Project | $4,000 | 2026-10-14T21:47:00+00:00 | Florida |
+| 1988 | Pontiac | Firebird Trans Am GTA Notchback | $8,075 | 2026-10-14T21:48:00+00:00 | Indiana |
+| 2014 | Mercedes-Benz | ML350 BlueTEC 4MATIC | $5,500 | 2026-10-14T21:49:00+00:00 | Florida |
+| 2002 | Volkswagen | EuroVan MV | $3,600 | 2026-10-14T21:50:00+00:00 | Connecticut |
+| 2020 | Ducati | Multistrada 1260 Pikes Peak | $9,851 | 2026-10-14T21:51:00+00:00 | Connecticut |
+| 2023 | Aston Martin | DBX707 | $79,388 | 2026-10-14T21:52:00+00:00 | California |
+| 2018 | Porsche | 911 GT2 RS Weissach | $464,111 | 2026-10-15T17:00:00+00:00 | Ohio |
 | 1991 | Porsche | 911 Turbo | $255,000 | 2026-10-15T17:05:00+00:00 | Illinois |
 | 1994 | Porsche | 911 Speedster Strosek 5-Speed | $165,000 | 2026-10-15T17:10:00+00:00 | Montana |
 | 2012 | Porsche | 911 Carrera 4 GTS Coupe 6-Speed | $220,000 | 2026-10-15T17:15:00+00:00 | Pennsylvania |
@@ -235,14 +66,14 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2010 | Ferrari | 458 Italia | $150,000 | 2026-10-15T17:36:00+00:00 | New Jersey |
 | 1970 | Mercedes-Benz | 280SL Project | $26,000 | 2026-10-15T17:37:00+00:00 | New York |
 | 2017 | Porsche | 911 Carrera 4S Coupe 7-Speed | $61,700 | 2026-10-15T17:38:00+00:00 | New Hampshire |
-| 1994 | BMW | M3 Coupe 5-Speed | $23,000 | 2026-10-15T17:38:00+00:00 | Not found |
-| 1997 | Toyota Land | Cruiser FZJ80 Collector&#8217;s Edition | $8,900 | 2026-10-15T17:39:00+00:00 | Texas |
+| 1994 | BMW | M3 Coupe 5-Speed | $23,250 | 2026-10-15T17:38:00+00:00 | Not found |
+| 1997 | Toyota Land | Cruiser FZJ80 Collector&#8217;s Edition | $9,000 | 2026-10-15T17:39:00+00:00 | Texas |
 | 1996 | Porsche | 911 Carrera Cabriolet 6-Speed | $41,993 | 2026-10-15T17:40:00+00:00 | Utah |
 | 2013 | Harley-Davidson | V-Rod Night Rod Special | $6,000 | 2026-10-15T17:41:00+00:00 | Montana |
 | 1964 | Volkswagen | Beetle | $4,000 | 2026-10-15T17:42:00+00:00 | Florida |
 | 1968 | Austin | Mini Cooper | $8,100 | 2026-10-15T17:43:00+00:00 | Virginia |
 | 2013 | Mazda | MX-5 Miata Grand Touring PRHT | $19,050 | 2026-10-15T17:44:00+00:00 | Pennsylvania |
-| 1971 | Datsun | 240Z Series I 4-Speed | $4,800 | 2026-10-15T17:45:00+00:00 | Iowa |
+| 1971 | Datsun | 240Z Series I 4-Speed | $8,800 | 2026-10-15T17:45:00+00:00 | Iowa |
 | 1993 | Volvo | 240 Wagon | $4,500 | 2026-10-15T17:46:00+00:00 | New York |
 | 2001 | GMC | Yukon SLT 4×4 | $9,600 | 2026-10-15T17:47:00+00:00 | Idaho |
 | 1965 | Ford | Mustang Convertible 289 | $25,000 | 2026-10-15T17:48:00+00:00 | Wisconsin |
@@ -253,57 +84,57 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2009 | Jaguar | XKR Portfolio Convertible | $20,500 | 2026-10-15T17:51:00+00:00 | Minnesota |
 | 1997 | Harley-Davidson | Heritage Springer Softail | $11,000 | 2026-10-15T17:52:00+00:00 | Texas |
 | 1970 | Chevrolet | Chevelle SS 454 Sport Coupe 6-Speed | $41,250 | 2026-10-15T17:53:00+00:00 | Texas |
-| 1971 | Authi | Mini Van | $650,000 | 2026-10-15T17:54:00+00:00 | Not found |
+| 1971 | Authi | Mini Van | $26,500 | 2026-10-15T17:54:00+00:00 | Not found |
 | 2010 | Mercury | Grand Marquis LS | $10,000 | 2026-10-15T17:55:00+00:00 | Alabama |
 | 1968 | Dodge | WM300 Power Wagon 4&#215;4 | $67,500 | 2026-10-15T17:56:00+00:00 | California |
 | 1971 | Ford | Bronco 302 | $10,000 | 2026-10-15T17:57:00+00:00 | Texas |
-| 2011 | Mercedes-Benz | E350 Wagon 4MATIC | $5,000 | 2026-10-15T17:57:00+00:00 | New York |
+| 2011 | Mercedes-Benz | E350 Wagon 4MATIC | $5,500 | 2026-10-15T17:57:00+00:00 | New York |
 | 2025 | Chevrolet | Corvette Z06 Convertible 3LZ Z07 | $116,000 | 2026-10-15T17:58:00+00:00 | Michigan |
 | 2015 | Porsche | Panamera 4S Executive | $20,000 | 2026-10-15T17:59:00+00:00 | Ohio |
 | 2017 | Chevrolet | Corvette Z06 Coupe 3LZ | $62,500 | 2026-10-15T18:00:00+00:00 | Maine |
 | 1975 | Ford | F-250 Custom Highboy 4×4 4-Speed | $8,500 | 2026-10-15T18:00:00+00:00 | Texas |
 | 2006 | Mercedes-Benz | SL500 | $13,000 | 2026-10-15T18:01:00+00:00 | Wisconsin |
-| 1973 | Triumph | TR6 5-Speed | $10,250 | 2026-10-15T18:02:00+00:00 | Montana |
+| 1973 | Triumph | TR6 5-Speed | $10,750 | 2026-10-15T18:02:00+00:00 | Montana |
 | 1988 | Chevrolet | Corvette Convertible | $3,500 | 2026-10-15T18:03:00+00:00 | Maryland |
-| 1987 | Mercedes-Benz | 560SL | $3,000 | 2026-10-15T18:04:00+00:00 | Florida |
+| 1987 | Mercedes-Benz | 560SL | $3,200 | 2026-10-15T18:04:00+00:00 | Florida |
 | 2001 | Jeep | Wrangler Sport 4.0 5-Speed | $10,000 | 2026-10-15T18:05:00+00:00 | California |
-| 2008 | Bentley | Continental GT Speed | $22,222 | 2026-10-15T18:06:00+00:00 | Texas |
+| 2008 | Bentley | Continental GT Speed | $25,000 | 2026-10-15T18:06:00+00:00 | Texas |
 | 1990 | Jeep | Grand Wagoneer | $7,600 | 2026-10-15T18:07:00+00:00 | Connecticut |
 | 2015 | Land Rover | LR4 HSE | $8,500 | 2026-10-15T18:08:00+00:00 | Montana |
 | 2005 | Mercedes-Benz | E55 AMG Sedan | $9,909 | 2026-10-15T18:09:00+00:00 | Kansas |
 | 2024 | Porsche | 718 Cayman GT4 RS Weissach | $156,000 | 2026-10-15T18:10:00+00:00 | Arizona |
 | 2003 | Ferrari | 360 Spider | $105,000 | 2026-10-15T18:12:00+00:00 | Pennsylvania |
 | 1992 | Mercedes-Benz | 500E | $25,000 | 2026-10-15T18:15:00+00:00 | Washington |
-| 1938 | Ford | Standard Coupe | $9,000 | 2026-10-15T18:16:00+00:00 | Massachusetts |
+| 1938 | Ford | Standard Coupe | $10,000 | 2026-10-15T18:16:00+00:00 | Massachusetts |
 | 1955 | Nimbus | Model C w/Cargo Box Sidecar | $8,500 | 2026-10-15T18:17:00+00:00 | Maine |
-| 2023 | BMW | M850i xDrive Convertible | $55,500 | 2026-10-15T18:18:00+00:00 | Florida |
-| 2016 | Toyota | Tacoma TRD Off-Road Access Cab 4×4 V6 | $10,000 | 2026-10-15T18:19:00+00:00 | Utah |
-| 2008 | Porsche | 911 GT2 | $365,000 | 2026-10-15T18:20:00+00:00 | New Jersey |
+| 2023 | BMW | M850i xDrive Convertible | $56,500 | 2026-10-15T18:18:00+00:00 | Florida |
+| 2016 | Toyota | Tacoma TRD Off-Road Access Cab 4×4 V6 | $10,250 | 2026-10-15T18:19:00+00:00 | Utah |
+| 2008 | Porsche | 911 GT2 | $382,008 | 2026-10-15T18:20:00+00:00 | New Jersey |
 | 1952 | MG | TD | $12,750 | 2026-10-15T18:20:00+00:00 | Washington |
 | 2005 | Chevrolet | Tahoe LS 4×4 | $13,250 | 2026-10-15T18:20:00+00:00 | California |
 | 1967 | Jaguar | XKE Series 1 4.2 Roadster | $25,000 | 2026-10-15T18:21:00+00:00 | Washington |
 | 1999 | Mazda | MX-5 Miata 5-Speed | $4,250 | 2026-10-15T18:22:00+00:00 | Michigan |
-| 1991 | Infiniti | Q45 | $12,500 | 2026-10-15T18:23:00+00:00 | Florida |
+| 1991 | Infiniti | Q45 | $13,333 | 2026-10-15T18:23:00+00:00 | Florida |
 | 2019 | Chevrolet | Corvette ZR1 Coupe 3ZR ZTK 7-Speed | $185,000 | 2026-10-15T18:23:00+00:00 | Ohio |
-| 2007 | Lexus | RX350 AWD | $9,000 | 2026-10-15T18:24:00+00:00 | Washington |
+| 2007 | Lexus | RX350 AWD | $11,000 | 2026-10-15T18:24:00+00:00 | Washington |
 | 1996 | Subaru | Sambar 4WD Dias 5-Speed | $5,500 | 2026-10-15T18:25:00+00:00 | Connecticut |
 | 1955 | Packard | Patrician | $6,500 | 2026-10-15T18:26:00+00:00 | Arizona |
-| 2010 | BMW | 535i xDrive Sports Wagon | $4,500 | 2026-10-15T18:27:00+00:00 | New Jersey |
-| 2007 | Aprilia | RS 125 | $2,250 | 2026-10-15T18:28:00+00:00 | Not found |
+| 2010 | BMW | 535i xDrive Sports Wagon | $4,800 | 2026-10-15T18:27:00+00:00 | New Jersey |
+| 2007 | Aprilia | RS 125 | $2,400 | 2026-10-15T18:28:00+00:00 | Not found |
 | 2015 | Audi | Q5 TDI Premium Plus | $6,000 | 2026-10-15T18:29:00+00:00 | Tennessee |
 | 1970 | Porsche | 911T Targa 5-Speed | $30,000 | 2026-10-15T18:30:00+00:00 | New Hampshire |
 | 1996 | Porsche | 911 Turbo | $149,911 | 2026-10-15T18:30:00+00:00 | Montana |
-| 2015 | Mini | Cooper S Convertible 6-Speed | $5,499 | 2026-10-15T18:31:00+00:00 | Florida |
+| 2015 | Mini | Cooper S Convertible 6-Speed | $5,599 | 2026-10-15T18:31:00+00:00 | Florida |
 | 1972 | Margay | Cheetah Go-Kart | $900 | 2026-10-15T18:31:00+00:00 | Not found |
-| 1966 | Sunbeam | Alpine Series V Project | $775 | 2026-10-15T18:32:00+00:00 | New York |
+| 1966 | Sunbeam | Alpine Series V Project | $1,500 | 2026-10-15T18:32:00+00:00 | New York |
 | 1975 | Chevrolet | K5 Blazer Cheyenne 4&#215;4 4-Speed | $21,000 | 2026-10-15T18:33:00+00:00 | California |
 | 1979 | Toyota Land | Cruiser FJ55 5-Speed | $20,000 | 2026-10-15T18:34:00+00:00 | Georgia |
 | 1972 | Honda | CB175 Super Sport | $1,400 | 2026-10-15T18:35:00+00:00 | Minnesota |
 | 1977 | GMC | C1500 Sierra Classic | $5,000 | 2026-10-15T18:36:00+00:00 | California |
 | 2020 | Porsche | Taycan Turbo | $50,000 | 2026-10-15T18:38:00+00:00 | California |
-| 1960 | Pontiac | Catalina Safari | $8,000 | 2026-10-15T18:39:00+00:00 | California |
-| 2004 | Porsche | 911 Carrera Coupe 6-Speed | $31,000 | 2026-10-15T18:40:00+00:00 | Florida |
-| 2001 | Dodge | Viper RT/10 | $25,250 | 2026-10-15T18:41:00+00:00 | Pennsylvania |
+| 1960 | Pontiac | Catalina Safari | $8,100 | 2026-10-15T18:39:00+00:00 | California |
+| 2004 | Porsche | 911 Carrera Coupe 6-Speed | $32,250 | 2026-10-15T18:40:00+00:00 | Florida |
+| 2001 | Dodge | Viper RT/10 | $35,000 | 2026-10-15T18:41:00+00:00 | Pennsylvania |
 | 1978 | International | Harvester Scout II 345 4×4 | $36,750 | 2026-10-15T18:42:00+00:00 | Indiana |
 | 2008 | Porsche | Cayenne GTS 6-Speed | $25,250 | 2026-10-15T18:43:00+00:00 | Alabama |
 | 1970 | Pontiac | Firebird Trans Am 5-Speed | $45,000 | 2026-10-15T18:45:00+00:00 | Illinois |
@@ -319,60 +150,60 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2014 | Mercedes-Benz | SLK55 AMG | $28,000 | 2026-10-15T18:56:00+00:00 | Ohio |
 | 2006 | BMW | M3 Convertible 6-Speed | $19,000 | 2026-10-15T18:57:00+00:00 | California |
 | 2012 | Mercedes-Benz | CLS550 | $6,100 | 2026-10-15T18:58:00+00:00 | Arizona |
-| 1995 | Land Rover | Defender 90 NAS 5-Speed | $16,000 | 2026-10-15T18:59:00+00:00 | California |
-| 2004 | Chevrolet | Express 1500 AWD Starcraft Conversion Van AWD | $5,600 | 2026-10-15T19:00:00+00:00 | Washington |
+| 1995 | Land Rover | Defender 90 NAS 5-Speed | $16,500 | 2026-10-15T18:59:00+00:00 | California |
+| 2004 | Chevrolet | Express 1500 AWD Starcraft Conversion Van AWD | $6,000 | 2026-10-15T19:00:00+00:00 | Washington |
 | 1985 | Porsche | 911 Carrera Coupe | $70,000 | 2026-10-15T19:00:00+00:00 | Michigan |
-| 1978 | Mercedes-Benz | 450SEL 6.9 | $2,777 | 2026-10-15T19:01:00+00:00 | Utah |
+| 1978 | Mercedes-Benz | 450SEL 6.9 | $2,900 | 2026-10-15T19:01:00+00:00 | Utah |
 | 2026 | Ferrari | Roma Spider | $200,000 | 2026-10-15T19:02:00+00:00 | Colorado |
-| 1993 | Ford | F-150 SVT Lightning | $7,000 | 2026-10-15T19:03:00+00:00 | Massachusetts |
+| 1993 | Ford | F-150 SVT Lightning | $7,100 | 2026-10-15T19:03:00+00:00 | Massachusetts |
 | 2009 | BMW | M3 Coupe 6-Speed | $38,500 | 2026-10-15T19:04:00+00:00 | California |
 | 1972 | Oldsmobile | Cutlass Supreme Convertible | $14,444 | 2026-10-15T19:05:00+00:00 | Colorado |
 | 2013 | Volkswagen | Jetta SportWagen TDI | $4,000 | 2026-10-15T19:06:00+00:00 | Maine |
-| 2010 | Porsche | 911 Carrera 4S Cabriolet 6-Speed | $45,500 | 2026-10-15T19:08:00+00:00 | New Jersey |
-| 1972 | Dodge | Demon 340 | $21,000 | 2026-10-15T19:09:00+00:00 | Pennsylvania |
-| 1984 | Porsche | 944 5-Speed | $4,300 | 2026-10-15T19:10:00+00:00 | Maryland |
+| 2010 | Porsche | 911 Carrera 4S Cabriolet 6-Speed | $46,250 | 2026-10-15T19:08:00+00:00 | New Jersey |
+| 1972 | Dodge | Demon 340 | $22,000 | 2026-10-15T19:09:00+00:00 | Pennsylvania |
+| 1984 | Porsche | 944 5-Speed | $4,400 | 2026-10-15T19:10:00+00:00 | Maryland |
 | 1994 | Chevrolet | K3500 Silverado Extended Cab 4&#215;4 Dually | $5,555 | 2026-10-15T19:11:00+00:00 | New Mexico |
-| 2008 | Smart | Fortwo Passion Cabriolet | $2,000 | 2026-10-15T19:12:00+00:00 | Idaho |
+| 2008 | Smart | Fortwo Passion Cabriolet | $2,526 | 2026-10-15T19:12:00+00:00 | Idaho |
 | 2009 | Porsche | 911 Carrera S Coupe | $45,000 | 2026-10-15T19:13:00+00:00 | Nebraska |
-| 1992 | Porsche | 911 Carrera 2 Coupe 5-Speed | $111,964 | 2026-10-15T19:14:00+00:00 | New York |
+| 1992 | Porsche | 911 Carrera 2 Coupe 5-Speed | $125,964 | 2026-10-15T19:14:00+00:00 | New York |
 | 2023 | Audi | e-tron GT Quattro Prestige | $40,759 | 2026-10-15T19:15:00+00:00 | California |
 | 2008 | Sucker | Punch Sallys Swinger | $201 | 2026-10-15T19:16:00+00:00 | Missouri |
-| 2016 | Mercedes-AMG | GT S | $38,500 | 2026-10-15T19:17:00+00:00 | Arizona |
+| 2016 | Mercedes-AMG | GT S | $40,000 | 2026-10-15T19:17:00+00:00 | Arizona |
 | 2001 | Mercedes-Benz | G500 Europa | $10,500 | 2026-10-15T19:19:00+00:00 | Florida |
 | 1997 | Ford | F-250 HD XLT Power Stroke 4×4 | $14,000 | 2026-10-15T19:20:00+00:00 | Utah |
 | 1970 | Chevrolet | Camaro Sport Coupe | $12,500 | 2026-10-15T19:21:00+00:00 | Michigan |
 | 2004 | Porsche | 911 Turbo Cabriolet | $19,500 | 2026-10-15T19:22:00+00:00 | Indiana |
 | 2009 | Rolls-Royce | Phantom Coupe | $70,000 | 2026-10-15T19:23:00+00:00 | Pennsylvania |
 | 2013 | Bentley | Continental GT W12 | $35,000 | 2026-10-15T19:24:00+00:00 | South Carolina |
-| 1991 | Toyota | Pickup XtraCab Deluxe V6 4&#215;4 5-Speed | $6,200 | 2026-10-15T19:25:00+00:00 | California |
+| 1991 | Toyota | Pickup XtraCab Deluxe V6 4&#215;4 5-Speed | $6,400 | 2026-10-15T19:25:00+00:00 | California |
 | 1960 | Chevrolet | Corvette 4-Speed Project | $10,000 | 2026-10-15T19:26:00+00:00 | Florida |
 | 1996 | Suzuki | Carry Pickup 4WD 5-Speed | $4,000 | 2026-10-15T19:27:00+00:00 | Maryland |
 | 2017 | Cadillac | XTS Raised-Roof Limousine | $14,500 | 2026-10-15T19:28:00+00:00 | Florida |
 | 1986 | BMW | 535i 5-Speed | $18,750 | 2026-10-15T19:29:00+00:00 | Connecticut |
 | 1940 | Ford | Pickup | $8,040 | 2026-10-15T19:30:00+00:00 | Tennessee |
-| 1972 | Moto | Guzzi Ambassador | $4,300 | 2026-10-15T19:31:00+00:00 | Ohio |
-| 2009 | Honda | Fit Sport | $3,600 | 2026-10-15T19:32:00+00:00 | California |
+| 1972 | Moto | Guzzi Ambassador | $4,400 | 2026-10-15T19:31:00+00:00 | Ohio |
+| 2009 | Honda | Fit Sport | $4,300 | 2026-10-15T19:32:00+00:00 | California |
 | 2023 | Dodge | Challenger T/A | $25,000 | 2026-10-15T19:33:00+00:00 | Indiana |
 | 1974 | Mercedes-Benz | 450SL | $10,277 | 2026-10-15T19:35:00+00:00 | Texas |
 | 1967 | Chevrolet | Corvette Coupe L68 427/400 4-Speed | $150,000 | 2026-10-15T19:36:00+00:00 | Ohio |
 | 2018 | BMW | 330i xDrive Sports Wagon M Sport | $24,500 | 2026-10-15T19:37:00+00:00 | Montana |
 | 1976 | Cadillac | Eldorado Convertible | $26,000 | 2026-10-15T19:38:00+00:00 | Arizona |
 | 1985 | Toyota Land | Cruiser FJ60 | $35,000 | 2026-10-15T19:39:00+00:00 | Florida |
-| 1962 | Cadillac | Fleetwood Sixty Special | $10,000 | 2026-10-15T19:40:00+00:00 | Texas |
+| 1962 | Cadillac | Fleetwood Sixty Special | $11,000 | 2026-10-15T19:40:00+00:00 | Texas |
 | 1970 | Porsche | 911S Coupe Race Car | $61,994 | 2026-10-15T19:41:00+00:00 | Texas |
 | 2003 | BMW | 540i M Sport 6-Speed | $8,900 | 2026-10-15T19:42:00+00:00 | California |
 | 2011 | Mercedes-Benz | ML63 AMG 4MATIC | $8,000 | 2026-10-15T19:43:00+00:00 | Not found |
 | 1990 | Ford | F-350 Roll-A-Long XLT Lariat Crew Cab 7.5L 4×4 | $6,550 | 2026-10-15T19:44:00+00:00 | Washington |
-| 2018 | Ferrari | 812 Superfast | $410,000 | 2026-10-15T19:45:00+00:00 | California |
-| 1989 | Acura | Legend L Coupe | $1,456 | 2026-10-15T19:46:00+00:00 | Georgia |
+| 2018 | Ferrari | 812 Superfast | $411,000 | 2026-10-15T19:45:00+00:00 | California |
+| 1989 | Acura | Legend L Coupe | $1,600 | 2026-10-15T19:46:00+00:00 | Georgia |
 | 2021 | Chevrolet | Corvette Stingray Convertible 3LT Z51 | $50,000 | 2026-10-15T19:47:00+00:00 | New York |
-| 1957 | Chevrolet | 210 2-Door Sedan | $23,000 | 2026-10-15T19:48:00+00:00 | Oregon |
+| 1957 | Chevrolet | 210 2-Door Sedan | $25,750 | 2026-10-15T19:48:00+00:00 | Oregon |
 | 2023 | Dodge | Challenger SRT Hellcat Jailbreak | $47,000 | 2026-10-15T19:49:00+00:00 | New Hampshire |
 | 2018 | Nissan | GT-R NISMO | $156,789 | 2026-10-15T19:50:00+00:00 | Georgia |
-| 1984 | Renault | R5 Turbo 2 6-Speed | $36,666 | 2026-10-15T19:51:00+00:00 | California |
-| 1968 | Porsche | 912 Coupe 5-Speed Race Car | $35,000 | 2026-10-15T19:52:00+00:00 | Arizona |
-| 1954 | MG | TF 5-Speed for Bridge Communities | $8,000 | 2026-10-15T19:53:00+00:00 | Illinois |
-| 2017 | Volkswagen | Golf R 6-Speed | $6,000 | 2026-10-15T19:54:00+00:00 | New Hampshire |
+| 1984 | Renault | R5 Turbo 2 6-Speed | $36,916 | 2026-10-15T19:51:00+00:00 | California |
+| 1968 | Porsche | 912 Coupe 5-Speed Race Car | $38,911 | 2026-10-15T19:52:00+00:00 | Arizona |
+| 1954 | MG | TF 5-Speed for Bridge Communities | $8,450 | 2026-10-15T19:53:00+00:00 | Illinois |
+| 2017 | Volkswagen | Golf R 6-Speed | $6,400 | 2026-10-15T19:54:00+00:00 | New Hampshire |
 | 1967 | Chevrolet | Camaro RS Coupe | $45,750 | 2026-10-15T19:55:00+00:00 | Indiana |
 | 1993 | Ford | Mustang SVT Cobra | $56,000 | 2026-10-15T19:56:00+00:00 | Indiana |
 | 2002 | Audi | TT Coupe Quattro 5-Speed | $5,700 | 2026-10-15T19:57:00+00:00 | Virginia |
@@ -381,7 +212,7 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2023 | Aston Martin | DB11 V8 Coupe | $105,000 | 2026-10-15T20:00:00+00:00 | Texas |
 | 1996 | Chevrolet | Camaro Z28 6-Speed | $4,000 | 2026-10-15T20:01:00+00:00 | Texas |
 | 2018 | Aprilia | RSV4 RF Track Bike | $2,000 | 2026-10-15T20:01:00+00:00 | Michigan |
-| 2011 | Saab | 9-5 Turbo4 Premium | $5,300 | 2026-10-15T20:02:00+00:00 | Alaska |
+| 2011 | Saab | 9-5 Turbo4 Premium | $5,400 | 2026-10-15T20:02:00+00:00 | Alaska |
 | 1967 | Mercury | Cougar Hardtop 289 3-Speed | $20,500 | 2026-10-15T20:03:00+00:00 | California |
 | 2004 | Porsche | 911 40th Anniversary Edition 6-Speed | $55,000 | 2026-10-15T20:04:00+00:00 | Michigan |
 | 1941 | Cadillac | Series 62 Convertible Sedan Deluxe | $10,500 | 2026-10-15T20:05:00+00:00 | Connecticut |
@@ -389,24 +220,24 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 1991 | Mercedes-Benz | 560SEL | $14,500 | 2026-10-15T20:07:00+00:00 | California |
 | 2011 | Audi | R8 V10 Spyder 6-Speed | $59,000 | 2026-10-15T20:08:00+00:00 | California |
 | 1966 | Ford | F-250 Custom 4&#215;4 4-Speed | $2,500 | 2026-10-15T20:09:00+00:00 | Texas |
-| 1970 | Jaguar | E-Type Series II Coupe 4-Speed | $30,000 | 2026-10-15T20:10:00+00:00 | New York |
+| 1970 | Jaguar | E-Type Series II Coupe 4-Speed | $31,111 | 2026-10-15T20:10:00+00:00 | New York |
 | 1996 | Toyota Land | Cruiser FZJ80 | $20,000 | 2026-10-15T20:11:00+00:00 | Washington |
-| 2007 | BMW | 335i Sedan | $4,420 | 2026-10-15T20:12:00+00:00 | North Carolina |
+| 2007 | BMW | 335i Sedan | $5,000 | 2026-10-15T20:12:00+00:00 | North Carolina |
 | 1939 | Cadillac | Series 61 Coupe Street Rod | $10,500 | 2026-10-15T20:13:00+00:00 | Ohio |
 | 2002 | Harley-Davidson | Sportster 1200 Custom | $1,000 | 2026-10-15T20:14:00+00:00 | Michigan |
-| 1986 | Toyota | Pickup Turbo 4&#215;4 5-Speed | $33,000 | 2026-10-15T20:15:00+00:00 | Idaho |
+| 1986 | Toyota | Pickup Turbo 4&#215;4 5-Speed | $34,000 | 2026-10-15T20:15:00+00:00 | Idaho |
 | 2000 | Land Rover | Defender 110 Td5 5-Speed | $36,950 | 2026-10-15T20:16:00+00:00 | Georgia |
-| 2007 | Mercedes-Benz | CLK350 Cabriolet | $2,215 | 2026-10-15T20:17:00+00:00 | Arizona |
+| 2007 | Mercedes-Benz | CLK350 Cabriolet | $2,350 | 2026-10-15T20:17:00+00:00 | Arizona |
 | 2022 | Ram | 1500 TRX Crew Cab 4×4 Hennessey Mammoth 1000 | $61,000 | 2026-10-15T20:18:00+00:00 | Indiana |
 | 2000 | BMW | M5 | $36,000 | 2026-10-15T20:19:00+00:00 | Delaware |
 | 2015 | Audi | S4 6-Speed | $8,500 | 2026-10-15T20:20:00+00:00 | Ohio |
 | 1968 | Dodge | Dart Hardtop | $11,000 | 2026-10-15T20:21:00+00:00 | Florida |
-| 2010 | Aston Martin | DB9 6-Speed | $30,500 | 2026-10-15T20:22:00+00:00 | Montana |
-| 1979 | KTM | MC80 400 | $1,325 | 2026-10-15T20:23:00+00:00 | Not found |
-| 2016 | Bentley | Continental GT V8 S Convertible | $25,500 | 2026-10-15T20:24:00+00:00 | Montana |
+| 2010 | Aston Martin | DB9 6-Speed | $32,000 | 2026-10-15T20:22:00+00:00 | Montana |
+| 1979 | KTM | MC80 400 | $1,425 | 2026-10-15T20:23:00+00:00 | Not found |
+| 2016 | Bentley | Continental GT V8 S Convertible | $40,000 | 2026-10-15T20:24:00+00:00 | Montana |
 | 1976 | Honda | MR250 Elsinore | $500 | 2026-10-15T20:25:00+00:00 | California |
-| 1991 | GMC | Sierra K3500 SLE 4×4 Dually | $2,500 | 2026-10-15T20:26:00+00:00 | California |
-| 1948 | Rover | P3 75 Project | $800 | 2026-10-15T20:28:00+00:00 | Not found |
+| 1991 | GMC | Sierra K3500 SLE 4×4 Dually | $3,000 | 2026-10-15T20:26:00+00:00 | California |
+| 1948 | Rover | P3 75 Project | $1,111 | 2026-10-15T20:28:00+00:00 | Not found |
 | 1998 | BMW | M3 Convertible 5-Speed | $35,000 | 2026-10-15T20:29:00+00:00 | California |
 | 2016 | Audi | S8 Plus | $39,999 | 2026-10-15T20:30:00+00:00 | Pennsylvania |
 | 1991 | Porsche | 911 Carrera 4 Cabriolet 5-Speed | $35,000 | 2026-10-15T20:31:00+00:00 | Illinois |
@@ -418,56 +249,56 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2008 | Infiniti | G37 Sport 6-Speed | $15,000 | 2026-10-15T20:37:00+00:00 | Oregon |
 | 1999 | Mercedes-Benz | S500 Grand Edition | $9,500 | 2026-10-15T20:38:00+00:00 | Florida |
 | 2007 | Chevrolet | Corvette Coupe | $14,500 | 2026-10-15T20:39:00+00:00 | Nevada |
-| 2009 | Mercedes-Benz | C300 4MATIC Luxury Sedan | $1,400 | 2026-10-15T20:40:00+00:00 | Ohio |
+| 2009 | Mercedes-Benz | C300 4MATIC Luxury Sedan | $1,800 | 2026-10-15T20:40:00+00:00 | Ohio |
 | 2021 | Chevrolet | Camaro ZL1 1LE 6-Speed | $49,000 | 2026-10-15T20:41:00+00:00 | Texas |
 | 2023 | Ferrari | 812 GTS | $700,000 | 2026-10-16T17:00:00+00:00 | Illinois |
 | 2008 | Porsche | 911 GT3 RS | $550,000 | 2026-10-16T17:05:00+00:00 | Montana |
-| 1965 | Ferrari | 330 GT 2+2 Series I | $175,000 | 2026-10-16T17:08:00+00:00 | California |
+| 1965 | Ferrari | 330 GT 2+2 Series I | $176,000 | 2026-10-16T17:08:00+00:00 | California |
 | 2014 | Lamborghini | Gallardo LP570-4 Squadra Corse | $610,000 | 2026-10-16T17:15:00+00:00 | Tennessee |
 | 1953 | Porsche | 356 Custom Limousine | $91,356 | 2026-10-16T17:15:00+00:00 | Florida |
 | 1994 | Porsche | 911 Turbo 3.6 | $300,000 | 2026-10-16T17:15:00+00:00 | Ohio |
-| 2024 | Porsche | 911 Dakar Rallye Design | $360,000 | 2026-10-16T17:20:00+00:00 | Wisconsin |
+| 2024 | Porsche | 911 Dakar Rallye Design | $361,911 | 2026-10-16T17:20:00+00:00 | Wisconsin |
 | 2022 | Ford | GT | $1,699,999 | 2026-10-16T17:20:00+00:00 | Montana |
-| 2015 | Mercedes-Benz | SLS AMG GT Final Edition | $325,000 | 2026-10-16T17:25:00+00:00 | Florida |
+| 2015 | Mercedes-Benz | SLS AMG GT Final Edition | $326,350 | 2026-10-16T17:25:00+00:00 | Florida |
 | 1999 | Ferrari | F355 Berlinetta 6-Speed Conversion | $151,000 | 2026-10-16T17:25:00+00:00 | California |
-| 2020 | Ferrari | F8 Tributo | $330,000 | 2026-10-16T17:30:00+00:00 | Florida |
+| 2020 | Ferrari | F8 Tributo | $335,000 | 2026-10-16T17:30:00+00:00 | Florida |
 | 2000 | Ferrari | 360 Modena 6-Speed | $70,000 | 2026-10-16T17:35:00+00:00 | Not found |
 | 1939 | Alfa Romeo | 6C 2500 SS Berlinetta Competizione Re-Creation | $112,500 | 2026-10-16T17:35:00+00:00 | Montana |
 | 1969 | Mercedes-Benz | 280SL | $160,000 | 2026-10-16T18:00:00+00:00 | Not found |
 | 1969 | Ford | Mustang Mach 1 M-Code 351 | $37,000 | 2026-10-16T18:00:00+00:00 | California |
-| 2000 | Renault | Twingo Air 5-Speed | $650,000 | 2026-10-16T18:00:00+00:00 | Not found |
-| 1998 | Mercedes-Benz | SL500 | $18,500 | 2026-10-16T18:00:00+00:00 | Mississippi |
-| 2025 | Maori | Yachts M54XL | $100,000 | 2026-10-16T18:18:00+00:00 | Florida |
-| 1984 | Volvo | 245 GLT Turbo Wagon | $7,777 | 2026-10-16T18:20:00+00:00 | Idaho |
-| 1997 | Mercedes-Benz | SL600 | $19,750 | 2026-10-16T18:20:00+00:00 | Wisconsin |
+| 2000 | Renault | Twingo Air 5-Speed | $169,000 | 2026-10-16T18:00:00+00:00 | Not found |
+| 1998 | Mercedes-Benz | SL500 | $19,000 | 2026-10-16T18:00:00+00:00 | Mississippi |
+| 2025 | Maori | Yachts M54XL | $130,000 | 2026-10-16T18:18:00+00:00 | Florida |
+| 1984 | Volvo | 245 GLT Turbo Wagon | $8,000 | 2026-10-16T18:20:00+00:00 | Idaho |
+| 1997 | Mercedes-Benz | SL600 | $26,000 | 2026-10-16T18:20:00+00:00 | Wisconsin |
 | 2010 | Mercedes-Benz | G55 AMG | $75,000 | 2026-10-16T18:21:00+00:00 | Maryland |
 | 1968 | Ford | Bronco 3-Speed | $35,000 | 2026-10-16T18:22:00+00:00 | Texas |
-| 2003 | Honda | S2000 | $23,300 | 2026-10-16T18:23:00+00:00 | California |
+| 2003 | Honda | S2000 | $25,000 | 2026-10-16T18:23:00+00:00 | California |
 | 1977 | Pontiac | Firebird Formula 6-Speed | $26,000 | 2026-10-16T18:24:00+00:00 | Arizona |
 | 1982 | Toyota Land | Cruiser FJ60 5-Speed | $65,000 | 2026-10-16T18:25:00+00:00 | Tennessee |
 | 1989 | Porsche | 944 S2 5-Speed | $15,000 | 2026-10-16T18:26:00+00:00 | Not found |
-| 2022 | BMW | M850i xDrive Coupe | $20,000 | 2026-10-16T18:27:00+00:00 | Oregon |
+| 2022 | BMW | M850i xDrive Coupe | $25,000 | 2026-10-16T18:27:00+00:00 | Oregon |
 | 2007 | Mercedes-Benz | SL550 50th Anniversary Edition | $13,250 | 2026-10-16T18:28:00+00:00 | Tennessee |
-| 1972 | Datsun | 240Z 4-Speed | $3,100 | 2026-10-16T18:29:00+00:00 | Oregon |
+| 1972 | Datsun | 240Z 4-Speed | $3,400 | 2026-10-16T18:29:00+00:00 | Oregon |
 | 2001 | Porsche | 911 Carrera Cabriolet 6-Speed | $21,996 | 2026-10-16T18:30:00+00:00 | Illinois |
 | 1964 | Chevrolet | Corvette 4-Speed | $20,000 | 2026-10-16T18:31:00+00:00 | New Hampshire |
-| 2004 | Audi | TT Roadster 225 Quattro 6-Speed | $3,300 | 2026-10-16T18:32:00+00:00 | Florida |
+| 2004 | Audi | TT Roadster 225 Quattro 6-Speed | $5,000 | 2026-10-16T18:32:00+00:00 | Florida |
 | 1984 | Pontiac | Firebird Trans Am 15th Anniversary | $7,000 | 2026-10-16T18:33:00+00:00 | Georgia |
 | 2013 | Mini | Cooper Clubman JCW 6-Speed | $3,000 | 2026-10-16T18:34:00+00:00 | California |
 | 1965 | Ford | Mustang Coupe | $12,500 | 2026-10-16T18:35:00+00:00 | Not found |
-| 1931 | Buick | Series 90 Model 96 Coupe | $5,100 | 2026-10-16T18:36:00+00:00 | Not found |
-| 1995 | Ford | F-250 XLT SuperCab 7.5L | $9,500 | 2026-10-16T18:37:00+00:00 | Kentucky |
+| 1931 | Buick | Series 90 Model 96 Coupe | $5,219 | 2026-10-16T18:36:00+00:00 | Not found |
+| 1995 | Ford | F-250 XLT SuperCab 7.5L | $10,500 | 2026-10-16T18:37:00+00:00 | Kentucky |
 | 1966 | Volkswagen | Beetle 4-Speed | $4,500 | 2026-10-16T18:38:00+00:00 | California |
 | 1999 | Porsche | 911 Carrera Coupe 6-Speed | $20,911 | 2026-10-16T18:39:00+00:00 | Indiana |
 | 2012 | Ford | Mustang Boss 302 | $25,000 | 2026-10-16T18:39:00+00:00 | California |
 | 2003 | Jeep | Wrangler X 4.0 5-Speed | $8,050 | 2026-10-16T18:40:00+00:00 | California |
-| 1996 | Mercedes-Benz | SL500 | $6,400 | 2026-10-16T18:40:00+00:00 | Pennsylvania |
+| 1996 | Mercedes-Benz | SL500 | $6,600 | 2026-10-16T18:40:00+00:00 | Pennsylvania |
 | 2011 | BMW | M3 Coupe 6-Speed | $30,250 | 2026-10-16T18:41:00+00:00 | Pennsylvania |
 | 1982 | Honda | CB750F Super Sport | $3,500 | 2026-10-16T18:43:00+00:00 | Virginia |
 | 2000 | Rolls-Royce | Silver Seraph | $12,777 | 2026-10-16T18:44:00+00:00 | Pennsylvania |
 | 2025 | Ferrari | 296 GTB | $295,000 | 2026-10-16T18:45:00+00:00 | California |
 | 2011 | Audi | A8L 4.2 | $6,100 | 2026-10-16T18:45:00+00:00 | California |
-| 2022 | Airstream | Interstate 24GT | $47,750 | 2026-10-16T18:46:00+00:00 | New York |
+| 2022 | Airstream | Interstate 24GT | $50,000 | 2026-10-16T18:46:00+00:00 | New York |
 | 2003 | Lexus | IS300 6-Speed | $20,000 | 2026-10-16T18:47:00+00:00 | Not found |
 | 1970 | Plymouth | Duster 340 4-Speed | $10,750 | 2026-10-16T18:47:00+00:00 | Ohio |
 | 1991 | Bimota | YB10 Dieci | $15,523 | 2026-10-16T18:48:00+00:00 | California |
@@ -475,14 +306,14 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2016 | Volkswagen | Touareg Lux TDI | $15,100 | 2026-10-16T18:49:00+00:00 | North Carolina |
 | 1965 | Studebaker | Daytona Wagonaire | $10,000 | 2026-10-16T18:50:00+00:00 | Massachusetts |
 | 1965 | Chevrolet | Impala SS Sport Coupe 4-Speed | $17,500 | 2026-10-16T18:51:00+00:00 | Tennessee |
-| 2017 | Volkswagen | Tiguan S | $2,300 | 2026-10-16T18:52:00+00:00 | Florida |
+| 2017 | Volkswagen | Tiguan S | $2,400 | 2026-10-16T18:52:00+00:00 | Florida |
 | 1987 | Porsche | 944 Turbo | $13,951 | 2026-10-16T18:54:00+00:00 | Oregon |
 | 2012 | Mercedes-Benz | S550 | $16,000 | 2026-10-16T18:55:00+00:00 | Florida |
 | 1972 | International | Harvester Travelette 1210D Utility Bed 4×4 5-Speed | $11,500 | 2026-10-16T18:56:00+00:00 | Colorado |
 | 1969 | Lancia | Fulvia 1.6 HF Fanalone | $48,000 | 2026-10-16T18:57:00+00:00 | Montana |
-| 2011 | GMC | Sierra 1500 WT Extended Cab 4×4 | $3,500 | 2026-10-16T18:58:00+00:00 | Indiana |
+| 2011 | GMC | Sierra 1500 WT Extended Cab 4×4 | $4,000 | 2026-10-16T18:58:00+00:00 | Indiana |
 | 2003 | Audi | RS6 | $5,000 | 2026-10-16T18:59:00+00:00 | Massachusetts |
-| 2000 | Mercedes-Benz | SL500 | $35,000 | 2026-10-16T19:00:00+00:00 | California |
+| 2000 | Mercedes-Benz | SL500 | $35,500 | 2026-10-16T19:00:00+00:00 | California |
 | 2024 | Ducati | Diavel for Bentley | $17,500 | 2026-10-16T19:00:00+00:00 | North Carolina |
 | 2020 | Porsche | Cayenne | $15,250 | 2026-10-16T19:01:00+00:00 | California |
 | 2003 | Nissan | Altima 2.5S | $999 | 2026-10-16T19:03:00+00:00 | Arizona |
@@ -497,7 +328,7 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2024 | 125cc | Maranello Racing MK3 Go-Kart | $600 | 2026-10-16T19:13:00+00:00 | Not found |
 | 2008 | Chevrolet | Corvette Z06 2LZ | $60,000 | 2026-10-16T19:14:00+00:00 | Florida |
 | 1999 | Mercedes-Benz | G320 | $21,000 | 2026-10-16T19:15:00+00:00 | Pennsylvania |
-| 1994 | Acura | NSX 5-Speed | $61,994 | 2026-10-16T19:15:00+00:00 | Colorado |
+| 1994 | Acura | NSX 5-Speed | $63,000 | 2026-10-16T19:15:00+00:00 | Colorado |
 | 1991 | Ford | Bronco XLT Silver Anniversary Edition | $8,000 | 2026-10-16T19:16:00+00:00 | Colorado |
 | 1972 | Fiat | 500R | $0 | 2026-10-16T19:17:00+00:00 | Not found |
 | 2022 | Cadillac | CT5-V Blackwing 6-Speed | $73,000 | 2026-10-16T19:19:00+00:00 | Kansas |
@@ -515,11 +346,11 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 1963 | Vespa | GS 160 | $3,000 | 2026-10-16T19:33:00+00:00 | Illinois |
 | 1958 | Ford | F-250 4-Speed | $1,958 | 2026-10-16T19:34:00+00:00 | Kansas |
 | 1974 | Porsche | 914 5-Speed | $34,250 | 2026-10-16T19:35:00+00:00 | California |
-| 2004 | Dodge | Ram 2500 SLT Quad Cab 4×4 Cummins | $7,500 | 2026-10-16T19:36:00+00:00 | California |
+| 2004 | Dodge | Ram 2500 SLT Quad Cab 4×4 Cummins | $7,850 | 2026-10-16T19:36:00+00:00 | California |
 | 1978 | Kawasaki | KE175 | $2,000 | 2026-10-16T19:36:00+00:00 | Florida |
 | 1956 | GMC | 100 Pickup | $18,500 | 2026-10-16T19:37:00+00:00 | California |
-| 1951 | Allard | K2 | $16,500 | 2026-10-16T19:38:00+00:00 | North Carolina |
-| 2016 | Porsche | Boxster Spyder 6-Speed | $99,981 | 2026-10-16T19:40:00+00:00 | Georgia |
+| 1951 | Allard | K2 | $17,000 | 2026-10-16T19:38:00+00:00 | North Carolina |
+| 2016 | Porsche | Boxster Spyder 6-Speed | $105,981 | 2026-10-16T19:40:00+00:00 | Georgia |
 | 2026 | Harley-Davidson | CVO Road Glide ST | $38,008 | 2026-10-16T19:41:00+00:00 | North Carolina |
 | 1962 | Austin-Healey | Sprite Mk II | $1,962 | 2026-10-16T19:42:00+00:00 | Idaho |
 | 2015 | Bentley | Flying Spur W12 | $7,800 | 2026-10-16T19:43:00+00:00 | Montana |
@@ -527,23 +358,23 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2024 | Toyota | Tundra Platinum Crewmax 4×4 TRD Package | $20,000 | 2026-10-16T19:45:00+00:00 | Indiana |
 | 1963 | Lancia | Flaminia 2.8 3C Convertible | $29,000 | 2026-10-16T19:45:00+00:00 | California |
 | 2018 | Ford | Mustang GT Petty&#8217;s Garage Bootlegger Edition 6-Speed | $20,250 | 2026-10-16T19:46:00+00:00 | California |
-| 1966 | Sunbeam | Tiger Mk 1A | $15,500 | 2026-10-16T19:47:00+00:00 | Montana |
-| 2006 | Chrysler | PT Cruiser Touring Edition Turbo Convertible | $4,000 | 2026-10-16T19:48:00+00:00 | Kansas |
+| 1966 | Sunbeam | Tiger Mk 1A | $16,000 | 2026-10-16T19:47:00+00:00 | Montana |
+| 2006 | Chrysler | PT Cruiser Touring Edition Turbo Convertible | $5,000 | 2026-10-16T19:48:00+00:00 | Kansas |
 | 2001 | Oldsmobile | Alero GL | $1,500 | 2026-10-16T19:49:00+00:00 | Arizona |
-| 1967 | Alfa Romeo | 1600 Spider Duetto | $10,500 | 2026-10-16T19:50:00+00:00 | Iowa |
+| 1967 | Alfa Romeo | 1600 Spider Duetto | $11,000 | 2026-10-16T19:50:00+00:00 | Iowa |
 | 1977 | Maserati | Merak SS Project | $11,250 | 2026-10-16T19:51:00+00:00 | California |
 | 1965 | Ford | F-100 Flareside Custom Cab 3-Speed | $9,100 | 2026-10-16T19:52:00+00:00 | California |
-| 2018 | Porsche | Macan S | $23,000 | 2026-10-16T19:52:00+00:00 | Pennsylvania |
-| 1986 | GMC | TopKick C7000 Pickup | $7,000 | 2026-10-16T19:53:00+00:00 | Illinois |
+| 2018 | Porsche | Macan S | $23,250 | 2026-10-16T19:52:00+00:00 | Pennsylvania |
+| 1986 | GMC | TopKick C7000 Pickup | $7,500 | 2026-10-16T19:53:00+00:00 | Illinois |
 | 2025 | BMW | M2 6-Speed | $50,000 | 2026-10-16T19:54:00+00:00 | California |
 | 2014 | Toyota | FJ Cruiser Trail Teams Ultimate Edition | $29,250 | 2026-10-16T19:55:00+00:00 | Kansas |
-| 2023 | Ducati | DesertX | $3,250 | 2026-10-16T19:56:00+00:00 | South Dakota |
+| 2023 | Ducati | DesertX | $3,500 | 2026-10-16T19:56:00+00:00 | South Dakota |
 | 2013 | Chevrolet | Corvette 427 Convertible | $35,000 | 2026-10-16T19:57:00+00:00 | Arkansas |
 | 2025 | Porsche | 911 GT3 RS | $200,000 | 2026-10-16T19:58:00+00:00 | Florida |
 | 1964 | Pontiac | GTO Hardtop Coupe 4-Speed | $50,389 | 2026-10-16T19:59:00+00:00 | Not found |
 | 2018 | Porsche | 911 Turbo S Coupe | $92,700 | 2026-10-16T20:00:00+00:00 | Georgia |
 | 1985 | Honda | ATC 250ES Big Red | $3,600 | 2026-10-16T20:01:00+00:00 | Arizona |
-| 1997 | Ferrari | F355 Spider 6-Speed | $75,000 | 2026-10-16T20:02:00+00:00 | Michigan |
+| 1997 | Ferrari | F355 Spider 6-Speed | $95,000 | 2026-10-16T20:02:00+00:00 | Michigan |
 | 1976 | Ford | Bronco 302 | $25,000 | 2026-10-16T20:03:00+00:00 | Arizona |
 | 2015 | Dodge | Viper SRT GTC Coupe | $134,000 | 2026-10-16T20:04:00+00:00 | Florida |
 | 2000 | Bentley | Arnage Red Label | $6,666 | 2026-10-16T20:05:00+00:00 | New Jersey |
@@ -561,7 +392,7 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2006 | Toyota | 4Runner Limited V8 4WD | $22,500 | 2026-10-16T20:17:00+00:00 | Pennsylvania |
 | 1997 | Toyota Land | Cruiser Prado TX KZJ95 Turbodiesel | $4,500 | 2026-10-16T20:19:00+00:00 | Kentucky |
 | 2004 | BMW | M3 Convertible | $6,000 | 2026-10-16T20:20:00+00:00 | Not found |
-| 2011 | Audi | R8 V10 Coupe | $65,000 | 2026-10-16T20:21:00+00:00 | Pennsylvania |
+| 2011 | Audi | R8 V10 Coupe | $70,000 | 2026-10-16T20:21:00+00:00 | Pennsylvania |
 | 2019 | Land Rover | Range Rover HSE Td6 Diesel | $5,000 | 2026-10-16T20:22:00+00:00 | Texas |
 | 1985 | GMC | K1500 Sierra Classic 4&#215;4 | $2,500 | 2026-10-16T20:23:00+00:00 | New York |
 | 2008 | BMW | 650i Convertible 6-Speed | $5,900 | 2026-10-16T20:24:00+00:00 | Pennsylvania |
@@ -569,9 +400,9 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2019 | Porsche | Cayenne Turbo | $36,000 | 2026-10-16T20:26:00+00:00 | California |
 | 2008 | Volkswagen | New Beetle | $12,500 | 2026-10-16T20:27:00+00:00 | Montana |
 | 2003 | BMW | 330i ZHP Sedan 6-Speed | $4,100 | 2026-10-16T20:28:00+00:00 | Florida |
-| 2008 | BMW | 335i Coupe | $3,335 | 2026-10-16T20:29:00+00:00 | Florida |
+| 2008 | BMW | 335i Coupe | $4,444 | 2026-10-16T20:29:00+00:00 | Florida |
 | 1968 | Ford | F-250 Ranger | $12,000 | 2026-10-16T20:30:00+00:00 | Colorado |
-| 1970 | Chevrolet | Camaro Z28 4-Speed | $75,000 | 2026-10-16T20:31:00+00:00 | New York |
+| 1970 | Chevrolet | Camaro Z28 4-Speed | $76,000 | 2026-10-16T20:31:00+00:00 | New York |
 | 1965 | International | Harvester Scout 80 4×4 | $55,000 | 2026-10-16T20:32:00+00:00 | Washington |
 | 1995 | Land Rover | Defender 110 300Tdi 5-Speed | $28,888 | 2026-10-16T20:33:00+00:00 | Washington |
 | 1970 | Chevrolet | K5 Blazer 4×4 | $20,000 | 2026-10-16T20:34:00+00:00 | Texas |
@@ -579,7 +410,7 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2016 | Porsche | Cayman GT4 | $60,000 | 2026-10-16T20:36:00+00:00 | Not found |
 | 1993 | AM | General Hummer Four-Door Hardtop | $26,000 | 2026-10-16T20:37:00+00:00 | Oklahoma |
 | 1967 | Ferves | Ranger | $26,789 | 2026-10-16T20:38:00+00:00 | California |
-| 1981 | DeLorean | DMC-12 | $91,000 | 2026-10-16T20:39:00+00:00 | Tennessee |
+| 1981 | DeLorean | DMC-12 | $101,000 | 2026-10-16T20:39:00+00:00 | Tennessee |
 | 1951 | Ford | F-1 Pickup | $20,750 | 2026-10-16T20:40:00+00:00 | Florida |
 | 1962 | Lincoln | Continental Convertible | $8,300 | 2026-10-16T20:41:00+00:00 | California |
 | 1985 | Jeep | Grand Wagoneer | $12,000 | 2026-10-16T20:42:00+00:00 | Indiana |
@@ -593,7 +424,7 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2001 | Ford | F-250 Super Duty Lariat Crew Cab Power Stroke 4×4 | $17,000 | 2026-10-16T20:50:00+00:00 | Iowa |
 | 2005 | Lotus | Elise | $29,005 | 2026-10-16T20:52:00+00:00 | Pennsylvania |
 | 2001 | Toyota | 4Runner SR5 Sport 4WD | $8,100 | 2026-10-16T20:53:00+00:00 | California |
-| 2006 | Dodge | Magnum SRT8 | $13,000 | 2026-10-16T20:54:00+00:00 | Florida |
+| 2006 | Dodge | Magnum SRT8 | $14,000 | 2026-10-16T20:54:00+00:00 | Florida |
 | 2003 | Toyota | Tacoma PreRunner | $11,000 | 2026-10-16T20:55:00+00:00 | Texas |
 | 1969 | Pontiac | Firebird Convertible | $8,000 | 2026-10-16T20:56:00+00:00 | Not found |
 | 2013 | Audi | Q5 3.0T Premium Plus | $6,000 | 2026-10-16T20:57:00+00:00 | Florida |
@@ -601,24 +432,24 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 1997 | Ford | Mustang GT Convertible | $3,000 | 2026-10-16T20:59:00+00:00 | Arizona |
 | 1965 | Ford | Mustang Fastback 5-Speed | $30,000 | 2026-10-16T21:00:00+00:00 | Not found |
 | 2020 | Lexus | LC500 Inspiration Series | $65,000 | 2026-10-16T21:01:00+00:00 | Arizona |
-| 2018 | Porsche | 718 Boxster | $2,600 | 2026-10-16T21:03:00+00:00 | California |
+| 2018 | Porsche | 718 Boxster | $3,500 | 2026-10-16T21:03:00+00:00 | California |
 | 2012 | Land Rover | Range Rover Sport HSE | $2,500 | 2026-10-16T21:05:00+00:00 | California |
 | 2005 | GMC | Canyon SLE Extended Cab 4×4 | $8,000 | 2026-10-16T21:06:00+00:00 | Kentucky |
 | 2000 | BMW | Z3 2.8 | $2,300 | 2026-10-16T21:07:00+00:00 | New York |
-| 2012 | Ford | Mustang Shelby GT500 Coupe | $12,000 | 2026-10-16T21:08:00+00:00 | Nevada |
+| 2012 | Ford | Mustang Shelby GT500 Coupe | $12,250 | 2026-10-16T21:08:00+00:00 | Nevada |
 | 2010 | Porsche | Boxster 6-Speed | $27,000 | 2026-10-16T21:09:00+00:00 | Pennsylvania |
 | 1987 | Porsche | 911 Carrera Targa G50 | $41,250 | 2026-10-16T21:10:00+00:00 | Pennsylvania |
 | 1998 | Land Rover | Defender 90 300Tdi | $4,750 | 2026-10-16T21:11:00+00:00 | Montana |
 | 1998 | Ford | F-150 XLT SuperCab 4&#215;4 | $5,250 | 2026-10-16T21:12:00+00:00 | North Carolina |
 | 2012 | Alpina | B7 xDrive SWB | $1,700 | 2026-10-16T21:13:00+00:00 | Michigan |
 | 1994 | BMW | 850CSi 6-Speed | $151,850 | 2026-10-17T17:00:00+00:00 | Not found |
-| 1972 | Fiat | 500F Jolly Conversion | $650,000 | 2026-10-17T17:05:00+00:00 | Not found |
-| 2001 | Saab | 9-3 Viggen Convertible | $13,150 | 2026-10-17T17:06:00+00:00 | Michigan |
+| 1972 | Fiat | 500F Jolly Conversion | $42,000 | 2026-10-17T17:05:00+00:00 | Not found |
+| 2001 | Saab | 9-3 Viggen Convertible | $14,950 | 2026-10-17T17:06:00+00:00 | Michigan |
 | 2003 | Porsche | 911 Carrera 4S Coupe 6-Speed | $35,000 | 2026-10-17T17:07:00+00:00 | Illinois |
 | 2013 | Porsche | Cayenne Diesel | $15,000 | 2026-10-17T17:08:00+00:00 | California |
-| 1974 | Volkswagen | Thing | $7,500 | 2026-10-17T17:10:00+00:00 | Michigan |
+| 1974 | Volkswagen | Thing | $8,000 | 2026-10-17T17:10:00+00:00 | Michigan |
 | 2015 | Mercedes-Benz | ML350 4MATIC | $9,999 | 2026-10-17T17:13:00+00:00 | California |
-| 2024 | 175cc | Maranello Racing MK3 Go-Kart | $1,100 | 2026-10-17T17:14:00+00:00 | Not found |
+| 2024 | 175cc | Maranello Racing MK3 Go-Kart | $2,100 | 2026-10-17T17:14:00+00:00 | Not found |
 | 1969 | Meteor | Montcalm S-33 Convertible Twentieth Anniversary Edition | $3,277 | 2026-10-17T17:16:00+00:00 | Not found |
 | 1926 | Ford | Model T Coupe | $1,000 | 2026-10-17T17:17:00+00:00 | Nevada |
 | 1996 | Ford | F-150 Centaurus SuperCab 5.8L 4×4 | $1,350 | 2026-10-17T17:17:00+00:00 | Idaho |
@@ -627,10 +458,10 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 1995 | Mercedes-Benz | E320 Cabriolet | $18,250 | 2026-10-17T17:20:00+00:00 | Not found |
 | 1984 | Mercedes-Benz | 230GE Cabriolet 4-Speed | $12,000 | 2026-10-17T17:22:00+00:00 | New Jersey |
 | 2021 | Jeep | Gladiator Rubicon AMW 707 | $30,000 | 2026-10-17T17:24:00+00:00 | Texas |
-| 2004 | Volkswagen | Jetta GLI VR6 Sedan 6-Speed | $3,700 | 2026-10-17T17:25:00+00:00 | Mississippi |
+| 2004 | Volkswagen | Jetta GLI VR6 Sedan 6-Speed | $4,300 | 2026-10-17T17:25:00+00:00 | Mississippi |
 | 2014 | BMW | i8 | $37,250 | 2026-10-17T17:25:00+00:00 | California |
 | 2014 | Audi | A6 Quattro Premium Plus | $4,750 | 2026-10-17T17:26:00+00:00 | Virginia |
-| 1966 | Chevrolet | Corvette Convertible L36 427/390 4-Speed | $77,777 | 2026-10-17T17:27:00+00:00 | North Carolina |
+| 1966 | Chevrolet | Corvette Convertible L36 427/390 4-Speed | $80,000 | 2026-10-17T17:27:00+00:00 | North Carolina |
 | 1951 | Vincent | Comet | $25,000 | 2026-10-17T17:28:00+00:00 | Colorado |
 | 1970 | Mercedes-Benz | 280SL 4-Speed | $7,000 | 2026-10-17T17:29:00+00:00 | New Mexico |
 | 2006 | Jaguar | Super V8 | $5,100 | 2026-10-17T17:30:00+00:00 | New Jersey |
@@ -640,7 +471,7 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 1990 | Jeep | Wrangler 4.2 5-Speed | $1,000 | 2026-10-17T17:34:00+00:00 | Pennsylvania |
 | 2011 | BMW | 1M | $13,000 | 2026-10-17T17:35:00+00:00 | Wisconsin |
 | 2000 | Mazda | MX-5 Miata 5-Speed | $2,500 | 2026-10-17T17:37:00+00:00 | Pennsylvania |
-| 2006 | Triumph | Bonneville T100 Tracker by Mule Motorcycles | $10,000 | 2026-10-17T17:38:00+00:00 | California |
+| 2006 | Triumph | Bonneville T100 Tracker by Mule Motorcycles | $11,200 | 2026-10-17T17:38:00+00:00 | California |
 | 1969 | Dodge | Dart Swinger | $2,500 | 2026-10-17T17:39:00+00:00 | Florida |
 | 2022 | BMW | X5 M50i | $29,000 | 2026-10-17T17:40:00+00:00 | Minnesota |
 | 1991 | Ford | Mustang LX Convertible | $6,800 | 2026-10-17T17:41:00+00:00 | Pennsylvania |
@@ -653,7 +484,7 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2008 | Porsche | 911 Targa 4S 6-Speed | $25,250 | 2026-10-17T17:49:00+00:00 | Oregon |
 | 2002 | Porsche | 911 Carrera Coupe 6-Speed | $40,000 | 2026-10-17T17:50:00+00:00 | Pennsylvania |
 | 2005 | Mini | Cooper 5-Speed | $1,200 | 2026-10-17T17:51:00+00:00 | Virginia |
-| 1989 | Chevrolet | Corvette Convertible | $3,700 | 2026-10-17T17:52:00+00:00 | California |
+| 1989 | Chevrolet | Corvette Convertible | $5,000 | 2026-10-17T17:52:00+00:00 | California |
 | 2003 | Mercedes-Benz | SL500 | $6,000 | 2026-10-17T17:53:00+00:00 | Montana |
 | 2009 | BMW | 328i Sports Wagon | $2,000 | 2026-10-17T17:54:00+00:00 | California |
 | 1971 | Jaguar | XKE Series II Roadster | $27,777 | 2026-10-17T17:55:00+00:00 | Nebraska |
@@ -663,7 +494,7 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2022 | Lexus | LC500 Convertible Inspiration Series | $91,000 | 2026-10-17T17:59:00+00:00 | New Hampshire |
 | 2008 | BMW | M3 Convertible 6-Speed | $14,250 | 2026-10-17T18:00:00+00:00 | California |
 | 2005 | Aston Martin | DB9 | $25,000 | 2026-10-17T18:01:00+00:00 | California |
-| 1997 | Jaguar | XK8 Coupe | $1,100 | 2026-10-17T18:02:00+00:00 | Florida |
+| 1997 | Jaguar | XK8 Coupe | $2,000 | 2026-10-17T18:02:00+00:00 | Florida |
 | 1979 | Mazda | RX-7 | $5,700 | 2026-10-17T18:03:00+00:00 | Montana |
 | 1974 | International | Harvester Scout II 345 4×4 Project | $2,500 | 2026-10-17T18:04:00+00:00 | Montana |
 | 1986 | Chevrolet | Camaro Z28 IROC-Z 5-Speed Project | $20,000 | 2026-10-17T18:05:00+00:00 | Wisconsin |
@@ -673,10 +504,10 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2016 | Porsche | Cayman GT4 | $70,500 | 2026-10-17T18:09:00+00:00 | Texas |
 | 1973 | Datsun | 620 Pickup 5-Speed | $10,000 | 2026-10-17T18:10:00+00:00 | California |
 | 1970 | Ford | Mustang Mach 1 | $25,500 | 2026-10-17T18:11:00+00:00 | Arizona |
-| 2006 | Porsche | 911 Carrera S Cabriolet 6-Speed | $20,000 | 2026-10-17T18:12:00+00:00 | Montana |
+| 2006 | Porsche | 911 Carrera S Cabriolet 6-Speed | $20,997 | 2026-10-17T18:12:00+00:00 | Montana |
 | 2011 | Honda | Accord EX-L Coupe V6 6-Speed | $12,000 | 2026-10-17T18:13:00+00:00 | New Jersey |
-| 2001 | Ford | Mustang SVT Cobra Coupe | $9,000 | 2026-10-17T18:14:00+00:00 | Ohio |
-| 1995 | Toyota | Tacoma 4&#215;4 5-Speed | $5,100 | 2026-10-17T18:15:00+00:00 | Florida |
+| 2001 | Ford | Mustang SVT Cobra Coupe | $9,100 | 2026-10-17T18:14:00+00:00 | Ohio |
+| 1995 | Toyota | Tacoma 4&#215;4 5-Speed | $5,200 | 2026-10-17T18:15:00+00:00 | Florida |
 | 2014 | Lexus | LX570 | $14,000 | 2026-10-17T18:17:00+00:00 | New Jersey |
 | 2005 | Audi | Allroad 2.7T Quattro | $2,500 | 2026-10-17T18:18:00+00:00 | Washington |
 | 2008 | Land Rover | Range Rover HSE | $3,855 | 2026-10-17T18:19:00+00:00 | Oregon |
@@ -700,17 +531,17 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2013 | BMW | M3 Coupe Lime Rock Park Edition | $53,500 | 2026-10-17T18:40:00+00:00 | Virginia |
 | 1999 | Ferrari | 550 Maranello | $90,500 | 2026-10-17T18:41:00+00:00 | New Jersey |
 | 2011 | Mercedes-Benz | SLS AMG | $200,000 | 2026-10-17T18:42:00+00:00 | New York |
-| 1972 | Porsche | 911T Coupe 5-Speed | $170,000 | 2026-10-17T18:43:00+00:00 | California |
-| 1963 | Percival | Wildcat Go-Kart | $2,250 | 2026-10-17T18:44:00+00:00 | Not found |
+| 1972 | Porsche | 911T Coupe 5-Speed | $175,000 | 2026-10-17T18:43:00+00:00 | California |
+| 1963 | Percival | Wildcat Go-Kart | $2,750 | 2026-10-17T18:44:00+00:00 | Not found |
 | 1973 | Mercedes-Benz | 450SL | $1,350 | 2026-10-17T18:45:00+00:00 | Oregon |
 | 2003 | Chevrolet | Corvette Z06 | $27,500 | 2026-10-17T18:46:00+00:00 | Florida |
 | 2000 | Acura | TL 3.2 Sedan | $4,000 | 2026-10-17T18:47:00+00:00 | North Carolina |
-| 1990 | Porsche | 911 Carrera 4 Cabriolet 5-Speed | $2,290 | 2026-10-17T18:48:00+00:00 | Georgia |
+| 1990 | Porsche | 911 Carrera 4 Cabriolet 5-Speed | $2,500 | 2026-10-17T18:48:00+00:00 | Georgia |
 | 2011 | Toyota Land | Cruiser URJ200 | $40,250 | 2026-10-17T18:50:00+00:00 | Montana |
 | 1965 | Oldsmobile | 442 Holiday Coupe 4-Speed | $14,442 | 2026-10-17T18:51:00+00:00 | California |
 | 2012 | Hyundai | Genesis Coupe 3.8 6-Speed | $2,100 | 2026-10-17T18:52:00+00:00 | Mississippi |
 | 2008 | Mercedes-Benz | C300 Sport Sedan 6-Speed | $3,000 | 2026-10-17T18:53:00+00:00 | Minnesota |
-| 2005 | GMC | Sierra 2500HD SLT Crew Cab Duramax 4×4 | $7,000 | 2026-10-17T18:54:00+00:00 | California |
+| 2005 | GMC | Sierra 2500HD SLT Crew Cab Duramax 4×4 | $7,100 | 2026-10-17T18:54:00+00:00 | California |
 | 2008 | Mercedes-Benz | S550 | $5,775 | 2026-10-17T18:55:00+00:00 | Montana |
 | 2019 | Chevrolet | Corvette Z06 Coupe 3LZ Z07 | $57,000 | 2026-10-17T18:56:00+00:00 | Indiana |
 | 2001 | Honda | ACTY SDX | $3,250 | 2026-10-17T18:57:00+00:00 | Montana |
@@ -725,13 +556,13 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 1977 | Chevrolet | C10 Custom Deluxe | $6,350 | 2026-10-18T17:03:00+00:00 | Oregon |
 | 1968 | Triumph | TR250 | $5,000 | 2026-10-18T17:04:00+00:00 | Not found |
 | 1974 | Yamaha | YZ250A | $3,600 | 2026-10-18T17:05:00+00:00 | Not found |
-| 1994 | Mercedes-Benz | E300 Turbodiesel 4MATIC Wagon | $13,000 | 2026-10-18T17:06:00+00:00 | Not found |
+| 1994 | Mercedes-Benz | E300 Turbodiesel 4MATIC Wagon | $15,000 | 2026-10-18T17:06:00+00:00 | Not found |
 | 1951 | Dodge | B-3-C 4-Speed | $7,500 | 2026-10-18T17:07:00+00:00 | Idaho |
-| 1996 | Chevrolet | Camaro Z28 SS Convertible | $7,700 | 2026-10-18T17:08:00+00:00 | Illinois |
+| 1996 | Chevrolet | Camaro Z28 SS Convertible | $8,000 | 2026-10-18T17:08:00+00:00 | Illinois |
 | 2000 | Mercedes-Benz | G320 | $28,500 | 2026-10-18T17:09:00+00:00 | Florida |
 | 2002 | Porsche | 911 Turbo Coupe X50 6-Speed | $124,996 | 2026-10-18T17:10:00+00:00 | Illinois |
 | 2010 | Toyota | FJ Cruiser | $1,600 | 2026-10-18T17:11:00+00:00 | Illinois |
-| 2008 | Mercedes-Benz | SL550 | $1,100 | 2026-10-18T17:12:00+00:00 | New York |
+| 2008 | Mercedes-Benz | SL550 | $3,300 | 2026-10-18T17:12:00+00:00 | New York |
 | 1977 | Ford | Bronco 5-Speed | $12,000 | 2026-10-18T17:13:00+00:00 | Virginia |
 | 2000 | Porsche | 911 Carrera Cabriolet 6-Speed | $1,000 | 2026-10-18T17:15:00+00:00 | Virginia |
 | 1964 | Rupp | Grandprix Go-Kart | $2,100 | 2026-10-18T17:16:00+00:00 | Not found |
@@ -744,17 +575,17 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 1977 | Ford | F-150 Ranger 4-Speed | $7,500 | 2026-10-18T17:23:00+00:00 | Colorado |
 | 1977 | Bultaco | Frontera 370 | $670 | 2026-10-18T17:24:00+00:00 | California |
 | 1990 | Chevrolet | Corvette Convertible 6-Speed | $1,769 | 2026-10-18T17:25:00+00:00 | Colorado |
-| 2001 | BMW | Z3 2.5i 5-Speed | $6,312 | 2026-10-18T17:27:00+00:00 | New York |
-| 1966 | Pontiac | GTO Convertible | $35,000 | 2026-10-18T17:28:00+00:00 | California |
+| 2001 | BMW | Z3 2.5i 5-Speed | $6,500 | 2026-10-18T17:27:00+00:00 | New York |
+| 1966 | Pontiac | GTO Convertible | $38,000 | 2026-10-18T17:28:00+00:00 | California |
 | 2004 | Mercedes-Benz | SL500 | $9,800 | 2026-10-18T17:29:00+00:00 | California |
-| 1970 | Pontiac | Firebird Trans Am 4-Speed | $33,333 | 2026-10-18T17:30:00+00:00 | Wisconsin |
-| 1991 | Mercedes-Benz | 500SEC | $37,000 | 2026-10-18T17:31:00+00:00 | Not found |
+| 1970 | Pontiac | Firebird Trans Am 4-Speed | $35,000 | 2026-10-18T17:30:00+00:00 | Wisconsin |
+| 1991 | Mercedes-Benz | 500SEC | $40,000 | 2026-10-18T17:31:00+00:00 | Not found |
 | 1999 | Hummer | H1 Wagon | $25,000 | 2026-10-18T17:32:00+00:00 | California |
 | 2000 | Chevrolet | Corvette Convertible | $3,500 | 2026-10-18T17:33:00+00:00 | California |
 | 1984 | Porsche | 911 Carrera Cabriolet | $5,000 | 2026-10-18T17:34:00+00:00 | Rhode Island |
 | 1971 | Lotus | Elan +2S Coupe | $15,000 | 2026-10-18T17:35:00+00:00 | California |
 | 1966 | Ford | Bronco | $15,000 | 2026-10-18T17:36:00+00:00 | Oregon |
-| 1970 | Porsche | 911T Coupe 5-Speed | $30,000 | 2026-10-18T17:37:00+00:00 | Michigan |
+| 1970 | Porsche | 911T Coupe 5-Speed | $30,250 | 2026-10-18T17:37:00+00:00 | Michigan |
 | 2026 | Chevrolet | Corvette ZR1 Convertible 3LZ | $185,000 | 2026-10-18T17:38:00+00:00 | Florida |
 | 2006 | Mitsubishi | Lancer Evolution IX MR | $48,000 | 2026-10-18T17:39:00+00:00 | Wisconsin |
 | 1970 | Ford | Mustang SportsRoof 5-Speed | $50,000 | 2026-10-18T17:40:00+00:00 | Montana |
@@ -764,28 +595,28 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 1968 | Chevrolet | Camaro SS Coupe 6-Speed | $25,000 | 2026-10-18T17:44:00+00:00 | Not found |
 | 2000 | Porsche | 911 Carrera 4 Millenium Edition | $11,000 | 2026-10-18T17:45:00+00:00 | California |
 | 1977 | Jeep | Cherokee S 4&#215;4 | $12,500 | 2026-10-18T17:46:00+00:00 | New York |
-| 2013 | Porsche | 911 Carrera S Cabriolet | $65,500 | 2026-10-18T17:47:00+00:00 | Oregon |
+| 2013 | Porsche | 911 Carrera S Cabriolet | $67,000 | 2026-10-18T17:47:00+00:00 | Oregon |
 | 1926 | Ford | Model T Pickup | $5,000 | 2026-10-18T17:48:00+00:00 | New Jersey |
 | 1976 | GMC | Birchaven 23’ Motorhome | $5,000 | 2026-10-18T17:49:00+00:00 | Washington |
 | 1973 | Mercedes-Benz | 450SL | $5,000 | 2026-10-18T17:49:00+00:00 | Georgia |
 | 2010 | Rossion | Q1 | $48,000 | 2026-10-19T14:22:00+00:00 | Pennsylvania |
-| 2017 | Ferrari | 488 Spider | $300,000 | 2026-10-19T17:00:00+00:00 | Florida |
+| 2017 | Ferrari | 488 Spider | $310,000 | 2026-10-19T17:00:00+00:00 | Florida |
 | 1993 | Ferrari | 512 TR | $190,000 | 2026-10-19T17:00:00+00:00 | Florida |
 | 2015 | Mercedes-Benz | SLS AMG GT Final Edition | $155,000 | 2026-10-19T17:10:00+00:00 | Maryland |
 | 2023 | Aston Martin | AMB 001 | $95,000 | 2026-10-19T17:10:00+00:00 | Not found |
 | 1971 | Mercedes-Benz | 280SE 3.5 Cabriolet | $150,000 | 2026-10-19T17:15:00+00:00 | Rhode Island |
 | 2006 | Ford | GT Heritage Edition | $1,300,000 | 2026-10-19T17:20:00+00:00 | Montana |
 | 2010 | Ferrari | 612 Scaglietti OTO | $70,575 | 2026-10-19T17:21:00+00:00 | Florida |
-| 1965 | Fiat | 1100D Sedan | $2,500 | 2026-10-19T17:23:00+00:00 | Not found |
+| 1965 | Fiat | 1100D Sedan | $3,000 | 2026-10-19T17:23:00+00:00 | Not found |
 | 2015 | BMW | X5 xDrive35i M Sport | $12,750 | 2026-10-19T17:24:00+00:00 | Massachusetts |
-| 2004 | Mercedes-Benz | SL55 AMG | $3,000 | 2026-10-19T17:25:00+00:00 | Florida |
+| 2004 | Mercedes-Benz | SL55 AMG | $3,777 | 2026-10-19T17:25:00+00:00 | Florida |
 | 1995 | AM | General Hummer Wagon | $20,000 | 2026-10-19T17:26:00+00:00 | Michigan |
 | 2007 | Lexus | LS460 | $7,500 | 2026-10-19T17:27:00+00:00 | New York |
 | 1999 | Suzuki | Jimny Turbo Kansai 4×4 | $3,000 | 2026-10-19T17:28:00+00:00 | Montana |
-| 2003 | Subaru | Impreza 2.5RS | $650,000 | 2026-10-19T17:29:00+00:00 | New Hampshire |
+| 2003 | Subaru | Impreza 2.5RS | $172,111 | 2026-10-19T17:29:00+00:00 | New Hampshire |
 | 2011 | BMW | 335i xDrive Sport Coupe 6-Speed | $335 | 2026-10-19T17:31:00+00:00 | Massachusetts |
 | 1993 | Land Rover | Defender 110 NAS 6-Speed | $22,472 | 2026-10-19T17:32:00+00:00 | California |
-| 2014 | Porsche | Cayman S | $6,100 | 2026-10-19T17:33:00+00:00 | Montana |
+| 2014 | Porsche | Cayman S | $41,000 | 2026-10-19T17:33:00+00:00 | Montana |
 | 2005 | BMW | M3 Coupe 6-Speed Conversion | $16,000 | 2026-10-19T17:34:00+00:00 | Arizona |
 | 1992 | Chevrolet | Corvette ZR-1 | $5,800 | 2026-10-19T17:35:00+00:00 | Arizona |
 | 2016 | Ferrari | 488 GTB | $488 | 2026-10-19T17:37:00+00:00 | California |
@@ -793,55 +624,55 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 1968 | Chevrolet | Chevelle Sport Coupe | $15,968 | 2026-10-19T17:39:00+00:00 | Arizona |
 | 2006 | Mercedes-Benz | SLK55 AMG P30 Performance Package | $5,000 | 2026-10-19T17:40:00+00:00 | California |
 | 2000 | Porsche | Boxster 5-Speed | $1,000 | 2026-10-19T17:41:00+00:00 | North Carolina |
-| 1990 | Ford | Thunderbird Super Coupe Anniversary Edition | $5,500 | 2026-10-19T17:42:00+00:00 | Kansas |
+| 1990 | Ford | Thunderbird Super Coupe Anniversary Edition | $6,000 | 2026-10-19T17:42:00+00:00 | Kansas |
 | 2007 | BMW | Z4 M Roadster | $16,500 | 2026-10-19T17:43:00+00:00 | Indiana |
 | 2006 | Land Rover | LR3 HSE | $6,600 | 2026-10-19T17:46:00+00:00 | Nevada |
 | 1985 | Ford | Bronco XLT 5.8L | $1,985 | 2026-10-19T17:47:00+00:00 | Nevada |
 | 1959 | MG | MGA Twin Cam Roadster | $7,500 | 2026-10-19T17:48:00+00:00 | Wisconsin |
-| 1967 | Ford | Galaxie 500XL Convertible Q-Code 428 | $4,500 | 2026-10-19T17:49:00+00:00 | California |
+| 1967 | Ford | Galaxie 500XL Convertible Q-Code 428 | $4,800 | 2026-10-19T17:49:00+00:00 | California |
 | 1998 | Chevrolet | C1500 Pickup | $5,150 | 2026-10-19T17:52:00+00:00 | Kansas |
-| 1996 | Dodge | Viper GTS | $45,000 | 2026-10-19T17:53:00+00:00 | Pennsylvania |
+| 1996 | Dodge | Viper GTS | $55,000 | 2026-10-19T17:53:00+00:00 | Pennsylvania |
 | 1995 | BMW | M3 Coupe 5-Speed | $5,000 | 2026-10-19T17:54:00+00:00 | Delaware |
 | 1973 | Chevrolet | Corvette Coupe L82 | $1,300 | 2026-10-19T17:56:00+00:00 | Tennessee |
 | 1999 | Porsche | 911 Carrera Cabriolet 6-Speed | $5,000 | 2026-10-19T17:58:00+00:00 | California |
 | 1996 | Toyota Land | Cruiser FZJ80 | $25,000 | 2026-10-19T17:59:00+00:00 | Texas |
-| 1967 | Volvo | 1800S | $13,750 | 2026-10-19T18:00:00+00:00 | Not found |
+| 1967 | Volvo | 1800S | $14,750 | 2026-10-19T18:00:00+00:00 | Not found |
 | 1957 | Continental | Mark II | $32,560 | 2026-10-19T18:01:00+00:00 | Florida |
 | 1974 | Honda | CB200T | $750 | 2026-10-19T18:02:00+00:00 | California |
-| 2023 | Ford | Bronco 2-Door 7-Speed | $669,420 | 2026-10-19T18:04:00+00:00 | Delaware |
+| 2023 | Ford | Bronco 2-Door 7-Speed | $2,023 | 2026-10-19T18:04:00+00:00 | Delaware |
 | 2003 | Ford | Thunderbird | $4,500 | 2026-10-19T18:06:00+00:00 | Kentucky |
 | 2016 | Mercedes-Benz | G550 | $52,500 | 2026-10-19T18:07:00+00:00 | California |
-| 2026 | Porsche | 911 Carrera 4S Coupe | $150,000 | 2026-10-19T18:08:00+00:00 | Oregon |
-| 2002 | Toyota | 4Runner Limited 4WD | $8,600 | 2026-10-19T18:09:00+00:00 | Pennsylvania |
+| 2026 | Porsche | 911 Carrera 4S Coupe | $160,000 | 2026-10-19T18:08:00+00:00 | Oregon |
+| 2002 | Toyota | 4Runner Limited 4WD | $10,250 | 2026-10-19T18:09:00+00:00 | Pennsylvania |
 | 1997 | Jaguar | XK8 Convertible Neiman Marcus Edition | $7,250 | 2026-10-19T18:10:00+00:00 | New York |
 | 2024 | Ferrari | Roma Coupe | $80,000 | 2026-10-19T18:11:00+00:00 | California |
 | 1970 | Volkswagen | Karmann Ghia Coupe | $5,000 | 2026-10-19T18:12:00+00:00 | North Carolina |
 | 2006 | Chris-Craft | Speedster 20&#8242; | $6,000 | 2026-10-19T18:13:00+00:00 | Georgia |
 | 2005 | Jaguar | Super V8 | $8,800 | 2026-10-19T18:14:00+00:00 | Florida |
-| 2015 | Victory | Magnum | $650,000 | 2026-10-19T18:15:00+00:00 | Arkansas |
-| 2011 | Ford | F-750 Super Duty XL Stake-Bed Cummins Dually | $23,500 | 2026-10-19T18:17:00+00:00 | Pennsylvania |
-| 2026 | Mercedes-AMG | E 53 Hybrid Wagon | $50,000 | 2026-10-19T18:20:00+00:00 | Connecticut |
+| 2015 | Victory | Magnum | $172,111 | 2026-10-19T18:15:00+00:00 | Arkansas |
+| 2011 | Ford | F-750 Super Duty XL Stake-Bed Cummins Dually | $24,500 | 2026-10-19T18:17:00+00:00 | Pennsylvania |
+| 2026 | Mercedes-AMG | E 53 Hybrid Wagon | $53,665 | 2026-10-19T18:20:00+00:00 | Connecticut |
 | 2021 | Maserati | Quattroporte S GranLusso | $15,000 | 2026-10-19T18:21:00+00:00 | Arizona |
-| 1969 | Buick | GS 400 Convertible 4-Speed | $10,750 | 2026-10-19T18:22:00+00:00 | New Hampshire |
+| 1969 | Buick | GS 400 Convertible 4-Speed | $12,000 | 2026-10-19T18:22:00+00:00 | New Hampshire |
 | 2023 | Chevrolet | Corvette Z06 Convertible 3LZ Z07 | $60,023 | 2026-10-19T18:23:00+00:00 | California |
 | 2017 | Lexus | GX460 Luxury | $20,000 | 2026-10-19T18:24:00+00:00 | Pennsylvania |
-| 2008 | BMW | K1200GT | $650,000 | 2026-10-19T18:25:00+00:00 | Kansas |
+| 2008 | BMW | K1200GT | $13,000 | 2026-10-19T18:25:00+00:00 | Kansas |
 | 2007 | Bentley | Continental GTC | $9,000 | 2026-10-19T18:26:00+00:00 | New Jersey |
 | 1988 | Land Rover | 110 V8 5-Speed | $7,500 | 2026-10-19T18:27:00+00:00 | South Carolina |
 | 1979 | Lincoln | Continental Mark V Cartier Edition | $2,500 | 2026-10-19T18:28:00+00:00 | Massachusetts |
 | 1941 | Chevrolet | Special Deluxe Coupe | $9,900 | 2026-10-19T18:29:00+00:00 | Washington |
-| 1995 | Rover | Mini Cooper 1.3i | $6,500 | 2026-10-19T18:30:00+00:00 | Pennsylvania |
+| 1995 | Rover | Mini Cooper 1.3i | $7,500 | 2026-10-19T18:30:00+00:00 | Pennsylvania |
 | 2016 | Maserati | GranTurismo Sport | $20,250 | 2026-10-19T18:31:00+00:00 | New York |
 | 1958 | Volkswagen | Beetle | $3,500 | 2026-10-19T18:32:00+00:00 | Florida |
-| 1972 | DeTomaso | Pantera | $20,000 | 2026-10-19T18:34:00+00:00 | Texas |
-| 2024 | Toyota | Pixis Van Cruise Turbo Altopiano Mini | $650,000 | 2026-10-19T18:35:00+00:00 | Not found |
+| 1972 | DeTomaso | Pantera | $26,000 | 2026-10-19T18:34:00+00:00 | Texas |
+| 2024 | Toyota | Pixis Van Cruise Turbo Altopiano Mini | $13,000 | 2026-10-19T18:35:00+00:00 | Not found |
 | 2009 | Triumph | 675 Daytona WorldSSP Race Bike | $8,500 | 2026-10-19T18:36:00+00:00 | California |
 | 2022 | Ford | F-350 Super Duty XL 4×4 | $10,000 | 2026-10-19T18:37:00+00:00 | Utah |
 | 2012 | Travertson | V-REX 2 | $1,515 | 2026-10-19T18:38:00+00:00 | Colorado |
 | 1974 | BMW | 3.0CSi 4-Speed | $20,250 | 2026-10-19T19:00:00+00:00 | Not found |
 | 2000 | Ducati | 748R | $9,000 | 2026-10-19T21:18:00+00:00 | Illinois |
 | 1955 | Jaguar | XK140 SE Roadster | $27,500 | 2026-10-19T21:19:00+00:00 | Washington |
-| 1976 | Porsche | 914 2.0 | $22,500 | 2026-10-19T21:20:00+00:00 | Illinois |
+| 1976 | Porsche | 914 2.0 | $25,000 | 2026-10-19T21:20:00+00:00 | Illinois |
 | 2015 | Chevrolet | Camaro Coupe 2SS 1LE 6-Speed | $8,000 | 2026-10-19T21:21:00+00:00 | Oregon |
 | 2014 | Toyota | FJ Cruiser Trail Teams Ultimate Edition | $15,000 | 2026-10-19T21:23:00+00:00 | Florida |
 | 2022 | Cadillac | CT5-V Blackwing Collector Series 6-Speed | $77,777 | 2026-10-19T21:24:00+00:00 | Ohio |
@@ -852,25 +683,25 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2002 | Chevrolet | Corvette Z06 | $15,000 | 2026-10-19T21:31:00+00:00 | Not found |
 | 2025 | EZ | Hauler XLT Pro 10&#8242; Cargo Trailer | $700 | 2026-10-19T21:32:00+00:00 | New York |
 | 1970 | Chevrolet | Nova Coupe | $9,000 | 2026-10-19T21:33:00+00:00 | Colorado |
-| 1984 | Porsche | 944 5-Speed | $7,000 | 2026-10-19T21:35:00+00:00 | Not found |
+| 1984 | Porsche | 944 5-Speed | $7,100 | 2026-10-19T21:35:00+00:00 | Not found |
 | 1993 | Ford | Mustang LX 5.0 Notchback | $23,000 | 2026-10-19T21:36:00+00:00 | Not found |
-| 2025 | Moke | America Electric Moke | $16,000 | 2026-10-19T21:37:00+00:00 | Massachusetts |
+| 2025 | Moke | America Electric Moke | $16,250 | 2026-10-19T21:37:00+00:00 | Massachusetts |
 | 2017 | Chevrolet | Corvette Grand Sport Coupe 3LT | $35,000 | 2026-10-19T21:38:00+00:00 | Wisconsin |
 | 2007 | Lexus | IS 350 | $4,500 | 2026-10-19T21:39:00+00:00 | California |
 | 2010 | BMW | 650i Coupe Sport | $10,000 | 2026-10-19T21:40:00+00:00 | Texas |
 | 1970 | MG | MGB GT | $2,500 | 2026-10-19T21:41:00+00:00 | California |
-| 1979 | Lincoln | Continental Mark V Collector&#8217;s Series | $14,000 | 2026-10-19T21:42:00+00:00 | Ohio |
+| 1979 | Lincoln | Continental Mark V Collector&#8217;s Series | $14,250 | 2026-10-19T21:42:00+00:00 | Ohio |
 | 1998 | Chevrolet | K1500 Silverado 4×4 | $5,000 | 2026-10-19T21:43:00+00:00 | Missouri |
-| 2001 | BMW | Z3 3.0i 5-Speed | $2,000 | 2026-10-19T21:44:00+00:00 | Texas |
-| 2022 | Renegade | Vienna 25VRMC 25th Anniversary Edition Motorhome | $25,000 | 2026-10-19T21:44:00+00:00 | Missouri |
+| 2001 | BMW | Z3 3.0i 5-Speed | $2,200 | 2026-10-19T21:44:00+00:00 | Texas |
+| 2022 | Renegade | Vienna 25VRMC 25th Anniversary Edition Motorhome | $30,000 | 2026-10-19T21:44:00+00:00 | Missouri |
 | 2002 | Pontiac | Firebird Trans Am WS6 Coupe | $13,000 | 2026-10-19T21:45:00+00:00 | New York |
-| 1991 | Mercedes-Benz | 300SL 5-Speed | $2,700 | 2026-10-19T21:46:00+00:00 | Nevada |
+| 1991 | Mercedes-Benz | 300SL 5-Speed | $3,000 | 2026-10-19T21:46:00+00:00 | Nevada |
 | 1999 | Mercedes-Benz | SL500 | $818 | 2026-10-19T21:47:00+00:00 | California |
 | 1978 | Pontiac | Firebird Trans Am Macho T/A 5-Speed | $11,361 | 2026-10-19T21:49:00+00:00 | California |
 | 2011 | BMW | 1M | $25,250 | 2026-10-19T21:49:00+00:00 | New Jersey |
 | 2014 | Ferrari | California | $80,000 | 2026-10-19T21:50:00+00:00 | Pennsylvania |
 | 2006 | Mercedes-Benz | SL65 AMG | $14,000 | 2026-10-19T21:51:00+00:00 | Pennsylvania |
-| 2006 | Dodge | Ram 3500 HD Laramie Quad Cab Cummins Dually 4&#215;4 6-Speed | $2,500 | 2026-10-19T21:52:00+00:00 | Not found |
+| 2006 | Dodge | Ram 3500 HD Laramie Quad Cab Cummins Dually 4&#215;4 6-Speed | $3,000 | 2026-10-19T21:52:00+00:00 | Not found |
 | 2003 | Ford | Mustang SVT Cobra Convertible | $10,000 | 2026-10-19T21:53:00+00:00 | Wisconsin |
 | 1991 | Toyota | Hilux Double Cab 4×4 5-Speed | $23,343 | 2026-10-19T21:54:00+00:00 | Georgia |
 | 1953 | Jaguar | XK120 SE Roadster | $20,777 | 2026-10-19T21:55:00+00:00 | Not found |
@@ -879,10 +710,10 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 1990 | Jeep | Grand Wagoneer | $7,500 | 2026-10-19T21:59:00+00:00 | Idaho |
 | 2014 | Ford | Mustang Saleen S302 Yellow Label Coupe | $15,000 | 2026-10-19T22:00:00+00:00 | Michigan |
 | 1996 | Porsche | 911 Carrera 4S Coupe 6-Speed | $20,000 | 2026-10-19T22:02:00+00:00 | New Mexico |
-| 2009 | Chrysler | 300 Limited | $5,000 | 2026-10-19T22:03:00+00:00 | Florida |
+| 2009 | Chrysler | 300 Limited | $5,150 | 2026-10-19T22:03:00+00:00 | Florida |
 | 2000 | Suzuki | Every Plus 4WD | $1,300 | 2026-10-19T22:04:00+00:00 | Florida |
 | 1961 | Chevrolet | Corvair 95 Rampside Pickup 4-Speed | $5,300 | 2026-10-19T22:05:00+00:00 | Louisiana |
-| 2006 | Bentley | Continental GT | $20,000 | 2026-10-19T22:06:00+00:00 | Texas |
+| 2006 | Bentley | Continental GT | $20,250 | 2026-10-19T22:06:00+00:00 | Texas |
 | 2019 | Porsche | 718 Cayman | $32,000 | 2026-10-19T22:08:00+00:00 | Oklahoma |
 | 2015 | Mercedes-Benz | S550 Coupe 4MATIC | $6,500 | 2026-10-19T22:09:00+00:00 | Florida |
 | 1995 | Chevrolet | K1500 Suburban LT 4×4 | $500 | 2026-10-19T22:10:00+00:00 | North Carolina |
@@ -891,20 +722,20 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 1965 | Dodge | Coronet 500 Hardtop | $6,565 | 2026-10-19T22:13:00+00:00 | Colorado |
 | 2009 | Mercedes-Benz | E350 Sport Sedan | $2,009 | 2026-10-19T22:14:00+00:00 | North Carolina |
 | 1974 | Lotus | Europa Twin Cam Special | $5,100 | 2026-10-19T22:15:00+00:00 | California |
-| 1967 | Chevrolet | Corvette Convertible | $36,000 | 2026-10-19T22:16:00+00:00 | Washington |
+| 1967 | Chevrolet | Corvette Convertible | $37,500 | 2026-10-19T22:16:00+00:00 | Washington |
 | 1971 | Chevrolet | Chevelle SS 454 Sport Coupe LS5 4-Speed | $35,000 | 2026-10-19T22:17:00+00:00 | Missouri |
 | 2012 | Land Rover | Range Rover HSE Luxury | $5,450 | 2026-10-19T22:18:00+00:00 | California |
-| 2010 | BMW | 128i Coupe Sport 6-Speed | $2,000 | 2026-10-19T22:19:00+00:00 | Michigan |
+| 2010 | BMW | 128i Coupe Sport 6-Speed | $3,000 | 2026-10-19T22:19:00+00:00 | Michigan |
 | 2004 | Mercedes-Benz | E55 AMG Sedan | $22,000 | 2026-10-19T22:20:00+00:00 | Virginia |
 | 1976 | Jensen | Interceptor Mk III Convertible | $38,000 | 2026-10-19T22:21:00+00:00 | Montana |
 | 2007 | Mercedes-Benz | SL55 AMG Mystic White Edition | $26,000 | 2026-10-19T22:22:00+00:00 | California |
 | 1998 | Toyota | Tacoma SR5 XtraCab 4×4 | $10,250 | 2026-10-19T22:24:00+00:00 | Washington |
-| 1977 | Yamaha | YZ80 | $1,500 | 2026-10-19T22:26:00+00:00 | Not found |
-| 1975 | Chevrolet | K20 Scottsdale 4×4 4-Speed | $1,500 | 2026-10-19T22:27:00+00:00 | California |
+| 1977 | Yamaha | YZ80 | $1,600 | 2026-10-19T22:26:00+00:00 | Not found |
+| 1975 | Chevrolet | K20 Scottsdale 4×4 4-Speed | $2,500 | 2026-10-19T22:27:00+00:00 | California |
 | 1997 | Ford | F-350 XL Crew Cab Power Stroke 4×4 | $2,600 | 2026-10-19T22:28:00+00:00 | Texas |
 | 1986 | Volvo | 240 DL Wagon 4-Speed | $3,000 | 2026-10-19T22:29:00+00:00 | New York |
-| 2003 | Harley-Davidson | Electra Glide Ultra Classic 100th Anniversary | $4,250 | 2026-10-19T22:30:00+00:00 | Montana |
-| 2013 | BMW | M3 Coupe Competition Package | $11,250 | 2026-10-19T22:31:00+00:00 | California |
+| 2003 | Harley-Davidson | Electra Glide Ultra Classic 100th Anniversary | $5,500 | 2026-10-19T22:30:00+00:00 | Montana |
+| 2013 | BMW | M3 Coupe Competition Package | $18,000 | 2026-10-19T22:31:00+00:00 | California |
 | 2009 | Pontiac | Solstice GXP Coupe 5-Speed | $11,500 | 2026-10-19T22:32:00+00:00 | Not found |
 | 2007 | Porsche | 911 Carrera Coupe | $1,100 | 2026-10-19T22:33:00+00:00 | Florida |
 | 2020 | Land Rover | Range Rover HSE P400 | $12,000 | 2026-10-19T22:33:00+00:00 | New York |
@@ -914,40 +745,40 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2013 | Ferrari | 458 Spider | $150,000 | 2026-10-19T22:37:00+00:00 | New Hampshire |
 | 2020 | GMC | Sierra 2500HD Denali Crew Cab Duramax 4&#215;4 | $10,000 | 2026-10-19T22:38:00+00:00 | Massachusetts |
 | 2004 | Ford | Thunderbird | $3,000 | 2026-10-19T22:39:00+00:00 | California |
-| 2012 | McLaren | MP4-12C | $50,000 | 2026-10-19T22:40:00+00:00 | Pennsylvania |
+| 2012 | McLaren | MP4-12C | $50,500 | 2026-10-19T22:40:00+00:00 | Pennsylvania |
 | 1958 | Mercedes-Benz | 220S Cabriolet 4-Speed | $32,500 | 2026-10-19T22:41:00+00:00 | Florida |
-| 1997 | Porsche | 911 Carrera Targa | $36,000 | 2026-10-19T22:42:00+00:00 | Michigan |
+| 1997 | Porsche | 911 Carrera Targa | $36,250 | 2026-10-19T22:42:00+00:00 | Michigan |
 | 2007 | Porsche | Cayman S 6-Speed | $7,000 | 2026-10-19T22:43:00+00:00 | Massachusetts |
 | 2000 | Acura | NSX-T 6-Speed | $37,000 | 2026-10-19T22:44:00+00:00 | Virginia |
 | 1990 | Mercedes-Benz | 300CE 5-Speed | $1,124 | 2026-10-19T22:45:00+00:00 | Illinois |
 | 1980 | Yamaha | XS850 Special | $500 | 2026-10-19T22:46:00+00:00 | California |
-| 1989 | Chevrolet | Suburban R2500 Scottsdale | $650,000 | 2026-10-19T22:47:00+00:00 | Washington |
+| 1989 | Chevrolet | Suburban R2500 Scottsdale | $13,000 | 2026-10-19T22:47:00+00:00 | Washington |
 | 2005 | Ford | E-450 Super Duty XLT 6.8 V10 Conversion Van | $5,000 | 2026-10-19T22:48:00+00:00 | Virginia |
 | 1969 | Chevrolet | Camaro RS/SS 350 Coupe 4-Speed | $36,000 | 2026-10-19T22:49:00+00:00 | California |
-| 2007 | BMW | Z4 Coupe 3.0si 6-Speed | $6,500 | 2026-10-19T22:50:00+00:00 | Ohio |
+| 2007 | BMW | Z4 Coupe 3.0si 6-Speed | $6,600 | 2026-10-19T22:50:00+00:00 | Ohio |
 | 2013 | Mercedes-Benz | C63 AMG Coupe | $12,000 | 2026-10-19T22:51:00+00:00 | Ohio |
 | 1967 | Kaiser-Jeep | M35A2 | $2,500 | 2026-10-19T22:52:00+00:00 | Michigan |
 | 1946 | Bentley | Mark VI Park Ward Drophead Coupe Project | $3,000 | 2026-10-19T22:53:00+00:00 | Florida |
 | 1972 | BMW | 3.0CS 4-Speed | $30,000 | 2026-10-19T22:54:00+00:00 | Texas |
-| 2010 | Lexus | LX570 | $6,800 | 2026-10-19T22:55:00+00:00 | Oklahoma |
+| 2010 | Lexus | LX570 | $10,000 | 2026-10-19T22:55:00+00:00 | Oklahoma |
 | 1972 | Datsun | 240Z 5-Speed | $9,000 | 2026-10-19T22:56:00+00:00 | Michigan |
 | 1972 | Oldsmobile | Cutlass S Coupe | $6,666 | 2026-10-19T22:57:00+00:00 | Colorado |
-| 2012 | Mercedes-Benz | E550 Sedan 4MATIC | $650,000 | 2026-10-19T22:58:00+00:00 | Connecticut |
-| 2006 | Dodge | Viper SRT-10 Coupe 50 VCA Edition | $50,000 | 2026-10-19T22:59:00+00:00 | Indiana |
+| 2012 | Mercedes-Benz | E550 Sedan 4MATIC | $13,000 | 2026-10-19T22:58:00+00:00 | Connecticut |
+| 2006 | Dodge | Viper SRT-10 Coupe 50 VCA Edition | $57,000 | 2026-10-19T22:59:00+00:00 | Indiana |
 | 2015 | Fiat | 500 Abarth 5-Speed | $3,000 | 2026-10-19T23:00:00+00:00 | Tennessee |
 | 2006 | Jaguar | S-Type | $1,234 | 2026-10-19T23:01:00+00:00 | Florida |
 | 1960 | Cadillac | Coupe DeVille | $22,000 | 2026-10-19T23:03:00+00:00 | Arizona |
 | 2006 | Lexus | LX470 | $26,000 | 2026-10-19T23:04:00+00:00 | Washington |
-| 2006 | Subaru | Impreza WRX STi | $10,000 | 2026-10-19T23:05:00+00:00 | Michigan |
+| 2006 | Subaru | Impreza WRX STi | $11,000 | 2026-10-19T23:05:00+00:00 | Michigan |
 | 2014 | Porsche | 911 Carrera S Coupe 7-Speed | $59,991 | 2026-10-19T23:06:00+00:00 | Massachusetts |
-| 1969 | Dodge | Charger from Fast Five Movie | $29,000 | 2026-10-19T23:07:00+00:00 | Ohio |
+| 1969 | Dodge | Charger from Fast Five Movie | $29,250 | 2026-10-19T23:07:00+00:00 | Ohio |
 | 1987 | Porsche | 924S 5-Speed | $924 | 2026-10-19T23:08:00+00:00 | Pennsylvania |
 | 1964 | Pontiac | Catalina Safari 389 | $2,222 | 2026-10-19T23:09:00+00:00 | Oregon |
 | 1969 | Porsche | 912 Coupe 5-Speed | $35,000 | 2026-10-19T23:10:00+00:00 | Pennsylvania |
 | 1996 | Jaguar | XJS 2+2 Celebration Edition Convertible | $10,500 | 2026-10-19T23:11:00+00:00 | Missouri |
 | 2009 | Land Rover | Range Rover Supercharged | $1,322 | 2026-10-19T23:12:00+00:00 | Mississippi |
-| 2006 | Lincoln | Town Car | $5,500 | 2026-10-19T23:14:00+00:00 | New York |
-| 1966 | Chevrolet | Chevelle Malibu Sport Coupe | $13,500 | 2026-10-19T23:15:00+00:00 | Montana |
+| 2006 | Lincoln | Town Car | $5,600 | 2026-10-19T23:14:00+00:00 | New York |
+| 1966 | Chevrolet | Chevelle Malibu Sport Coupe | $18,000 | 2026-10-19T23:15:00+00:00 | Montana |
 | 2007 | Mazda | MX-5 Miata Touring 6-Speed | $5,500 | 2026-10-19T23:16:00+00:00 | Pennsylvania |
 | 1969 | Ford | Bronco 302 | $15,000 | 2026-10-19T23:17:00+00:00 | California |
 | 2002 | Toyota | Camry XLE V6 | $8,000 | 2026-10-19T23:18:00+00:00 | California |
@@ -955,7 +786,7 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2006 | Aston Martin | V12 Vanquish S | $30,000 | 2026-10-19T23:20:00+00:00 | Texas |
 | 2009 | BMW | M6 Coupe 6-Speed | $25,000 | 2026-10-19T23:21:00+00:00 | Not found |
 | 2018 | Dodge | Charger SRT Hellcat | $5,000 | 2026-10-19T23:22:00+00:00 | Colorado |
-| 2006 | Ford | Mustang Shelby GT-H | $10,000 | 2026-10-19T23:23:00+00:00 | Texas |
+| 2006 | Ford | Mustang Shelby GT-H | $12,500 | 2026-10-19T23:23:00+00:00 | Texas |
 | 1967 | Dodge | Coronet 318 Convertible | $5,155 | 2026-10-19T23:24:00+00:00 | Ohio |
 | 2004 | Lexus | LS430 Ultra Luxury Package | $7,250 | 2026-10-19T23:25:00+00:00 | Arizona |
 | 1966 | Oldsmobile | Toronado Deluxe | $12,000 | 2026-10-19T23:26:00+00:00 | Kentucky |
@@ -964,22 +795,22 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2010 | BMW | X3 xDrive30i M Sport 6-Speed | $1,199 | 2026-10-19T23:29:00+00:00 | Utah |
 | 1991 | Dodge | Power Ram W250 Cummins 4&#215;4 5-Speed | $30,000 | 2026-10-19T23:30:00+00:00 | Arizona |
 | 2003 | Acura | NSX-T 6-Speed | $118,777 | 2026-10-19T23:31:00+00:00 | Montana |
-| 1980 | Chevrolet | K5 Blazer Silverado 4&#215;4 | $1,100 | 2026-10-19T23:33:00+00:00 | Ohio |
+| 1980 | Chevrolet | K5 Blazer Silverado 4&#215;4 | $1,300 | 2026-10-19T23:33:00+00:00 | Ohio |
 | 2008 | Porsche | 911 Turbo Coupe 6-Speed | $140,000 | 2026-10-20T17:00:00+00:00 | Georgia |
 | 1968 | Shelby | Mustang GT500KR Convertible | $140,000 | 2026-10-20T17:00:00+00:00 | California |
 | 1982 | Ferrari | 512 BBi | $250,000 | 2026-10-20T17:05:00+00:00 | Not found |
 | 1998 | Acura | NSX-T 6-Speed | $127,777 | 2026-10-20T17:10:00+00:00 | California |
-| 1948 | Tatra | T87 | $675,000 | 2026-10-20T17:20:00+00:00 | Not found |
+| 1948 | Tatra | T87 | $30,000 | 2026-10-20T17:20:00+00:00 | Not found |
 | 2005 | Ford | GT | $551,000 | 2026-10-20T17:25:00+00:00 | Colorado |
 | 1957 | Alfa Romeo | Giulietta Sprint 5-Speed | $23,500 | 2026-10-20T17:25:00+00:00 | California |
 | 2020 | Ford | GT Carbon Series | $875,000 | 2026-10-20T17:30:00+00:00 | Michigan |
 | 1993 | Mazda | RX-7 Touring 5-Speed Conversion | $13,500 | 2026-10-20T17:31:00+00:00 | Florida |
 | 1995 | Acura | NSX-T | $55,600 | 2026-10-20T17:33:00+00:00 | Ohio |
-| 1998 | Mercedes-Benz | C230 | $650,000 | 2026-10-20T17:34:00+00:00 | Arizona |
+| 1998 | Mercedes-Benz | C230 | $200 | 2026-10-20T17:34:00+00:00 | Arizona |
 | 2025 | Ford | Mustang Shelby Super Snake | $60,000 | 2026-10-20T17:35:00+00:00 | New Jersey |
-| 2005 | Porsche | 911 Carrera S Coupe 6-Speed | $52,500 | 2026-10-20T17:35:00+00:00 | New Jersey |
+| 2005 | Porsche | 911 Carrera S Coupe 6-Speed | $70,000 | 2026-10-20T17:35:00+00:00 | New Jersey |
 | 2020 | Rolls-Royce | Wraith | $67,500 | 2026-10-20T17:36:00+00:00 | California |
-| 2001 | Toyota | Tacoma PreRunner Double Cab SR5 V6 | $5,000 | 2026-10-20T17:37:00+00:00 | Texas |
+| 2001 | Toyota | Tacoma PreRunner Double Cab SR5 V6 | $5,500 | 2026-10-20T17:37:00+00:00 | Texas |
 | 2000 | Ducati | 748 | $700 | 2026-10-20T17:38:00+00:00 | New York |
 | 1989 | Ferrari | Mondial T Cabriolet | $31,000 | 2026-10-20T17:38:00+00:00 | New Jersey |
 | 2006 | Ferrari | 612 Scaglietti | $55,000 | 2026-10-20T17:39:00+00:00 | Florida |
@@ -990,31 +821,31 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2023 | Polaris | RZR Pro XP | $1,000 | 2026-10-20T17:43:00+00:00 | Mississippi |
 | 2003 | Mercedes-Benz | SL55 AMG | $5,500 | 2026-10-20T17:44:00+00:00 | Minnesota |
 | 1973 | Porsche | 911T Targa 5-Speed Project | $3,100 | 2026-10-20T17:45:00+00:00 | West Virginia |
-| 1963 | Chevrolet | Corvette Split-Window Coupe L76 327/340 4-Speed | $90,001 | 2026-10-20T17:46:00+00:00 | California |
+| 1963 | Chevrolet | Corvette Split-Window Coupe L76 327/340 4-Speed | $105,001 | 2026-10-20T17:46:00+00:00 | California |
 | 2003 | Ford | Mustang SVT Cobra Coupe 10th Anniversary Edition | $22,500 | 2026-10-20T17:47:00+00:00 | Illinois |
-| 1978 | Mercedes-Benz | 450SL | $650,000 | 2026-10-20T17:48:00+00:00 | Wisconsin |
+| 1978 | Mercedes-Benz | 450SL | $30,000 | 2026-10-20T17:48:00+00:00 | Wisconsin |
 | 2000 | Honda | Prelude 5-Speed | $8,200 | 2026-10-20T17:49:00+00:00 | New Jersey |
 | 1992 | Land Rover | Defender 90 200Tdi 5-Speed | $7,500 | 2026-10-20T17:50:00+00:00 | Maryland |
 | 2000 | Toyota | MR2 Spyder 5-Speed | $10,000 | 2026-10-20T17:51:00+00:00 | California |
 | 1987 | BMW | 325i 5-Speed | $1,500 | 2026-10-20T17:52:00+00:00 | New York |
 | 1966 | Pontiac | Tempest Custom Hardtop Sedan | $1,966 | 2026-10-20T17:54:00+00:00 | North Carolina |
-| 1974 | MG | MGB Roadster | $200 | 2026-10-20T17:55:00+00:00 | Georgia |
+| 1974 | MG | MGB Roadster | $500 | 2026-10-20T17:55:00+00:00 | Georgia |
 | 2018 | Mercedes-AMG | E63 S 4MATIC Wagon | $35,000 | 2026-10-20T17:56:00+00:00 | Florida |
 | 2004 | BMW | M3 Convertible 6-Speed Conversion | $1,000 | 2026-10-20T17:58:00+00:00 | New York |
 | 2006 | BMW | Z4 M Coupe | $34,000 | 2026-10-20T17:59:00+00:00 | New Jersey |
-| 2004 | Ferrari | 360 Modena 6-Speed | $135,000 | 2026-10-20T18:01:00+00:00 | Florida |
-| 2014 | Porsche | Boxster S | $3,500 | 2026-10-20T18:02:00+00:00 | New Jersey |
-| 2007 | Porsche | 911 Carrera Coupe 6-Speed | $15,000 | 2026-10-20T18:03:00+00:00 | New Jersey |
+| 2004 | Ferrari | 360 Modena 6-Speed | $145,000 | 2026-10-20T18:01:00+00:00 | Florida |
+| 2014 | Porsche | Boxster S | $4,000 | 2026-10-20T18:02:00+00:00 | New Jersey |
+| 2007 | Porsche | 911 Carrera Coupe 6-Speed | $20,000 | 2026-10-20T18:03:00+00:00 | New Jersey |
 | 2024 | Moke | America Electric Moke | $8,500 | 2026-10-20T18:04:00+00:00 | Iowa |
 | 1993 | Dodge | Viper RT/10 | $11,000 | 2026-10-20T18:05:00+00:00 | California |
 | 1930 | Ford | Model A Roadster Pickup | $6,800 | 2026-10-20T18:06:00+00:00 | Ohio |
-| 2015 | Mercedes-Benz | SL550 | $650,000 | 2026-10-20T18:07:00+00:00 | Massachusetts |
-| 1997 | Porsche | 911 Carrera Targa 6-Speed | $20,000 | 2026-10-20T18:08:00+00:00 | Virginia |
+| 2015 | Mercedes-Benz | SL550 | $30,000 | 2026-10-20T18:07:00+00:00 | Massachusetts |
+| 1997 | Porsche | 911 Carrera Targa 6-Speed | $22,222 | 2026-10-20T18:08:00+00:00 | Virginia |
 | 2000 | Honda | Civic Si | $15,000 | 2026-10-20T18:09:00+00:00 | New Jersey |
-| 1970 | AMC | AMX 4-Speed | $3,100 | 2026-10-20T18:10:00+00:00 | Texas |
+| 1970 | AMC | AMX 4-Speed | $8,500 | 2026-10-20T18:10:00+00:00 | Texas |
 | 2006 | Aston Martin | DB9 Volante | $25,000 | 2026-10-20T18:11:00+00:00 | California |
 | 2013 | BMW | M3 Coupe Competition Package | $46,000 | 2026-10-20T18:12:00+00:00 | New York |
-| 2000 | Honda | S2000 | $12,250 | 2026-10-20T18:13:00+00:00 | Virginia |
+| 2000 | Honda | S2000 | $15,000 | 2026-10-20T18:13:00+00:00 | Virginia |
 | 1954 | Jaguar | XK120 Roadster | $15,000 | 2026-10-20T18:14:00+00:00 | Connecticut |
 | 2022 | Ferrari | Portofino M | $175,000 | 2026-10-20T18:15:00+00:00 | Connecticut |
 | 1995 | Acura | NSX-T 5-Speed | $75,000 | 2026-10-20T18:16:00+00:00 | Wisconsin |
@@ -1022,61 +853,61 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 1993 | Chevrolet | Corvette Coupe 40th Anniversary | $9,999 | 2026-10-20T18:17:00+00:00 | Illinois |
 | 2011 | Porsche | Cayenne Turbo | $2,212 | 2026-10-20T18:18:00+00:00 | North Carolina |
 | 2019 | Mercedes-AMG | C43 Sedan | $8,000 | 2026-10-20T18:19:00+00:00 | Michigan |
-| 1994 | Jaguar | XJS 2+2 Convertible | $650,000 | 2026-10-20T18:19:00+00:00 | Arizona |
+| 1994 | Jaguar | XJS 2+2 Convertible | $30,000 | 2026-10-20T18:19:00+00:00 | Arizona |
 | 1965 | Ford | Mustang Coupe 289 | $1,500 | 2026-10-20T18:20:00+00:00 | California |
-| 2012 | Bentley | Continental GT W12 | $21,250 | 2026-10-20T18:21:00+00:00 | North Carolina |
+| 2012 | Bentley | Continental GT W12 | $21,500 | 2026-10-20T18:21:00+00:00 | North Carolina |
 | 2016 | Land Rover | Range Rover Td6 Diesel | $12,000 | 2026-10-20T18:22:00+00:00 | Washington |
-| 1987 | Cadillac | Allante | $2,100 | 2026-10-20T18:23:00+00:00 | Minnesota |
+| 1987 | Cadillac | Allante | $2,350 | 2026-10-20T18:23:00+00:00 | Minnesota |
 | 2011 | Mercedes-Benz | E350 4MATIC Wagon | $99 | 2026-10-20T18:23:00+00:00 | Montana |
-| 1999 | Subaru | Legacy Touring Wagon GT-B 5-Speed | $1,600 | 2026-10-20T18:24:00+00:00 | Idaho |
+| 1999 | Subaru | Legacy Touring Wagon GT-B 5-Speed | $3,650 | 2026-10-20T18:24:00+00:00 | Idaho |
 | 2014 | BMW | X1 xDrive28i | $1,000 | 2026-10-20T18:25:00+00:00 | Montana |
-| 2006 | BMW | HP2 Enduro | $650,000 | 2026-10-20T18:26:00+00:00 | Not found |
-| 2025 | Porsche | 718 Boxster Style Edition 6-Speed | $56,000 | 2026-10-20T18:27:00+00:00 | Texas |
-| 2005 | Jeep | Wrangler Unlimited Rock Crawler | $5,000 | 2026-10-20T18:28:00+00:00 | Colorado |
-| 2012 | Subaru | Impreza WRX STi | $650,000 | 2026-10-20T18:29:00+00:00 | Florida |
+| 2006 | BMW | HP2 Enduro | $30,000 | 2026-10-20T18:26:00+00:00 | Not found |
+| 2025 | Porsche | 718 Boxster Style Edition 6-Speed | $56,500 | 2026-10-20T18:27:00+00:00 | Texas |
+| 2005 | Jeep | Wrangler Unlimited Rock Crawler | $5,100 | 2026-10-20T18:28:00+00:00 | Colorado |
+| 2012 | Subaru | Impreza WRX STi | $30,000 | 2026-10-20T18:29:00+00:00 | Florida |
 | 2022 | Porsche | 911 Turbo S Coupe | $200,000 | 2026-10-20T18:30:00+00:00 | Montana |
 | 1971 | Ford | F-250 Sport Custom Highboy 4&#215;4 | $75,000 | 2026-10-20T18:31:00+00:00 | Arkansas |
 | 1959 | Autobianchi | Bianchina Transformabile | $500 | 2026-10-20T18:31:00+00:00 | Ohio |
 | 2003 | Acura | NSX-T 6-Speed | $30,000 | 2026-10-20T18:32:00+00:00 | California |
 | 1970 | BMW | 2800CS 4-Speed | $2,500 | 2026-10-20T18:33:00+00:00 | Not found |
-| 1988 | Land Rover | 110 Tophat Pickup Conversion 6-Speed | $5,000 | 2026-10-20T18:34:00+00:00 | Montana |
-| 1984 | Mercedes-Benz | 380SL | $700 | 2026-10-20T18:34:00+00:00 | Oregon |
-| 2002 | Porsche | 911 Turbo Coupe 6-Speed | $21,996 | 2026-10-20T18:35:00+00:00 | Florida |
-| 2010 | Nissan | 370Z Touring Roadster | $650,000 | 2026-10-20T18:36:00+00:00 | California |
-| 1981 | Fiat | X1/9 | $2,000 | 2026-10-20T18:37:00+00:00 | Iowa |
-| 2017 | Ford | Focus RS | $2,017 | 2026-10-20T18:38:00+00:00 | Connecticut |
+| 1988 | Land Rover | 110 Tophat Pickup Conversion 6-Speed | $6,000 | 2026-10-20T18:34:00+00:00 | Montana |
+| 1984 | Mercedes-Benz | 380SL | $1,500 | 2026-10-20T18:34:00+00:00 | Oregon |
+| 2002 | Porsche | 911 Turbo Coupe 6-Speed | $44,000 | 2026-10-20T18:35:00+00:00 | Florida |
+| 2010 | Nissan | 370Z Touring Roadster | $30,000 | 2026-10-20T18:36:00+00:00 | California |
+| 1981 | Fiat | X1/9 | $2,200 | 2026-10-20T18:37:00+00:00 | Iowa |
+| 2017 | Ford | Focus RS | $5,000 | 2026-10-20T18:38:00+00:00 | Connecticut |
 | 1986 | Porsche | 911 Carrera Targa | $25,000 | 2026-10-20T18:39:00+00:00 | California |
 | 2005 | Chevrolet | Silverado 2500HD Extended Cab 4×4 | $6,969 | 2026-10-20T18:40:00+00:00 | Idaho |
 | 1963 | Studebaker | Avanti | $3,200 | 2026-10-20T18:41:00+00:00 | Pennsylvania |
 | 1969 | Chevrolet | Camaro Coupe 6-Speed | $30,000 | 2026-10-20T18:42:00+00:00 | Texas |
-| 1999 | Mercedes-Benz | SL500 | $650,000 | 2026-10-20T18:43:00+00:00 | Florida |
+| 1999 | Mercedes-Benz | SL500 | $1,000 | 2026-10-20T18:43:00+00:00 | Florida |
 | 1995 | Chevrolet | C2500 HD Trail Wagons Conversion | $690 | 2026-10-20T18:44:00+00:00 | Washington |
 | 1964 | Porsche | 356C Coupe | $6,000 | 2026-10-20T18:45:00+00:00 | Arizona |
 | 1972 | Chevrolet | El Camino 4-Speed | $5,000 | 2026-10-20T18:46:00+00:00 | New York |
-| 2003 | GMC | Yukon XL Denali | $650,000 | 2026-10-20T18:47:00+00:00 | California |
-| 1970 | Chevrolet | Corvette Coupe LS5 454/390 4-Speed | $7,500 | 2026-10-20T18:48:00+00:00 | Oregon |
-| 1975 | Chevrolet | K10 Cheyenne 4&#215;4 | $10,750 | 2026-10-20T18:49:00+00:00 | Washington |
+| 2003 | GMC | Yukon XL Denali | $30,750 | 2026-10-20T18:47:00+00:00 | California |
+| 1970 | Chevrolet | Corvette Coupe LS5 454/390 4-Speed | $8,200 | 2026-10-20T18:48:00+00:00 | Oregon |
+| 1975 | Chevrolet | K10 Cheyenne 4&#215;4 | $15,000 | 2026-10-20T18:49:00+00:00 | Washington |
 | 1974 | Kawasaki | Z1 900 | $8,250 | 2026-10-20T18:50:00+00:00 | California |
 | 1968 | Chevrolet | Corvette Convertible 4-Speed | $12,222 | 2026-10-20T18:51:00+00:00 | Pennsylvania |
 | 2013 | Mini | Cooper S Coupe 6-Speed | $1,000 | 2026-10-20T18:52:00+00:00 | Pennsylvania |
 | 1997 | Ford | F-250 HD XLT SuperCab Power Stroke | $5,000 | 2026-10-20T18:53:00+00:00 | Oregon |
 | 1981 | Jeep | CJ-5 Laredo 4-Speed | $0 | 2026-10-20T18:54:00+00:00 | Oregon |
 | 1999 | Toyota Land | Cruiser UZJ100 | $250 | 2026-10-20T18:55:00+00:00 | Missouri |
-| 2002 | Saab | 9-3 Viggen 4-Door | $5,448 | 2026-10-20T18:56:00+00:00 | Ohio |
-| 1967 | Plymouth | Barracuda Convertible | $650,000 | 2026-10-20T18:57:00+00:00 | New Jersey |
+| 2002 | Saab | 9-3 Viggen 4-Door | $5,999 | 2026-10-20T18:56:00+00:00 | Ohio |
+| 1967 | Plymouth | Barracuda Convertible | $30,750 | 2026-10-20T18:57:00+00:00 | New Jersey |
 | 2018 | Toyota Land | Cruiser URJ200 | $55,000 | 2026-10-20T18:58:00+00:00 | Virginia |
-| 1951 | Mercedes-Benz | 170 Da Four-Door Sedan | $650,000 | 2026-10-20T18:59:00+00:00 | Pennsylvania |
-| 1973 | International | Harvester Loadstar | $8,888 | 2026-10-20T19:00:00+00:00 | Maine |
+| 1951 | Mercedes-Benz | 170 Da Four-Door Sedan | $30,750 | 2026-10-20T18:59:00+00:00 | Pennsylvania |
+| 1973 | International | Harvester Loadstar | $14,444 | 2026-10-20T19:00:00+00:00 | Maine |
 | 2014 | Chevrolet | Corvette Stingray Convertible 3LT Z51 7-Speed | $12,250 | 2026-10-20T19:01:00+00:00 | Wisconsin |
-| 1974 | Ford | Bronco | $650,000 | 2026-10-20T19:02:00+00:00 | California |
-| 1968 | Porsche | 912 Coupe 5-Speed | $1,968 | 2026-10-20T19:03:00+00:00 | New Hampshire |
-| 1970 | Volvo | 142S 4-Speed | $1,542 | 2026-10-20T19:04:00+00:00 | Florida |
+| 1974 | Ford | Bronco | $5,000 | 2026-10-20T19:02:00+00:00 | California |
+| 1968 | Porsche | 912 Coupe 5-Speed | $3,000 | 2026-10-20T19:03:00+00:00 | New Hampshire |
+| 1970 | Volvo | 142S 4-Speed | $1,776 | 2026-10-20T19:04:00+00:00 | Florida |
 | 2009 | Mercedes-Benz | S550 4MATIC | $5,000 | 2026-10-20T19:05:00+00:00 | Tennessee |
 | 2013 | Porsche | Cayenne GTS | $4,000 | 2026-10-20T19:06:00+00:00 | Texas |
-| 1987 | Porsche | 911 Turbo Coupe | $10,911 | 2026-10-20T19:07:00+00:00 | Wisconsin |
+| 1987 | Porsche | 911 Turbo Coupe | $12,000 | 2026-10-20T19:07:00+00:00 | Wisconsin |
 | 1982 | Porsche | 928 Project | $1,500 | 2026-10-20T19:08:00+00:00 | Kentucky |
 | 1973 | Porsche | 911T Coupe 5-Speed | $10,000 | 2026-10-20T19:10:00+00:00 | New York |
-| 1967 | Chevrolet | Corvette Convertible 327/300 4-Speed | $20,000 | 2026-10-20T19:11:00+00:00 | Ohio |
+| 1967 | Chevrolet | Corvette Convertible 327/300 4-Speed | $35,000 | 2026-10-20T19:11:00+00:00 | Ohio |
 | 1969 | Chevrolet | Camaro Z/28 Coupe 4-Speed w/Cross-Ram Intake | $61,969 | 2026-10-20T19:12:00+00:00 | Michigan |
 | 2027 | Chevrolet | Corvette ZR1X Coupe 3LZ | $240,000 | 2026-10-20T19:13:00+00:00 | New Hampshire |
 | 2007 | Jeep | Wrangler Unlimited Sahara | $2,345 | 2026-10-20T19:14:00+00:00 | Iowa |
@@ -1085,22 +916,22 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2015 | Ducati | 1299 Panigale S | $5,000 | 2026-10-20T19:17:00+00:00 | Florida |
 | 2022 | BMW | M760i xDrive The Final V12 Edition | $55,000 | 2026-10-20T19:18:00+00:00 | Montana |
 | 2001 | Porsche | Boxster S 6-Speed | $0 | 2026-10-20T19:19:00+00:00 | Pennsylvania |
-| 2014 | BMW | M6 Coupe 6-Speed | $5,000 | 2026-10-20T19:20:00+00:00 | Pennsylvania |
+| 2014 | BMW | M6 Coupe 6-Speed | $12,500 | 2026-10-20T19:20:00+00:00 | Pennsylvania |
 | 2024 | GMC | Sierra 3500HD Denali Crew Cab Duramax Dually 4×4 | $62,000 | 2026-10-20T19:21:00+00:00 | Montana |
 | 2014 | Audi | A6 Quattro Premium Plus | $4,750 | 2026-10-20T19:22:00+00:00 | Texas |
 | 2024 | Porsche | 911 GT3 RS Weissach | $400,000 | 2026-10-20T19:23:00+00:00 | Florida |
 | 1987 | Mercedes-Benz | 560SL | $7,500 | 2026-10-20T19:24:00+00:00 | New York |
 | 2016 | Audi | Allroad Quattro Premium Plus | $5,100 | 2026-10-20T19:25:00+00:00 | Michigan |
-| 2017 | BMW | X5 xDrive50i xLine | $0 | 2026-10-20T19:26:00+00:00 | New Jersey |
+| 2017 | BMW | X5 xDrive50i xLine | $7,500 | 2026-10-20T19:26:00+00:00 | New Jersey |
 | 2007 | Porsche | 911 Carrera 4S Coupe X51 6-Speed | $15,000 | 2026-10-20T19:27:00+00:00 | Pennsylvania |
-| 2013 | BMW | 135is Coupe 6-Speed | $5,135 | 2026-10-20T19:28:00+00:00 | Pennsylvania |
+| 2013 | BMW | 135is Coupe 6-Speed | $6,000 | 2026-10-20T19:28:00+00:00 | Pennsylvania |
 | 1968 | Ford | Torino GT Fastback S-Code 390 | $7,500 | 2026-10-20T19:30:00+00:00 | Ohio |
 | 1963 | Plymouth | Fury Convertible | $10,000 | 2026-10-20T19:31:00+00:00 | California |
 | 2014 | Ferrari | California | $70,500 | 2026-10-20T19:31:00+00:00 | California |
 | 2022 | Vespa | 946 Christian Dior Limited Edition | $12,000 | 2026-10-20T19:32:00+00:00 | Montana |
-| 2017 | BMW | M240i Coupe 6-Speed | $650,000 | 2026-10-20T19:34:00+00:00 | Florida |
-| 1990 | Ford | Mustang GT 5.0 Hatchback 5-Speed | $9,000 | 2026-10-20T19:36:00+00:00 | New York |
-| 1954 | Ford | Comète Monte-Carlo 5-Speed | $5,700 | 2026-10-20T19:37:00+00:00 | Kansas |
+| 2017 | BMW | M240i Coupe 6-Speed | $18,000 | 2026-10-20T19:34:00+00:00 | Florida |
+| 1990 | Ford | Mustang GT 5.0 Hatchback 5-Speed | $13,150 | 2026-10-20T19:36:00+00:00 | New York |
+| 1954 | Ford | Comète Monte-Carlo 5-Speed | $8,500 | 2026-10-20T19:37:00+00:00 | Kansas |
 | 1956 | Jaguar | XK140 MC Roadster 5-Speed | $42,000 | 2026-10-20T19:38:00+00:00 | Arizona |
 | 2006 | Maserati | Quattroporte Executive GT | $3,000 | 2026-10-20T19:39:00+00:00 | Florida |
 | 1991 | BMW | 850i 6-Speed | $20,000 | 2026-10-20T19:40:00+00:00 | California |
@@ -1108,7 +939,7 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2012 | Land Rover | Range Rover Supercharged | $1,500 | 2026-10-20T19:43:00+00:00 | California |
 | 2009 | Nissan | 370Z 6-Speed | $1,000 | 2026-10-20T19:44:00+00:00 | Montana |
 | 2018 | Mercedes-Benz | GLS450 4MATIC | $1,000 | 2026-10-20T19:45:00+00:00 | Texas |
-| 1994 | Audi | RS2 Avant | $650,000 | 2026-10-20T19:46:00+00:00 | Not found |
+| 1994 | Audi | RS2 Avant | $7,250 | 2026-10-20T19:46:00+00:00 | Not found |
 | 2021 | Ram | 1500 TRX Crew Cab 4×4 Hennessey Mammoth 1000 | $1,000 | 2026-10-20T19:47:00+00:00 | Montana |
 | 1990 | Ford | F-250 XLT Lariat SuperCab 4&#215;4 5-Speed | $10,500 | 2026-10-20T19:48:00+00:00 | Michigan |
 | 1957 | Chevrolet | Corvette 3-Speed | $1,957 | 2026-10-20T19:49:00+00:00 | Florida |
@@ -1119,60 +950,60 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 1964 | .5 | Ford Mustang Coupe D-Code 289 4-Speed Project | $2,100 | 2026-10-20T19:54:00+00:00 | Virginia |
 | 1997 | Lexus | LX450 | $5,000 | 2026-10-20T19:55:00+00:00 | Massachusetts |
 | 1957 | Ford | Fairlane 500 Club Victoria | $3,000 | 2026-10-20T19:56:00+00:00 | Oregon |
-| 2014 | Porsche | Cayenne Diesel | $5,250 | 2026-10-20T19:57:00+00:00 | Arizona |
+| 2014 | Porsche | Cayenne Diesel | $5,555 | 2026-10-20T19:57:00+00:00 | Arizona |
 | 2017 | Fiat | 124 Spider Abarth | $4,500 | 2026-10-20T19:58:00+00:00 | California |
 | 1994 | Mazda | MX-5 Miata 5-Speed | $4,000 | 2026-10-20T19:59:00+00:00 | Florida |
 | 1998 | Subaru | Sambar 4WD Deck Van 5-Speed | $3,250 | 2026-10-20T20:00:00+00:00 | Florida |
 | 1962 | Mercedes-Benz | 190SL | $62,190 | 2026-10-20T20:01:00+00:00 | California |
-| 1981 | Mercedes-Benz | 300TD Turbo | $0 | 2026-10-20T20:02:00+00:00 | Maryland |
+| 1981 | Mercedes-Benz | 300TD Turbo | $1,000 | 2026-10-20T20:02:00+00:00 | Maryland |
 | 1975 | Volkswagen | Type 2 Kombi 23-Window Conversion | $15,000 | 2026-10-20T20:03:00+00:00 | Florida |
 | 1963 | Studebaker | Lark Deluxe 2-Door Sedan 3-Speed | $2,000 | 2026-10-20T20:04:00+00:00 | Illinois |
-| 2019 | Mercedes-Benz | Sprinter 3500XD Land Yacht Motor Werks Conversion | $10,000 | 2026-10-20T20:05:00+00:00 | Florida |
-| 1965 | Jaguar | XKE Series 1 4.2 Coupe 5-Speed Race Car | $30,000 | 2026-10-20T20:06:00+00:00 | Montana |
+| 2019 | Mercedes-Benz | Sprinter 3500XD Land Yacht Motor Werks Conversion | $11,000 | 2026-10-20T20:05:00+00:00 | Florida |
+| 1965 | Jaguar | XKE Series 1 4.2 Coupe 5-Speed Race Car | $32,000 | 2026-10-20T20:06:00+00:00 | Montana |
 | 1956 | Chevrolet | Corvette 3-Speed Project | $5,000 | 2026-10-20T20:07:00+00:00 | New Jersey |
-| 2019 | Dodge | Grand Caravan by BraunAbility | $2,019 | 2026-10-20T20:08:00+00:00 | California |
-| 1968 | Ford | Mustang Coupe California Special 289 | $7,500 | 2026-10-20T20:09:00+00:00 | New Hampshire |
+| 2019 | Dodge | Grand Caravan by BraunAbility | $2,200 | 2026-10-20T20:08:00+00:00 | California |
+| 1968 | Ford | Mustang Coupe California Special 289 | $7,600 | 2026-10-20T20:09:00+00:00 | New Hampshire |
 | 2004 | Volkswagen | R32 | $16,000 | 2026-10-20T20:10:00+00:00 | Arizona |
-| 2022 | BMW | M4 Coupe 6-Speed | $45,000 | 2026-10-20T20:11:00+00:00 | California |
+| 2022 | BMW | M4 Coupe 6-Speed | $47,500 | 2026-10-20T20:11:00+00:00 | California |
 | 2003 | Volkswagen | Passat W8 4Motion Sedan 6-Speed | $100 | 2026-10-20T20:12:00+00:00 | Texas |
-| 1969 | Ford | Mustang SportsRoof 5-Speed | $5,000 | 2026-10-20T20:13:00+00:00 | Washington |
-| 1999 | GMC | Yukon SLE 4×4 | $5,700 | 2026-10-20T20:14:00+00:00 | Kansas |
-| 1976 | Mercedes-Benz | 350SL | $650,000 | 2026-10-20T20:15:00+00:00 | Not found |
+| 1969 | Ford | Mustang SportsRoof 5-Speed | $6,500 | 2026-10-20T20:13:00+00:00 | Washington |
+| 1999 | GMC | Yukon SLE 4×4 | $9,500 | 2026-10-20T20:14:00+00:00 | Kansas |
+| 1976 | Mercedes-Benz | 350SL | $30,750 | 2026-10-20T20:15:00+00:00 | Not found |
 | 1965 | Sunbeam | Tiger Mk I | $6,000 | 2026-10-20T20:16:00+00:00 | Massachusetts |
-| 2003 | Stewart | &#038; Stevenson M1078A1 LMTV &#038; M1082 Trailer | $15,000 | 2026-10-20T20:18:00+00:00 | Not found |
-| 2003 | BMW | 525i Sport Wagon | $1,250 | 2026-10-20T20:19:00+00:00 | New Jersey |
-| 2002 | Pontiac | Firebird Trans Am Coupe | $650,000 | 2026-10-20T20:20:00+00:00 | Oklahoma |
+| 2003 | Stewart | &#038; Stevenson M1078A1 LMTV &#038; M1082 Trailer | $18,000 | 2026-10-20T20:18:00+00:00 | Not found |
+| 2003 | BMW | 525i Sport Wagon | $1,500 | 2026-10-20T20:19:00+00:00 | New Jersey |
+| 2002 | Pontiac | Firebird Trans Am Coupe | $30,750 | 2026-10-20T20:20:00+00:00 | Oklahoma |
 | 2002 | Volvo | S60 | $400 | 2026-10-20T20:21:00+00:00 | Texas |
 | 1978 | Pontiac | Firebird Trans Am | $8,200 | 2026-10-20T20:22:00+00:00 | North Carolina |
 | 2016 | Scion | FR-S 6-Speed | $1,000 | 2026-10-20T20:23:00+00:00 | Florida |
-| 2013 | Chevrolet | Corvette Grand Sport Convertible | $15,000 | 2026-10-20T20:24:00+00:00 | Montana |
+| 2013 | Chevrolet | Corvette Grand Sport Convertible | $28,000 | 2026-10-20T20:24:00+00:00 | Montana |
 | 2011 | Audi | A4 Avant 2.0T Prestige | $1,000 | 2026-10-20T20:25:00+00:00 | Wisconsin |
-| 2004 | Ford | Thunderbird | $4,000 | 2026-10-20T20:26:00+00:00 | Pennsylvania |
-| 2011 | Porsche | Boxster 6-Speed | $987 | 2026-10-20T20:27:00+00:00 | Pennsylvania |
+| 2004 | Ford | Thunderbird | $5,800 | 2026-10-20T20:26:00+00:00 | Pennsylvania |
+| 2011 | Porsche | Boxster 6-Speed | $2,011 | 2026-10-20T20:27:00+00:00 | Pennsylvania |
 | 1970 | Honda | Z50A Mini Trail | $1,600 | 2026-10-20T20:28:00+00:00 | Not found |
 | 2011 | Porsche | 911 Carrera S Coupe | $90,000 | 2026-10-20T20:29:00+00:00 | Pennsylvania |
 | 2024 | Rezvani | Arsenal w/Security Package | $60,000 | 2026-10-20T20:30:00+00:00 | Georgia |
 | 1973 | MG | MGB GT | $2,258 | 2026-10-20T20:32:00+00:00 | Nebraska |
 | 2015 | Toyota | Tacoma Double Cab V6 4×4 6-Speed w/Chinook Pop-Up Camper | $7,500 | 2026-10-20T20:33:00+00:00 | Oregon |
-| 2019 | Rolls-Royce | Dawn | $123,456 | 2026-10-20T20:34:00+00:00 | Missouri |
+| 2019 | Rolls-Royce | Dawn | $125,000 | 2026-10-20T20:34:00+00:00 | Missouri |
 | 2010 | Aston Martin | Rapide | $40,000 | 2026-10-20T20:35:00+00:00 | Florida |
 | 1968 | Chevrolet | C10 Stepside Pickup 4-Speed | $0 | 2026-10-20T20:37:00+00:00 | Ohio |
 | 2010 | Bentley | Continental Supersports | $99 | 2026-10-20T20:38:00+00:00 | Florida |
 | 1991 | Dodge | Ram W250 4×4 Cummins | $2,500 | 2026-10-20T20:39:00+00:00 | Idaho |
 | 1956 | Chevrolet | Nomad 4-Speed | $7,500 | 2026-10-20T20:40:00+00:00 | Montana |
 | 1996 | Ford | F-250 XLT SuperCab Power Stroke 4×4 | $1,000 | 2026-10-20T20:41:00+00:00 | Washington |
-| 2007 | Infiniti | G35 Coupe | $650,000 | 2026-10-20T20:42:00+00:00 | Florida |
+| 2007 | Infiniti | G35 Coupe | $31,000 | 2026-10-20T20:42:00+00:00 | Florida |
 | 1986 | Toyota | Supra | $3,200 | 2026-10-20T20:43:00+00:00 | Alabama |
 | 2012 | Chevrolet | Camaro ZL1 Coupe 6-Speed | $16,028 | 2026-10-20T20:44:00+00:00 | Wisconsin |
-| 2016 | Porsche | Cayman 6-Speed | $22,500 | 2026-10-20T20:45:00+00:00 | California |
+| 2016 | Porsche | Cayman 6-Speed | $23,000 | 2026-10-20T20:45:00+00:00 | California |
 | 1981 | Chevrolet | Corvette 4-Speed | $7,500 | 2026-10-20T20:46:00+00:00 | California |
 | 2006 | Ferrari | F430 Spider | $75,000 | 2026-10-20T20:46:00+00:00 | Tennessee |
-| 2021 | Ferrari | 812 GTS | $235,000 | 2026-10-20T20:52:00+00:00 | Arizona |
-| 1974 | Hodaka | Dirt Squirt 100 | $550 | 2026-10-20T20:53:00+00:00 | Not found |
-| 2023 | Porsche | 911 Sport Classic | $75,000 | 2026-10-20T20:54:00+00:00 | Not found |
+| 2021 | Ferrari | 812 GTS | $240,000 | 2026-10-20T20:52:00+00:00 | Arizona |
+| 1974 | Hodaka | Dirt Squirt 100 | $1,000 | 2026-10-20T20:53:00+00:00 | Not found |
+| 2023 | Porsche | 911 Sport Classic | $250,000 | 2026-10-20T20:54:00+00:00 | Not found |
 | 2010 | Porsche | 911 Carrera 4S Cabriolet | $35,000 | 2026-10-20T20:55:00+00:00 | California |
 | 1975 | Norton | Commando 850 | $5,150 | 2026-10-20T20:56:00+00:00 | New Jersey |
-| 2016 | BMW | 535i Gran Turismo | $650,000 | 2026-10-20T20:57:00+00:00 | Arizona |
+| 2016 | BMW | 535i Gran Turismo | $31,000 | 2026-10-20T20:57:00+00:00 | Arizona |
 | 2020 | Porsche | Cayenne | $5,000 | 2026-10-20T20:58:00+00:00 | Georgia |
 | 1966 | Chevrolet | Corvette Convertible 327/300 4-Speed | $5,000 | 2026-10-20T20:59:00+00:00 | New York |
 | 2003 | Land Rover | Discovery II HSE | $2,500 | 2026-10-20T21:00:00+00:00 | Oklahoma |
@@ -1180,8 +1011,8 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2002 | Honda | XR650R | $1,250 | 2026-10-20T21:02:00+00:00 | California |
 | 1997 | Ferrari | 456 GTA | $51,500 | 2026-10-20T21:03:00+00:00 | California |
 | 2011 | GMC | Savana 6.0L Conversion Van | $1,969 | 2026-10-20T21:04:00+00:00 | Not found |
-| 2004 | Chevrolet | SSR | $6,004 | 2026-10-20T21:06:00+00:00 | Virginia |
-| 2006 | Honda | Element EX-P 4WD 5-Speed | $4,300 | 2026-10-20T21:07:00+00:00 | Ohio |
+| 2004 | Chevrolet | SSR | $7,000 | 2026-10-20T21:06:00+00:00 | Virginia |
+| 2006 | Honda | Element EX-P 4WD 5-Speed | $6,000 | 2026-10-20T21:07:00+00:00 | Ohio |
 | 2013 | BMW | 128i M Sport Convertible 6-Speed | $2,200 | 2026-10-20T21:08:00+00:00 | Not found |
 | 2011 | Porsche | 911 GT3 RS | $167,000 | 2026-10-21T17:00:00+00:00 | Florida |
 | 1976 | Porsche | 930 Turbo Carrera | $99,930 | 2026-10-21T17:05:00+00:00 | Arkansas |
@@ -1190,7 +1021,7 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2023 | Ferrari | 812 GTS | $800,000 | 2026-10-21T17:20:00+00:00 | California |
 | 2023 | Mercedes-AMG | GT2 Race Car | $125,000 | 2026-10-21T17:25:00+00:00 | Not found |
 | 2018 | Porsche | 911 Turbo S Coupe Exclusive Series | $236,000 | 2026-10-21T17:30:00+00:00 | Florida |
-| 2009 | Superformance | GT40 Mk II | $55,000 | 2026-10-21T17:35:00+00:00 | Indiana |
+| 2009 | Superformance | GT40 Mk II | $55,500 | 2026-10-21T17:35:00+00:00 | Indiana |
 | 1963 | Chevrolet | Corvette Split-Window Coupe L84 327/360 Fuelie 4-Speed | $155,000 | 2026-10-21T17:40:00+00:00 | California |
 | 2018 | Porsche | 911 GT2 RS Weissach | $337,310 | 2026-10-21T17:45:00+00:00 | Montana |
 | 1958 | Porsche | 356A Speedster | $100,000 | 2026-10-21T17:50:00+00:00 | New York |
@@ -1198,207 +1029,90 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 | 2012 | Mercedes-Benz | SLS AMG | $115,150 | 2026-10-21T18:00:00+00:00 | Pennsylvania |
 | 2019 | Chevrolet | Corvette ZR1 Coupe 3ZR ZTK | $110,000 | 2026-10-21T18:05:00+00:00 | Florida |
 | 2005 | Ford | GT | $300,000 | 2026-10-21T18:10:00+00:00 | Arizona |
-| 1996 | Porsche | 911 Turbo | $120,000 | 2026-10-21T18:15:00+00:00 | California |
-| 1998 | Ferrari | 550 Maranello | $22,222 | 2026-10-21T18:16:00+00:00 | New Hampshire |
+| 1996 | Porsche | 911 Turbo | $130,000 | 2026-10-21T18:15:00+00:00 | California |
+| 1998 | Ferrari | 550 Maranello | $30,000 | 2026-10-21T18:16:00+00:00 | New Hampshire |
 | 1998 | Acura | Integra Type R | $3,500 | 2026-10-21T18:17:00+00:00 | Not found |
 | 1973 | .5 | Porsche 911T Targa 5-Speed | $80,500 | 2026-10-21T18:18:00+00:00 | California |
-| 1992 | BMW | 850i | $6,000 | 2026-10-21T18:19:00+00:00 | Not found |
+| 1992 | BMW | 850i | $8,500 | 2026-10-21T18:19:00+00:00 | Not found |
 | 2006 | Jaguar | XKR Convertible Victory Edition | $2,000 | 2026-10-21T18:23:00+00:00 | California |
-| 2014 | Porsche | Boxster S | $26,500 | 2026-10-21T18:26:00+00:00 | Arizona |
-| 2014 | Mercedes-Benz | SL63 AMG P30 Performance Package | $29,999 | 2026-10-21T18:27:00+00:00 | Idaho |
-| 1994 | Acura | NSX 5-Speed | $10,000 | 2026-10-21T18:29:00+00:00 | California |
+| 2014 | Porsche | Boxster S | $29,000 | 2026-10-21T18:26:00+00:00 | Arizona |
+| 2014 | Mercedes-Benz | SL63 AMG P30 Performance Package | $33,500 | 2026-10-21T18:27:00+00:00 | Idaho |
+| 1994 | Acura | NSX 5-Speed | $60,000 | 2026-10-21T18:29:00+00:00 | California |
 | 2003 | Mercedes-Benz | SL500 | $1,000 | 2026-10-21T18:30:00+00:00 | California |
-| 2007 | Honda | S2000 | $1,500 | 2026-10-21T18:31:00+00:00 | Connecticut |
-| 2024 | Ford | Transit 350 AWD Trail Extended High-Roof Cargo Van | $20,000 | 2026-10-21T18:32:00+00:00 | Montana |
-| 2002 | Lexus | RX300 AWD | $669,420 | 2026-10-21T18:34:00+00:00 | New York |
+| 2016 | Indian | Chief | $6,000 | 2026-10-21T18:30:00+00:00 | North Carolina |
+| 2007 | Honda | S2000 | $17,000 | 2026-10-21T18:31:00+00:00 | Connecticut |
+| 2024 | Ford | Transit 350 AWD Trail Extended High-Roof Cargo Van | $30,000 | 2026-10-21T18:32:00+00:00 | Montana |
+| 2002 | Lexus | RX300 AWD | $1,200 | 2026-10-21T18:34:00+00:00 | New York |
 | 1997 | Porsche | 911 Carrera S Coupe 6-Speed | $85,000 | 2026-10-21T18:35:00+00:00 | Georgia |
-| 2004 | Ford | Mustang GT Convertible 5-Speed | $675,000 | 2026-10-21T18:36:00+00:00 | New Hampshire |
-| 1999 | Mercedes-Benz | SL500 | $675,000 | 2026-10-21T18:37:00+00:00 | Washington |
-| 1987 | Porsche | 928 S4 | $2,100 | 2026-10-21T18:39:00+00:00 | North Carolina |
-| 1997 | Chevrolet | K2500 HD Silverado 4×4 | $4,000 | 2026-10-21T18:40:00+00:00 | Oregon |
-| 1980 | Mercedes-Benz | 450SL | $669,420 | 2026-10-21T18:41:00+00:00 | Washington |
-| 2002 | GMC | Yukon XL SLT 4×4 | $1,500 | 2026-10-21T18:43:00+00:00 | Colorado |
-| 1968 | Chevrolet | Corvette Coupe 4-Speed | $669,420 | 2026-10-21T18:45:00+00:00 | Illinois |
+| 2004 | Ford | Mustang GT Convertible 5-Speed | $2,004 | 2026-10-21T18:36:00+00:00 | New Hampshire |
+| 1999 | Mercedes-Benz | SL500 | $5,000 | 2026-10-21T18:37:00+00:00 | Washington |
+| 1987 | Porsche | 928 S4 | $5,000 | 2026-10-21T18:39:00+00:00 | North Carolina |
+| 1997 | Chevrolet | K2500 HD Silverado 4×4 | $5,500 | 2026-10-21T18:40:00+00:00 | Oregon |
+| 1980 | Mercedes-Benz | 450SL | $31,000 | 2026-10-21T18:41:00+00:00 | Washington |
+| 2002 | GMC | Yukon XL SLT 4×4 | $1,800 | 2026-10-21T18:43:00+00:00 | Colorado |
+| 1968 | Chevrolet | Corvette Coupe 4-Speed | $10,000 | 2026-10-21T18:45:00+00:00 | Illinois |
 | 1994 | Pontiac | Firebird Trans Am Coupe | $0 | 2026-10-21T18:46:00+00:00 | Oregon |
+| 1995 | Jaguar | XJS 2+2 Convertible | $1,000 | 2026-10-21T18:47:00+00:00 | California |
+| 2009 | BMW | M3 Coupe | $31,000 | 2026-10-21T18:48:00+00:00 | Florida |
+| 2014 | Porsche | Cayenne Diesel Platinum Edition | $4,444 | 2026-10-21T18:49:00+00:00 | Florida |
+| 2005 | Porsche | 911 Turbo S Cabriolet 6-Speed | $9,996 | 2026-10-21T18:50:00+00:00 | California |
+| 2021 | Ducati | Panigale V4 | $31,000 | 2026-10-21T18:51:00+00:00 | Florida |
+| 2008 | Mercedes-Benz | SL55 AMG | $2,000 | 2026-10-21T18:52:00+00:00 | Pennsylvania |
+| 1969 | Ford | F-100 3-Speed | $100 | 2026-10-21T18:54:00+00:00 | Montana |
+| 1987 | Ford | Mustang GT 5.0 Convertible | $31,000 | 2026-10-21T18:55:00+00:00 | Michigan |
+| 1987 | Porsche | 911 Carrera Targa DP935 I | $18,000 | 2026-10-21T18:56:00+00:00 | South Carolina |
+| 2000 | Land Rover | Defender 90 Td5 5-Speed | $5,000 | 2026-10-21T18:58:00+00:00 | Maryland |
+| 1993 | Mazda | MX-5 Miata 5-Speed | $2,500 | 2026-10-21T18:59:00+00:00 | Indiana |
+| 2022 | Vespa | Sei Giorni 300 | $3,200 | 2026-10-21T19:00:00+00:00 | California |
+| 2004 | Ford | Ranger XLT SuperCab 4×4 | $7,800 | 2026-10-21T19:01:00+00:00 | Wyoming |
+| 2001 | Lotus | Esprit V8 | $38,500 | 2026-10-21T19:02:00+00:00 | Pennsylvania |
+| 1992 | AM | General M998 HMMWV | $240,000 | 2026-10-21T19:03:00+00:00 | Pennsylvania |
+| 2019 | Bentley | Bentayga V8 | $65,000 | 2026-10-21T19:04:00+00:00 | California |
+| 1967 | Chevrolet | Corvette Coupe 5-Speed | $27,000 | 2026-10-21T19:04:00+00:00 | Montana |
+| 1987 | Suzuki | Samurai JX Hardtop 5-Speed | $6,100 | 2026-10-21T19:05:00+00:00 | Wisconsin |
+| 1965 | BMW | R60/2 | $3,500 | 2026-10-21T19:06:00+00:00 | New York |
+| 2011 | Land Rover | LR2 HSE | $8,399 | 2026-10-21T19:07:00+00:00 | Virginia |
+| 2006 | Mercedes-Benz | E500 Sedan | $2,500 | 2026-10-21T19:08:00+00:00 | New Jersey |
+| 1980 | Maserati | Merak SS | $20,000 | 2026-10-21T19:09:00+00:00 | Michigan |
+| 1999 | Toyota Land | Cruiser UZJ100 | $5,000 | 2026-10-21T19:10:00+00:00 | Oregon |
+| 2002 | Dodge | Ram 2500HD SLT Quad Cab V10 4×4 | $2,500 | 2026-10-21T19:11:00+00:00 | Nevada |
+| 1997 | BMW | 540i 6-Speed | $1,000 | 2026-10-21T19:12:00+00:00 | California |
+| 2012 | Ferrari | 458 Spider | $4,580 | 2026-10-21T19:13:00+00:00 | Florida |
+| 1998 | Subaru | Sambar 4WD Pickup 5-Speed | $777 | 2026-10-21T19:14:00+00:00 | Virginia |
+| 2018 | Jaguar | XF Sportbrake S | $10,500 | 2026-10-21T19:15:00+00:00 | California |
+| 1995 | Ford | F-150 XLT 5-Speed | $5,500 | 2026-10-21T19:16:00+00:00 | California |
+| 1978 | Ford | F-250 Ranger XLT 4&#215;4 | $6,200 | 2026-10-21T19:19:00+00:00 | Oregon |
+| 1950 | Nimbus | Model C | $6,000 | 2026-10-21T19:20:00+00:00 | Texas |
+| 2013 | BMW | 335i Sedan M Sport 6-Speed | $0 | 2026-10-21T19:21:00+00:00 | Montana |
+| 2014 | Harley-Davidson | CVO Limited | $45,500 | 2026-10-21T19:22:00+00:00 | California |
+| 2002 | BMW | M3 Dinan S Coupe 6-Speed Track Car | $33,500 | 2026-10-21T19:24:00+00:00 | Washington |
+| 1969 | Oldsmobile | Ninety-Eight Convertible | $31,000 | 2026-10-21T19:27:00+00:00 | Oregon |
+| 2003 | BMW | Z4 Roadster 3.0i 6-Speed | $0 | 2026-10-21T19:29:00+00:00 | Florida |
+| 1946 | Chevrolet | Pickup | $10,000 | 2026-10-21T19:30:00+00:00 | Florida |
+| 1973 | Mercedes-Benz | 220D 4-Speed | $7,300 | 2026-10-21T20:08:00+00:00 | Oregon |
+| 2004 | Cadillac | CTS-V | $2,420 | 2026-10-21T20:23:00+00:00 | Michigan |
+| 1995 | Toyota | T100 Xtracab SR5 4&#215;4 | $6,100 | 2026-10-21T20:30:00+00:00 | California |
+| 1964 | Mercury | Comet Caliente Convertible 289 | $1,964 | 2026-10-21T20:31:00+00:00 | Indiana |
+| 1962 | Rambler | American Deluxe 2-Door Club Sedan | $199 | 2026-10-21T20:44:00+00:00 | Indiana |
+| 2018 | BMW | Alpina B6 xDrive Gran Coupe | $7,000 | 2026-10-21T20:46:00+00:00 | Nevada |
+| 2004 | Mercedes-Benz | SL600 | $17,500 | 2026-10-21T20:47:00+00:00 | Michigan |
+| 2000 | Lotus | Elise Sport 190 | $25,000 | 2026-10-21T20:48:00+00:00 | Arizona |
+| 2019 | Land Rover | Range Rover Supercharged | $5,000 | 2026-10-21T20:49:00+00:00 | Texas |
+| 2002 | Porsche | 911 Carrera Cabriolet 6-Speed | $31,000 | 2026-10-21T20:57:00+00:00 | Arizona |
+| 1992 | Honda | NSR250 | $33,500 | 2026-10-21T21:05:00+00:00 | Washington |
+| 1970 | BMW | 2002 5-Speed | $2,506 | 2026-10-21T21:09:00+00:00 | North Carolina |
 | 1976 | Porsche | 930 Turbo | $100,000 | 2026-10-22T17:00:00+00:00 | Arkansas |
 | 2001 | Ferrari | 550 Barchetta Pininfarina | $305,000 | 2026-10-22T17:05:00+00:00 | Montana |
 | 1977 | Porsche | 911S IMSA Race Car | $10,000 | 2026-10-22T17:10:00+00:00 | Not found |
-| 1999 | Ferrari | 550 Maranello | $150,000 | 2026-10-22T17:15:00+00:00 | Michigan |
+| 1999 | Ferrari | 550 Maranello | $152,500 | 2026-10-22T17:15:00+00:00 | Michigan |
 | 1964 | Maserati | Mistral Spyder 3500 | $60,000 | 2026-10-22T17:20:00+00:00 | Arizona |
+| 1937 | Cord | 812 Sportsman Convertible Coupe | $12,000 | 2026-10-22T17:30:00+00:00 | Indiana |
 | 2002 | Nissan | Skyline GT-R M-Spec Nür | $110,000 | 2026-10-23T17:00:00+00:00 | Montana |
 | 1967 | Ferrari | 330 GTC | $250,000 | 2026-10-23T17:05:00+00:00 | Montana |
 | 1989 | Lamborghini | Countach 25th Anniversary | $74,000 | 2026-10-23T17:10:00+00:00 | Arkansas |
+| 2020 | Lamborghini | Aventador LP770-4 SVJ Coupe | $222,222 | 2026-10-23T17:20:00+00:00 | New Jersey |
+| 2008 | Spyker | C8 Laviolette | $390,000 | 2026-10-24T17:00:00+00:00 | Montana |
 
-- [608-Mile, Cobalt Blue Metallic 2023 Porsche 911 Sport Classic](https://bringatrailer.com/listing/2023-porsche-911-sport-classic-34/)
-- [1953 Alfa Romeo 1900C Sprint Coupe by Touring 5-Speed](https://bringatrailer.com/listing/1953-alfa-romeo-1900-3/)
-- [24k-Mile 2015 Mercedes-Benz SLS AMG GT Coupe Final Edition](https://bringatrailer.com/listing/2015-mercedes-benz-sls-amg-gt-final-edition-14/)
-- [1976 Ferrari 308 GTB Vetroresina](https://bringatrailer.com/listing/1976-ferrari-308-gtb-18/)
-- [1990 Porsche 911 Carrera Coupe by Singer](https://bringatrailer.com/listing/1990-porsche-911-carrera-63/)
-- [41k-Mile 1998 Porsche 911 Carrera S Coupe 6-Speed](https://bringatrailer.com/listing/1998-porsche-911-carrera-s-coupe-106/)
-- [1983 Lancia 037 Evolution II](https://bringatrailer.com/listing/1983-lancia-037-evolution-ii/)
-- [2018 Porsche 911 GT2 RS Weissach](https://bringatrailer.com/listing/2018-porsche-911-gt2-rs-101/)
-- [2,900-Mile 1993 Ford Mustang SVT Cobra R](https://bringatrailer.com/listing/1993-ford-mustang-svt-cobra-r-15/)
-- [15k-Mile 1980 Ferrari 308 GTSi](https://bringatrailer.com/listing/1980-ferrari-308-gtsi-39/)
-- [2003 Porsche 911 Turbo Coupe 6-Speed](https://bringatrailer.com/listing/2003-porsche-911-turbo-coupe-129/)
-- [Euro 2001 Ferrari 360 Spider 6-Speed](https://bringatrailer.com/listing/2001-ferrari-360-spider-108/)
-- [39k-Mile 2011 Porsche 911 Turbo S Cabriolet](https://bringatrailer.com/listing/2011-porsche-911-turbo-s-cabriolet-26/)
-- [1957 Ford Thunderbird 3-Speed](https://bringatrailer.com/listing/1957-ford-thunderbird-474/)
-- [16k-Mile, Original-Owner 2005 Honda S2000](https://bringatrailer.com/listing/2005-honda-s2000-245/)
-- [1972 Triumph TR6](https://bringatrailer.com/listing/1972-triumph-tr6-155/)
-- [347-Powered 1973 Ford Bronco](https://bringatrailer.com/listing/1973-ford-bronco-347/)
-- [1970 Mercedes-Benz 280SL](https://bringatrailer.com/listing/1970-mercedes-benz-280sl-196/)
-- [1967 Lincoln Continental Convertible](https://bringatrailer.com/listing/1967-lincoln-continental-58/)
-- [10k-Mile 2012 BMW M3 Coupe Competition Edition Frozen Silver](https://bringatrailer.com/listing/2012-bmw-m3-coupe-68/)
-- [Callaway Turbocharged 1985 Volkswagen GTI w/BBS Body Kit](https://bringatrailer.com/listing/1985-volkswagen-gti/)
-- [191-Mile 2005 Harley-Davidson V-Rod for the Kyle Petty Charity Ride Across America](https://bringatrailer.com/listing/2005-harley-davidson-v-rod-17/)
-- [20-Years-Owned, RoW 1989 Porsche 911 Carrera Coupe G50](https://bringatrailer.com/listing/1989-porsche-911-carrera-coupe-66/)
-- [9k-Mile, One-Family-Owned 2017 Alfa Romeo 4C Coupe](https://bringatrailer.com/listing/2017-alfa-romeo-4c-coupe-17/)
-- [6k-Mile 2008 Ford F-350 Lariat Crew Cab Power Stroke 4×4](https://bringatrailer.com/listing/2008-ford-f-350-44/)
-- [39k-Mile 2007 Mercedes-Benz CLK550 Cabriolet](https://bringatrailer.com/listing/2007-mercedes-benz-clk550-cabriolet-14/)
-- [1988 Jaguar XJ-S V12 Hess &#038; Eisenhardt](https://bringatrailer.com/listing/1988-jaguar-xj-s-v12-20/)
-- [2003 Jaguar XKR Convertible](https://bringatrailer.com/listing/2003-jaguar-xkr-convertible-15/)
-- [2014 Mercedes-Benz E350 Wagon 4MATIC](https://bringatrailer.com/listing/2014-mercedes-benz-e350-wagon-45/)
-- [2001 Porsche Boxster 5-Speed](https://bringatrailer.com/listing/2001-porsche-boxster-101/)
-- [434-Powered 1968 Chevrolet Camaro Coupe](https://bringatrailer.com/listing/1968-chevrolet-camaro-464/)
-- [30k-Mile 2001 BMW M5](https://bringatrailer.com/listing/2001-bmw-m5-296/)
-- [1970 Chevrolet Chevelle Malibu Sport Coupe](https://bringatrailer.com/listing/1970-chevrolet-chevelle-168/)
-- [4,900-Mile 2021 Ferrari F8 Spider](https://bringatrailer.com/listing/2021-ferrari-f8-spider-20/)
-- [1995 Toyota Land Cruiser FZJ80](https://bringatrailer.com/listing/1995-toyota-land-cruiser-fzj80-101/)
-- [14k-Mile 2015 Aston Martin DB9 Volante](https://bringatrailer.com/listing/2015-aston-martin-db9-volante-6/)
-- [1995 Chevrolet K2500 Suburban LS 7.4L 4×4](https://bringatrailer.com/listing/1995-chevrolet-suburban-29/)
-- [2016 Porsche Panamera 4 Edition](https://bringatrailer.com/listing/2016-porsche-panamera-4-7/)
-- [2016 Land Rover LR4 HSE Luxury](https://bringatrailer.com/listing/2016-land-rover-lr4-143/)
-- [2,800-Kilometer 2015 Volvo V60 Polestar](https://bringatrailer.com/listing/2015-volvo-v60-13/)
-- [1997 Porsche 911 Carrera Cabriolet 6-Speed](https://bringatrailer.com/listing/1997-porsche-911-carrera-cabriolet-143/)
-- [Chevrolet-Powered 1960 Willys CJ-5 4-Speed](https://bringatrailer.com/listing/1960-willys-cj-5-3/)
-- [Whipple-Supercharged 2021 Ram 1500 TRX Crew Cab 4&#215;4](https://bringatrailer.com/listing/2021-ram-1500-trx-104/)
-- [Supercharged 5.7L Hemi–Powered, 1969 Dodge Super Bee–Bodied 2009 Dodge Challenger R/T 6-Speed](https://bringatrailer.com/listing/1969-dodge-coronet-super-bee-15/)
-- [2002 Toyota 4Runner Limited 4WD](https://bringatrailer.com/listing/2002-toyota-4runner-174/)
-- [1992 Acura NSX 5-Speed](https://bringatrailer.com/listing/1992-acura-nsx-136/)
-- [1958 Edsel Citation Convertible](https://bringatrailer.com/listing/1958-edsel-citation-11/)
-- [41k-Mile 2015 Porsche Boxster GTS](https://bringatrailer.com/listing/2015-porsche-boxster-gts-27/)
-- [10k-Mile 2003 Infiniti M45](https://bringatrailer.com/listing/2003-infiniti-m45-7/)
-- [Euro 1988 Volkswagen Vanagon Caravelle Carat 5-Speed](https://bringatrailer.com/listing/1988-volkswagen-vanagon-14/)
-- [1999 Porsche 911 Carrera 4 Coupe 6-Speed](https://bringatrailer.com/listing/1999-porsche-911-carrera-4-coupe-32/)
-- [363-Powered 1966 Ford Mustang Fastback Track Car](https://bringatrailer.com/listing/1966-ford-mustang-1074/)
-- [1,400-Mile 2018 Dodge Challenger SRT Demon](https://bringatrailer.com/listing/2018-dodge-challenger-srt-demon-162/)
-- [1990 Chevrolet Corvette Convertible](https://bringatrailer.com/listing/1990-chevrolet-corvette-convertible-43/)
-- [1988 Saab 900 Turbo SPG 5-Speed](https://bringatrailer.com/listing/1988-saab-900-turbo-spg-10/)
-- [26k-Mile 2006 Jeep Wrangler Rubicon 4.0 6-Speed](https://bringatrailer.com/listing/2006-jeep-wrangler-418/)
-- [Original-Owner, 9k-Mile 1992 Chevrolet Corvette Coupe 6-Speed](https://bringatrailer.com/listing/1992-chevrolet-corvette-coupe-50/)
-- [31k-Mile 2014 BMW 750Li xDrive M Sport](https://bringatrailer.com/listing/2014-bmw-750li-8/)
-- [4.6L-Powered 1995 Land Rover Range Rover County Classic LWB](https://bringatrailer.com/listing/1995-land-rover-range-rover-county-classic-lwb-52-2/)
-- [2002 Audi TT Coupe ALMS Commemorative Edition Quattro 6-Speed](https://bringatrailer.com/listing/2002-audi-tt-coupe-29/)
-- [1981 Porsche 911SC Coupe](https://bringatrailer.com/listing/1981-porsche-911sc-94/)
-- [1986 Chrysler LeBaron Town &#038; Country Mark Cross Convertible](https://bringatrailer.com/listing/1986-chrysler-lebaron-4/)
-- [691-Mile 2024 Porsche 718 Spyder RS Weissach](https://bringatrailer.com/listing/2024-porsche-718-spyder-rs-36/)
-- [1988 Pontiac Fiero GT 5-Speed](https://bringatrailer.com/listing/1988-pontiac-fiero-gt-114/)
-- [2022 Mercedes-AMG G63 4&#215;4²](https://bringatrailer.com/listing/2022-mercedes-amg-g63-4x4%c2%b2-13/)
-- [9k-Mile 2016 Mercedes-AMG E63 S 4MATIC Wagon](https://bringatrailer.com/listing/2016-mercedes-benz-e63-s-amg-wagon-10/)
-- [1998 Volkswagen New Beetle GT6 6-Speed by HPA Motorsports](https://bringatrailer.com/listing/1998-volkswagen-new-beetle-4/)
-- [1959 Austin-Healey 3000 BT7 Mk I](https://bringatrailer.com/listing/1959-austin-healey-3000-mk-i-12/)
-- [1987 Mercedes-Benz 560SEL](https://bringatrailer.com/listing/1987-mercedes-benz-560sel-69/)
-- [1924 Buick Series 24-Six Touring Car](https://bringatrailer.com/listing/1924-buick-standard-6/)
-- [2021 Mercedes-Benz E450 4MATIC All-Terrain Wagon](https://bringatrailer.com/listing/2021-mercedes-benz-e450-all-terrain-wagon-7/)
-- [One-Owner 2008 Bentley Continental GTC](https://bringatrailer.com/listing/2008-bentley-continental-gtc-70/)
-- [67k-Kilometer 1991 BMW 850i](https://bringatrailer.com/listing/1991-bmw-850i-229/)
-- [45k-Mile 2004 Mercedes-Benz C320 Sport Coupe](https://bringatrailer.com/listing/2004-mercedes-benz-c320-sport-coupe-4-2/)
-- [1989 Mercedes-Benz 560SL](https://bringatrailer.com/listing/1989-mercedes-benz-560sl-601/)
-- [1986 Alfa Romeo Spider Quadrifoglio](https://bringatrailer.com/listing/1986-alfa-romeo-spider-quadrifoglio-25/)
-- [1966 Buick Wildcat Custom Convertible](https://bringatrailer.com/listing/1966-buick-wildcat-8/)
-- [305-Powered 1952 Chevrolet 3100 Pickup](https://bringatrailer.com/listing/1952-chevrolet-3100-pickup-35/)
-- [11k-Mile 2012 Chevrolet Camaro 2SS Convertible 6-Speed](https://bringatrailer.com/listing/2012-chevrolet-camaro-convertible-26/)
-- [5k-Mile 1987 Porsche 924S 5-Speed](https://bringatrailer.com/listing/1987-porsche-924s-117/)
-- [1981 Jeep Cherokee Laredo 4×4](https://bringatrailer.com/listing/1981-jeep-cherokee-6/)
-- [37-Years-Owned 1985 Toyota Supra](https://bringatrailer.com/listing/1985-toyota-supra-58/)
-- [2,300-Mile 2023 Chevrolet Camaro ZL1 1LE Coupe](https://bringatrailer.com/listing/2023-chevrolet-camaro-coupe-48/)
-- [1971 GMC C2500 Sierra](https://bringatrailer.com/listing/1971-gmc-c2500-10/)
-- [Twin-Plug 1970 Porsche 914-6 GT-Style Track Car](https://bringatrailer.com/listing/1970-porsche-914-6-110-2/)
-- [8k-Mile 2003 Ford F-150 Harley-Davidson Edition SuperCrew](https://bringatrailer.com/listing/2003-ford-f-150-80/)
-- [1991 Volvo 240 Wagon](https://bringatrailer.com/listing/1991-volvo-240-56/)
-- [2024 Jaguar F-Type P575 R75 Convertible](https://bringatrailer.com/listing/2024-jaguar-f-type-p575-r75-convertible-2-2/)
-- [1989 Chevrolet S-10 Tahoe Extended Cab V6 4×4 Baja](https://bringatrailer.com/listing/1989-chevrolet-s-10-19/)
-- [1977 MG MGB Roadster](https://bringatrailer.com/listing/1977-mg-mgb-roadster-45/)
-- [1964 Ford Thunderbird](https://bringatrailer.com/listing/1964-ford-thunderbird-120/)
-- [31-Years-Owned 1994 Chevrolet K1500 Silverado Z71 4×4 Sportside](https://bringatrailer.com/listing/1994-chevrolet-k1500-pickup-55/)
-- [45-Years-Family-Owned 1980 Chevrolet Corvette](https://bringatrailer.com/listing/1980-chevrolet-corvette-130/)
-- [2017 Ford Transit 250 Sherrod Conversion Van](https://bringatrailer.com/listing/2017-ford-transit-250/)
-- [1976 Jaguar XJ6C Project](https://bringatrailer.com/listing/1976-jaguar-xj6c-19/)
-- [RoW 1978 Porsche 928 5-Speed Project](https://bringatrailer.com/listing/1978-porsche-928-82/)
-- [1971 Ford F-250 Sport Custom Highboy 4&#215;4](https://bringatrailer.com/listing/1971-ford-f-250-138/)
-- [23k-Mile 2012 Porsche 911 Carrera S Coupe](https://bringatrailer.com/listing/2012-porsche-911-991-carrera-s-coupe-54/)
-- [1991 Honda Accord EX Wagon](https://bringatrailer.com/listing/1991-honda-accord-52/)
-- [1990 Mitsubishi Delica L300 Star Wagon Chamonix Edition 4×4](https://bringatrailer.com/listing/1990-mitsubishi-delica-l300-star-wagon-3/)
-- [LT1-Powered 1953 Studebaker Champion Regal Starliner Hardtop](https://bringatrailer.com/listing/1953-studebaker-champion-19/)
-- [36k-Mile 2003 Chevrolet S-10 LS Crew Cab V6 4×4](https://bringatrailer.com/listing/2003-chevrolet-s-10-39/)
-- [2014 Chevrolet SS Sedan](https://bringatrailer.com/listing/2014-chevrolet-ss-sedan-27/)
-- [49k-Mile 2007 BMW M6 Convertible 6-Speed](https://bringatrailer.com/listing/2007-bmw-m6-convertible-67/)
-- [One-Family-Owned 1959 Edsel Ranger Two-Door Hardtop](https://bringatrailer.com/listing/1959-edsel-ranger-9/)
-- [2007 Chevrolet Silverado 2500HD LT](https://bringatrailer.com/listing/2007-chevrolet-silverado-2500hd-gmt900-7/)
-- [One-Owner 1996 Chevrolet Impala SS](https://bringatrailer.com/listing/1996-chevrolet-impala-ss-128/)
-- [137-Mile 2004 Honda Rune](https://bringatrailer.com/listing/2004-honda-rune-69/)
-- [2005 Mercedes-Benz CLK55 AMG Cabriolet](https://bringatrailer.com/listing/2005-mercedes-benz-clk55-amg-cabriolet-8/)
-- [460-Powered 1978 Ford F-250 Camper Special 4×4 Flatbed](https://bringatrailer.com/listing/1978-ford-f-250-128/)
-- [1997 Mercedes-Benz SL600](https://bringatrailer.com/listing/1997-mercedes-benz-sl600-52/)
-- [Fuel-Injected 1989 Jeep Grand Wagoneer](https://bringatrailer.com/listing/1989-jeep-grand-wagoneer-188/)
-- [2023 Porsche 911 Turbo S Coupe](https://bringatrailer.com/listing/2023-porsche-911-turbo-s-coupe-38/)
-- [1975 Yamaha RD350](https://bringatrailer.com/listing/1975-yamaha-rd350-16/)
-- [48k-Mile 1999 Jeep Cherokee Classic 4&#215;4](https://bringatrailer.com/listing/1999-jeep-cherokee-162/)
-- [1929 Ford Model A Coupe](https://bringatrailer.com/listing/1929-ford-model-a-322/)
-- [1975 Kawasaki F9 Bighorn 350](https://bringatrailer.com/listing/1975-kawasaki-f9-bighorn-350-4/)
-- [16k-Kilometer 2014 Ferrari 458 Spider](https://bringatrailer.com/listing/2014-ferrari-458-spider-38/)
-- [2013 Porsche 911 Carrera 4S Coupe](https://bringatrailer.com/listing/2013-porsche-911-carrera-4s-coupe-29/)
-- [1986 Land Rover 110 Diesel 5-Speed](https://bringatrailer.com/listing/1986-land-rover-110-54/)
-- [15k-Mile 2007 Chevrolet Corvette Z06 2LZ 6-Speed](https://bringatrailer.com/listing/2007-chevrolet-corvette-z06-126/)
-- [1984 Honda CT110](https://bringatrailer.com/listing/1984-honda-ct110-14/)
-- [40k-Mile 2013 BMW 335is Convertible 6-Speed](https://bringatrailer.com/listing/2013-bmw-335is-convertible-10/)
-- [6k-Mile 2001 Plymouth Prowler](https://bringatrailer.com/listing/2001-plymouth-prowler-56/)
-- [1984 Honda VT250F Project](https://bringatrailer.com/listing/1984-honda-vt250f-project/)
-- [1950 Oldsmobile Futuramic Series 88 2-Door Club Sedan](https://bringatrailer.com/listing/1950-oldsmobile-futuramic-series-88-9/)
-- [Coyote-Powered 1966 Ford Bronco by Vintage Broncos](https://bringatrailer.com/listing/1966-ford-bronco-299/)
-- [25-Years-Family-Owned 2000 Chevrolet Corvette Convertible 6-Speed](https://bringatrailer.com/listing/2000-chevrolet-corvette-convertible-62/)
-- [2001 Porsche 911 Carrera Coupe 6-Speed](https://bringatrailer.com/listing/2001-porsche-911-carrera-coupe-74/)
-- [2015 Mercedes-Benz G550](https://bringatrailer.com/listing/2015-mercedes-benz-g550-37/)
-- [20k-Mile 2012 Cadillac CTS-V Wagon](https://bringatrailer.com/listing/2012-cadillac-cts-v-47/)
-- [2010 Porsche 911 Carrera Cabriolet](https://bringatrailer.com/listing/2010-porsche-911-carrera-cabriolet-10/)
-- [1998 Dodge Viper GTS GT2 Championship Edition](https://bringatrailer.com/listing/1998-dodge-viper-gts-gt2-championship-edition-14/)
-- [33k-Mile 2019 Fiat 124 Spider Abarth 6-Speed](https://bringatrailer.com/listing/2019-fiat-124-spider-abarth-10/)
-- [9k-Mile 1990 Nissan 300ZX Twin Turbo 5-Speed](https://bringatrailer.com/listing/1990-nissan-300zx-twin-turbo-178/)
-- [8k-Mile 2007 Ferrari F430](https://bringatrailer.com/listing/2007-ferrari-f430-98-2/)
-- [1988 Porsche 911 Turbo Coupe 3.4L](https://bringatrailer.com/listing/1988-porsche-911-turbo-coupe-40/)
-- [Original-Owner 2005 BMW F650GS Dakar](https://bringatrailer.com/listing/2005-bmw-f650gs-6/)
-- [2025 Porsche 911 GT3 Weissach 6-Speed](https://bringatrailer.com/listing/2025-porsche-911-gt3-5/)
-- [29k-Mile 1978 Oldsmobile Toronado Brougham Coupe](https://bringatrailer.com/listing/1978-oldsmobile-toronado-5/)
-- [1969 Ford Mustang SportsRoof 302 3-Speed](https://bringatrailer.com/listing/1969-ford-mustang-275/)
-- [BPT-Powered 1988 Mazda 323 GTX Turbo](https://bringatrailer.com/listing/1988-mazda-323-gtx-4/)
-- [33k-Mile 2003 Mercedes-Benz SL500](https://bringatrailer.com/listing/2003-mercedes-benz-sl500-417/)
-- [1986 Porsche 911 Carrera Cabriolet Slant Nose Conversion](https://bringatrailer.com/listing/1986-porsche-911-carrera-cabriolet-107/)
-- [9k-Mile 1991 Chevrolet Corvette ZR-1](https://bringatrailer.com/listing/1991-chevrolet-corvette-zr-1-73/)
-- [47k-Mile 2019 Mercedes-Benz S560 4MATIC Sedan](https://bringatrailer.com/listing/2019-mercedes-benz-s560-sedan-9/)
-- [10k-Mile 2019 Land Rover Range Rover SVAutobiography LWB](https://bringatrailer.com/listing/2019-land-rover-range-rover-67/)
-- [Canadian-Market 2012 Mercedes-Benz E63 AMG Wagon P30 Performance Package](https://bringatrailer.com/listing/2012-mercedes-benz-e63-amg-wagon-78/)
-- [31k-Mile 2007 Chevrolet Express 2500 Duramax](https://bringatrailer.com/listing/2007-chevrolet-express-9/)
-- [1969 Porsche 911T Coupe 5-Speed](https://bringatrailer.com/listing/1969-porsche-911t-50/)
-- [1971 Pontiac GTO Hardtop Coupe](https://bringatrailer.com/listing/1971-pontiac-gto-36/)
-- [15k-Mile 2013 Ford Mustang Shelby GT500 Convertible](https://bringatrailer.com/listing/2013-ford-mustang-shelby-gt500-convertible-37/)
-- [2007 Lamborghini Gallardo Spyder](https://bringatrailer.com/listing/2007-lamborghini-gallardo-spyder-18/)
-- [29k-Mile 2002 BMW M Coupe S54](https://bringatrailer.com/listing/2002-bmw-m-coupe-68/)
-- [1993 BMW R100RT](https://bringatrailer.com/listing/1993-bmw-r100rt/)
-- [2004 BMW 330Ci ZHP Coupe 6-Speed](https://bringatrailer.com/listing/2004-bmw-330i-zhp-sedan-57/)
-- [1939 GMC AC-102 Pickup](https://bringatrailer.com/listing/1939-gmc-ac-102/)
-- [1953 Kaiser Manhattan Sedan](https://bringatrailer.com/listing/1953-kaiser-manhattan-9/)
-- [1964 Chevrolet Corvette Convertible 4-Speed](https://bringatrailer.com/listing/1964-chevrolet-corvette-385/)
-- [21k-Mile 2006 Mercedes-Benz E350 4MATIC Sedan](https://bringatrailer.com/listing/2006-mercedes-benz-e350-sedan-22/)
-- [1957 BMW Isetta 300 Bubble Window](https://bringatrailer.com/listing/1957-bmw-isetta-300-54/)
-- [2003 Chevrolet Corvette Coupe](https://bringatrailer.com/listing/2003-chevrolet-corvette-coupe-59/)
-- [2007 BMW 550i Sport](https://bringatrailer.com/listing/2007-bmw-550i-11/)
-- [1931 Chevrolet Series AE Independence Canopy Express Huckster](https://bringatrailer.com/listing/1931-chevrolet-series-ae-independence-canopy-express/)
-- [2025 Porsche 911 Carrera 4 GTS Coupe](https://bringatrailer.com/listing/2025-porsche-911-carrera-4-gts-coupe-4/)
-- [10k-Mile 2010 Ferrari California](https://bringatrailer.com/listing/2010-ferrari-california-81/)
-- [1962 International Harvester Scout 80 4×4](https://bringatrailer.com/listing/1962-international-harvester-scout-80-40/)
-- [45k-Mile 2005 Porsche Cayenne Turbo](https://bringatrailer.com/listing/2005-porsche-cayenne-turbo-57/)
-- [360-Powered 1983 Jeep CJ-8 Scrambler 4-Speed](https://bringatrailer.com/listing/1983-jeep-cj-8-scrambler-39/)
-- [2001 Subaru Outback L.L. Bean Edition](https://bringatrailer.com/listing/2001-subaru-outback-14/)
 - [2018 Volvo V90 T6 AWD R-Design](https://bringatrailer.com/listing/2018-volvo-v90-2/)
 - [S54-Powered 1998 BMW M3 Sedan 6-Speed](https://bringatrailer.com/listing/1998-bmw-m3-238/)
 - [BluePrint 350-Powered 1967 Chevrolet C10 Pickup Stepside](https://bringatrailer.com/listing/1967-chevrolet-c10-pickup-169/)
@@ -1441,6 +1155,7 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 - [1999 Ford F-350 Super Duty SuperCab 5-Speed Dually](https://bringatrailer.com/listing/1999-ford-f-350-100-2/)
 - [1991 Toyota MR2 Turbo 5-Speed](https://bringatrailer.com/listing/1991-toyota-mr2-turbo-48/)
 - [21k-Mile 2000 Porsche Boxster S 6-Speed](https://bringatrailer.com/listing/2000-porsche-boxster-s-199/)
+- [45k-Mile 2005 Porsche Cayenne Turbo](https://bringatrailer.com/listing/2005-porsche-cayenne-turbo-57/)
 - [1970 Honda CT70 Trail](https://bringatrailer.com/listing/1970-honda-ct70-trail-125/)
 - [2014 Volvo XC90 3.2 Premier Plus AWD](https://bringatrailer.com/listing/2014-volvo-xc90-4/)
 - [1963 Daimler SP250 Project](https://bringatrailer.com/listing/1963-daimler-sp250-9/)
@@ -1988,7 +1703,7 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 - [1995 Suzuki Cappuccino](https://bringatrailer.com/listing/1995-suzuki-cappuccino-3/)
 - [Modified 1968 Chevrolet Camaro SS Coupe 6-Speed](https://bringatrailer.com/listing/1968-chevrolet-camaro-468/)
 - [2000 Porsche 911 Carrera 4 Millenium Edition](https://bringatrailer.com/listing/2000-porsche-911-carrera-coupe-78/)
-- [48-Years-Owned 1977 Jeep Cherokee S 4&#215;4](https://bringatrailer.com/listing/1977-jeep-cherokee-9/)
+- [48-Years-Owned, 407-Powered 1977 Jeep Cherokee S 4&#215;4](https://bringatrailer.com/listing/1977-jeep-cherokee-9/)
 - [34k-Mile 2013 Porsche 911 Carrera S Cabriolet](https://bringatrailer.com/listing/2013-porsche-911-carrera-s-cabriolet-49/)
 - [1926 Ford Model T Pickup](https://bringatrailer.com/listing/1926-ford-model-tt-5/)
 - [1976 GMC Birchaven 23’ Motorhome](https://bringatrailer.com/listing/1976-gmc-motorhome/)
@@ -2433,6 +2148,7 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 - [16k-Mile 2014 Mercedes-Benz SL63 AMG P30 Performance Package](https://bringatrailer.com/listing/2014-mercedes-benz-sl63-amg-22/)
 - [1994 Acura NSX 5-Speed](https://bringatrailer.com/listing/1994-acura-nsx-56/)
 - [2003 Mercedes-Benz SL500](https://bringatrailer.com/listing/2003-mercedes-benz-sl500-414/)
+- [2016 Indian Chief](https://bringatrailer.com/listing/2016-indian-chief/)
 - [12k-Mile 2007 Honda S2000](https://bringatrailer.com/listing/2007-honda-s2000-204/)
 - [2024 Ford Transit 350 AWD Trail Extended High-Roof Cargo Van](https://bringatrailer.com/listing/2024-ford-ford-transit-350-trail-eco-boost-all-wheel-drive-2/)
 - [One-Owner 2002 Lexus RX300 AWD](https://bringatrailer.com/listing/2002-lexus-rx300-3/)
@@ -2445,25 +2161,77 @@ Window: all live auctions closing within 14 days (effectively all); filter by da
 - [2002 GMC Yukon XL SLT 4×4](https://bringatrailer.com/listing/2002-gmc-yukon-xl-12/)
 - [427-Powered 1968 Chevrolet Corvette Coupe 4-Speed](https://bringatrailer.com/listing/1968-chevrolet-corvette-coupe-51/)
 - [1994 Pontiac Firebird Trans Am Coupe](https://bringatrailer.com/listing/1994-pontiac-firebird-trans-am-coupe-11/)
+- [25k-Mile 1995 Jaguar XJS 2+2 Convertible](https://bringatrailer.com/listing/1995-jaguar-xjs-convertible-81/)
+- [2009 BMW M3 Coupe](https://bringatrailer.com/listing/2009-bmw-m3-coupe-69/)
+- [2014 Porsche Cayenne Diesel Platinum Edition](https://bringatrailer.com/listing/2014-porsche-cayenne-diesel-183/)
+- [19k-Mile 2005 Porsche 911 Turbo S Cabriolet 6-Speed](https://bringatrailer.com/listing/2005-porsche-911-turbo-s-cabriolet-58/)
+- [365-Mile 2021 Ducati Panigale V4](https://bringatrailer.com/listing/2021-ducati-panigale-v4-7/)
+- [38k-Mile 2008 Mercedes-Benz SL55 AMG](https://bringatrailer.com/listing/2008-mercedes-benz-sl55-amg-29/)
+- [1969 Ford F-100 3-Speed](https://bringatrailer.com/listing/1969-ford-f-100-143/)
+- [17k-Mile 1987 Ford Mustang GT 5.0 Convertible](https://bringatrailer.com/listing/1987-ford-mustang-53/)
+- [1987 Porsche 911 Carrera Targa DP935 I](https://bringatrailer.com/listing/1987-porsche-911-carrera-targa-145/)
+- [2000 Land Rover Defender 90 Td5 5-Speed](https://bringatrailer.com/listing/2000-land-rover-defender-90-20/)
+- [44k-Mile 1993 Mazda MX-5 Miata 5-Speed](https://bringatrailer.com/listing/1993-mazda-mx-5-miata-135/)
+- [80-Mile 2022 Vespa Sei Giorni 300](https://bringatrailer.com/listing/80-mile-2022-vespa-sei-giorni-300/)
+- [2004 Ford Ranger XLT SuperCab 4×4](https://bringatrailer.com/listing/2004-ford-ranger-25/)
+- [16k-Mile 2001 Lotus Esprit V8](https://bringatrailer.com/listing/2001-lotus-esprit-v8-10/)
+- [1992 AM General M998 HMMWV](https://bringatrailer.com/listing/1992-am-general-hmmwv-military-16/)
+- [6k-Mile 2019 Bentley Bentayga V8](https://bringatrailer.com/listing/2019-bentley-bentayga-14/)
+- [572-Powered 1967 Chevrolet Corvette Coupe 5-Speed](https://bringatrailer.com/listing/1967-chevrolet-corvette-coupe-142/)
+- [1987 Suzuki Samurai JX Hardtop 5-Speed](https://bringatrailer.com/listing/1987-suzuki-samurai-49/)
+- [1965 BMW R60/2](https://bringatrailer.com/listing/1965-bmw-r60-2-16/)
+- [2011 Land Rover LR2 HSE](https://bringatrailer.com/listing/2011-land-rover-lr2-3/)
+- [2006 Mercedes-Benz E500 Sedan](https://bringatrailer.com/listing/2006-mercedes-benz-e500-sedan-6-2/)
+- [1980 Maserati Merak SS](https://bringatrailer.com/listing/1980-maserati-merak-ss-11/)
+- [1999 Toyota Land Cruiser UZJ100](https://bringatrailer.com/listing/1999-toyota-land-cruiser-150/)
+- [2002 Dodge Ram 2500HD SLT Quad Cab V10 4×4](https://bringatrailer.com/listing/2002-dodge-ram-2500hd-43/)
+- [46k-Mile 1997 BMW 540i 6-Speed](https://bringatrailer.com/listing/1997-bmw-540i-77/)
+- [10k-Mile 2012 Ferrari 458 Spider](https://bringatrailer.com/listing/2012-ferrari-458-spider-28/)
+- [1998 Subaru Sambar 4WD Pickup 5-Speed](https://bringatrailer.com/listing/1998-subaru-sambar-14/)
+- [2018 Jaguar XF Sportbrake S](https://bringatrailer.com/listing/2018-jaguar-xf-sportbrake-12/)
+- [1995 Ford F-150 XLT 5-Speed](https://bringatrailer.com/listing/1995-ford-f-150-146/)
+- [1978 Ford F-250 Ranger XLT 4&#215;4](https://bringatrailer.com/listing/1978-ford-f-250-127/)
+- [1950 Nimbus Model C](https://bringatrailer.com/listing/1950-nimbus-c/)
+- [2013 BMW 335i Sedan M Sport 6-Speed](https://bringatrailer.com/listing/2013-bmw-335i-sedan-8/)
+- [2014 Harley-Davidson CVO Limited](https://bringatrailer.com/listing/2014-harley-davidson-cvo-limited-2/)
+- [2002 BMW M3 Dinan S Coupe 6-Speed Track Car](https://bringatrailer.com/listing/2002-bmw-m3-coupe-142/)
+- [1969 Oldsmobile Ninety-Eight Convertible](https://bringatrailer.com/listing/1969-oldsmobile-98-6/)
+- [49k-Mile 2003 BMW Z4 Roadster 3.0i 6-Speed](https://bringatrailer.com/listing/2003-bmw-z4-roadster-142/)
+- [5.3L-Powered 1946 Chevrolet Pickup](https://bringatrailer.com/listing/1946-chevrolet-pickup-61/)
+- [36k-Mile 1973 Mercedes-Benz 220D 4-Speed](https://bringatrailer.com/listing/1973-mercedes-benz-220d-22/)
+- [Original-Owner 2004 Cadillac CTS-V](https://bringatrailer.com/listing/2004-cadillac-cts-v-18/)
+- [1995 Toyota T100 Xtracab SR5 4&#215;4](https://bringatrailer.com/listing/1995-toyota-t100-23/)
+- [32-Years-Owned 1964 Mercury Comet Caliente Convertible 289](https://bringatrailer.com/listing/1964-mercury-comet-39/)
+- [1962 Rambler American Deluxe 2-Door Club Sedan](https://bringatrailer.com/listing/1962-amc-american-deluxe-coupe/)
+- [35k-Mile 2018 BMW Alpina B6 xDrive Gran Coupe](https://bringatrailer.com/listing/2018-bmw-alpina-b6-xdrive-gran-coupe-2/)
+- [2004 Mercedes-Benz SL600](https://bringatrailer.com/listing/2004-mercedes-benz-sl600-137/)
+- [2000 Lotus Elise Sport 190](https://bringatrailer.com/listing/2000-lotus-elise-5/)
+- [2019 Land Rover Range Rover Supercharged](https://bringatrailer.com/listing/2019-land-rover-range-rover-66/)
+- [2002 Porsche 911 Carrera Cabriolet 6-Speed](https://bringatrailer.com/listing/2002-porsche-911-carrera-cabriolet-109/)
+- [Modified JDM 1992 Honda NSR250](https://bringatrailer.com/listing/1992-honda-nsr250/)
+- [2,130cc-Powered 1970 BMW 2002 5-Speed](https://bringatrailer.com/listing/1970-bmw-2002-42/)
 - [RoW 1976 Porsche 930 Turbo](https://bringatrailer.com/listing/1976-porsche-930-turbo-21/)
 - [2001 Ferrari 550 Barchetta Pininfarina](https://bringatrailer.com/listing/2001-ferrari-550-barchetta-pininfarina-7/)
 - [Twin-Plug 3.5L-Powered 1977 Porsche 911S IMSA Race Car](https://bringatrailer.com/listing/1977-porsche-911s-race-car/)
 - [17k-Mile 1999 Ferrari 550 Maranello](https://bringatrailer.com/listing/1999-ferrari-550-maranello-65/)
 - [1964 Maserati Mistral Spyder 3500](https://bringatrailer.com/listing/1964-maserati-mistral/)
+- [Supercharged 1937 Cord 812 Sportsman Convertible Coupe](https://bringatrailer.com/listing/1937-cord-sc-cabriolet-sportsman/)
 - [37k-Kilometer 2002 Nissan Skyline GT-R M-Spec Nür](https://bringatrailer.com/listing/2002-nissan-skyline-gt-r-8/)
 - [1967 Ferrari 330 GTC](https://bringatrailer.com/listing/1967-ferrari-330-gtc-20/)
 - [1989 Lamborghini Countach 25th Anniversary](https://bringatrailer.com/listing/1989-lamborghini-countach-25th-anniversary-24/)
+- [2020 Lamborghini Aventador LP770-4 SVJ Coupe](https://bringatrailer.com/listing/2020-lamborghini-aventador-lp770-4-svj-coupe-7/)
+- [171-Kilometer 2008 Spyker C8 Laviolette](https://bringatrailer.com/listing/2008-spyker-c8-laviolette-2/)
 
 ---
 
 ### Diagnostics
 
-- excerpt matches seen: 1305
-- objects parsed: 1305
+- excerpt matches seen: 1212
+- objects parsed: 1212
 - missing timestamp: 0
-- ending outside window: 0
-- checked within window: 1305
-- skipped no year or make: 81
+- ending outside window: 29
+- checked within window: 1183
+- skipped no year or make: 75
 - detail fetch failures: 0
-- bid found: 1224
-- title place found: 1142
+- bid found: 1108
+- title place found: 1033
